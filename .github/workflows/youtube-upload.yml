@@ -1,11 +1,8 @@
 name: Upload Short to YouTube
 
-# Fires when the daily routine publishes a GitHub Release (assets: <id>.mp4 + upload.json).
-# Uploads only when the repository variable AUTO_UPLOAD is "true" (set it after the
-# YouTube API audit is approved — see YOUTUBE_SETUP.md). Manual runs always upload.
+# Manual re-upload of an existing release (e.g. an episode published before AUTO_UPLOAD was on).
+# Daily uploads happen inside publish.yml.
 on:
-  release:
-    types: [published]
   workflow_dispatch:
     inputs:
       tag:
@@ -14,7 +11,6 @@ on:
 
 jobs:
   upload:
-    if: ${{ vars.AUTO_UPLOAD == 'true' || github.event_name == 'workflow_dispatch' }}
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -25,7 +21,7 @@ jobs:
       - name: Download release assets
         env:
           GH_TOKEN: ${{ github.token }}
-          TAG: ${{ github.event.release.tag_name || inputs.tag }}
+          TAG: ${{ inputs.tag }}
         run: gh release download "$TAG" -D release -p "*.mp4" -p "upload.json"
       - name: Upload to YouTube
         env:

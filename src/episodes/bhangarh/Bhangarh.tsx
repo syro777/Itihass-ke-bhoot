@@ -46,7 +46,7 @@ export const Bhangarh: React.FC = () => {
       <TopTitle line1="INDIA KA SABSE" line2="DARAAVNA KILA" hideFrom={cta ? Math.round(cta.start * FPS) - 4 : undefined} />
       <Captions timeline={timeline} y={1400} />
       <ProgressBar total={totalFrames} />
-      <Audio src={staticFile("bhangarh/mix.wav")} />
+      <Audio src={staticFile("bhangarh/mix.m4a")} />
     </AbsoluteFill>
   );
 };

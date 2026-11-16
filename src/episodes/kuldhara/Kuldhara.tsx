@@ -33,7 +33,7 @@ export const Kuldhara: React.FC = () => {
       <TopTitle line1="EK RAAT MEIN" line2="GAYAB GAON" hideFrom={cta ? Math.round(cta.start * FPS) - 4 : undefined} />
       <Captions timeline={timeline} y={1400} />
       <ProgressBar total={totalFrames} />
-      <Audio src={staticFile("kuldhara/mix.wav")} />
+      <Audio src={staticFile("kuldhara/mix.m4a")} />
     </AbsoluteFill>
   );
 };

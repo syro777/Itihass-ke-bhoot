@@ -294,7 +294,9 @@ def main(ep):
     lf = (f"loudnorm=I=-14:TP=-1.5:LRA=11:measured_I={m['input_i']}:measured_TP={m['input_tp']}:"
           f"measured_LRA={m['input_lra']}:measured_thresh={m['input_thresh']}:offset={m['target_offset']}:linear=true")
     subprocess.run(["ffmpeg", "-v", "error", "-y", "-i", raw, "-af", lf, "-ar", str(SR), "-c:a", "pcm_s16le", out], check=True)
-    print(f"input loudness {m['input_i']} LUFS -> -14 LUFS  => {os.path.normpath(out)}")
+    # Compressed copy that is committed to git and used by the composition (CI renders from it).
+    subprocess.run(["ffmpeg", "-v", "error", "-y", "-i", out, "-c:a", "aac", "-b:a", "192k", out.replace(".wav", ".m4a")], check=True)
+    print(f"input loudness {m['input_i']} LUFS -> -14 LUFS  => {os.path.normpath(out.replace('.wav', '.m4a'))}")
 
 
 if __name__ == "__main__":
