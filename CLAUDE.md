@@ -34,6 +34,6 @@ See README.md for the script format, components and SFX list. Always render chec
 The MP4, plus title (with #shorts), description, hashtags (first 3 matter, max 15), tags and a pinned comment, written in Hinglish/Hindi.
 
 ## Automation (daily)
-- GitHub repo: **syro777/itihaas-ke-bhoot** (user's personal account; never use the swiings2123-dev account).
+- GitHub repo: **syro777/Itihass-ke-bhoot** (user's personal account; never use the swiings2123-dev account).
 - A daily scheduled task runs `AUTOMATION.md` end to end: next topic from `topics.json` → research → script → voice/audio → scenes → checked render → commit → GitHub Release.
 - `.github/workflows/youtube-upload.yml` uploads the release to YouTube when repo variable `AUTO_UPLOAD` = `true` (only after the YouTube API audit; see `YOUTUBE_SETUP.md`). Secrets live only in GitHub Actions secrets.

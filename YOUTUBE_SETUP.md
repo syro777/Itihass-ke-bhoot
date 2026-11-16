@@ -25,7 +25,7 @@ Ye steps aapko khud karne hain (Google aur GitHub ke login aapke paas hain). Koi
 4. Step 2 mein **Exchange authorization code for tokens** dabao → **Refresh token** copy karo.
 
 ## 5. GitHub Secrets
-Repo `syro777/itihaas-ke-bhoot` → **Settings → Secrets and variables → Actions → New repository secret**:
+Repo `syro777/Itihass-ke-bhoot` → **Settings → Secrets and variables → Actions → New repository secret**:
 - `YT_CLIENT_ID`
 - `YT_CLIENT_SECRET`
 - `YT_REFRESH_TOKEN`
