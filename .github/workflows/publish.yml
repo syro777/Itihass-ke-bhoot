@@ -37,6 +37,9 @@ jobs:
           echo "comp=$(jq -r .composition "episodes/$EP/upload.json")" >> "$GITHUB_OUTPUT"
           echo "tag=ep-$(TZ=Asia/Kolkata date +%F)-$EP" >> "$GITHUB_OUTPUT"
 
+      - name: Check YouTube metadata (title, description, tags)
+        run: python3 tools/check_upload_meta.py "episodes/${{ steps.ep.outputs.id }}/upload.json"
+
       - uses: actions/setup-node@v4
         with:
           node-version: 22
@@ -82,6 +85,11 @@ jobs:
           YT_CLIENT_ID: ${{ secrets.YT_CLIENT_ID }}
           YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
           YT_REFRESH_TOKEN: ${{ secrets.YT_REFRESH_TOKEN }}
+          GH_TOKEN: ${{ github.token }}
+          EP: ${{ steps.ep.outputs.id }}
+          TAG: ${{ steps.ep.outputs.tag }}
         run: |
           pip install -q google-api-python-client google-auth
-          python tools/upload_youtube.py "out/${{ steps.ep.outputs.id }}.mp4" "episodes/${{ steps.ep.outputs.id }}/upload.json"
+          python tools/upload_youtube.py "out/$EP.mp4" "episodes/$EP/upload.json"
+          { echo "▶️ YouTube: $(cat youtube_url.txt)"; echo; cat "episodes/$EP/youtube.md"; } > notes.md
+          gh release edit "$TAG" --notes-file notes.md

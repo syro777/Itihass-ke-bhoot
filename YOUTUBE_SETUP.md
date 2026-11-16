@@ -1,5 +1,8 @@
 # YouTube auto-upload setup (ek baar karna hai)
 
+**Kya automatic hai:** roz ka title (#shorts ke saath), description (hashtags + subscribe line), tags, category, Hindi language, "Made for kids: No", aur shaam 7 baje (IST) ka scheduled publish. Upload ke baad YouTube link Release notes mein aa jaata hai. Upload se pehle metadata ki jaanch hoti hai; gadbad ho to publish ruk jaata hai.
+**Kya manual rahega:** comment ko **pin** karna (YouTube API pin karne nahi deta). Pinned comment ka text har Release ke `youtube.md` mein milega.
+
 Ye steps aapko khud karne hain (Google aur GitHub ke login aapke paas hain). Koi bhi ID, secret ya token **chat mein mat bhejna**, sirf GitHub Secrets mein daalna.
 
 ## 1. Google Cloud project

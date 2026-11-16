@@ -24,6 +24,9 @@ from googleapiclient.http import MediaFileUpload
 
 
 def main(video_path, meta_path):
+    missing = [k for k in ("YT_CLIENT_ID", "YT_CLIENT_SECRET", "YT_REFRESH_TOKEN") if not os.environ.get(k)]
+    if missing:
+        sys.exit(f"Missing GitHub secrets: {', '.join(missing)}. Add them as described in YOUTUBE_SETUP.md (step 5).")
     meta = json.load(open(meta_path, encoding="utf-8"))
     creds = Credentials(
         token=None,
@@ -61,7 +64,16 @@ def main(video_path, meta_path):
         if progress:
             print(f"uploaded {int(progress.progress() * 100)}%")
     vid = resp["id"]
-    print(f"OK https://youtube.com/shorts/{vid} status={resp['status'].get('privacyStatus')} publishAt={resp['status'].get('publishAt')}")
+    url = f"https://youtube.com/shorts/{vid}"
+    st = resp["status"]
+    print(f"OK {url} status={st.get('privacyStatus')} publishAt={st.get('publishAt')}")
+    with open("youtube_url.txt", "w") as f:
+        f.write(url + "\n")
+    summary = os.environ.get("GITHUB_STEP_SUMMARY")
+    if summary:
+        with open(summary, "a", encoding="utf-8") as f:
+            f.write(f"### Uploaded to YouTube\n- {url}\n- Title: {body['snippet']['title']}\n"
+                    f"- Privacy: {st.get('privacyStatus')}, publish at: {st.get('publishAt', 'now')}\n")
 
 
 if __name__ == "__main__":

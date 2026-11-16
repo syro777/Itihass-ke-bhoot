@@ -9,6 +9,9 @@ on:
         description: "Release tag to upload (e.g. ep-2026-11-17-nalanda)"
         required: true
 
+permissions:
+  contents: write
+
 jobs:
   upload:
     runs-on: ubuntu-latest
@@ -23,9 +26,17 @@ jobs:
           GH_TOKEN: ${{ github.token }}
           TAG: ${{ inputs.tag }}
         run: gh release download "$TAG" -D release -p "*.mp4" -p "upload.json"
+      - name: Check YouTube metadata (title, description, tags)
+        run: python3 tools/check_upload_meta.py release/upload.json
       - name: Upload to YouTube
         env:
           YT_CLIENT_ID: ${{ secrets.YT_CLIENT_ID }}
           YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
           YT_REFRESH_TOKEN: ${{ secrets.YT_REFRESH_TOKEN }}
-        run: python tools/upload_youtube.py release/*.mp4 release/upload.json
+          GH_TOKEN: ${{ github.token }}
+          TAG: ${{ inputs.tag }}
+        run: |
+          python tools/upload_youtube.py release/*.mp4 release/upload.json
+          gh release view "$TAG" --json body --jq .body > old.md
+          { echo "▶️ YouTube: $(cat youtube_url.txt)"; echo; cat old.md; } > notes.md
+          gh release edit "$TAG" --notes-file notes.md

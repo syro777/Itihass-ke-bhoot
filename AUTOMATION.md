@@ -51,6 +51,8 @@ Tile them into a contact sheet and **look at it**. Fix: text overlapping the tit
    "publishAt": "<today 19:00 IST as UTC, e.g. 2026-11-17T13:30:00Z>"}
   ```
   If it is already past 18:00 IST, use tomorrow 19:00 IST.
+- Description: hook line, short story teaser, A-vs-B comment question, "📜 Itihaas" facts line, "👻" folklore note, "🔔 Subscribe karo: @ItihaasKeBhoot", then 8–12 hashtags (first 3 most important; never more than 15). Title ≤ 100 chars with #shorts. Tags: 10–15 search phrases (Hinglish + English), ≤ 500 chars in total.
+- Run `python3 tools/check_upload_meta.py episodes/<id>/upload.json` and fix every problem it lists. CI runs the same check and stops the publish if it fails.
 
 ## 8. Publish (GitHub Actions renders and releases)
 Claude Code sessions cannot create GitHub Releases, so CI does it:
