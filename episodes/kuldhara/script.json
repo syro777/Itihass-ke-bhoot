@@ -1,0 +1,130 @@
+{
+  "id": "kuldhara",
+  "voice": "hi-IN-MadhurNeural",
+  "rate": "+28%",
+  "pitch": "-2Hz",
+  "pauses": {"word": 0.05, "comma": 0.09, "sentence": 0.14},
+  "notes": "Facts: Kuldhara (Jaisalmer district) settled ~13th c. by Paliwal Brahmins; abandoned 1825 with nearby villages. Salim Singh story, 84 villages, one-night exodus and curse = legend ('kehte hain'). Historians: water scarcity + heavy taxes. Gate-closed-at-sunset claim NOT verified, so not used.",
+  "scenes": [
+    {
+      "id": "hook",
+      "mood": "tense",
+      "hi": "राजस्थान का एक गाँव, जो 200 साल से वीरान है! कहते हैं, यहाँ के लोग एक ही रात में गायब हो गए!",
+      "en": "Rajasthan ka ek *GAON, jo *200 saal se veeraan hai! Kehte hain, yahan ke log ek hi *RAAT mein *GAYAB ho gaye!",
+      "sfx": [
+        {"at": "start", "sfx": "boom", "gain": 0.8},
+        {"at": "start", "sfx": "wind", "gain": 0.35},
+        {"at": "200", "sfx": "stamp", "gain": 0.7},
+        {"at": "raat", "sfx": "riser", "off": -0.3, "gain": 0.5},
+        {"at": "gayab", "sfx": "glitch", "gain": 0.7},
+        {"at": "gayab", "sfx": "boom", "gain": 0.9}
+      ]
+    },
+    {
+      "id": "location",
+      "mood": "mystery",
+      "hi": "ये है जैसलमेर का कुलधरा गाँव।",
+      "en": "Ye hai Jaisalmer ka *KULDHARA gaon.",
+      "sfx": [
+        {"at": "start", "sfx": "whoosh", "off": -0.15, "gain": 0.7},
+        {"at": "ye", "sfx": "footsteps", "gain": 0.5},
+        {"at": "kuldhara", "sfx": "hit", "gain": 0.7}
+      ]
+    },
+    {
+      "id": "history",
+      "mood": "royal",
+      "hi": "करीब सात सौ साल पहले इसे पालीवाल ब्राह्मणों ने बसाया था। रेगिस्तान में भी उनकी खेती और व्यापार कमाल का था।",
+      "en": "Kareeb saat sau saal pehle ise *PALIWAL Brahmanon ne basaya tha. Registan mein bhi unki *KHETI aur *VYAPAAR kamaal ka tha.",
+      "sfx": [
+        {"at": "start", "sfx": "whoosh", "off": -0.15, "gain": 0.6},
+        {"at": "saat", "sfx": "stamp", "gain": 0.8},
+        {"at": "paliwal", "sfx": "fanfare", "gain": 0.5},
+        {"at": "kheti", "sfx": "shimmer", "gain": 0.4},
+        {"at": "vyapaar", "sfx": "chisel", "gain": 0.45},
+        {"at": "kamaal", "sfx": "ding", "gain": 0.4}
+      ]
+    },
+    {
+      "id": "diwan",
+      "mood": "creepy",
+      "hi": "फिर आया जैसलमेर का दीवान सालिम सिंह। उसने भारी टैक्स लगाए, और कहते हैं, उसकी नज़र मुखिया की बेटी पर पड़ गई।",
+      "en": "Phir aaya Jaisalmer ka Diwan *SALIM *SINGH. Usne bhaari *TAX lagaye, aur kehte hain, uski nazar mukhiya ki *BETI par pad gayi.",
+      "sfx": [
+        {"at": "start", "sfx": "glitch", "off": -0.1, "gain": 0.6},
+        {"at": "salim", "sfx": "hit", "gain": 0.7},
+        {"at": "tax", "sfx": "stamp", "gain": 0.8},
+        {"at": "nazar", "sfx": "ghost", "gain": 0.45},
+        {"at": "beti", "sfx": "shimmer_dark", "gain": 0.5}
+      ]
+    },
+    {
+      "id": "council",
+      "mood": "tense",
+      "hi": "धमकी मिली: शादी करो, वरना अंजाम बुरा होगा! तब चौरासी गाँवों के पालीवालों ने रात में पंचायत बुलाई।",
+      "en": "Dhamki mili: shaadi karo, warna anjaam *BURA hoga! Tab *84 gaon ke Paliwalon ne raat mein *PANCHAYAT bulayi.",
+      "sfx": [
+        {"at": "start", "sfx": "whoosh", "off": -0.15, "gain": 0.6},
+        {"at": "dhamki", "sfx": "hit", "gain": 0.7},
+        {"at": "bura", "sfx": "thunder", "off": -0.05, "gain": 0.8},
+        {"at": "84", "sfx": "stamp", "gain": 0.8},
+        {"at": "panchayat", "sfx": "fire", "gain": 0.6}
+      ]
+    },
+    {
+      "id": "exodus",
+      "mood": "sad",
+      "hi": "और एक ही रात में हज़ारों लोग अपने घर छोड़कर चले गए! कोई पक्का नहीं जानता, वो कहाँ गए।",
+      "en": "Aur ek hi raat mein *HAZAARON log apne ghar chhodkar chale gaye! Koi pakka nahi jaanta, woh *KAHAN gaye.",
+      "sfx": [
+        {"at": "start", "sfx": "whoosh", "off": -0.15, "gain": 0.6},
+        {"at": "raat", "sfx": "footsteps", "gain": 0.6},
+        {"at": "chhodkar", "sfx": "footsteps", "gain": 0.5},
+        {"at": "koi", "sfx": "wind", "gain": 0.5},
+        {"at": "kahan", "sfx": "ghost", "gain": 0.5}
+      ]
+    },
+    {
+      "id": "curse",
+      "mood": "climax",
+      "hi": "जाते जाते उन्होंने श्राप दिया: इस गाँव में फिर कभी कोई नहीं बस पाएगा!",
+      "en": "Jaate jaate unhone *SHRAAP diya: is gaon mein phir kabhi koi *NAHI bas paayega!",
+      "sfx": [
+        {"at": "start", "sfx": "whoosh", "off": -0.15, "gain": 0.6},
+        {"at": "unhone", "sfx": "riser", "gain": 0.6},
+        {"at": "shraap", "sfx": "thunder", "off": -0.05, "gain": 1.0},
+        {"at": "shraap", "sfx": "boom", "gain": 0.8},
+        {"at": "nahi", "sfx": "crash", "gain": 0.8}
+      ]
+    },
+    {
+      "id": "today",
+      "mood": "sad",
+      "hi": "आज भी कुलधरा वीरान पड़ा है। पर इतिहासकार कहते हैं, असली वजह पानी की कमी और भारी टैक्स हो सकते हैं।",
+      "en": "Aaj bhi Kuldhara *VEERAAN pada hai. Par itihaaskar kehte hain, asli wajah *PAANI ki kami aur bhaari *TAX ho sakte hain.",
+      "sfx": [
+        {"at": "start", "sfx": "whoosh", "off": -0.15, "gain": 0.6},
+        {"at": "start", "sfx": "wind", "gain": 0.5},
+        {"at": "veeraan", "sfx": "creak", "gain": 0.5},
+        {"at": "itihaaskar", "sfx": "pop", "gain": 0.6},
+        {"at": "paani", "sfx": "hit", "gain": 0.6},
+        {"at": "tax", "sfx": "stamp", "gain": 0.7}
+      ]
+    },
+    {
+      "id": "cta",
+      "mood": "tense",
+      "hi": "श्राप या पानी? आपको क्या लगता है? कमेंट में बताओ, और ऐसे ही रहस्यों के लिए इतिहास के भूत को सब्सक्राइब करो!",
+      "en": "*SHRAAP ya *PAANI? Aapko kya lagta hai? Comment mein batao, aur aise hi rahasyon ke liye *ITIHAAS *KE *BHOOT ko *SUBSCRIBE karo!",
+      "sfx": [
+        {"at": "start", "sfx": "glitch", "off": -0.1, "gain": 0.5},
+        {"at": "start", "sfx": "heartbeat", "gain": 0.5},
+        {"at": "shraap", "sfx": "pop", "gain": 0.5},
+        {"at": "comment", "sfx": "pop", "gain": 0.6},
+        {"at": "itihaas", "sfx": "whoosh", "off": -0.12, "gain": 0.5},
+        {"at": "subscribe", "sfx": "pop", "off": 0.13, "gain": 0.8},
+        {"at": "subscribe", "sfx": "ding", "off": 0.27, "gain": 0.7}
+      ]
+    }
+  ]
+}

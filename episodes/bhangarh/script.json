@@ -1,0 +1,351 @@
+{
+  "id": "bhangarh",
+  "voice": "hi-IN-MadhurNeural",
+  "rate": "+28%",
+  "pitch": "-2Hz",
+  "notes": "hi = Devanagari text spoken by the TTS. en = Hinglish caption words, one per spoken word (same order). *WORD = emphasis (red, bigger). sfx.at = Hinglish word (lowercase, no punctuation) or 'start'/'end'; off = seconds offset. mood = music profile: tense|mystery|royal|calm|climax|creepy|sad. rate/pauses: channel preference = fast, continuous male narration (keep pauses tiny). Every episode: mid-video subscribe nudge (SubscribeNudge) + spoken subscribe line with ChannelCard at the end.",
+  "scenes": [
+    {
+      "id": "hook",
+      "mood": "tense",
+      "hi": "भारत में एक ऐसा किला है, जहाँ सूरज ढलने के बाद जाना सरकार ने मना कर रखा है!",
+      "en": "Bharat mein ek aisa *KILA hai, jahan sooraj dhalne ke baad jaana sarkaar ne *MANA kar rakha hai!",
+      "sfx": [
+        {
+          "at": "start",
+          "sfx": "boom",
+          "gain": 0.9
+        },
+        {
+          "at": "start",
+          "sfx": "wind",
+          "gain": 0.35
+        },
+        {
+          "at": "sooraj",
+          "sfx": "riser",
+          "off": -0.2,
+          "gain": 0.45
+        },
+        {
+          "at": "mana",
+          "sfx": "thunder",
+          "off": -0.05,
+          "gain": 0.9
+        },
+        {
+          "at": "mana",
+          "sfx": "stamp",
+          "gain": 0.8
+        }
+      ]
+    },
+    {
+      "id": "location",
+      "mood": "mystery",
+      "hi": "ये है राजस्थान के अलवर में भानगढ़ का किला।",
+      "en": "Ye hai Rajasthan ke Alwar mein *BHANGARH ka kila.",
+      "sfx": [
+        {
+          "at": "start",
+          "sfx": "whoosh",
+          "off": -0.15,
+          "gain": 0.7
+        },
+        {
+          "at": "ye",
+          "sfx": "footsteps",
+          "gain": 0.5
+        },
+        {
+          "at": "bhangarh",
+          "sfx": "hit",
+          "gain": 0.7
+        }
+      ]
+    },
+    {
+      "id": "history",
+      "mood": "royal",
+      "hi": "सन् 1573 में आमेर के राजा भगवंत दास ने इसे अपने बेटे माधो सिंह के लिए बसाया।",
+      "en": "San *1573 mein Amer ke Raja Bhagwant Das ne ise apne bete Madho Singh ke liye basaya.",
+      "sfx": [
+        {
+          "at": "start",
+          "sfx": "whoosh",
+          "off": -0.15,
+          "gain": 0.7
+        },
+        {
+          "at": "1573",
+          "sfx": "stamp",
+          "gain": 0.9
+        },
+        {
+          "at": "raja",
+          "sfx": "fanfare",
+          "gain": 0.5
+        },
+        {
+          "at": "ise",
+          "sfx": "chisel",
+          "gain": 0.5
+        },
+        {
+          "at": "madho",
+          "sfx": "chisel",
+          "gain": 0.45
+        },
+        {
+          "at": "basaya",
+          "sfx": "bell",
+          "gain": 0.4
+        }
+      ]
+    },
+    {
+      "id": "sage",
+      "mood": "calm",
+      "hi": "लेकिन कहते हैं, यहाँ बाबा बालू नाथ तपस्या करते थे। उनकी शर्त थी: महल की परछाई उनकी कुटिया पर कभी नहीं पड़नी चाहिए।",
+      "en": "Lekin kehte hain, yahan Baba Balu Nath tapasya karte the. Unki *SHART thi: mahal ki *PARCHHAI unki kutiya par kabhi nahi padni chahiye.",
+      "sfx": [
+        {
+          "at": "start",
+          "sfx": "whoosh",
+          "off": -0.15,
+          "gain": 0.6
+        },
+        {
+          "at": "baba",
+          "sfx": "bell",
+          "gain": 0.55
+        },
+        {
+          "at": "shart",
+          "sfx": "hit",
+          "gain": 0.6
+        },
+        {
+          "at": "parchhai",
+          "sfx": "shimmer_dark",
+          "gain": 0.5
+        },
+        {
+          "at": "start",
+          "sfx": "pop",
+          "off": 0.42,
+          "gain": 0.5
+        },
+        {
+          "at": "start",
+          "sfx": "pop",
+          "off": 1.27,
+          "gain": 0.6
+        },
+        {
+          "at": "start",
+          "sfx": "ding",
+          "off": 1.4,
+          "gain": 0.45
+        }
+      ]
+    },
+    {
+      "id": "curse",
+      "mood": "climax",
+      "hi": "फिर एक राजा ने महल ऊँचा करवा दिया... परछाई पड़ी, और पूरा भानगढ़ श्रापित हो गया!",
+      "en": "Phir ek raja ne mahal ooncha karwa diya... parchhai padi, aur poora Bhangarh *SHRAAPIT ho gaya!",
+      "sfx": [
+        {
+          "at": "start",
+          "sfx": "whoosh",
+          "off": -0.15,
+          "gain": 0.6
+        },
+        {
+          "at": "mahal",
+          "sfx": "rumble",
+          "gain": 0.6
+        },
+        {
+          "at": "parchhai",
+          "sfx": "riser",
+          "off": -0.3,
+          "gain": 0.6
+        },
+        {
+          "at": "shraapit",
+          "sfx": "thunder",
+          "off": -0.05,
+          "gain": 1.0
+        },
+        {
+          "at": "shraapit",
+          "sfx": "boom",
+          "gain": 0.9
+        }
+      ]
+    },
+    {
+      "id": "tantrik",
+      "mood": "creepy",
+      "hi": "दूसरी कहानी और डरावनी है। तांत्रिक सिंघिया राजकुमारी रत्नावती पर मोहित हो गया, और जादुई तेल से उसे वश में करना चाहा।",
+      "en": "Doosri kahani aur *DARAAVNI hai. *TANTRIK Singhia Rajkumari Ratnavati par mohit ho gaya, aur *JAADUI tel se use vash mein karna chaha.",
+      "sfx": [
+        {
+          "at": "start",
+          "sfx": "glitch",
+          "off": -0.1,
+          "gain": 0.6
+        },
+        {
+          "at": "tantrik",
+          "sfx": "ghost",
+          "gain": 0.45
+        },
+        {
+          "at": "ratnavati",
+          "sfx": "chime",
+          "gain": 0.45
+        },
+        {
+          "at": "jaadui",
+          "sfx": "shimmer",
+          "gain": 0.6
+        }
+      ]
+    },
+    {
+      "id": "rock",
+      "mood": "climax",
+      "hi": "पर राजकुमारी ने तेल चट्टान पर फेंक दिया... चट्टान ने तांत्रिक को कुचल दिया! मरते मरते उसने श्राप दिया: यहाँ कोई नहीं बचेगा!",
+      "en": "Par Rajkumari ne tel chattan par phenk diya... chattan ne tantrik ko *KUCHAL diya! Marte marte usne *SHRAAP diya: yahan koi *NAHI bachega!",
+      "sfx": [
+        {
+          "at": "start",
+          "sfx": "whoosh",
+          "off": -0.15,
+          "gain": 0.6
+        },
+        {
+          "at": "phenk",
+          "sfx": "splash",
+          "gain": 0.6
+        },
+        {
+          "at": "chattan",
+          "sfx": "rumble",
+          "nth": 2,
+          "gain": 0.8
+        },
+        {
+          "at": "kuchal",
+          "sfx": "crash",
+          "off": -0.05,
+          "gain": 1.0
+        },
+        {
+          "at": "marte",
+          "sfx": "heartbeat",
+          "gain": 0.7
+        },
+        {
+          "at": "yahan",
+          "sfx": "ghost",
+          "gain": 0.6
+        },
+        {
+          "at": "nahi",
+          "sfx": "boom",
+          "gain": 0.8
+        }
+      ]
+    },
+    {
+      "id": "ruins",
+      "mood": "sad",
+      "hi": "कहते हैं, फिर युद्ध में पूरा नगर उजड़ गया। आज भी ASI का बोर्ड कहता है: सूर्यास्त के बाद प्रवेश वर्जित!",
+      "en": "Kehte hain, phir yuddh mein poora nagar *UJAD gaya. Aaj bhi ASI ka board kehta hai: sooryast ke baad *PRAVESH *VARJIT!",
+      "sfx": [
+        {
+          "at": "start",
+          "sfx": "whoosh",
+          "off": -0.15,
+          "gain": 0.6
+        },
+        {
+          "at": "yuddh",
+          "sfx": "swords",
+          "gain": 0.55
+        },
+        {
+          "at": "ujad",
+          "sfx": "wind",
+          "gain": 0.5
+        },
+        {
+          "at": "board",
+          "sfx": "creak",
+          "gain": 0.6
+        },
+        {
+          "at": "pravesh",
+          "sfx": "stamp",
+          "gain": 0.9
+        }
+      ]
+    },
+    {
+      "id": "cta",
+      "mood": "tense",
+      "hi": "श्राप सच है या कहानी? पर क्या आप भानगढ़ में एक रात रुकोगे? कमेंट में बताओ, और ऐसे ही रहस्यों के लिए इतिहास के भूत को सब्सक्राइब करो!",
+      "en": "Shraap *SACH hai ya kahani? Par kya *AAP Bhangarh mein ek *RAAT rukoge? Comment mein batao, aur aise hi rahasyon ke liye *ITIHAAS *KE *BHOOT ko *SUBSCRIBE karo!",
+      "sfx": [
+        {
+          "at": "start",
+          "sfx": "glitch",
+          "off": -0.1,
+          "gain": 0.5
+        },
+        {
+          "at": "start",
+          "sfx": "heartbeat",
+          "gain": 0.6
+        },
+        {
+          "at": "raat",
+          "sfx": "ghost",
+          "gain": 0.6
+        },
+        {
+          "at": "comment",
+          "sfx": "pop",
+          "gain": 0.6
+        },
+        {
+          "at": "itihaas",
+          "sfx": "whoosh",
+          "off": -0.12,
+          "gain": 0.5
+        },
+        {
+          "at": "subscribe",
+          "sfx": "pop",
+          "off": 0.13,
+          "gain": 0.8
+        },
+        {
+          "at": "subscribe",
+          "sfx": "ding",
+          "off": 0.27,
+          "gain": 0.7
+        }
+      ]
+    }
+  ],
+  "pauses": {
+    "word": 0.05,
+    "comma": 0.09,
+    "sentence": 0.14
+  }
+}

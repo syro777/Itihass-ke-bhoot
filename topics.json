@@ -1,0 +1,33 @@
+{
+  "notes": "Daily queue. The daily routine takes the first topic with status 'todo', sets it to 'done' with the date when the video is published. Alternate Indian history, Indian ghost places and world ghost stories. Avoid topics built around suicide, real recent tragedies or living people.",
+  "topics": [
+    {"id": "bhangarh", "title": "Bhangarh Fort — India ka sabse daraavna kila", "type": "india-ghost", "status": "done", "date": "2026-11-16"},
+    {"id": "kuldhara", "title": "Kuldhara — ek raat mein gayab gaon", "type": "india-ghost", "status": "done", "date": "2026-11-16"},
+    {"id": "shaniwar-wada", "title": "Shaniwar Wada, Pune — Narayanrao ki cheekh ('Kaka mala vachva')", "type": "india-ghost", "status": "todo"},
+    {"id": "nalanda", "title": "Nalanda — jab library mahino tak jalti rahi", "type": "india-history", "status": "todo"},
+    {"id": "island-of-dolls", "title": "Island of the Dolls, Mexico — gudiyon ka bhootiya tapu", "type": "world-ghost", "status": "todo"},
+    {"id": "roopkund", "title": "Roopkund — kankaalon ki jheel ka raaz", "type": "india-history", "status": "todo"},
+    {"id": "agrasen-baoli", "title": "Agrasen ki Baoli, Delhi — kaala paani ki kahani", "type": "india-ghost", "status": "todo"},
+    {"id": "shivaji-agra-escape", "title": "Shivaji Maharaj ka Agra se mithai ki tokri mein escape", "type": "india-history", "status": "todo"},
+    {"id": "tower-of-london", "title": "Tower of London — Anne Boleyn ka bina sir wala bhoot", "type": "world-ghost", "status": "todo"},
+    {"id": "kiradu-temples", "title": "Kiradu Mandir, Barmer — raat rukne wala patthar ban jaata hai?", "type": "india-ghost", "status": "todo"},
+    {"id": "konark-magnet", "title": "Konark Surya Mandir — chumbak ka rahasya", "type": "india-history", "status": "todo"},
+    {"id": "poveglia", "title": "Poveglia Island, Italy — duniya ka sabse bhootiya tapu", "type": "world-ghost", "status": "todo"},
+    {"id": "jatinga", "title": "Jatinga, Assam — jahan panchhi khud maut ki taraf udte hain", "type": "india-history", "status": "todo"},
+    {"id": "dow-hill", "title": "Dow Hill, Kurseong — bina sir wala ladka", "type": "india-ghost", "status": "todo"},
+    {"id": "kohinoor-curse", "title": "Kohinoor ka shraap — sirf aurtein hi pehen sakti hain?", "type": "india-history", "status": "todo"},
+    {"id": "edinburgh-vaults", "title": "Edinburgh Vaults — zameen ke neeche ka bhootiya shehar", "type": "world-ghost", "status": "todo"},
+    {"id": "malcha-mahal", "title": "Malcha Mahal, Delhi — jungle mein chhupi 'begum' ki kahani", "type": "india-ghost", "status": "todo"},
+    {"id": "kailasa-ellora", "title": "Kailasa Mandir, Ellora — ek hi chattan se bana mandir", "type": "india-history", "status": "todo"},
+    {"id": "raynham-brown-lady", "title": "Brown Lady of Raynham Hall — duniya ki sabse famous bhoot photo", "type": "world-ghost", "status": "todo"},
+    {"id": "golconda-clap", "title": "Golconda Fort — taali jo 1 km door sunayi deti hai", "type": "india-history", "status": "todo"},
+    {"id": "dumas-beach", "title": "Dumas Beach, Surat — kaali ret aur raat ki awaazein", "type": "india-ghost", "status": "todo"},
+    {"id": "tipu-rockets", "title": "Tipu Sultan ke rocket — jinse angrez bhi dar gaye", "type": "india-history", "status": "todo"},
+    {"id": "flannan-isles", "title": "Flannan Isles — teen lighthouse keeper jo gayab ho gaye", "type": "world-ghost", "status": "todo"},
+    {"id": "chand-baori", "title": "Chand Baori — 3500 seedhiyon wala rahasyamay kuan", "type": "india-history", "status": "todo"},
+    {"id": "mary-kings-close", "title": "Mary King's Close — deewaron mein band gali", "type": "world-ghost", "status": "todo"},
+    {"id": "hampi", "title": "Hampi — duniya ka sabse ameer shehar jo ek yudh mein khatam ho gaya", "type": "india-history", "status": "todo"},
+    {"id": "savoy-hotel-mussoorie", "title": "Savoy Hotel, Mussoorie — Lady Garnet Orme ka rahasya", "type": "india-ghost", "status": "todo"},
+    {"id": "ashoka-kalinga", "title": "Kalinga yudh — jisne Ashok ko badal diya", "type": "india-history", "status": "todo"}
+  ]
+}

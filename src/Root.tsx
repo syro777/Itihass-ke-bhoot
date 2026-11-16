@@ -1,9 +1,18 @@
-import { MyComposition } from "./Composition";
+import "./fonts";
+import { Composition, Still } from "remotion";
+import { Banner, LogoAvatar, LogoFull } from "./brand/Brand";
+import { Bhangarh, totalFrames } from "./episodes/bhangarh/Bhangarh";
+import { Kuldhara, totalFrames as kuldharaFrames } from "./episodes/kuldhara/Kuldhara";
+import { FPS, H, W } from "./lib/util";
 
 export const RemotionRoot: React.FC = () => {
   return (
     <>
-      <MyComposition />
+      <Composition id="Bhangarh" component={Bhangarh} durationInFrames={totalFrames} fps={FPS} width={W} height={H} />
+      <Composition id="Kuldhara" component={Kuldhara} durationInFrames={kuldharaFrames} fps={FPS} width={W} height={H} />
+      <Still id="LogoAvatar" component={LogoAvatar} width={800} height={800} />
+      <Still id="LogoFull" component={LogoFull} width={1200} height={1200} />
+      <Still id="Banner" component={Banner} width={2560} height={1440} />
     </>
   );
 };

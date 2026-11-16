@@ -1,0 +1,35 @@
+name: Upload Short to YouTube
+
+# Fires when the daily routine publishes a GitHub Release (assets: <id>.mp4 + upload.json).
+# Uploads only when the repository variable AUTO_UPLOAD is "true" (set it after the
+# YouTube API audit is approved — see YOUTUBE_SETUP.md). Manual runs always upload.
+on:
+  release:
+    types: [published]
+  workflow_dispatch:
+    inputs:
+      tag:
+        description: "Release tag to upload (e.g. ep-2026-11-17-nalanda)"
+        required: true
+
+jobs:
+  upload:
+    if: ${{ vars.AUTO_UPLOAD == 'true' || github.event_name == 'workflow_dispatch' }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install google-api-python-client google-auth
+      - name: Download release assets
+        env:
+          GH_TOKEN: ${{ github.token }}
+          TAG: ${{ github.event.release.tag_name || inputs.tag }}
+        run: gh release download "$TAG" -D release -p "*.mp4" -p "upload.json"
+      - name: Upload to YouTube
+        env:
+          YT_CLIENT_ID: ${{ secrets.YT_CLIENT_ID }}
+          YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
+          YT_REFRESH_TOKEN: ${{ secrets.YT_REFRESH_TOKEN }}
+        run: python tools/upload_youtube.py release/*.mp4 release/upload.json
