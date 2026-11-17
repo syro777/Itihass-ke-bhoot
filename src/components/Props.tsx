@@ -75,7 +75,7 @@ export const HighwaySign: React.FC<{ x: number; y: number; scale?: number; popAt
       <text x={-55} y={-672} textAnchor="middle" fontFamily={HIND} fontWeight={700} fontSize={70} fill="#ffffff">
         {hi}
       </text>
-      <text x={-55} y={-590} textAnchor="middle" fontFamily={POP} fontWeight={900} fontSize={66} fill="#ffffff">
+      <text x={-55} y={-590} textAnchor="middle" fontFamily={POP} fontWeight={900} fontSize={en.length > 9 ? 50 : 66} fill="#ffffff">
         {en}
       </text>
       <text x={-55} y={-516} textAnchor="middle" fontFamily={POP} fontWeight={800} fontSize={30} fill="#d6f5e3" letterSpacing={2}>

@@ -1,0 +1,360 @@
+{
+  "id": "shaniwar-wada",
+  "voice": "hi-IN-MadhurNeural",
+  "rate": "+28%",
+  "pitch": "-2Hz",
+  "pauses": {
+    "word": 0.05,
+    "comma": 0.09,
+    "sentence": 0.14
+  },
+  "notes": "Facts: Shaniwar Wada, Pune; foundation laid by Peshwa Bajirao I in 1730 on a Saturday (completed 1732). Narayanrao became Peshwa at 17 and was killed by Gardi soldiers in Shaniwar Wada on 30 Aug 1773; plot attributed to Raghunathrao / Anandibai. Fire of 27 Feb 1828 burned ~7 days, cause unknown. Legend ('kehte hain'): Anandibai changed 'dhara' (catch) to 'mara' (kill) in the order; 'Kaka mala vachva' cry heard on full-moon nights. No gore: the killing is shown symbolically.",
+  "scenes": [
+    {
+      "id": "hook",
+      "mood": "tense",
+      "hi": "पुणे के इस महल में, कहते हैं, आज भी रात को एक चीख गूंजती है: काका मला वाचवा! यानी, चाचा मुझे बचाओ!",
+      "en": "Pune ke is mahal mein, kehte hain, aaj bhi raat ko ek *CHEEKH goonjti hai: *KAKA *MALA *VACHVA! Yaani, *CHACHA mujhe *BACHAO!",
+      "sfx": [
+        {
+          "at": "start",
+          "sfx": "boom",
+          "gain": 0.8
+        },
+        {
+          "at": "start",
+          "sfx": "wind",
+          "gain": 0.35
+        },
+        {
+          "at": "cheekh",
+          "sfx": "riser",
+          "off": -0.4,
+          "gain": 0.5
+        },
+        {
+          "at": "kaka",
+          "sfx": "hit",
+          "gain": 0.8
+        },
+        {
+          "at": "kaka",
+          "sfx": "ghost",
+          "gain": 0.6
+        },
+        {
+          "at": "bachao",
+          "sfx": "glitch",
+          "gain": 0.5
+        }
+      ]
+    },
+    {
+      "id": "location",
+      "mood": "mystery",
+      "hi": "ये है शनिवार वाड़ा, पेशवाओं का महल।",
+      "en": "Ye hai *SHANIWAR *WADA, Peshwaon ka mahal.",
+      "sfx": [
+        {
+          "at": "start",
+          "sfx": "whoosh",
+          "off": -0.15,
+          "gain": 0.7
+        },
+        {
+          "at": "ye",
+          "sfx": "footsteps",
+          "gain": 0.5
+        },
+        {
+          "at": "shaniwar",
+          "sfx": "hit",
+          "gain": 0.7
+        },
+        {
+          "at": "peshwaon",
+          "sfx": "creak",
+          "gain": 0.5
+        }
+      ]
+    },
+    {
+      "id": "history",
+      "mood": "royal",
+      "hi": "इसकी नींव 1730 में बाजीराव पेशवा ने रखी थी, और शनिवार के दिन रखी, इसलिए नाम पड़ा शनिवार वाड़ा।",
+      "en": "Iski neev *1730 mein *BAJIRAO Peshwa ne rakhi thi, aur *SHANIWAR ke din rakhi, isliye naam pada Shaniwar Wada.",
+      "sfx": [
+        {
+          "at": "start",
+          "sfx": "whoosh",
+          "off": -0.15,
+          "gain": 0.6
+        },
+        {
+          "at": "1730",
+          "sfx": "stamp",
+          "gain": 0.8
+        },
+        {
+          "at": "bajirao",
+          "sfx": "fanfare",
+          "gain": 0.5
+        },
+        {
+          "at": "neev",
+          "sfx": "chisel",
+          "gain": 0.45
+        },
+        {
+          "at": "shaniwar",
+          "sfx": "ding",
+          "gain": 0.5
+        },
+        {
+          "at": "naam",
+          "sfx": "pop",
+          "gain": 0.5
+        }
+      ]
+    },
+    {
+      "id": "peshwa",
+      "mood": "mystery",
+      "hi": "फिर सिर्फ सत्रह साल की उम्र में नारायणराव पेशवा बने। पर चाचा रघुनाथराव को गद्दी चाहिए थी।",
+      "en": "Phir sirf *17 saal ki umar mein *NARAYANRAO Peshwa bane. Par chacha *RAGHUNATHRAO ko gaddi chahiye thi.",
+      "sfx": [
+        {
+          "at": "start",
+          "sfx": "whoosh",
+          "off": -0.15,
+          "gain": 0.6
+        },
+        {
+          "at": "17",
+          "sfx": "stamp",
+          "gain": 0.8
+        },
+        {
+          "at": "narayanrao",
+          "sfx": "chime",
+          "gain": 0.45
+        },
+        {
+          "at": "raghunathrao",
+          "sfx": "shimmer_dark",
+          "gain": 0.55
+        },
+        {
+          "at": "gaddi",
+          "sfx": "hit",
+          "gain": 0.5
+        }
+      ]
+    },
+    {
+      "id": "letter",
+      "mood": "creepy",
+      "hi": "कहते हैं, चिट्ठी में लिखा था: नारायणराव को धरा, यानी पकड़ो। पर चाची आनंदीबाई ने एक अक्षर बदलकर लिख दिया: मारा!",
+      "en": "Kehte hain, chitthi mein likha tha: Narayanrao ko *DHARA, yaani *PAKDO. Par chachi *ANANDIBAI ne ek akshar badalkar likh diya: *MAARA!",
+      "sfx": [
+        {
+          "at": "start",
+          "sfx": "glitch",
+          "off": -0.1,
+          "gain": 0.6
+        },
+        {
+          "at": "chitthi",
+          "sfx": "pop",
+          "gain": 0.5
+        },
+        {
+          "at": "dhara",
+          "sfx": "hit",
+          "gain": 0.6
+        },
+        {
+          "at": "anandibai",
+          "sfx": "ghost",
+          "gain": 0.45
+        },
+        {
+          "at": "badalkar",
+          "sfx": "riser",
+          "gain": 0.6
+        },
+        {
+          "at": "maara",
+          "sfx": "thunder",
+          "off": -0.05,
+          "gain": 0.9
+        },
+        {
+          "at": "maara",
+          "sfx": "boom",
+          "gain": 0.8
+        }
+      ]
+    },
+    {
+      "id": "attack",
+      "mood": "climax",
+      "hi": "30 अगस्त 1773 को गारदी सिपाही महल में घुस आए। नारायणराव काका मला वाचवा चिल्लाते हुए भागे, पर बच नहीं पाए।",
+      "en": "*30_August_1773 ko Gardi sipahi mahal mein ghus aaye. Narayanrao Kaka mala vachva chillate hue bhaage, par bach *NAHI paaye.",
+      "sfx": [
+        {
+          "at": "start",
+          "sfx": "whoosh",
+          "off": -0.15,
+          "gain": 0.6
+        },
+        {
+          "at": "30_august_1773",
+          "sfx": "stamp",
+          "gain": 0.8
+        },
+        {
+          "at": "gardi",
+          "sfx": "swords",
+          "gain": 0.6
+        },
+        {
+          "at": "ghus",
+          "sfx": "footsteps",
+          "gain": 0.6
+        },
+        {
+          "at": "kaka",
+          "sfx": "ghost",
+          "gain": 0.6
+        },
+        {
+          "at": "bhaage",
+          "sfx": "heartbeat",
+          "gain": 0.6
+        },
+        {
+          "at": "nahi",
+          "sfx": "crash",
+          "off": -0.05,
+          "gain": 0.9
+        }
+      ]
+    },
+    {
+      "id": "fire",
+      "mood": "climax",
+      "hi": "फिर 1828 में महल में ऐसी आग लगी, जो सात दिन तक जलती रही! आग कैसे लगी, आज तक पता नहीं।",
+      "en": "Phir *1828 mein mahal mein aisi *AAG lagi, jo *7 din tak jalti rahi! Aag kaise lagi, aaj tak *PATA nahi.",
+      "sfx": [
+        {
+          "at": "start",
+          "sfx": "whoosh",
+          "off": -0.15,
+          "gain": 0.6
+        },
+        {
+          "at": "1828",
+          "sfx": "stamp",
+          "gain": 0.7
+        },
+        {
+          "at": "aag",
+          "sfx": "fire",
+          "gain": 0.9
+        },
+        {
+          "at": "aag",
+          "sfx": "boom",
+          "gain": 0.7
+        },
+        {
+          "at": "7",
+          "sfx": "stamp",
+          "gain": 0.7
+        },
+        {
+          "at": "pata",
+          "sfx": "hit",
+          "gain": 0.6
+        }
+      ]
+    },
+    {
+      "id": "today",
+      "mood": "sad",
+      "hi": "आज सिर्फ दीवारें बची हैं, और लोग कहते हैं, पूर्णिमा की रात वो चीख आज भी सुनाई देती है।",
+      "en": "Aaj sirf deewarein bachi hain, aur log kehte hain, *POORNIMA ki raat woh *CHEEKH aaj bhi sunayi deti hai.",
+      "sfx": [
+        {
+          "at": "start",
+          "sfx": "whoosh",
+          "off": -0.15,
+          "gain": 0.6
+        },
+        {
+          "at": "start",
+          "sfx": "wind",
+          "gain": 0.5
+        },
+        {
+          "at": "poornima",
+          "sfx": "chime",
+          "gain": 0.45
+        },
+        {
+          "at": "cheekh",
+          "sfx": "ghost",
+          "gain": 0.7
+        }
+      ]
+    },
+    {
+      "id": "cta",
+      "mood": "tense",
+      "hi": "सच या वहम? कमेंट में बताओ, और ऐसे ही रहस्यों के लिए इतिहास के भूत को सब्सक्राइब करो!",
+      "en": "*SACH ya *VAHAM? Comment mein batao, aur aise hi rahasyon ke liye *ITIHAAS *KE *BHOOT ko *SUBSCRIBE karo!",
+      "sfx": [
+        {
+          "at": "start",
+          "sfx": "glitch",
+          "off": -0.1,
+          "gain": 0.5
+        },
+        {
+          "at": "start",
+          "sfx": "heartbeat",
+          "gain": 0.5
+        },
+        {
+          "at": "sach",
+          "sfx": "pop",
+          "gain": 0.5
+        },
+        {
+          "at": "comment",
+          "sfx": "pop",
+          "gain": 0.6
+        },
+        {
+          "at": "itihaas",
+          "sfx": "whoosh",
+          "off": -0.12,
+          "gain": 0.5
+        },
+        {
+          "at": "subscribe",
+          "sfx": "pop",
+          "off": 0.13,
+          "gain": 0.8
+        },
+        {
+          "at": "subscribe",
+          "sfx": "ding",
+          "off": 0.27,
+          "gain": 0.7
+        }
+      ]
+    }
+  ]
+}

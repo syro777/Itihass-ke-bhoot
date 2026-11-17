@@ -157,7 +157,7 @@ def main(script_path):
         wlist = []
         for w, e in zip(words, en):
             emph = e.startswith("*")
-            txt = e.lstrip("*")
+            txt = e.lstrip("*").replace("_", " ")  # "30_August_1773" = one spoken token, shown with spaces
             wlist.append({
                 "text": txt,
                 "key": clean(e),

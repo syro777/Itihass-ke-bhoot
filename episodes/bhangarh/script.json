@@ -3,7 +3,7 @@
   "voice": "hi-IN-MadhurNeural",
   "rate": "+28%",
   "pitch": "-2Hz",
-  "notes": "hi = Devanagari text spoken by the TTS. en = Hinglish caption words, one per spoken word (same order). *WORD = emphasis (red, bigger). sfx.at = Hinglish word (lowercase, no punctuation) or 'start'/'end'; off = seconds offset. mood = music profile: tense|mystery|royal|calm|climax|creepy|sad. rate/pauses: channel preference = fast, continuous male narration (keep pauses tiny). Every episode: mid-video subscribe nudge (SubscribeNudge) + spoken subscribe line with ChannelCard at the end.",
+  "notes": "hi = Devanagari text spoken by the TTS. en = Hinglish caption words, one per spoken word (same order). *WORD = emphasis; join words with _ when the voice reads them as one token (e.g. 30_August_1773) (red, bigger). sfx.at = Hinglish word (lowercase, no punctuation) or 'start'/'end'; off = seconds offset. mood = music profile: tense|mystery|royal|calm|climax|creepy|sad. rate/pauses: channel preference = fast, continuous male narration (keep pauses tiny). Every episode: mid-video subscribe nudge (SubscribeNudge) + spoken subscribe line with ChannelCard at the end.",
   "scenes": [
     {
       "id": "hook",
