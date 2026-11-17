@@ -11,9 +11,10 @@ Brand assets: `src/brand/Brand.tsx` (ghost-king mascot; renders LogoAvatar, Logo
 - Facts must be real: check them before writing. Frame legends as folklore ("kehte hain") and never state an unverified claim as fact.
 
 ## Voiceover (user preference — always follow)
-- **Good male voice.** Default: `hi-IN-MadhurNeural` (only free Hindi male voice; the multilingual voices fail on Hindi text). Once ElevenLabs credits are available (quota resets on the 23rd of each month), offer a premium Hindi male voice.
-- **Continuous delivery, short pauses:** the narrator keeps talking. `tools/make_voice.py` trims silences to word 0.05 s / comma 0.09 s / sentence 0.14 s and uses tiny gaps between scenes. Don't lengthen these.
-- **Slightly fast speed:** rate `+28%` (was +20% on the first video, which the user found too slow).
+- **Clear, natural, "viral narrator" male voice.** Clarity beats speed: every word must be pronounced fully.
+- Free default: `hi-IN-MadhurNeural` at rate **+8%** with natural pauses (word 0.14 s / comma 0.24 s / sentence 0.34 s, soft 12 ms fades). The old +28% with hard-trimmed pauses sounded too fast and choppy — never go back to it.
+- Premium: ElevenLabs Hindi male narrator (quota resets on the 23rd of each month) — offer it when credits are available.
+- Keep scripts short enough (≈ 120–135 words) to stay ≤ 60 s at this pace instead of speeding the voice up.
 
 ## Subscribe focus (user preference — every video)
 1. Mid-video **SubscribeNudge** (pill slides in, cursor clicks, "SUBSCRIBED" + bell ding) in a quiet early-middle moment, placed where it doesn't overlap the title or other text.

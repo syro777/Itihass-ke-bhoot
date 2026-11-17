@@ -24,16 +24,16 @@ import numpy as np  # noqa: E402
 SR = 48000
 
 # ---- Channel voice preferences (Itihaas Ke Bhoot) ----
-# Good male voice, fast-ish delivery, almost no pauses: the narrator should keep talking.
+# Clear male voice at a natural pace (user found +28% with hard-trimmed pauses too fast and choppy).
 DEFAULT_VOICE = "hi-IN-MadhurNeural"
-DEFAULT_RATE = "+28%"
+DEFAULT_RATE = "+8%"
 DEFAULT_PITCH = "-2Hz"
 # Longest silence allowed between words (seconds); longer TTS pauses are cut down to these.
-DEFAULT_GAPS = {"word": 0.05, "comma": 0.09, "sentence": 0.14}
+DEFAULT_GAPS = {"word": 0.14, "comma": 0.24, "sentence": 0.34}
 
-LEAD_FIRST = 0.05   # silence before first scene's voice
-LEAD = 0.08         # silence at start of every other scene
-TAIL = 0.12         # silence after last word of a scene
+LEAD_FIRST = 0.08   # silence before first scene's voice
+LEAD = 0.15         # silence at start of every other scene
+TAIL = 0.25         # silence after last word of a scene
 END_PAD = 1.6       # extra time on the final scene for the end card
 
 
@@ -70,7 +70,7 @@ async def _tts_once(text, voice, rate, pitch, mp3_path):
 
 def tighten(audio, words, en, gaps):
     """Cut long silences between words down to the allowed gap. Returns (audio, words) with new timings."""
-    fade = int(0.004 * SR)
+    fade = int(0.012 * SR)
     out, new_words = [], []
     out_len = 0
     pos = max(0, int((words[0]["start"] - 0.03) * SR))
@@ -87,7 +87,7 @@ def tighten(audio, words, en, gaps):
                 lim = gaps["word"]
             lim_s = int(lim * SR)
             if ns - we > lim_s:
-                keep_after = int(lim_s * 0.65)
+                keep_after = int(lim_s * 0.75)  # keep word tails intact
                 seg_end, next_pos = we + keep_after, ns - (lim_s - keep_after)
             else:
                 seg_end, next_pos = ns, ns

@@ -13,8 +13,7 @@ import make_voice as mv  # noqa: E402
 import numpy as np  # noqa: E402
 
 VOICES = [
-    ("1_Madhur_NEW_fast_tight", "hi-IN-MadhurNeural", "-2Hz"),
-    ("2_Madhur_NEW_deep_voice", "hi-IN-MadhurNeural", "-8Hz"),
+    ("NEW_clear_natural_Madhur", "hi-IN-MadhurNeural", "-2Hz"),
 ]
 
 
@@ -36,7 +35,7 @@ def main(script_path, scene_ids):
     gaps = {**mv.DEFAULT_GAPS, **script.get("pauses", {})}
     gap = np.zeros(int(0.08 * mv.SR), dtype=np.float32)
 
-    jobs = [("0_OLD_Madhur_slow_pauses", "hi-IN-MadhurNeural", "+20%", "-2Hz", False)]
+    jobs = []
     jobs += [(n, v, mv.DEFAULT_RATE, p, True) for n, v, p in VOICES]
     for name, voice, rate, pitch, tight in jobs:
         parts = []
