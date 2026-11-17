@@ -230,7 +230,7 @@ def footsteps(steps=4, gap=0.42):
     t = tt(dur)
     x = np.zeros_like(t)
     for i in range(steps):
-        s = int((i * gap + RNG.uniform(-0.02, 0.02)) * SR)
+        s = max(0, int((i * gap + RNG.uniform(-0.02, 0.02)) * SR))
         tl = t[: len(t) - s]
         crunch = filt(noise(len(tl)), "bandpass", [1200, 5000]) * env_exp(tl, 32)
         thud = filt(noise(len(tl)), "lowpass", 180) * env_exp(tl, 40) * 1.5

@@ -1,0 +1,112 @@
+{
+  "id": "roopkund",
+  "style": "3d",
+  "voice": "hi-IN-MadhurNeural",
+  "pitch": "-2Hz",
+  "notes": "Facts: Roopkund, glacial lake at 5,029 m (16,499 ft) below Mt Trishul, Chamoli, Uttarakhand. Remains reported in 1942 by forest ranger H.K. Madhwal; hundreds of individuals. 2019 Nature Communications DNA study (Harney et al., 38 skeletons): 23 South Asian-related (died 7th-10th c.), 14 eastern Mediterranean-related (died ~1800 CE), 1 Southeast Asian; deposited in multiple events ~1000 years apart. Hailstorm = earlier theory, framed as 'pehle maana gaya'. Each scene ≤ 10 s so one AI clip covers it.",
+  "scenes": [
+    {
+      "id": "hook",
+      "mood": "tense",
+      "hi": "हिमालय में एक ऐसी झील है, जिसमें पानी के नीचे सैकड़ों इंसानी कंकाल पड़े हैं!",
+      "en": "Himalaya mein ek aisi *JHEEL hai, jisme paani ke neeche *SAIKDON insaani *KANKAAL pade hain!",
+      "sfx": [
+        {"at": "start", "sfx": "boom", "gain": 0.7},
+        {"at": "start", "sfx": "wind", "gain": 0.35},
+        {"at": "saikdon", "sfx": "riser", "off": -0.3, "gain": 0.45},
+        {"at": "kankaal", "sfx": "hit", "gain": 0.8}
+      ]
+    },
+    {
+      "id": "location",
+      "mood": "mystery",
+      "hi": "ये है उत्तराखंड की रूपकुंड झील, जो 16 हज़ार फीट से भी ऊपर है।",
+      "en": "Ye hai Uttarakhand ki *ROOPKUND jheel, jo *16 hazaar feet se bhi upar hai.",
+      "sfx": [
+        {"at": "start", "sfx": "whoosh", "off": -0.15, "gain": 0.6},
+        {"at": "roopkund", "sfx": "hit", "gain": 0.6},
+        {"at": "16", "sfx": "wind", "gain": 0.4}
+      ]
+    },
+    {
+      "id": "discovery",
+      "mood": "mystery",
+      "hi": "1942 में एक फॉरेस्ट रेंजर को बर्फ पिघलने पर यहाँ हड्डियों का ढेर मिला।",
+      "en": "*1942 mein ek forest ranger ko barf pighalne par yahan *HADDIYON ka dher mila.",
+      "sfx": [
+        {"at": "start", "sfx": "whoosh", "off": -0.15, "gain": 0.6},
+        {"at": "1942", "sfx": "stamp", "gain": 0.7},
+        {"at": "ranger", "sfx": "footsteps", "gain": 0.5},
+        {"at": "haddiyon", "sfx": "hit", "gain": 0.7}
+      ]
+    },
+    {
+      "id": "theory",
+      "mood": "tense",
+      "hi": "पहले माना गया कि सब एक साथ, एक भयानक ओलों के तूफ़ान में मारे गए।",
+      "en": "Pehle maana gaya ki sab ek saath, ek bhayanak *OLON ke toofan mein maare gaye.",
+      "sfx": [
+        {"at": "start", "sfx": "whoosh", "off": -0.15, "gain": 0.6},
+        {"at": "bhayanak", "sfx": "thunder", "gain": 0.8},
+        {"at": "olon", "sfx": "rumble", "gain": 0.6}
+      ]
+    },
+    {
+      "id": "dna",
+      "mood": "climax",
+      "hi": "पर 2019 में DNA जांच ने सबको चौंका दिया!",
+      "en": "Par *2019 mein *DNA jaanch ne sabko *CHAUNKA diya!",
+      "sfx": [
+        {"at": "start", "sfx": "glitch", "off": -0.1, "gain": 0.5},
+        {"at": "dna", "sfx": "shimmer", "gain": 0.5},
+        {"at": "chaunka", "sfx": "boom", "gain": 0.8}
+      ]
+    },
+    {
+      "id": "india",
+      "mood": "royal",
+      "hi": "कुछ लोग भारत के थे, जो करीब 1200 साल पहले मरे।",
+      "en": "Kuch log *BHARAT ke the, jo kareeb *1200 saal pehle mare.",
+      "sfx": [
+        {"at": "start", "sfx": "whoosh", "off": -0.15, "gain": 0.6},
+        {"at": "bharat", "sfx": "bell", "gain": 0.4},
+        {"at": "1200", "sfx": "stamp", "gain": 0.7}
+      ]
+    },
+    {
+      "id": "greece",
+      "mood": "creepy",
+      "hi": "पर 14 लोग ग्रीस के आसपास के इलाके से थे, और वो लगभग 200 साल पहले मरे!",
+      "en": "Par *14 log *GREECE ke aaspaas ke ilaake se the, aur woh lagbhag *200 saal pehle mare!",
+      "sfx": [
+        {"at": "start", "sfx": "whoosh", "off": -0.15, "gain": 0.6},
+        {"at": "greece", "sfx": "hit", "gain": 0.7},
+        {"at": "200", "sfx": "stamp", "gain": 0.8}
+      ]
+    },
+    {
+      "id": "mystery",
+      "mood": "climax",
+      "hi": "यानी हज़ार साल का फर्क! आखिर ग्रीस के लोग, हिमालय की इस झील तक कैसे पहुंचे?",
+      "en": "Yaani *HAZAAR saal ka farq! Aakhir Greece ke log, Himalaya ki is jheel tak *KAISE pahunche?",
+      "sfx": [
+        {"at": "start", "sfx": "whoosh", "off": -0.15, "gain": 0.6},
+        {"at": "hazaar", "sfx": "boom", "gain": 0.7},
+        {"at": "kaise", "sfx": "ghost", "gain": 0.5}
+      ]
+    },
+    {
+      "id": "cta",
+      "mood": "tense",
+      "hi": "आपको क्या लगता है? कमेंट में बताओ, और ऐसे ही रहस्यों के लिए इतिहास के भूत को सब्सक्राइब करो!",
+      "en": "Aapko kya *LAGTA hai? Comment mein batao, aur aise hi rahasyon ke liye *ITIHAAS *KE *BHOOT ko *SUBSCRIBE karo!",
+      "sfx": [
+        {"at": "start", "sfx": "glitch", "off": -0.1, "gain": 0.5},
+        {"at": "comment", "sfx": "pop", "gain": 0.6},
+        {"at": "itihaas", "sfx": "whoosh", "off": -0.12, "gain": 0.5},
+        {"at": "subscribe", "sfx": "pop", "off": 0.13, "gain": 0.8},
+        {"at": "subscribe", "sfx": "ding", "off": 0.27, "gain": 0.7}
+      ]
+    }
+  ]
+}

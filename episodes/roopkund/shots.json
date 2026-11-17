@@ -1,0 +1,41 @@
+{
+  "style": "Stylized 3D animated film still (Pixar/Disney-style CGI), cinematic lighting, rich detail, vertical 9:16 composition, no text, no watermark.",
+  "shots": {
+    "hook": {
+      "image": "A small turquoise glacial lake high in the Himalayas at dawn, ringed by snow-capped peaks and jagged grey rocks. Through the clear shallow water and scattered along the rocky shore lie many old human skulls and bones (stylized, not gory, bleached and ancient). Thin mist drifting over the water. Eerie, mysterious mood with cold blue shadows and a golden rim of sunrise. High camera angle looking down at the lake.",
+      "motion": "The camera slowly descends and glides toward the lake surface while thin mist drifts across the water, ripples move gently over the skulls and bones, and wind lifts fine snow powder off the peaks. Eerie, mysterious mood."
+    },
+    "location": {
+      "image": "Wide establishing view of a small frozen-edged glacial lake in a high Himalayan bowl beneath a huge snow-covered mountain (Mount Trishul), Uttarakhand, India. A lone trekker in a red down jacket and backpack stands on a rock at the rim looking at the lake. Clear sky, crisp sunlight, epic scale.",
+      "motion": "Slow drone pull-back revealing the vast snowy mountains around the lake while the trekker stands still and his jacket flutters in the wind; clouds drift past the summit."
+    },
+    "discovery": {
+      "image": "1940s Indian forest ranger in a khaki uniform, wide-brimmed hat and walking stick, kneeling in melting snow at the edge of a high glacial lake, shocked expression, as old bones and a skull emerge from the snow in front of him. Overcast mountain light.",
+      "motion": "The ranger leans closer in surprise as snow slowly melts and slides away, revealing more bones; his breath shows in the cold air; the camera pushes in gently."
+    },
+    "theory": {
+      "image": "Ancient travellers in traditional Indian clothes on a narrow Himalayan mountain pass, caught in a violent storm with giant hailstones falling from dark clouds, people shielding their heads and running for cover. Dramatic lighting, lightning in the clouds. Not gory.",
+      "motion": "Large hailstones pelt down and bounce off rocks, travellers hurry for shelter holding cloth over their heads, lightning flashes in the dark clouds."
+    },
+    "dna": {
+      "image": "Modern genetics laboratory at night: a scientist in a white lab coat and gloves holds an old skull under a lamp, a glowing blue DNA double helix floats and rotates above the bench, screens with colourful DNA charts in the background.",
+      "motion": "The glowing DNA helix rotates and pulses with light, the scientist turns the skull and looks up in amazement as data scrolls on the screens."
+    },
+    "india": {
+      "image": "8th-century Indian pilgrims in simple traditional clothing with walking sticks and cloth bundles, walking in a line up a snowy Himalayan trail toward a glacial lake at sunrise, warm golden light, devotional mood.",
+      "motion": "The pilgrims walk slowly up the trail in a line, cloth flapping in the wind, sunrise light moving across the snow; the camera tracks alongside them."
+    },
+    "greece": {
+      "image": "A small group of 18th-century Mediterranean travellers in European period clothing (long coats, waistcoats, caps) standing among snowy Himalayan peaks, looking lost and cold, one holding a paper map, their faces puzzled. Overcast cold light.",
+      "motion": "The travellers look around in confusion, one turns the map, snow blows past them, and the camera slowly circles the group."
+    },
+    "mystery": {
+      "image": "Night at the high Himalayan glacial lake: a lone hooded traveller with a lantern stands at the shore, the lake reflects a sky full of stars, and a huge glowing question mark shape formed by aurora-like light hangs above the mountains. Mysterious, magical mood.",
+      "motion": "The lantern flickers, stars twinkle, the glowing question-mark light shimmers in the sky and its reflection ripples on the water; the camera slowly pushes in."
+    },
+    "cta": {
+      "image": "Moonlit high Himalayan glacial lake at night with gentle snowfall, snowy peaks under a full moon, faint ghostly mist over the water, calm and mysterious. Lower half dark and simple.",
+      "motion": "Gentle snowfall drifts down, mist moves slowly over the moonlit water, and the camera slowly orbits the lake."
+    }
+  }
+}
