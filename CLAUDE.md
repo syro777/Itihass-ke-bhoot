@@ -35,5 +35,5 @@ The MP4, plus title (with #shorts), description, hashtags (first 3 matter, max 1
 
 ## Automation (daily)
 - GitHub repo: **syro777/Itihass-ke-bhoot** (user's personal account; never use the swiings2123-dev account).
-- A daily scheduled task runs `AUTOMATION.md` end to end: next topic from `topics.json` → research → script → voice/audio → scenes → checked frames → commit + `episodes/LATEST` → push.
+- **On demand only (user preference):** never create videos on a schedule. Make a video only when the user asks. The routine in `AUTOMATION.md` runs end to end: next topic from `topics.json` → research → script → voice/audio → scenes → checked frames → commit + `episodes/LATEST` → push.
 - `.github/workflows/publish.yml` (on push of `episodes/LATEST`) renders the MP4, creates the GitHub Release, and uploads to YouTube when repo variable `AUTO_UPLOAD` = `true` (only after the YouTube API audit; see `YOUTUBE_SETUP.md`). Claude Code sessions cannot create releases themselves. Secrets live only in GitHub Actions secrets.

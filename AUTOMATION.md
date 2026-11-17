@@ -1,6 +1,6 @@
-# Daily routine — one new Short per day
+# Episode routine — one new Short, on demand
 
-The scheduled task runs this routine once a day in a fresh cloud session. Follow it end to end. Read `CLAUDE.md` first: its voice, caption and subscribe rules are mandatory.
+Run this only when the user asks for a new video (the user turned off automatic daily videos). Follow it end to end. Read `CLAUDE.md` first: its voice, caption and subscribe rules are mandatory.
 
 ## 0. Setup (≈2 min)
 1. Attach the repo with push access (`add_repo` syro777/Itihass-ke-bhoot, access "push"), clone it, `cd` into it.
