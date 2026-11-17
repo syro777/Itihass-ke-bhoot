@@ -52,7 +52,7 @@ jobs:
           npx remotion browser ensure
 
       - name: Render
-        run: npx remotion render "${{ steps.ep.outputs.comp }}" "out/${{ steps.ep.outputs.id }}.mp4" --codec=h264 --crf=18 --audio-bitrate=192k
+        run: npx remotion render "${{ steps.ep.outputs.comp }}" "out/${{ steps.ep.outputs.id }}.mp4" --codec=h264 --crf=18 --audio-bitrate=192k --gl=swangle
 
       - name: Verify
         run: |

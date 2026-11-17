@@ -10,6 +10,10 @@ Brand assets: `src/brand/Brand.tsx` (ghost-king mascot; renders LogoAvatar, Logo
 - Strong hook in the first 2 seconds, a twist/question at the end.
 - Facts must be real: check them before writing. Frame legends as folklore ("kehte hain") and never state an unverified claim as fact.
 
+## Visual style (user preference)
+- **3D animation** for new videos (since Roopkund, Nov 2026): procedural low-poly Three.js worlds + "bean" 3D characters in `src/components/three/` (World.tsx, Bean.tsx), rendered with `--gl=swangle`. Earlier episodes are 2D stickman.
+- **Free tools only.** Do not use paid AI generation (Gemini image/video, ElevenLabs credits) unless the user asks; the Gemini project has no prepaid credits.
+
 ## Voiceover (user preference — always follow)
 - **Clear, natural, "viral narrator" male voice.** Clarity beats speed: every word must be pronounced fully.
 - Free default: `hi-IN-MadhurNeural` at rate **+8%** with natural pauses (word 0.14 s / comma 0.24 s / sentence 0.34 s, soft 12 ms fades). The old +28% with hard-trimmed pauses sounded too fast and choppy — never go back to it.
