@@ -314,3 +314,217 @@ export const Palm: React.FC<{ position: [number, number, number]; scale?: number
     </group>
   );
 };
+
+/* ---------------- Gumnaami Baba episode props ---------------- */
+
+/** Sepia photo with a bust silhouette (round glasses + cap), used for old family photos. */
+export const sepiaPhotoTexture = (variant = 0) => {
+  const c = document.createElement("canvas");
+  c.width = 256;
+  c.height = 320;
+  const g = c.getContext("2d")!;
+  const gr = g.createRadialGradient(128, 150, 30, 128, 160, 200);
+  gr.addColorStop(0, "#d9b98a");
+  gr.addColorStop(1, "#6b4a2a");
+  g.fillStyle = gr;
+  g.fillRect(0, 0, 256, 320);
+  g.fillStyle = "#3a2614";
+  g.beginPath();
+  g.ellipse(128, 300, 100, 70, 0, Math.PI, 0);
+  g.fill();
+  g.beginPath();
+  g.arc(128, 150, 52, 0, Math.PI * 2);
+  g.fill();
+  if (variant % 2 === 0) {
+    g.strokeStyle = "#d9b98a";
+    g.lineWidth = 5;
+    g.beginPath();
+    g.arc(108, 148, 14, 0, Math.PI * 2);
+    g.arc(148, 148, 14, 0, Math.PI * 2);
+    g.stroke();
+    g.fillStyle = "#3a2614";
+    g.fillRect(80, 84, 96, 26);
+  }
+  g.strokeStyle = "#f3e6c8";
+  g.lineWidth = 12;
+  g.strokeRect(6, 6, 244, 308);
+  const t = new THREE.CanvasTexture(c);
+  t.colorSpace = THREE.SRGBColorSpace;
+  return t;
+};
+
+/** Old trunk with a hinged lid (`open` 0..1) and photos rising out (`rise` 0..1). */
+export const Trunk: React.FC<{ position: [number, number, number]; open: number; rise: number }> = ({ position, open, rise }) => {
+  const photos = useMemo(() => [0, 1, 2].map((i) => sepiaPhotoTexture(i)), []);
+  return (
+    <group position={position}>
+      <mesh position={[0, 0.45, 0]} castShadow receiveShadow>
+        <boxGeometry args={[2.2, 0.9, 1.3]} />
+        <meshStandardMaterial color="#5a3a1e" roughness={0.8} />
+      </mesh>
+      {[-0.7, 0.7].map((x) => (
+        <mesh key={x} position={[x, 0.45, 0.66]}>
+          <boxGeometry args={[0.12, 0.92, 0.02]} />
+          <meshStandardMaterial color="#9a8a5a" metalness={0.5} roughness={0.4} />
+        </mesh>
+      ))}
+      <group position={[0, 0.9, -0.65]} rotation={[-open * 1.9, 0, 0]}>
+        <mesh position={[0, 0.08, 0.65]} castShadow>
+          <boxGeometry args={[2.24, 0.16, 1.34]} />
+          <meshStandardMaterial color="#6b4422" roughness={0.75} />
+        </mesh>
+      </group>
+      {photos.map((tex, i) => (
+        <group key={i} position={[(i - 1) * 0.65, 0.7 + rise * (1.0 + i * 0.25), 0.1 - i * 0.05]} rotation={[-0.15, (i - 1) * 0.25, (i - 1) * 0.08]} scale={rise}>
+          <mesh>
+            <planeGeometry args={[0.55, 0.7]} />
+            <meshStandardMaterial map={tex} emissive="#ffe0a0" emissiveMap={tex} emissiveIntensity={0.35} side={THREE.DoubleSide} />
+          </mesh>
+        </group>
+      ))}
+      {rise > 0 && <pointLight position={[0, 1.6, 0.6]} color="#ffd59a" intensity={10 * rise} distance={6} decay={1.5} />}
+    </group>
+  );
+};
+
+/** 1940s twin-engine aircraft; `smoke` shows a trailing smoke column. */
+export const Plane1945: React.FC<{ position: [number, number, number]; rotation?: [number, number, number]; scale?: number; smoke?: number }> = ({
+  position,
+  rotation = [0, 0, 0],
+  scale = 1,
+  smoke = 0,
+}) => {
+  const f = useCurrentFrame();
+  return (
+    <group position={position} rotation={rotation} scale={scale}>
+      <mesh rotation={[0, 0, Math.PI / 2]} castShadow>
+        <capsuleGeometry args={[0.45, 5, 8, 16]} />
+        <meshStandardMaterial color="#5e6b4a" roughness={0.6} metalness={0.2} />
+      </mesh>
+      <mesh position={[0.3, 0, 0]} castShadow>
+        <boxGeometry args={[1.3, 0.1, 8.5]} />
+        <meshStandardMaterial color="#56633f" roughness={0.6} />
+      </mesh>
+      <mesh position={[-2.6, 0.55, 0]}>
+        <boxGeometry args={[0.7, 1.0, 0.08]} />
+        <meshStandardMaterial color="#56633f" />
+      </mesh>
+      <mesh position={[-2.6, 0.05, 0]}>
+        <boxGeometry args={[0.6, 0.06, 2.6]} />
+        <meshStandardMaterial color="#56633f" />
+      </mesh>
+      {[-1.9, 1.9].map((z) => (
+        <group key={z} position={[0.9, -0.1, z]}>
+          <mesh rotation={[0, 0, Math.PI / 2]}>
+            <cylinderGeometry args={[0.28, 0.32, 1.1, 12]} />
+            <meshStandardMaterial color="#3a3f32" />
+          </mesh>
+          <mesh position={[0.6, 0, 0]} rotation={[f * 0.9, 0, 0]}>
+            <boxGeometry args={[0.04, 1.4, 0.14]} />
+            <meshStandardMaterial color="#1a1a1a" />
+          </mesh>
+        </group>
+      ))}
+      {smoke > 0 &&
+        new Array(14).fill(0).map((_, i) => (
+          <sprite key={i} position={[-1 - i * 0.9, 0.2 + i * 0.25, 1.9 + Math.sin(i + f / 6) * 0.3]} scale={[1.2 + i * 0.35, 1.2 + i * 0.35, 1]}>
+            <spriteMaterial map={softTexture()} color={i < 2 ? "#ff8a3d" : "#3a3436"} transparent opacity={smoke * (0.75 - i * 0.045)} depthWrite={false} />
+          </sprite>
+        ))}
+    </group>
+  );
+};
+
+/** Semi-transparent cloth curtain with a gentle frame-driven wave. */
+export const Curtain: React.FC<{ position: [number, number, number]; width?: number; height?: number; color?: string; opacity?: number }> = ({
+  position,
+  width = 5,
+  height = 4,
+  color = "#e8dcc0",
+  opacity = 0.82,
+}) => {
+  const f = useCurrentFrame();
+  const geo = useMemo(() => new THREE.PlaneGeometry(width, height, 40, 10), [width, height]);
+  const p = geo.attributes.position as THREE.BufferAttribute;
+  for (let i = 0; i < p.count; i++) {
+    const x = p.getX(i);
+    const y = p.getY(i);
+    p.setZ(i, Math.sin(x * 3.2 + f / 14) * 0.08 * (1 - (y + height / 2) / height + 0.2));
+  }
+  p.needsUpdate = true;
+  geo.computeVertexNormals();
+  return (
+    <mesh geometry={geo} position={position}>
+      <meshStandardMaterial color={color} transparent opacity={opacity} side={THREE.DoubleSide} roughness={0.9} />
+    </mesh>
+  );
+};
+
+/** Vintage valve radio with a glowing dial. */
+export const Radio: React.FC<{ position: [number, number, number]; glow?: number; scale?: number }> = ({ position, glow = 1, scale = 1 }) => (
+  <group position={position} scale={scale}>
+    <mesh castShadow>
+      <boxGeometry args={[1.6, 1.0, 0.7]} />
+      <meshStandardMaterial color="#6b3e1e" roughness={0.6} />
+    </mesh>
+    <mesh position={[-0.35, 0.05, 0.36]}>
+      <circleGeometry args={[0.32, 24]} />
+      <meshStandardMaterial color="#c9b48a" />
+    </mesh>
+    {[-0.2, -0.1, 0, 0.1, 0.2].map((y) => (
+      <mesh key={y} position={[-0.35, 0.05 + y, 0.37]}>
+        <boxGeometry args={[0.58, 0.02, 0.01]} />
+        <meshStandardMaterial color="#6b3e1e" />
+      </mesh>
+    ))}
+    <mesh position={[0.42, 0.12, 0.36]}>
+      <planeGeometry args={[0.55, 0.3]} />
+      <meshStandardMaterial color="#ffcf70" emissive="#ffb347" emissiveIntensity={1.5 * glow} />
+    </mesh>
+    {[0.28, 0.56].map((x) => (
+      <mesh key={x} position={[x, -0.25, 0.38]} rotation={[Math.PI / 2, 0, 0]}>
+        <cylinderGeometry args={[0.08, 0.08, 0.06, 16]} />
+        <meshStandardMaterial color="#2a1a0c" />
+      </mesh>
+    ))}
+    {glow > 0 && <pointLight position={[0.4, 0.2, 0.8]} color="#ffb347" intensity={4 * glow} distance={4} />}
+  </group>
+);
+
+/** Rotating DNA double helix (emissive). */
+export const DnaHelix: React.FC<{ position: [number, number, number]; scale?: number; colorA?: string; colorB?: string; rungs?: number }> = ({
+  position,
+  scale = 1,
+  colorA = "#5ff2ff",
+  colorB = "#ff5fd2",
+  rungs = 22,
+}) => {
+  const f = useCurrentFrame();
+  const ang = f * 0.045;
+  return (
+    <group position={position} scale={scale}>
+      {new Array(rungs).fill(0).map((_, i) => {
+        const a = ang + i * 0.45;
+        const y = i * 0.17;
+        const x1 = Math.cos(a) * 0.55;
+        const z1 = Math.sin(a) * 0.55;
+        return (
+          <group key={i}>
+            <mesh position={[x1, y, z1]}>
+              <sphereGeometry args={[0.07, 10, 8]} />
+              <meshStandardMaterial color={colorA} emissive={colorA} emissiveIntensity={2} />
+            </mesh>
+            <mesh position={[-x1, y, -z1]}>
+              <sphereGeometry args={[0.07, 10, 8]} />
+              <meshStandardMaterial color={colorB} emissive={colorB} emissiveIntensity={2} />
+            </mesh>
+            <mesh position={[0, y, 0]} rotation={[0, -a, Math.PI / 2]}>
+              <cylinderGeometry args={[0.018, 0.018, 1.1, 6]} />
+              <meshStandardMaterial color="#ffffff" emissive="#9fdfff" emissiveIntensity={0.8} />
+            </mesh>
+          </group>
+        );
+      })}
+    </group>
+  );
+};

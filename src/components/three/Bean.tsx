@@ -44,7 +44,7 @@ export type BeanLook = {
   skin?: string;
   body?: string; // shirt / coat colour
   legs?: string;
-  hat?: "none" | "ranger" | "turban" | "cap" | "hood" | "beanie";
+  hat?: "none" | "ranger" | "turban" | "cap" | "hood" | "beanie" | "officer";
   hatColor?: string;
   coat?: boolean; // long coat skirt
   backpack?: string;
@@ -171,12 +171,13 @@ export const Bean: React.FC<{ position: [number, number, number]; rotY?: number;
                 </group>
               ),
             )}
-            {look.glasses && (
-              <mesh position={[0, 0.05, 0.33]} rotation={[0, 0, 0]}>
-                <torusGeometry args={[0.1, 0.012, 6, 20]} />
-                <meshStandardMaterial color="#222" />
-              </mesh>
-            )}
+            {look.glasses &&
+              [-0.12, 0.12].map((x) => (
+                <mesh key={x} position={[x, 0.05, 0.33]}>
+                  <torusGeometry args={[0.085, 0.012, 6, 20]} />
+                  <meshStandardMaterial color="#222" />
+                </mesh>
+              ))}
             {look.beard && (
               <mesh position={[0, -0.18, 0.18]} scale={[1, 0.8, 0.7]}>
                 <sphereGeometry args={[0.22, 14, 10]} />
@@ -218,6 +219,22 @@ export const Bean: React.FC<{ position: [number, number, number]; rotY?: number;
                 <sphereGeometry args={[0.35, 16, 10, 0, Math.PI * 2, 0, Math.PI / 2]} />
                 <meshStandardMaterial color={look.hatColor ?? "#c0392b"} />
               </mesh>
+            )}
+            {look.hat === "officer" && (
+              <group position={[0, 0.24, 0]}>
+                <mesh castShadow>
+                  <cylinderGeometry args={[0.36, 0.33, 0.22, 20]} />
+                  <meshStandardMaterial color={look.hatColor ?? "#8a7a4a"} />
+                </mesh>
+                <mesh position={[0, -0.08, 0.26]} rotation={[0.35, 0, 0]}>
+                  <boxGeometry args={[0.42, 0.04, 0.22]} />
+                  <meshStandardMaterial color="#2a2418" />
+                </mesh>
+                <mesh position={[0, 0.02, 0.33]}>
+                  <sphereGeometry args={[0.05, 10, 8]} />
+                  <meshStandardMaterial color="#d9a93a" metalness={0.6} roughness={0.3} />
+                </mesh>
+              </group>
             )}
             {look.hat === "hood" && (
               <mesh position={[0, 0.08, -0.04]} castShadow>

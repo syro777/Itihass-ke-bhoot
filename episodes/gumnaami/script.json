@@ -1,0 +1,251 @@
+{
+  "id": "gumnaami",
+  "style": "3d",
+  "voice": "hi-IN-MadhurNeural",
+  "pitch": "-2Hz",
+  "notes": "Facts (commissions only): Official account — Netaji died after a plane crash at Taihoku (Taiwan) on 18 Aug 1945 (Shah Nawaz Committee, Khosla Commission). Mukherjee Commission (report Nov 2005, tabled May 2006): Bose did not die in that crash; Renkoji ashes not his; government rejected the report. Gumnaami Baba / Bhagwanji lived in Faizabad, died 16 Sep 1985; items linked to Netaji found in his belongings. Vishnu Sahai Commission (report 2017, tabled Dec 2019): he was a follower of Netaji, not Netaji; noted his voice was very similar to Netaji's. CFSL DNA test of his teeth did not match the Bose family (contested by some). Curtain/face legend framed as 'kehte hain'. Respectful to Netaji; no allegations against individuals. WATCH: open loop (who was the sadhu?) closed at end; ending question loops back to the hook.",
+  "scenes": [
+    {
+      "id": "hook",
+      "mood": "tense",
+      "hi": "1985 में फैज़ाबाद में एक साधु की मौत हुई, और उसके कमरे से नेताजी के परिवार की तस्वीरें मिलीं!",
+      "en": "*1985 mein Faizabad mein ek *SADHU ki maut hui, aur uske kamre se *NETAJI ke parivaar ki *TASVEEREIN mili!",
+      "sfx": [
+        {
+          "at": "start",
+          "sfx": "boom",
+          "gain": 0.7
+        },
+        {
+          "at": "start",
+          "sfx": "wind",
+          "gain": 0.35
+        },
+        {
+          "at": "sadhu",
+          "sfx": "ghost",
+          "gain": 0.45
+        },
+        {
+          "at": "kamre",
+          "sfx": "creak",
+          "gain": 0.6
+        },
+        {
+          "at": "netaji",
+          "sfx": "hit",
+          "gain": 0.8
+        }
+      ]
+    },
+    {
+      "id": "crash",
+      "mood": "climax",
+      "hi": "पर सरकारी कहानी कहती है, नेताजी की मौत 1945 में ताइवान के एक प्लेन क्रैश में हुई थी।",
+      "en": "Par sarkaari kahani kehti hai, *NETAJI ki maut *1945 mein *TAIWAN ke ek plane *CRASH mein hui thi.",
+      "sfx": [
+        {
+          "at": "start",
+          "sfx": "whoosh",
+          "off": -0.15,
+          "gain": 0.6
+        },
+        {
+          "at": "1945",
+          "sfx": "stamp",
+          "gain": 0.7
+        },
+        {
+          "at": "taiwan",
+          "sfx": "rumble",
+          "gain": 0.6
+        },
+        {
+          "at": "crash",
+          "sfx": "crash",
+          "off": -0.05,
+          "gain": 0.9
+        }
+      ]
+    },
+    {
+      "id": "commission",
+      "mood": "tense",
+      "hi": "फिर 2005 में मुखर्जी आयोग ने कहा: नेताजी उस क्रैश में नहीं मरे थे! हालांकि सरकार ने ये रिपोर्ट नहीं मानी।",
+      "en": "Phir *2005 mein Mukherjee Aayog ne kaha: Netaji us crash mein *NAHI mare the! Halaanki sarkaar ne ye *REPORT nahi maani.",
+      "sfx": [
+        {
+          "at": "start",
+          "sfx": "whoosh",
+          "off": -0.15,
+          "gain": 0.6
+        },
+        {
+          "at": "2005",
+          "sfx": "stamp",
+          "gain": 0.7
+        },
+        {
+          "at": "nahi",
+          "sfx": "thunder",
+          "off": -0.05,
+          "gain": 0.8,
+          "nth": 1
+        },
+        {
+          "at": "report",
+          "sfx": "stamp",
+          "gain": 0.7
+        }
+      ]
+    },
+    {
+      "id": "baba",
+      "mood": "creepy",
+      "hi": "तो क्या नेताजी भेष बदलकर, गुमनामी बाबा बनकर जी रहे थे?",
+      "en": "To kya Netaji bhes badalkar, *GUMNAAMI *BABA bankar jee rahe the?",
+      "sfx": [
+        {
+          "at": "start",
+          "sfx": "glitch",
+          "off": -0.1,
+          "gain": 0.5
+        },
+        {
+          "at": "gumnaami",
+          "sfx": "riser",
+          "gain": 0.5
+        },
+        {
+          "at": "baba",
+          "sfx": "hit",
+          "gain": 0.7
+        }
+      ]
+    },
+    {
+      "id": "curtain",
+      "mood": "creepy",
+      "hi": "कहते हैं, ये बाबा किसी को अपना चेहरा नहीं दिखाते थे, बस पर्दे के पीछे से बात करते थे।",
+      "en": "Kehte hain, ye baba kisi ko apna *CHEHRA nahi dikhate the, bas *PARDE ke peeche se baat karte the.",
+      "sfx": [
+        {
+          "at": "start",
+          "sfx": "whoosh",
+          "off": -0.15,
+          "gain": 0.6
+        },
+        {
+          "at": "chehra",
+          "sfx": "heartbeat",
+          "gain": 0.6
+        },
+        {
+          "at": "parde",
+          "sfx": "ghost",
+          "gain": 0.5
+        }
+      ]
+    },
+    {
+      "id": "voice",
+      "mood": "mystery",
+      "hi": "और उनकी आवाज़? जांच आयोग ने भी माना, नेताजी जैसी ही थी!",
+      "en": "Aur unki *AAWAAZ? Jaanch aayog ne bhi maana, Netaji *JAISI hi thi!",
+      "sfx": [
+        {
+          "at": "start",
+          "sfx": "whoosh",
+          "off": -0.15,
+          "gain": 0.6
+        },
+        {
+          "at": "aawaaz",
+          "sfx": "shimmer_dark",
+          "gain": 0.5
+        },
+        {
+          "at": "jaisi",
+          "sfx": "hit",
+          "gain": 0.7
+        }
+      ]
+    },
+    {
+      "id": "reveal",
+      "mood": "climax",
+      "hi": "पर 2019 की रिपोर्ट ने कहा: गुमनामी बाबा नेताजी नहीं, उनके एक अनुयायी थे। और दांतों का DNA भी मेल नहीं खाया।",
+      "en": "Par *2019 ki report ne kaha: Gumnaami Baba Netaji nahi, unke ek *ANUYAYI the. Aur daanton ka *DNA bhi mel nahi khaya.",
+      "sfx": [
+        {
+          "at": "start",
+          "sfx": "whoosh",
+          "off": -0.15,
+          "gain": 0.6
+        },
+        {
+          "at": "2019",
+          "sfx": "stamp",
+          "gain": 0.7
+        },
+        {
+          "at": "anuyayi",
+          "sfx": "thunder",
+          "off": -0.05,
+          "gain": 0.8
+        },
+        {
+          "at": "dna",
+          "sfx": "shimmer",
+          "gain": 0.5
+        },
+        {
+          "at": "khaya",
+          "sfx": "stamp",
+          "gain": 0.8
+        }
+      ]
+    },
+    {
+      "id": "cta",
+      "mood": "tense",
+      "hi": "तो 1945 के बाद नेताजी का क्या हुआ? कमेंट में बताओ, और ऐसे ही रहस्यों के लिए इतिहास के भूत को सब्सक्राइब करो!",
+      "en": "To *1945 ke baad Netaji ka *KYA hua? Comment mein batao, aur aise hi rahasyon ke liye *ITIHAAS *KE *BHOOT ko *SUBSCRIBE karo!",
+      "sfx": [
+        {
+          "at": "start",
+          "sfx": "heartbeat",
+          "gain": 0.5
+        },
+        {
+          "at": "kya",
+          "sfx": "ghost",
+          "gain": 0.5
+        },
+        {
+          "at": "comment",
+          "sfx": "pop",
+          "gain": 0.6
+        },
+        {
+          "at": "itihaas",
+          "sfx": "whoosh",
+          "off": -0.12,
+          "gain": 0.5
+        },
+        {
+          "at": "subscribe",
+          "sfx": "pop",
+          "off": 0.13,
+          "gain": 0.8
+        },
+        {
+          "at": "subscribe",
+          "sfx": "ding",
+          "off": 0.27,
+          "gain": 0.7
+        }
+      ]
+    }
+  ]
+}

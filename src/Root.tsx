@@ -7,6 +7,7 @@ import { ShaniwarWada, totalFrames as shaniwarFrames } from "./episodes/shaniwar
 import { FPS, H, W } from "./lib/util";
 import { Roopkund, totalFrames as roopkundFrames } from "./episodes/roopkund/Roopkund";
 import { Pushpak, totalFrames as pushpakFrames } from "./episodes/pushpak/Pushpak";
+import { Gumnaami, totalFrames as gumnaamiFrames } from "./episodes/gumnaami/Gumnaami";
 
 export const RemotionRoot: React.FC = () => {
   return (
@@ -16,6 +17,7 @@ export const RemotionRoot: React.FC = () => {
       <Composition id="ShaniwarWada" component={ShaniwarWada} durationInFrames={shaniwarFrames} fps={FPS} width={W} height={H} />
       <Composition id="Roopkund" component={Roopkund} durationInFrames={roopkundFrames} fps={FPS} width={W} height={H} />
       <Composition id="Pushpak" component={Pushpak} durationInFrames={pushpakFrames} fps={FPS} width={W} height={H} />
+      <Composition id="Gumnaami" component={Gumnaami} durationInFrames={gumnaamiFrames} fps={FPS} width={W} height={H} />
       <Still id="LogoAvatar" component={LogoAvatar} width={800} height={800} />
       <Still id="LogoFull" component={LogoFull} width={1200} height={1200} />
       <Still id="Banner" component={Banner} width={2560} height={1440} />

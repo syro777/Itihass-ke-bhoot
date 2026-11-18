@@ -20,6 +20,14 @@ Brand assets: `src/brand/Brand.tsx` (ghost-king mascot; renders LogoAvatar, Logo
 - Premium: ElevenLabs Hindi male narrator (quota resets on the 23rd of each month) — offer it when credits are available.
 - Keep scripts short enough (≈ 120–135 words) to stay ≤ 60 s at this pace instead of speeding the voice up.
 
+## Viral script rules (WATCH; from the short-form-video skills)
+- **W**in the first 3 s: most striking frame first (no fade-in), hook text on screen by frame 1, curiosity gap in the first line.
+- **A**rc with one open loop (a question) answered only at the end; a visual change (cut, punch-in, stamp, badge) every ~2–4 s.
+- **T**wo tracks: captions + stamps/chips must tell the story on mute.
+- **C**ash the promise: the payoff answers the hook honestly (no bait-and-switch, no invented stats); legends framed as legends.
+- **H**old the loop: the last line should feed back into the hook; one CTA (comment question + subscribe line).
+- Keep text inside the 9:16 safe area: ~120 px clear at the top and right, ~320 px at the bottom.
+
 ## Subscribe focus (user preference — every video)
 1. Mid-video **SubscribeNudge** (pill slides in, cursor clicks, "SUBSCRIBED" + bell ding) in a quiet early-middle moment, placed where it doesn't overlap the title or other text.
 2. Final scene: spoken line "… ऐसे ही रहस्यों के लिए इतिहास के भूत को सब्सक्राइब करो!" with **ChannelCard** (avatar, name, handle, animated SUBSCRIBE click + bell).
