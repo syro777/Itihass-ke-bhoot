@@ -172,6 +172,13 @@
       "title": "Kalinga yudh — jisne Ashok ko badal diya",
       "type": "india-history",
       "status": "todo"
+    },
+    {
+      "id": "pushpak",
+      "title": "Pushpak Vimaan — kya prachin Bharat mein vimaan the?",
+      "type": "india-history",
+      "status": "done",
+      "date": "2026-11-18"
     }
   ]
 }

@@ -1,0 +1,279 @@
+{
+  "id": "pushpak",
+  "style": "3d",
+  "voice": "hi-IN-MadhurNeural",
+  "pitch": "-2Hz",
+  "notes": "Facts: Pushpaka vimana = Ravana's flying chariot in the Ramayana (faith/scripture, shown respectfully). Vaimanika Shastra revealed in 1952 by G.R. Josyer; claimed to be dictated by Pandit Subbaraya Shastry (1918-1923) and 'psychically delivered' by sage Bharadvaja; Hindi 1959, English 1973. 1974 IISc study (Mukunda et al.): text composed ~1900-1922, aircraft designs aeronautically unfeasible ('poor concoctions'). Talpade 1895 Chowpatty flight: unverified, first reported in 1952, no contemporary evidence. Suspense structure: claim -> investigation -> reveal -> twist.",
+  "scenes": [
+    {
+      "id": "hook",
+      "mood": "tense",
+      "hi": "क्या प्राचीन भारत में हवाई जहाज़ उड़ते थे? एक किताब ने यही दावा किया था!",
+      "en": "Kya pracheen Bharat mein *HAWAI *JAHAZ udte the? Ek *KITAAB ne yahi daava kiya tha!",
+      "sfx": [
+        {
+          "at": "start",
+          "sfx": "boom",
+          "gain": 0.7
+        },
+        {
+          "at": "start",
+          "sfx": "wind",
+          "gain": 0.4
+        },
+        {
+          "at": "hawai",
+          "sfx": "whoosh",
+          "gain": 0.6
+        },
+        {
+          "at": "kitaab",
+          "sfx": "hit",
+          "gain": 0.8
+        }
+      ]
+    },
+    {
+      "id": "pushpak",
+      "mood": "royal",
+      "hi": "रामायण में रावण का पुष्पक विमान, आसमान में उड़ने वाला महल था।",
+      "en": "Ramayan mein Ravan ka *PUSHPAK vimaan, aasmaan mein udne wala *MAHAL tha.",
+      "sfx": [
+        {
+          "at": "start",
+          "sfx": "whoosh",
+          "off": -0.15,
+          "gain": 0.6
+        },
+        {
+          "at": "pushpak",
+          "sfx": "shimmer",
+          "gain": 0.6
+        },
+        {
+          "at": "mahal",
+          "sfx": "bell",
+          "gain": 0.4
+        }
+      ]
+    },
+    {
+      "id": "book",
+      "mood": "mystery",
+      "hi": "फिर 1952 में वैमानिक शास्त्र नाम की किताब सामने आई, विमान बनाने के नक्शों के साथ!",
+      "en": "Phir *1952 mein *VAIMANIK *SHASTRA naam ki kitaab saamne aayi, vimaan banane ke *NAKSHON ke saath!",
+      "sfx": [
+        {
+          "at": "start",
+          "sfx": "whoosh",
+          "off": -0.15,
+          "gain": 0.6
+        },
+        {
+          "at": "1952",
+          "sfx": "stamp",
+          "gain": 0.7
+        },
+        {
+          "at": "vaimanik",
+          "sfx": "creak",
+          "gain": 0.6
+        },
+        {
+          "at": "nakshon",
+          "sfx": "shimmer_dark",
+          "gain": 0.6
+        }
+      ]
+    },
+    {
+      "id": "claim",
+      "mood": "creepy",
+      "hi": "दावा था, ये ज्ञान ऋषि भारद्वाज का है, जो एक पंडित को ध्यान में मिला!",
+      "en": "Daava tha, ye gyaan *RISHI *BHARADWAJ ka hai, jo ek pandit ko *DHYAAN mein mila!",
+      "sfx": [
+        {
+          "at": "start",
+          "sfx": "whoosh",
+          "off": -0.15,
+          "gain": 0.6
+        },
+        {
+          "at": "daava",
+          "sfx": "stamp",
+          "gain": 0.7
+        },
+        {
+          "at": "rishi",
+          "sfx": "bell",
+          "gain": 0.45
+        },
+        {
+          "at": "dhyaan",
+          "sfx": "shimmer",
+          "gain": 0.5
+        }
+      ]
+    },
+    {
+      "id": "iisc",
+      "mood": "tense",
+      "hi": "1974 में बेंगलुरु के IISc के वैज्ञानिकों ने इसकी जांच शुरू की।",
+      "en": "*1974 mein Bengaluru ke *IISC ke vaigyanikon ne iski *JAANCH shuru ki.",
+      "sfx": [
+        {
+          "at": "start",
+          "sfx": "whoosh",
+          "off": -0.15,
+          "gain": 0.6
+        },
+        {
+          "at": "1974",
+          "sfx": "stamp",
+          "gain": 0.7
+        },
+        {
+          "at": "start",
+          "sfx": "tick",
+          "off": 0.3,
+          "gain": 0.6
+        },
+        {
+          "at": "jaanch",
+          "sfx": "heartbeat",
+          "gain": 0.7
+        },
+        {
+          "at": "jaanch",
+          "sfx": "riser",
+          "gain": 0.6
+        }
+      ]
+    },
+    {
+      "id": "reveal",
+      "mood": "climax",
+      "hi": "और नतीजा चौंकाने वाला था! ये किताब हज़ारों साल पुरानी नहीं, बल्कि बीसवीं सदी की शुरुआत में लिखी गई थी।",
+      "en": "Aur nateeja *CHAUNKANE wala tha! Ye kitaab hazaaron saal purani nahi, balki *BEESVI *SADI ki shuruaat mein likhi gayi thi.",
+      "sfx": [
+        {
+          "at": "chaunkane",
+          "sfx": "thunder",
+          "off": -0.05,
+          "gain": 0.9
+        },
+        {
+          "at": "chaunkane",
+          "sfx": "boom",
+          "gain": 0.8
+        },
+        {
+          "at": "beesvi",
+          "sfx": "stamp",
+          "gain": 0.8
+        }
+      ]
+    },
+    {
+      "id": "fail",
+      "mood": "tense",
+      "hi": "और इसके विमान? वैज्ञानिकों ने कहा, ये कभी उड़ ही नहीं सकते!",
+      "en": "Aur iske vimaan? Vaigyanikon ne kaha, ye kabhi *UDD hi *NAHI sakte!",
+      "sfx": [
+        {
+          "at": "start",
+          "sfx": "whoosh",
+          "off": -0.15,
+          "gain": 0.6
+        },
+        {
+          "at": "vimaan",
+          "sfx": "rumble",
+          "gain": 0.6
+        },
+        {
+          "at": "udd",
+          "sfx": "crash",
+          "off": -0.1,
+          "gain": 0.9
+        },
+        {
+          "at": "nahi",
+          "sfx": "stamp",
+          "gain": 0.8
+        }
+      ]
+    },
+    {
+      "id": "twist",
+      "mood": "mystery",
+      "hi": "पर कहते हैं, 1895 में मुंबई में शिवकर तलपदे ने राइट ब्रदर्स से 8 साल पहले विमान उड़ाया था! पर इसका कोई पक्का सबूत नहीं मिला।",
+      "en": "Par kehte hain, *1895 mein Mumbai mein *SHIVKAR *TALPADE ne Wright Brothers se *8 saal pehle vimaan udaya tha! Par iska koi pakka *SABOOT nahi mila.",
+      "sfx": [
+        {
+          "at": "start",
+          "sfx": "glitch",
+          "off": -0.1,
+          "gain": 0.5
+        },
+        {
+          "at": "1895",
+          "sfx": "stamp",
+          "gain": 0.7
+        },
+        {
+          "at": "udaya",
+          "sfx": "whoosh",
+          "gain": 0.6
+        },
+        {
+          "at": "saboot",
+          "sfx": "hit",
+          "gain": 0.7
+        }
+      ]
+    },
+    {
+      "id": "cta",
+      "mood": "tense",
+      "hi": "सच या कहानी? कमेंट में बताओ, और ऐसे ही रहस्यों के लिए इतिहास के भूत को सब्सक्राइब करो!",
+      "en": "*SACH ya *KAHANI? Comment mein batao, aur aise hi rahasyon ke liye *ITIHAAS *KE *BHOOT ko *SUBSCRIBE karo!",
+      "sfx": [
+        {
+          "at": "start",
+          "sfx": "whoosh",
+          "off": -0.15,
+          "gain": 0.5
+        },
+        {
+          "at": "sach",
+          "sfx": "pop",
+          "gain": 0.5
+        },
+        {
+          "at": "comment",
+          "sfx": "pop",
+          "gain": 0.6
+        },
+        {
+          "at": "itihaas",
+          "sfx": "whoosh",
+          "off": -0.12,
+          "gain": 0.5
+        },
+        {
+          "at": "subscribe",
+          "sfx": "pop",
+          "off": 0.13,
+          "gain": 0.8
+        },
+        {
+          "at": "subscribe",
+          "sfx": "ding",
+          "off": 0.27,
+          "gain": 0.7
+        }
+      ]
+    }
+  ]
+}

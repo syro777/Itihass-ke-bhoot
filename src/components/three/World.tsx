@@ -257,7 +257,7 @@ export const SkyDome: React.FC<{ top: string; horizon: string; bottom?: string }
   );
 };
 
-const softTexture = (() => {
+export const softTexture = (() => {
   let tex: THREE.CanvasTexture | null = null;
   return () => {
     if (tex) return tex;
@@ -435,6 +435,35 @@ export const Hail: React.FC<{ count?: number; center: [number, number, number]; 
             <icosahedronGeometry args={[0.07 + rand(i + 7, 71) * 0.07, 0]} />
             <meshStandardMaterial color="#eef6ff" roughness={0.3} />
           </mesh>
+        );
+      })}
+    </group>
+  );
+};
+
+/** Soft drifting clouds (sprites). */
+export const Clouds: React.FC<{ count?: number; y?: number; spread?: number; opacity?: number; color?: string; seed?: number; speed?: number; scale?: number }> = ({
+  count = 18,
+  y = 0,
+  spread = 160,
+  opacity = 0.85,
+  color = "#ffffff",
+  seed = 81,
+  speed = 0.15,
+  scale = 1,
+}) => {
+  const f = useCurrentFrame();
+  const tex = softTexture();
+  return (
+    <group>
+      {new Array(count).fill(0).map((_, i) => {
+        const x = ((rand(i, seed) - 0.5) * spread * 2 + f * speed * (0.5 + rand(i + 3, seed)) + spread) % (spread * 2) - spread;
+        const z = -rand(i + 1, seed) * spread * 1.5 + 20;
+        const s = (30 + rand(i + 2, seed) * 50) * scale;
+        return (
+          <sprite key={i} position={[x, y + (rand(i + 4, seed) - 0.5) * 30, z]} scale={[s * 1.8, s, 1]}>
+            <spriteMaterial map={tex} color={color} transparent opacity={opacity} depthWrite={false} />
+          </sprite>
         );
       })}
     </group>

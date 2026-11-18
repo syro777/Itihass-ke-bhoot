@@ -396,10 +396,24 @@ def fire(dur=4.0):
     return norm(stereo((roar + crk) * env, 0.1, 0.4), 0.6)
 
 
+def tick(beats=6, gap=0.5):
+    """Clock ticking (tick-tock) for suspense."""
+    dur = beats * gap + 0.3
+    t = tt(dur)
+    x = np.zeros_like(t)
+    for i in range(beats):
+        s = int(i * gap * SR)
+        tl = t[: len(t) - s]
+        f0 = 2400 if i % 2 == 0 else 1900
+        x[s:] += bell_partials(tl, f0, [1, 1.7, 2.6], [1, 0.4, 0.2], [90, 120, 160], 2) * 0.9
+        x[s:] += filt(noise(len(tl)), "highpass", 3000) * env_exp(tl, 300) * 0.4
+    return norm(stereo(x, 0.1, 0.2), 0.6)
+
+
 LIBRARY = {
     "whoosh": whoosh, "boom": boom, "thunder": thunder, "heartbeat": heartbeat, "bell": bell,
     "chime": chime, "shimmer": shimmer, "shimmer_dark": shimmer_dark, "rumble": rumble,
     "crash": crash, "riser": riser, "stamp": stamp, "hit": hit, "footsteps": footsteps,
     "fanfare": fanfare, "chisel": chisel, "splash": splash, "ghost": ghost, "glitch": glitch,
-    "swords": swords, "wind": wind, "creak": creak, "pop": pop, "ding": ding, "fire": fire,
+    "swords": swords, "wind": wind, "creak": creak, "pop": pop, "ding": ding, "fire": fire, "tick": tick,
 }

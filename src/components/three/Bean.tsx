@@ -20,6 +20,9 @@ export const BP = {
   lantern: { la: [0.1, 0.15], ra: [0.9, -0.2], ll: 0, rl: 0, lean: 0, head: [0, -0.15], bob: 0, crouch: 0 } as BeanPose,
   kneel: { la: [0.9, 0.2], ra: [1.2, -0.2], ll: 1.4, rl: -0.2, lean: 0.35, head: [0, 0.4], bob: 0, crouch: 0.55 } as BeanPose,
   shock: { la: [0.6, 1.0], ra: [0.6, -1.0], ll: 0.1, rl: -0.1, lean: -0.15, head: [0, -0.1], bob: 0, crouch: 0 } as BeanPose,
+  sit: { la: [0.7, 0.35], ra: [0.7, -0.35], ll: 1.5, rl: 1.5, lean: 0, head: [0, 0.05], bob: 0, crouch: 1 } as BeanPose,
+  facepalm: { la: [0.1, 0.15], ra: [2.3, -0.6], ll: 0, rl: 0, lean: 0.1, head: [0, 0.3], bob: 0, crouch: 0 } as BeanPose,
+  cheer: { la: [2.8, 0.3], ra: [2.8, -0.3], ll: 0, rl: 0, lean: -0.05, head: [0, -0.2], bob: 0, crouch: 0 } as BeanPose,
 };
 
 export const walk = (phase: number, amt = 1, run = false): BeanPose => {
