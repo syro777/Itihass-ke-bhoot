@@ -1,0 +1,135 @@
+name: Render & publish long video
+
+# Long-form (16:9) episodes: the routine writes the episode id to episodes/LATEST_LONG.
+# The composition is rendered in parallel frame-range segments (muted), the segments are
+# joined without re-encoding, the -14 LUFS mix is muxed in, and the result is released.
+on:
+  push:
+    branches: [main]
+    paths: ["episodes/LATEST_LONG"]
+  workflow_dispatch:
+    inputs:
+      episode:
+        description: "Episode id (folder name in episodes/)"
+        required: true
+
+permissions:
+  contents: write
+
+concurrency:
+  group: publish-long
+  cancel-in-progress: false
+
+jobs:
+  plan:
+    runs-on: ubuntu-latest
+    outputs:
+      id: ${{ steps.ep.outputs.id }}
+      comp: ${{ steps.ep.outputs.comp }}
+      tag: ${{ steps.ep.outputs.tag }}
+      matrix: ${{ steps.ep.outputs.matrix }}
+    steps:
+      - uses: actions/checkout@v4
+      - name: Resolve episode and segments
+        id: ep
+        run: |
+          EP="${{ inputs.episode }}"
+          [ -z "$EP" ] && EP=$(tr -d '[:space:]' < episodes/LATEST_LONG)
+          test -f "episodes/$EP/upload.json"
+          COMP=$(jq -r .composition "episodes/$EP/upload.json")
+          SEGS=$(jq -r '.segments // 10' "episodes/$EP/upload.json")
+          DUR=$(jq -r .duration "src/data/$EP.timeline.json")
+          MATRIX=$(python3 -c "import json;n=int('$SEGS');T=round(float('$DUR')*30);print(json.dumps({'include':[{'idx':i,'from':i*T//n,'to':(i+1)*T//n-1} for i in range(n)]}))")
+          echo "id=$EP" >> "$GITHUB_OUTPUT"
+          echo "comp=$COMP" >> "$GITHUB_OUTPUT"
+          echo "tag=long-$(TZ=Asia/Kolkata date +%F)-$EP" >> "$GITHUB_OUTPUT"
+          echo "matrix=$MATRIX" >> "$GITHUB_OUTPUT"
+          echo "$MATRIX"
+      - name: Check YouTube metadata
+        run: python3 tools/check_upload_meta.py "episodes/${{ steps.ep.outputs.id }}/upload.json"
+
+  render:
+    needs: plan
+    runs-on: ubuntu-latest
+    timeout-minutes: 150
+    strategy:
+      fail-fast: true
+      matrix: ${{ fromJson(needs.plan.outputs.matrix) }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - name: Install
+        run: |
+          npm ci
+          npx remotion browser ensure
+      - name: Render segment ${{ matrix.idx }} (frames ${{ matrix.from }}-${{ matrix.to }})
+        run: npx remotion render "${{ needs.plan.outputs.comp }}" "out/seg-${{ matrix.idx }}.mp4" --frames=${{ matrix.from }}-${{ matrix.to }} --muted --codec=h264 --crf=20 --gl=swangle
+      - uses: actions/upload-artifact@v4
+        with:
+          name: seg-${{ matrix.idx }}
+          path: out/seg-${{ matrix.idx }}.mp4
+          retention-days: 2
+
+  assemble:
+    needs: [plan, render]
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install ffmpeg
+        run: sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg
+      - uses: actions/download-artifact@v4
+        with:
+          pattern: seg-*
+          merge-multiple: true
+          path: segs
+      - name: Join segments and add the mix
+        env:
+          EP: ${{ needs.plan.outputs.id }}
+        run: |
+          ls segs | sort -t- -k2 -n | sed "s#^#file '$PWD/segs/#; s#\$#'#" > list.txt
+          cat list.txt
+          ffmpeg -hide_banner -loglevel error -f concat -safe 0 -i list.txt -c copy video.mp4
+          mkdir -p out
+          ffmpeg -hide_banner -loglevel error -i video.mp4 -i "public/$EP/mix.m4a" -map 0:v -map 1:a -c copy -shortest -movflags +faststart "out/$EP.mp4"
+      - name: Verify
+        env:
+          EP: ${{ needs.plan.outputs.id }}
+        run: |
+          ffprobe -v error -show_entries stream=codec_name,width,height,nb_frames:format=duration -of compact "out/$EP.mp4"
+          ffmpeg -hide_banner -i "out/$EP.mp4" -af ebur128 -f null - 2>&1 | grep -A3 Summary | grep "I:"
+      - name: Create release
+        env:
+          GH_TOKEN: ${{ github.token }}
+          EP: ${{ needs.plan.outputs.id }}
+          TAG: ${{ needs.plan.outputs.tag }}
+        run: |
+          TITLE="$(jq -r .title "episodes/$EP/upload.json")"
+          FILES=("out/$EP.mp4" "episodes/$EP/upload.json" "episodes/$EP/youtube.md")
+          [ -f "episodes/$EP/thumbnail.png" ] && FILES+=("episodes/$EP/thumbnail.png")
+          if gh release view "$TAG" >/dev/null 2>&1; then
+            gh release upload "$TAG" "${FILES[@]}" --clobber
+          else
+            gh release create "$TAG" "${FILES[@]}" --title "$TITLE" --notes-file "episodes/$EP/youtube.md"
+          fi
+      - uses: actions/setup-python@v5
+        if: ${{ vars.AUTO_UPLOAD == 'true' }}
+        with:
+          python-version: "3.12"
+      - name: Upload to YouTube
+        if: ${{ vars.AUTO_UPLOAD == 'true' }}
+        env:
+          YT_CLIENT_ID: ${{ secrets.YT_CLIENT_ID }}
+          YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
+          YT_REFRESH_TOKEN: ${{ secrets.YT_REFRESH_TOKEN }}
+          GH_TOKEN: ${{ github.token }}
+          EP: ${{ needs.plan.outputs.id }}
+          TAG: ${{ needs.plan.outputs.tag }}
+        run: |
+          pip install -q google-api-python-client google-auth
+          python tools/upload_youtube.py "out/$EP.mp4" "episodes/$EP/upload.json"
+          { echo "▶️ YouTube: $(cat youtube_url.txt)"; echo; cat "episodes/$EP/youtube.md"; } > notes.md
+          gh release edit "$TAG" --notes-file notes.md

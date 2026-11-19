@@ -1,5 +1,5 @@
 import React from "react";
-import { AbsoluteFill, Easing, interpolate, useCurrentFrame } from "remotion";
+import { AbsoluteFill, Easing, interpolate, useCurrentFrame, useVideoConfig } from "remotion";
 import { pop } from "../lib/util";
 import { POSES, SharedDefs, Stickman } from "./Stickman";
 
@@ -136,15 +136,16 @@ export const ChannelCard: React.FC<{ x: number; y: number; at: number; clickAt: 
 };
 
 /** Small mid-video reminder: pill slides in, gets clicked, slides out. Use inside a <Sequence> of ~80 frames. */
-export const SubscribeNudge: React.FC<{ y?: number; scale?: number }> = ({ y = 600, scale = 0.8 }) => {
+export const SubscribeNudge: React.FC<{ x?: number; y?: number; scale?: number }> = ({ x = 470, y = 600, scale = 0.8 }) => {
   const f = useCurrentFrame();
+  const { width, height } = useVideoConfig();
   const out = interpolate(f, [62, 78], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp", easing: Easing.in(Easing.cubic) });
   return (
     <AbsoluteFill style={{ pointerEvents: "none" }}>
-      <svg width={1080} height={1920} viewBox="0 0 1080 1920">
+      <svg width={width} height={height} viewBox={`0 0 ${width} ${height}`}>
         <SharedDefs />
         <g transform={`translate(${out * 900},0)`}>
-          <SubscribeButton x={470} y={y} scale={scale} at={0} clickAt={26} />
+          <SubscribeButton x={x} y={y} scale={scale} at={0} clickAt={26} />
         </g>
       </svg>
     </AbsoluteFill>

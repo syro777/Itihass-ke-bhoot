@@ -5,10 +5,8 @@ import { Timeline } from "../lib/util";
 type CapWord = { text: string; emph: boolean; start: number; end: number };
 type Page = { words: CapWord[]; start: number; end: number };
 
-const MAX_WORDS = 3;
-const MAX_CHARS = 17;
 
-export const buildPages = (tl: Timeline): Page[] => {
+export const buildPages = (tl: Timeline, MAX_WORDS = 3, MAX_CHARS = 17): Page[] => {
   const pages: Page[] = [];
   for (const sc of tl.scenes) {
     let cur: CapWord[] = [];
@@ -46,11 +44,18 @@ const OUTLINE = (px: number, c = "#000") => {
   return s.join(",");
 };
 
-export const Captions: React.FC<{ timeline: Timeline; y?: number }> = ({ timeline, y = 1300 }) => {
+export const Captions: React.FC<{ timeline: Timeline; y?: number; size?: number; maxWords?: number; maxChars?: number; side?: number }> = ({
+  timeline,
+  y = 1300,
+  size = 96,
+  maxWords = 3,
+  maxChars = 17,
+  side = 70,
+}) => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
   const t = frame / fps;
-  const pages = useMemo(() => buildPages(timeline), [timeline]);
+  const pages = useMemo(() => buildPages(timeline, maxWords, maxChars), [timeline, maxWords, maxChars]);
   const page = pages.find((p) => t >= p.start - 0.04 && t < p.end);
   if (!page) return null;
   const enter = spring({ frame: frame - Math.round(page.start * fps), fps, config: { damping: 12, stiffness: 220, mass: 0.6 } });
@@ -60,15 +65,15 @@ export const Captions: React.FC<{ timeline: Timeline; y?: number }> = ({ timelin
       <div
         style={{
           position: "absolute",
-          left: 70,
-          right: 70,
+          left: side,
+          right: side,
           top: y,
           transform: `translateY(-50%) scale(${0.82 + 0.18 * enter})`,
           display: "flex",
           flexWrap: "wrap",
           justifyContent: "center",
           alignItems: "center",
-          columnGap: 36,
+          columnGap: Math.round(size * 0.37),
           rowGap: 4,
         }}
       >
@@ -84,7 +89,7 @@ export const Captions: React.FC<{ timeline: Timeline; y?: number }> = ({ timelin
               style={{
                 fontFamily: "Poppins",
                 fontWeight: 900,
-                fontSize: w.emph ? 112 : 96,
+                fontSize: w.emph ? Math.round(size * 1.17) : size,
                 lineHeight: 1.12,
                 color,
                 opacity: spoken ? 1 : 0.88,
@@ -92,7 +97,7 @@ export const Captions: React.FC<{ timeline: Timeline; y?: number }> = ({ timelin
                 letterSpacing: 1,
                 display: "inline-block",
                 transform: `scale(${scale}) rotate(${active ? (i % 2 ? 2 : -2) : 0}deg)`,
-                textShadow: OUTLINE(8) + (w.emph && active ? ", 0 0 40px rgba(255,40,40,0.9)" : ""),
+                textShadow: OUTLINE(Math.max(5, Math.round(size / 12))) + (w.emph && active ? ", 0 0 40px rgba(255,40,40,0.9)" : ""),
               }}
             >
               {w.text}

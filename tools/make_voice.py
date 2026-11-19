@@ -151,7 +151,7 @@ def main(script_path):
         audio[-fade:] *= np.linspace(1, 0, fade)
 
         lead = LEAD_FIRST if i == 0 else LEAD
-        dur = lead + len(audio) / SR + (END_PAD if i == n - 1 else 0.0)
+        dur = lead + len(audio) / SR + (END_PAD if i == n - 1 else 0.0) + float(sc.get("hold", 0.0))  # optional dramatic pause
         chunks.append((t + lead, audio))
 
         wlist = []

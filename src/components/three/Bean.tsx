@@ -52,6 +52,7 @@ export type BeanLook = {
   glasses?: boolean;
   eyes?: "normal" | "wide" | "closed";
   held?: "none" | "stick" | "map" | "lantern" | "skull";
+  headless?: boolean;
 };
 
 const Limb: React.FC<{ len: number; r: number; color: string }> = ({ len, r, color }) => (
@@ -147,7 +148,7 @@ export const Bean: React.FC<{ position: [number, number, number]; rotY?: number;
             );
           })}
           {/* head */}
-          <group position={[0, 1.08, 0]} rotation={[pose.head[1], pose.head[0], 0]}>
+          <group position={[0, 1.08, 0]} rotation={[pose.head[1], pose.head[0], 0]} visible={!look.headless}>
             <mesh castShadow>
               <sphereGeometry args={[0.34, 24, 18]} />
               <meshStandardMaterial color={skin} roughness={0.65} />

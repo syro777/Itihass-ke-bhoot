@@ -100,8 +100,8 @@ export const Fog: React.FC<{ y: number; count?: number; opacity?: number; speed?
   );
 };
 
-export const Vignette: React.FC<{ strength?: number }> = ({ strength = 1 }) => (
-  <rect x={-100} y={-100} width={W + 200} height={H + 200} fill="url(#vignette)" opacity={strength} />
+export const Vignette: React.FC<{ strength?: number; w?: number; h?: number }> = ({ strength = 1, w = W, h = H }) => (
+  <rect x={-100} y={-100} width={w + 200} height={h + 200} fill="url(#vignette)" opacity={strength} />
 );
 
 export const Lightning: React.FC<{ x: number; at: number; seed?: string; len?: number; y2?: number }> = ({
@@ -219,7 +219,7 @@ export const Shockwave: React.FC<{ x: number; y: number; at: number; color?: str
 };
 
 /** Film grain using an animated turbulence filter. */
-export const Grain: React.FC<{ opacity?: number }> = ({ opacity = 0.07 }) => {
+export const Grain: React.FC<{ opacity?: number; w?: number; h?: number }> = ({ opacity = 0.07, w = W, h = H }) => {
   const frame = useCurrentFrame();
   return (
     <g opacity={opacity}>
@@ -227,7 +227,7 @@ export const Grain: React.FC<{ opacity?: number }> = ({ opacity = 0.07 }) => {
         <feTurbulence type="fractalNoise" baseFrequency="0.85" numOctaves={2} seed={frame % 6} />
         <feColorMatrix type="saturate" values="0" />
       </filter>
-      <rect x={0} y={0} width={W} height={H} filter={`url(#grain${frame % 6})`} />
+      <rect x={0} y={0} width={w} height={h} filter={`url(#grain${frame % 6})`} />
     </g>
   );
 };

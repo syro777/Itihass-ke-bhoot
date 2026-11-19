@@ -43,6 +43,11 @@ npx remotion render <Comp> out/<id>.mp4 --crf=18        # final video
 ```
 See README.md for the script format, components and SFX list. Always render check frames and look at them before the final render.
 
+## Long videos (16:9, since Nov 2026)
+- 1920×1080 composition; captions `y≈965, size 60, 4 words/page`; chapter card, chapter badge, night clock and DAR METER live in `src/components/LongForm.tsx`. Aim for ≥ 8 min (mid-roll ads), chapters in the description (first at 00:00, no `#` before chapter numbers).
+- A scene in script.json may set `"hold": <seconds>` for a dramatic pause after it.
+- Publish by writing the id to `episodes/LATEST_LONG`: `.github/workflows/publish-long.yml` renders `segments` (upload.json) frame ranges in parallel, joins them, adds `public/<id>/mix.m4a`, and releases the MP4 + `thumbnail.png` (1280×720 Still) under tag `long-<date>-<id>`. `upload.json` needs `"long": true`.
+
 ## Each delivery includes
 The MP4, plus title (with #shorts), description, hashtags (first 3 matter, max 15), tags and a pinned comment, written in Hinglish/Hindi.
 

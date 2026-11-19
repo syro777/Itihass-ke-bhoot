@@ -23,13 +23,13 @@ export const Stage3D: React.FC<{
         {children}
       </ThreeCanvas>
       <AbsoluteFill style={{ pointerEvents: "none" }}>
-        <svg width={1080} height={1920} viewBox="0 0 1080 1920">
+        <svg width={width} height={height} viewBox={`0 0 ${width} ${height}`}>
           <SharedDefs />
-          <Vignette strength={0.9} />
-          {tint && tintOp > 0 && <rect width={1080} height={1920} fill={tint} opacity={tintOp} />}
-          <Grain opacity={0.05} />
+          <Vignette strength={0.9} w={width} h={height} />
+          {tint && tintOp > 0 && <rect width={width} height={height} fill={tint} opacity={tintOp} />}
+          <Grain opacity={0.05} w={width} h={height} />
           {overlay}
-          {Math.max(flashOp, entry) > 0 && <rect width={1080} height={1920} fill="#ffffff" opacity={Math.max(flashOp, entry)} />}
+          {Math.max(flashOp, entry) > 0 && <rect width={width} height={height} fill="#ffffff" opacity={Math.max(flashOp, entry)} />}
         </svg>
       </AbsoluteFill>
     </AbsoluteFill>

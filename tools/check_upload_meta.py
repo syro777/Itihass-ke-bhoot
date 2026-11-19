@@ -29,7 +29,7 @@ def check(meta):
     tags = meta.get("tags", [])
     if len(title) > MAX_TITLE:
         errs.append(f"title is {len(title)} chars (max {MAX_TITLE})")
-    if "#shorts" not in (title + " " + desc).lower():
+    if not meta.get("long") and "#shorts" not in (title + " " + desc).lower():
         errs.append("add #shorts to the title or description")
     for field, text in (("title", title), ("description", desc)):
         if "<" in text or ">" in text:

@@ -200,6 +200,13 @@
       "type": "india-history",
       "status": "done",
       "date": "2026-11-19"
+    },
+    {
+      "id": "bhootiya-5",
+      "title": "LONG: Bharat ki 5 sabse bhootiya jagah (Dumas, Dow Hill, Shaniwar Wada, Kuldhara, Bhangarh)",
+      "type": "india-ghost-long",
+      "status": "done",
+      "date": "2026-11-19"
     }
   ]
 }

@@ -1,0 +1,1604 @@
+{
+ "id": "bhootiya-5",
+ "style": "3d-long",
+ "voice": "hi-IN-MadhurNeural",
+ "pitch": "-2Hz",
+ "notes": "LONG-FORM 16:9. Countdown of 5 haunted places, one night 9 PM -> midnight. Facts: Dumas (Surat) black sand; cremation-ground origin = folklore; disappearance stories unverified (said so); black sand attributed to heavy minerals. Dow Hill (Kurseong, Darjeeling dist.): Dow Hill Girls' School (1879) and Victoria Boys' School; headless boy on 'Death Road' = folklore; school administration says no such death on campus; Kurseong = 'land of white orchids'. Shaniwar Wada: foundation 1730 by Bajirao I on a Saturday; Narayanrao (b. 1755) killed 30 Aug 1773 aged 18 by Gardis; dhara/mara + 'Kaka mala vachva' cry = legend; fire 1828 burned ~7 days. Kuldhara: Paliwal Brahmins from ~13th c.; abandoned ~1825; Salim Singh / 84 villages / one night / curse = legend; historians: water scarcity + taxes; never resettled; now a heritage site (no 'closed at sunset' claim). Bhangarh (Alwar): built 16th c. (1573) by Raja Bhagwant Das for Madho Singh; Balu Nath shadow curse + tantrik Singhia/Ratnavati = legends; temples largely intact; ASI board prohibits entry before sunrise / after sunset; likely reasons safety + Sariska wildlife (framed 'shayad'). 'Dar meter' is the narrator's playful opinion.",
+ "scenes": [
+  {
+   "id": "i1",
+   "mood": "tense",
+   "hi": "भारत में एक जगह ऐसी है, जहाँ सरकार ने खुद बोर्ड लगा रखा है: सूरज ढलने के बाद, अंदर आना मना है!",
+   "en": "Bharat mein ek jagah aisi hai, jahan *SARKAAR ne khud *BOARD laga rakha hai: suraj dhalne ke baad, andar aana *MANA hai!",
+   "sfx": [
+    {
+     "at": "start",
+     "sfx": "boom",
+     "gain": 0.7
+    },
+    {
+     "at": "start",
+     "sfx": "wind",
+     "gain": 0.35
+    },
+    {
+     "at": "board",
+     "sfx": "stamp",
+     "gain": 0.7
+    },
+    {
+     "at": "mana",
+     "sfx": "hit",
+     "gain": 0.85
+    }
+   ]
+  },
+  {
+   "id": "i2",
+   "mood": "creepy",
+   "hi": "आज की रात, हम भारत की पाँच सबसे भूतिया जगहों पर चलेंगे।",
+   "en": "Aaj ki raat, hum Bharat ki *PAANCH sabse *BHOOTIYA jagahon par chalenge.",
+   "sfx": [
+    {
+     "at": "start",
+     "sfx": "ghost",
+     "gain": 0.45
+    },
+    {
+     "at": "paanch",
+     "sfx": "hit",
+     "gain": 0.6
+    }
+   ]
+  },
+  {
+   "id": "i3",
+   "mood": "mystery",
+   "hi": "हर जगह की एक कहानी है, जिसे लोग धीमी आवाज़ में सुनाते हैं।",
+   "en": "Har jagah ki ek kahani hai, jise log *DHEEMI aawaaz mein sunaate hain.",
+   "sfx": [
+    {
+     "at": "dheemi",
+     "sfx": "shimmer_dark",
+     "gain": 0.4
+    }
+   ]
+  },
+  {
+   "id": "i4",
+   "mood": "mystery",
+   "hi": "पर साथ में, मैं आपको असली इतिहास भी बताऊँगा, ताकि सच और कहानी का फैसला आप खुद कर सको।",
+   "en": "Par saath mein, main aapko *ASLI *ITIHAAS bhi bataunga, taaki *SACH aur *KAHANI ka faisla aap khud kar sako.",
+   "sfx": [
+    {
+     "at": "asli",
+     "sfx": "stamp",
+     "gain": 0.5
+    }
+   ]
+  },
+  {
+   "id": "i5",
+   "mood": "tense",
+   "hi": "और नंबर एक वाली जगह? वहीं लगा है वो बोर्ड।",
+   "en": "Aur number *EK wali jagah? Wahin laga hai wo *BOARD.",
+   "sfx": [
+    {
+     "at": "start",
+     "sfx": "heartbeat",
+     "gain": 0.5
+    },
+    {
+     "at": "board",
+     "sfx": "hit",
+     "gain": 0.7
+    }
+   ]
+  },
+  {
+   "id": "i5b",
+   "mood": "mystery",
+   "hi": "रास्ते में हर जगह का एक डर मीटर भी दूँगा, दस में से।",
+   "en": "Raaste mein har jagah ka ek *DAR *METER bhi doonga, das mein se.",
+   "sfx": [
+    {
+     "at": "dar",
+     "sfx": "riser",
+     "gain": 0.35
+    }
+   ]
+  },
+  {
+   "id": "i6",
+   "mood": "calm",
+   "hi": "वीडियो अच्छा लगे, तो इतिहास के भूत को सब्सक्राइब कर लेना। तो चलिए, लालटेन जलाइए!",
+   "en": "Video accha lage, to *ITIHAAS *KE *BHOOT ko *SUBSCRIBE kar lena. To chaliye, *LALTEN jalaiye!",
+   "sfx": [
+    {
+     "at": "subscribe",
+     "sfx": "pop",
+     "gain": 0.7,
+     "off": 0.13
+    },
+    {
+     "at": "subscribe",
+     "sfx": "ding",
+     "gain": 0.6,
+     "off": 0.27
+    },
+    {
+     "at": "lalten",
+     "sfx": "fire",
+     "gain": 0.5
+    }
+   ]
+  },
+  {
+   "id": "d0",
+   "mood": "mystery",
+   "hi": "रात के नौ बजे हैं। पहला पड़ाव, समंदर किनारे।",
+   "en": "Raat ke *NAU baje hain. Pehla padaav, *SAMANDAR kinare.",
+   "sfx": [
+    {
+     "at": "start",
+     "sfx": "tick",
+     "gain": 0.5
+    },
+    {
+     "at": "samandar",
+     "sfx": "wind",
+     "gain": 0.45
+    }
+   ]
+  },
+  {
+   "id": "d1",
+   "mood": "tense",
+   "hi": "नंबर पाँच: डुमस बीच, सूरत, गुजरात।",
+   "en": "Number *PAANCH: *DUMAS *BEACH, Surat, Gujarat.",
+   "sfx": [
+    {
+     "at": "start",
+     "sfx": "boom",
+     "gain": 0.8
+    },
+    {
+     "at": "start",
+     "sfx": "whoosh",
+     "gain": 0.6,
+     "off": -0.2
+    }
+   ],
+   "hold": 1.3
+  },
+  {
+   "id": "d2",
+   "mood": "calm",
+   "hi": "अरब सागर के किनारे ये बीच, दिन में लोगों से भरा रहता है।",
+   "en": "*ARAB *SAGAR ke kinare ye beach, din mein logon se bhara rehta hai.",
+   "sfx": [
+    {
+     "at": "start",
+     "sfx": "whoosh",
+     "gain": 0.55,
+     "off": -0.15
+    }
+   ]
+  },
+  {
+   "id": "d2b",
+   "mood": "calm",
+   "hi": "शाम को यहाँ डूबता सूरज देखने के लिए भीड़ लगती है।",
+   "en": "Shaam ko yahan *DOOBTA *SURAJ dekhne ke liye bheed lagti hai.",
+   "sfx": [
+    {
+     "at": "suraj",
+     "sfx": "chime",
+     "gain": 0.35
+    }
+   ]
+  },
+  {
+   "id": "d3",
+   "mood": "creepy",
+   "hi": "पर इसकी रेत काली है, और रात होते ही, यहाँ का माहौल बदल जाता है।",
+   "en": "Par iski *RET *KAALI hai, aur raat hote hi, yahan ka mahaul *BADAL jaata hai.",
+   "sfx": [
+    {
+     "at": "kaali",
+     "sfx": "hit",
+     "gain": 0.6
+    },
+    {
+     "at": "badal",
+     "sfx": "shimmer_dark",
+     "gain": 0.45
+    }
+   ]
+  },
+  {
+   "id": "d4",
+   "mood": "creepy",
+   "hi": "कहते हैं, सदियों पहले ये जगह एक श्मशान थी, जहाँ चिताएँ जलती थीं।",
+   "en": "Kehte hain, sadiyon pehle ye jagah ek *SHMASHAAN thi, jahan *CHITAYEIN jalti thi.",
+   "sfx": [
+    {
+     "at": "shmashaan",
+     "sfx": "ghost",
+     "gain": 0.5
+    },
+    {
+     "at": "chitayein",
+     "sfx": "fire",
+     "gain": 0.5
+    }
+   ]
+  },
+  {
+   "id": "d5",
+   "mood": "creepy",
+   "hi": "लोककथा कहती है, ये काली रेत उन्हीं चिताओं की राख है।",
+   "en": "Lokkatha kehti hai, ye kaali ret unhi chitaon ki *RAAKH hai.",
+   "sfx": [
+    {
+     "at": "raakh",
+     "sfx": "hit",
+     "gain": 0.7
+    }
+   ]
+  },
+  {
+   "id": "d6",
+   "mood": "creepy",
+   "hi": "रात में यहाँ टहलने वाले, अजीब फुसफुसाहट सुनने का दावा करते हैं, जैसे कोई कान में कह रहा हो: वापस जाओ!",
+   "en": "Raat mein yahan tehelne wale, ajeeb *PHUSPHUSAHAT sunne ka daava karte hain, jaise koi kaan mein keh raha ho: *WAPAS *JAO!",
+   "sfx": [
+    {
+     "at": "phusphusahat",
+     "sfx": "ghost",
+     "gain": 0.55
+    },
+    {
+     "at": "wapas",
+     "sfx": "glitch",
+     "gain": 0.5
+    },
+    {
+     "at": "jao",
+     "sfx": "hit",
+     "gain": 0.8
+    }
+   ]
+  },
+  {
+   "id": "d7",
+   "mood": "tense",
+   "hi": "कहते हैं, यहाँ के कुत्ते रात में खाली अँधेरे की तरफ देखकर भौंकते हैं।",
+   "en": "Kehte hain, yahan ke *KUTTE raat mein khaali andhere ki taraf dekhkar *BHAUNKTE hain.",
+   "sfx": [
+    {
+     "at": "kutte",
+     "sfx": "heartbeat",
+     "gain": 0.5
+    },
+    {
+     "at": "bhaunkte",
+     "sfx": "hit",
+     "gain": 0.6
+    }
+   ]
+  },
+  {
+   "id": "d8",
+   "mood": "mystery",
+   "hi": "लोगों के गायब होने की कहानियाँ भी सुनाई जाती हैं, पर उनका कोई पक्का रिकॉर्ड नहीं मिलता।",
+   "en": "Logon ke *GAAYAB hone ki kahaniyan bhi sunaai jaati hain, par unka koi *PAKKA *RECORD nahi milta.",
+   "sfx": [
+    {
+     "at": "gaayab",
+     "sfx": "ghost",
+     "gain": 0.45
+    },
+    {
+     "at": "pakka",
+     "sfx": "stamp",
+     "gain": 0.6
+    }
+   ]
+  },
+  {
+   "id": "d9",
+   "mood": "mystery",
+   "hi": "और साइंस? काली रेत की वजह, उसमें मौजूद आयरन जैसे भारी खनिज बताए जाते हैं।",
+   "en": "Aur *SCIENCE? Kaali ret ki wajah, usme maujood *IRON jaise bhaari *KHANIJ bataaye jaate hain.",
+   "sfx": [
+    {
+     "at": "start",
+     "sfx": "whoosh",
+     "gain": 0.55,
+     "off": -0.15
+    },
+    {
+     "at": "science",
+     "sfx": "shimmer",
+     "gain": 0.45
+    }
+   ]
+  },
+  {
+   "id": "d10",
+   "mood": "calm",
+   "hi": "और समंदर की तेज़ हवा, रात में किसी को भी कानों में आवाज़ें सुनवा सकती है।",
+   "en": "Aur samandar ki tez *HAWA, raat mein kisi ko bhi kaanon mein aawaazein sunva sakti hai.",
+   "sfx": [
+    {
+     "at": "hawa",
+     "sfx": "wind",
+     "gain": 0.55
+    }
+   ]
+  },
+  {
+   "id": "d11",
+   "mood": "tense",
+   "hi": "डर मीटर: दस में से छह।",
+   "en": "*DAR *METER: das mein se *CHHAH.",
+   "sfx": [
+    {
+     "at": "dar",
+     "sfx": "riser",
+     "gain": 0.4
+    },
+    {
+     "at": "chhah",
+     "sfx": "stamp",
+     "gain": 0.7
+    }
+   ],
+   "hold": 0.8
+  },
+  {
+   "id": "d12",
+   "mood": "mystery",
+   "hi": "तो डुमस का राज़: राख या खनिज? अगली जगह पर चलते हैं, पहाड़ों में!",
+   "en": "To Dumas ka raaz: *RAAKH ya *KHANIJ? Agli jagah par chalte hain, *PAHAADON mein!",
+   "sfx": [
+    {
+     "at": "pahaadon",
+     "sfx": "whoosh",
+     "gain": 0.6
+    }
+   ]
+  },
+  {
+   "id": "w0",
+   "mood": "mystery",
+   "hi": "रात के दस बजे हैं, और पहाड़ों पर कोहरा उतर आया है।",
+   "en": "Raat ke *DAS baje hain, aur pahaadon par *KOHRA utar aaya hai.",
+   "sfx": [
+    {
+     "at": "start",
+     "sfx": "tick",
+     "gain": 0.5
+    },
+    {
+     "at": "kohra",
+     "sfx": "wind",
+     "gain": 0.5
+    }
+   ]
+  },
+  {
+   "id": "w1",
+   "mood": "tense",
+   "hi": "नंबर चार: डाउ हिल, कर्सियांग, पश्चिम बंगाल।",
+   "en": "Number *CHAAR: *DOW *HILL, Kurseong, Paschim Bengal.",
+   "sfx": [
+    {
+     "at": "start",
+     "sfx": "boom",
+     "gain": 0.8
+    },
+    {
+     "at": "start",
+     "sfx": "whoosh",
+     "gain": 0.6,
+     "off": -0.2
+    }
+   ],
+   "hold": 1.3
+  },
+  {
+   "id": "w2",
+   "mood": "calm",
+   "hi": "दार्जिलिंग के पास, ऊँचे पेड़ों के घने जंगलों से ढका एक शांत पहाड़ी इलाका।",
+   "en": "Darjeeling ke paas, *UNCHE pedon ke ghane *JANGALON se dhaka ek shaant pahaadi ilaaka.",
+   "sfx": [
+    {
+     "at": "start",
+     "sfx": "whoosh",
+     "gain": 0.55,
+     "off": -0.15
+    }
+   ]
+  },
+  {
+   "id": "w3",
+   "mood": "calm",
+   "hi": "कर्सियांग नाम का मतलब ही है: सफेद ऑर्किड की धरती।",
+   "en": "Kurseong naam ka matlab hi hai: *SAFED *ORCHID ki dharti.",
+   "sfx": [
+    {
+     "at": "safed",
+     "sfx": "chime",
+     "gain": 0.4
+    }
+   ]
+  },
+  {
+   "id": "w4",
+   "mood": "mystery",
+   "hi": "यहाँ अंग्रेज़ों के ज़माने के, सौ साल से भी पुराने स्कूल हैं।",
+   "en": "Yahan *ANGREZON ke zamaane ke, *SAU saal se bhi purane *SCHOOL hain.",
+   "sfx": [
+    {
+     "at": "school",
+     "sfx": "bell",
+     "gain": 0.4
+    }
+   ]
+  },
+  {
+   "id": "w4b",
+   "mood": "mystery",
+   "hi": "डाउ हिल स्कूल की शुरुआत 1879 में हुई थी।",
+   "en": "Dow Hill school ki shuruaat *1879 mein hui thi.",
+   "sfx": [
+    {
+     "at": "1879",
+     "sfx": "stamp",
+     "gain": 0.55
+    }
+   ]
+  },
+  {
+   "id": "w5",
+   "mood": "creepy",
+   "hi": "डाउ हिल गर्ल्स स्कूल और विक्टोरिया बॉयज़ स्कूल के बीच, जंगल से गुज़रती एक सड़क है।",
+   "en": "Dow Hill Girls School aur *VICTORIA Boys School ke beech, *JANGAL se guzarti ek *SADAK hai.",
+   "sfx": [
+    {
+     "at": "jangal",
+     "sfx": "wind",
+     "gain": 0.4
+    }
+   ]
+  },
+  {
+   "id": "w6",
+   "mood": "creepy",
+   "hi": "लोग इसे डेथ रोड कहते हैं।",
+   "en": "Log ise *DEATH *ROAD kehte hain.",
+   "sfx": [
+    {
+     "at": "death",
+     "sfx": "hit",
+     "gain": 0.8
+    },
+    {
+     "at": "road",
+     "sfx": "shimmer_dark",
+     "gain": 0.45
+    }
+   ]
+  },
+  {
+   "id": "w7",
+   "mood": "climax",
+   "hi": "कहते हैं, यहाँ लकड़हारों ने एक बिना सिर वाले लड़के को देखा है, जो सड़क पार करके पेड़ों में गायब हो जाता है!",
+   "en": "Kehte hain, yahan *LAKADHAARON ne ek *BINA *SIR wale ladke ko dekha hai, jo sadak paar karke pedon mein *GAAYAB ho jaata hai!",
+   "sfx": [
+    {
+     "at": "start",
+     "sfx": "heartbeat",
+     "gain": 0.5
+    },
+    {
+     "at": "bina",
+     "sfx": "riser",
+     "gain": 0.45
+    },
+    {
+     "at": "sir",
+     "sfx": "hit",
+     "gain": 0.8
+    },
+    {
+     "at": "gaayab",
+     "sfx": "ghost",
+     "gain": 0.55
+    }
+   ]
+  },
+  {
+   "id": "w8",
+   "mood": "creepy",
+   "hi": "कुछ कहानियों में वो स्कूल की यूनिफॉर्म में होता है।",
+   "en": "Kuch kahaniyon mein wo school ki *UNIFORM mein hota hai.",
+   "sfx": [
+    {
+     "at": "uniform",
+     "sfx": "creak",
+     "gain": 0.5
+    }
+   ]
+  },
+  {
+   "id": "w9",
+   "mood": "creepy",
+   "hi": "और कुछ लोग कहते हैं, जंगल में चलते हुए लगता है, जैसे कोई लाल आँखों से पीछा कर रहा हो।",
+   "en": "Aur kuch log kehte hain, jangal mein chalte hue lagta hai, jaise koi *LAAL *AANKHON se peecha kar raha ho.",
+   "sfx": [
+    {
+     "at": "start",
+     "sfx": "footsteps",
+     "gain": 0.45
+    },
+    {
+     "at": "laal",
+     "sfx": "glitch",
+     "gain": 0.45
+    },
+    {
+     "at": "aankhon",
+     "sfx": "hit",
+     "gain": 0.7
+    }
+   ]
+  },
+  {
+   "id": "w10",
+   "mood": "mystery",
+   "hi": "पर सच क्या है? स्कूल प्रशासन कहता रहा है, कैंपस पर कभी ऐसी कोई मौत हुई ही नहीं।",
+   "en": "Par *SACH kya hai? School prashaasan kehta raha hai, campus par kabhi aisi koi *MAUT hui hi *NAHI.",
+   "sfx": [
+    {
+     "at": "start",
+     "sfx": "whoosh",
+     "gain": 0.55,
+     "off": -0.15
+    },
+    {
+     "at": "nahi",
+     "sfx": "stamp",
+     "gain": 0.6
+    }
+   ]
+  },
+  {
+   "id": "w11",
+   "mood": "calm",
+   "hi": "और घना कोहरा, बादलों में डूबी पहाड़ियाँ, यहाँ आँखों को धोखा देना आसान है।",
+   "en": "Aur ghana *KOHRA, baadalon mein doobi pahaadiyan, yahan aankhon ko *DHOKHA dena aasaan hai.",
+   "sfx": [
+    {
+     "at": "kohra",
+     "sfx": "wind",
+     "gain": 0.45
+    }
+   ]
+  },
+  {
+   "id": "w12",
+   "mood": "creepy",
+   "hi": "फिर भी, सर्दियों की छुट्टियों में जब स्कूल खाली होते हैं, यहाँ की खामोशी डरा देती है।",
+   "en": "Phir bhi, sardiyon ki *CHHUTTIYON mein jab school khaali hote hain, yahan ki *KHAMOSHI dara deti hai.",
+   "sfx": [
+    {
+     "at": "khamoshi",
+     "sfx": "shimmer_dark",
+     "gain": 0.45
+    }
+   ]
+  },
+  {
+   "id": "w13",
+   "mood": "tense",
+   "hi": "डर मीटर: दस में से सात।",
+   "en": "*DAR *METER: das mein se *SAAT.",
+   "sfx": [
+    {
+     "at": "dar",
+     "sfx": "riser",
+     "gain": 0.4
+    },
+    {
+     "at": "saat",
+     "sfx": "stamp",
+     "gain": 0.7
+    }
+   ],
+   "hold": 0.8
+  },
+  {
+   "id": "s0",
+   "mood": "mystery",
+   "hi": "रात के ग्यारह बजे। अब चलते हैं, इतिहास के सबसे खौफनाक महलों में से एक में।",
+   "en": "Raat ke *GYARAH baje. Ab chalte hain, itihaas ke sabse *KHAUFNAAK mahalon mein se ek mein.",
+   "sfx": [
+    {
+     "at": "start",
+     "sfx": "tick",
+     "gain": 0.5
+    },
+    {
+     "at": "khaufnaak",
+     "sfx": "creak",
+     "gain": 0.5
+    }
+   ]
+  },
+  {
+   "id": "s1",
+   "mood": "royal",
+   "hi": "नंबर तीन: शनिवार वाड़ा, पुणे, महाराष्ट्र।",
+   "en": "Number *TEEN: *SHANIWAR *WADA, Pune, Maharashtra.",
+   "sfx": [
+    {
+     "at": "start",
+     "sfx": "boom",
+     "gain": 0.8
+    },
+    {
+     "at": "start",
+     "sfx": "whoosh",
+     "gain": 0.6,
+     "off": -0.2
+    }
+   ],
+   "hold": 1.3
+  },
+  {
+   "id": "s2",
+   "mood": "royal",
+   "hi": "पेशवा बाजीराव प्रथम ने, 1730 में एक शनिवार के दिन, इसकी नींव रखी थी।",
+   "en": "Peshwa *BAJIRAO pratham ne, *1730 mein ek *SHANIWAR ke din, iski neev rakhi thi.",
+   "sfx": [
+    {
+     "at": "start",
+     "sfx": "whoosh",
+     "gain": 0.55,
+     "off": -0.15
+    },
+    {
+     "at": "1730",
+     "sfx": "stamp",
+     "gain": 0.6
+    }
+   ]
+  },
+  {
+   "id": "s3",
+   "mood": "royal",
+   "hi": "यही वो बाजीराव हैं, जिनकी और मस्तानी की कहानी आज भी मशहूर है।",
+   "en": "Yahi wo Bajirao hain, jinki aur *MASTANI ki kahani aaj bhi mashhoor hai.",
+   "sfx": [
+    {
+     "at": "mastani",
+     "sfx": "chime",
+     "gain": 0.4
+    }
+   ]
+  },
+  {
+   "id": "s4",
+   "mood": "royal",
+   "hi": "यहीं से मराठा साम्राज्य का बड़ा हिस्सा चलता था।",
+   "en": "Yahin se *MARATHA saamrajya ka bada hissa chalta tha.",
+   "sfx": [
+    {
+     "at": "maratha",
+     "sfx": "fanfare",
+     "gain": 0.5
+    }
+   ]
+  },
+  {
+   "id": "s4b",
+   "mood": "royal",
+   "hi": "इसका मुख्य दरवाज़ा, दिल्ली दरवाज़ा, दिल्ली की दिशा में बना है, और उस पर हाथियों को रोकने वाले नुकीले कीले लगे हैं।",
+   "en": "Iska mukhya darwaza, *DILLI *DARWAZA, Dilli ki disha mein bana hai, aur us par haathiyon ko rokne wale *NUKEELE keele lage hain.",
+   "sfx": [
+    {
+     "at": "start",
+     "sfx": "whoosh",
+     "gain": 0.55,
+     "off": -0.15
+    },
+    {
+     "at": "nukeele",
+     "sfx": "chisel",
+     "gain": 0.5
+    }
+   ]
+  },
+  {
+   "id": "s5",
+   "mood": "tense",
+   "hi": "पर 30 अगस्त 1773 को, यहाँ कुछ ऐसा हुआ, जो आज तक भुलाया नहीं गया।",
+   "en": "Par *30_August_1773 ko, yahan kuch aisa hua, jo aaj tak *BHULAYA nahi gaya.",
+   "sfx": [
+    {
+     "at": "start",
+     "sfx": "heartbeat",
+     "gain": 0.5
+    },
+    {
+     "at": "bhulaya",
+     "sfx": "hit",
+     "gain": 0.7
+    }
+   ]
+  },
+  {
+   "id": "s6",
+   "mood": "climax",
+   "hi": "अठारह साल के पेशवा नारायणराव को, महल के अंदर ही गारदी सैनिकों ने मार डाला।",
+   "en": "*ATHARAH saal ke Peshwa *NARAYANRAO ko, mahal ke andar hi *GARDI sainikon ne maar daala.",
+   "sfx": [
+    {
+     "at": "gardi",
+     "sfx": "swords",
+     "gain": 0.6
+    },
+    {
+     "at": "daala",
+     "sfx": "hit",
+     "gain": 0.85
+    }
+   ]
+  },
+  {
+   "id": "s7",
+   "mood": "tense",
+   "hi": "कहते हैं, उनके चाचा रघुनाथराव ने आदेश भेजा था: नारायणराव को धरा, यानी पकड़ो।",
+   "en": "Kehte hain, unke chacha *RAGHUNATHRAO ne aadesh bheja tha: Narayanrao ko *DHARA, yaani pakdo.",
+   "sfx": [
+    {
+     "at": "start",
+     "sfx": "whoosh",
+     "gain": 0.55,
+     "off": -0.15
+    },
+    {
+     "at": "dhara",
+     "sfx": "stamp",
+     "gain": 0.6
+    }
+   ]
+  },
+  {
+   "id": "s8",
+   "mood": "climax",
+   "hi": "पर चाची आनंदीबाई ने एक अक्षर बदल दिया: धरा की जगह, मारा!",
+   "en": "Par chachi *ANANDIBAI ne ek *AKSHAR badal diya: dhara ki jagah, *MAARA!",
+   "sfx": [
+    {
+     "at": "akshar",
+     "sfx": "chisel",
+     "gain": 0.5
+    },
+    {
+     "at": "maara",
+     "sfx": "thunder",
+     "gain": 0.75,
+     "off": -0.05
+    }
+   ]
+  },
+  {
+   "id": "s9",
+   "mood": "climax",
+   "hi": "जान बचाने के लिए नारायणराव चिल्लाते हुए भागे: काका, मला वाचवा! यानी, चाचा, मुझे बचाओ!",
+   "en": "Jaan bachaane ke liye Narayanrao chillaate hue bhaage: *KAKA, *MALA *VACHVA! Yaani, chacha, mujhe *BACHAO!",
+   "sfx": [
+    {
+     "at": "start",
+     "sfx": "footsteps",
+     "gain": 0.5
+    },
+    {
+     "at": "kaka",
+     "sfx": "ghost",
+     "gain": 0.55
+    },
+    {
+     "at": "bachao",
+     "sfx": "hit",
+     "gain": 0.7
+    }
+   ]
+  },
+  {
+   "id": "s10",
+   "mood": "sad",
+   "hi": "पर उन्हें कोई नहीं बचा पाया।",
+   "en": "Par unhe koi *NAHI bacha paaya.",
+   "sfx": [
+    {
+     "at": "nahi",
+     "sfx": "bell",
+     "gain": 0.45
+    }
+   ]
+  },
+  {
+   "id": "s11",
+   "mood": "climax",
+   "hi": "फिर 1828 में, एक रहस्यमयी आग लगी, जो सात दिन तक जलती रही। महल राख हो गया।",
+   "en": "Phir *1828 mein, ek *RAHASYAMAYI aag lagi, jo *SAAT din tak jalti rahi. Mahal *RAAKH ho gaya.",
+   "sfx": [
+    {
+     "at": "start",
+     "sfx": "fire",
+     "gain": 0.55
+    },
+    {
+     "at": "aag",
+     "sfx": "boom",
+     "gain": 0.6
+    },
+    {
+     "at": "raakh",
+     "sfx": "rumble",
+     "gain": 0.6
+    }
+   ]
+  },
+  {
+   "id": "s12",
+   "mood": "sad",
+   "hi": "आज बस दीवारें, दरवाज़े और नींव बची हैं।",
+   "en": "Aaj bas *DEEWAREIN, darwaaze aur neev bachi hain.",
+   "sfx": [
+    {
+     "at": "start",
+     "sfx": "wind",
+     "gain": 0.4
+    }
+   ]
+  },
+  {
+   "id": "s13",
+   "mood": "creepy",
+   "hi": "और लोग कहते हैं, पूर्णिमा की रातों में, यहाँ आज भी वही चीख गूँजती है: काका, मला वाचवा!",
+   "en": "Aur log kehte hain, *PURNIMA ki raaton mein, yahan aaj bhi wahi *CHEEKH goonjti hai: Kaka, mala vachva!",
+   "sfx": [
+    {
+     "at": "purnima",
+     "sfx": "shimmer_dark",
+     "gain": 0.45
+    },
+    {
+     "at": "cheekh",
+     "sfx": "ghost",
+     "gain": 0.6
+    }
+   ]
+  },
+  {
+   "id": "s14",
+   "mood": "mystery",
+   "hi": "इतिहास सच है, चीख एक लोककथा। पर पुराने महल की खाली दीवारें, आवाज़ को अजीब तरह गूँजा देती हैं।",
+   "en": "Itihaas *SACH hai, cheekh ek *LOKKATHA. Par purane mahal ki khaali deewarein, aawaaz ko ajeeb tarah *GOONJA deti hain.",
+   "sfx": [
+    {
+     "at": "start",
+     "sfx": "whoosh",
+     "gain": 0.55,
+     "off": -0.15
+    },
+    {
+     "at": "goonja",
+     "sfx": "shimmer",
+     "gain": 0.4
+    }
+   ]
+  },
+  {
+   "id": "s15",
+   "mood": "tense",
+   "hi": "डर मीटर: दस में से आठ।",
+   "en": "*DAR *METER: das mein se *AATH.",
+   "sfx": [
+    {
+     "at": "dar",
+     "sfx": "riser",
+     "gain": 0.4
+    },
+    {
+     "at": "aath",
+     "sfx": "stamp",
+     "gain": 0.7
+    }
+   ],
+   "hold": 0.8
+  },
+  {
+   "id": "k0",
+   "mood": "mystery",
+   "hi": "साढ़े ग्यारह बज चुके हैं। अब रेगिस्तान की बारी।",
+   "en": "Saadhe gyarah baj chuke hain. Ab *REGISTAN ki baari.",
+   "sfx": [
+    {
+     "at": "start",
+     "sfx": "tick",
+     "gain": 0.5
+    },
+    {
+     "at": "registan",
+     "sfx": "wind",
+     "gain": 0.5
+    }
+   ]
+  },
+  {
+   "id": "k1",
+   "mood": "tense",
+   "hi": "नंबर दो: कुलधरा, जैसलमेर, राजस्थान।",
+   "en": "Number *DO: *KULDHARA, Jaisalmer, Rajasthan.",
+   "sfx": [
+    {
+     "at": "start",
+     "sfx": "boom",
+     "gain": 0.8
+    },
+    {
+     "at": "start",
+     "sfx": "whoosh",
+     "gain": 0.6,
+     "off": -0.2
+    }
+   ],
+   "hold": 1.3
+  },
+  {
+   "id": "k2",
+   "mood": "mystery",
+   "hi": "थार रेगिस्तान में, पत्थर के सैकड़ों घरों वाला एक गाँव, जहाँ आज कोई नहीं रहता।",
+   "en": "Thar registan mein, patthar ke *SAIKDON gharon wala ek gaon, jahan aaj *KOI *NAHI rehta.",
+   "sfx": [
+    {
+     "at": "start",
+     "sfx": "whoosh",
+     "gain": 0.55,
+     "off": -0.15
+    }
+   ]
+  },
+  {
+   "id": "k3",
+   "mood": "calm",
+   "hi": "तेरहवीं सदी के आसपास, यहाँ पालीवाल ब्राह्मण बसे थे, जो खेती और व्यापार में माहिर थे।",
+   "en": "*TERAHVI sadi ke aaspaas, yahan *PALIWAL brahmin base the, jo kheti aur vyapaar mein maahir the.",
+   "sfx": [
+    {
+     "at": "paliwal",
+     "sfx": "chime",
+     "gain": 0.4
+    }
+   ]
+  },
+  {
+   "id": "k3b",
+   "mood": "calm",
+   "hi": "उन्होंने रेगिस्तान में पानी बचाने के अनोखे तरीके खोजे।",
+   "en": "Unhone registan mein *PAANI bachaane ke *ANOKHE tareeke khoje.",
+   "sfx": [
+    {
+     "at": "paani",
+     "sfx": "splash",
+     "gain": 0.35
+    }
+   ]
+  },
+  {
+   "id": "k4",
+   "mood": "tense",
+   "hi": "फिर 1825 के आसपास, ये गाँव अचानक खाली हो गया।",
+   "en": "Phir *1825 ke aaspaas, ye gaon achanak *KHAALI ho gaya.",
+   "sfx": [
+    {
+     "at": "khaali",
+     "sfx": "hit",
+     "gain": 0.7
+    }
+   ]
+  },
+  {
+   "id": "k5",
+   "mood": "tense",
+   "hi": "कहानी कहती है, जैसलमेर का दीवान सालिम सिंह, गाँव के मुखिया की बेटी से ज़बरदस्ती शादी करना चाहता था।",
+   "en": "Kahani kehti hai, Jaisalmer ka diwan *SALIM *SINGH, gaon ke mukhiya ki *BETI se zabardasti shaadi karna chahta tha.",
+   "sfx": [
+    {
+     "at": "start",
+     "sfx": "whoosh",
+     "gain": 0.55,
+     "off": -0.15
+    },
+    {
+     "at": "salim",
+     "sfx": "stamp",
+     "gain": 0.6
+    }
+   ]
+  },
+  {
+   "id": "k6",
+   "mood": "climax",
+   "hi": "अपनी बेटी और इज़्ज़त बचाने के लिए, कहते हैं, चौरासी गाँवों के लोग, एक ही रात में सब छोड़कर चले गए!",
+   "en": "Apni beti aur izzat bachaane ke liye, kehte hain, *CHAURASI gaonon ke log, *EK *HI *RAAT mein sab chhodkar chale gaye!",
+   "sfx": [
+    {
+     "at": "start",
+     "sfx": "footsteps",
+     "gain": 0.5
+    },
+    {
+     "at": "chaurasi",
+     "sfx": "hit",
+     "gain": 0.7
+    },
+    {
+     "at": "raat",
+     "sfx": "riser",
+     "gain": 0.45
+    }
+   ]
+  },
+  {
+   "id": "k7",
+   "mood": "creepy",
+   "hi": "और जाते हुए श्राप दे गए: इस ज़मीन पर फिर कभी कोई नहीं बस पाएगा।",
+   "en": "Aur jaate hue *SHRAAP de gaye: is zameen par phir kabhi koi nahi *BAS paayega.",
+   "sfx": [
+    {
+     "at": "shraap",
+     "sfx": "thunder",
+     "gain": 0.75,
+     "off": -0.05
+    },
+    {
+     "at": "bas",
+     "sfx": "ghost",
+     "gain": 0.5
+    }
+   ]
+  },
+  {
+   "id": "k8",
+   "mood": "creepy",
+   "hi": "आज भी लोग कहते हैं, रात में यहाँ कदमों की आहट और बातचीत की आवाज़ें सुनाई देती हैं।",
+   "en": "Aaj bhi log kehte hain, raat mein yahan *KADMON ki aahat aur baatcheet ki *AAWAAZEIN sunaai deti hain.",
+   "sfx": [
+    {
+     "at": "kadmon",
+     "sfx": "footsteps",
+     "gain": 0.5
+    },
+    {
+     "at": "aawaazein",
+     "sfx": "ghost",
+     "gain": 0.5
+    }
+   ]
+  },
+  {
+   "id": "k9",
+   "mood": "mystery",
+   "hi": "पर इतिहासकार कुछ और कहते हैं: पानी की भारी कमी, और ऊपर से भारी टैक्स।",
+   "en": "Par *ITIHAASKAAR kuch aur kehte hain: *PAANI ki bhaari kami, aur upar se bhaari *TAX.",
+   "sfx": [
+    {
+     "at": "start",
+     "sfx": "whoosh",
+     "gain": 0.55,
+     "off": -0.15
+    },
+    {
+     "at": "paani",
+     "sfx": "splash",
+     "gain": 0.4
+    },
+    {
+     "at": "tax",
+     "sfx": "stamp",
+     "gain": 0.6
+    }
+   ]
+  },
+  {
+   "id": "k10",
+   "mood": "calm",
+   "hi": "शायद गाँव एक रात में नहीं, धीरे धीरे खाली हुए।",
+   "en": "Shayad gaon ek raat mein nahi, *DHEERE *DHEERE khaali hue.",
+   "sfx": [
+    {
+     "at": "dheere",
+     "sfx": "chime",
+     "gain": 0.35
+    }
+   ]
+  },
+  {
+   "id": "k11",
+   "mood": "mystery",
+   "hi": "पर एक बात सच है: दो सौ साल बाद भी, कुलधरा में आज तक कोई दोबारा नहीं बसा।",
+   "en": "Par ek baat *SACH hai: do sau saal baad bhi, Kuldhara mein aaj tak koi *DOBARA nahi basa.",
+   "sfx": [
+    {
+     "at": "dobara",
+     "sfx": "hit",
+     "gain": 0.65
+    }
+   ]
+  },
+  {
+   "id": "k12",
+   "mood": "calm",
+   "hi": "आज ये एक हेरिटेज साइट है, जहाँ सैलानी इन खाली घरों को देखने आते हैं।",
+   "en": "Aaj ye ek *HERITAGE site hai, jahan sailaani in *KHAALI gharon ko dekhne aate hain.",
+   "sfx": [
+    {
+     "at": "start",
+     "sfx": "whoosh",
+     "gain": 0.55,
+     "off": -0.15
+    }
+   ]
+  },
+  {
+   "id": "k13",
+   "mood": "tense",
+   "hi": "डर मीटर: दस में से आठ।",
+   "en": "*DAR *METER: das mein se *AATH.",
+   "sfx": [
+    {
+     "at": "dar",
+     "sfx": "riser",
+     "gain": 0.4
+    },
+    {
+     "at": "aath",
+     "sfx": "stamp",
+     "gain": 0.7
+    }
+   ],
+   "hold": 0.8
+  },
+  {
+   "id": "b0",
+   "mood": "tense",
+   "hi": "रात के बारह बजने वाले हैं।",
+   "en": "Raat ke *BAARAH bajne wale hain.",
+   "sfx": [
+    {
+     "at": "start",
+     "sfx": "tick",
+     "gain": 0.55
+    },
+    {
+     "at": "baarah",
+     "sfx": "bell",
+     "gain": 0.55
+    }
+   ]
+  },
+  {
+   "id": "b1",
+   "mood": "climax",
+   "hi": "और अब, नंबर एक: भानगढ़ का किला, अलवर, राजस्थान।",
+   "en": "Aur ab, number *EK: *BHANGARH ka kila, Alwar, Rajasthan.",
+   "sfx": [
+    {
+     "at": "start",
+     "sfx": "boom",
+     "gain": 0.8
+    },
+    {
+     "at": "start",
+     "sfx": "whoosh",
+     "gain": 0.6,
+     "off": -0.2
+    },
+    {
+     "at": "bhangarh",
+     "sfx": "thunder",
+     "gain": 0.6
+    }
+   ],
+   "hold": 1.3
+  },
+  {
+   "id": "b2",
+   "mood": "royal",
+   "hi": "अरावली की पहाड़ियों के बीच, सोलहवीं सदी में, राजा भगवंत दास ने अपने बेटे माधो सिंह के लिए ये किला बनवाया।",
+   "en": "*ARAVALLI ki pahaadiyon ke beech, *SOLAHVI sadi mein, Raja *BHAGWANT *DAS ne apne bete *MADHO *SINGH ke liye ye kila banwaaya.",
+   "sfx": [
+    {
+     "at": "start",
+     "sfx": "whoosh",
+     "gain": 0.55,
+     "off": -0.15
+    },
+    {
+     "at": "solahvi",
+     "sfx": "stamp",
+     "gain": 0.55
+    }
+   ]
+  },
+  {
+   "id": "b3",
+   "mood": "royal",
+   "hi": "बाज़ार, मंदिर, हवेलियाँ, एक पूरा शहर हुआ करता था यहाँ।",
+   "en": "*BAZAAR, *MANDIR, *HAVELIYAN, ek poora *SHEHAR hua karta tha yahan.",
+   "sfx": [
+    {
+     "at": "mandir",
+     "sfx": "bell",
+     "gain": 0.4
+    }
+   ]
+  },
+  {
+   "id": "b4",
+   "mood": "sad",
+   "hi": "पर आज ये खंडहर है।",
+   "en": "Par aaj ye *KHANDAHAR hai.",
+   "sfx": [
+    {
+     "at": "khandahar",
+     "sfx": "rumble",
+     "gain": 0.5
+    }
+   ]
+  },
+  {
+   "id": "b5",
+   "mood": "mystery",
+   "hi": "हैरानी की बात: खंडहरों के बीच, किले के कुछ मंदिर आज भी काफी हद तक सही सलामत खड़े हैं।",
+   "en": "Hairani ki baat: khandaharon ke beech, kile ke kuch *MANDIR aaj bhi kaafi had tak *SAHI *SALAMAT khade hain.",
+   "sfx": [
+    {
+     "at": "mandir",
+     "sfx": "shimmer",
+     "gain": 0.4
+    }
+   ]
+  },
+  {
+   "id": "b6",
+   "mood": "creepy",
+   "hi": "इसके पीछे दो कहानियाँ सुनाई जाती हैं।",
+   "en": "Iske peeche *DO kahaniyan sunaai jaati hain.",
+   "sfx": [
+    {
+     "at": "do",
+     "sfx": "hit",
+     "gain": 0.6
+    }
+   ]
+  },
+  {
+   "id": "b7",
+   "mood": "mystery",
+   "hi": "पहली: यहाँ गुरु बालू नाथ नाम के एक साधु तप करते थे।",
+   "en": "Pehli: yahan *GURU *BALU *NATH naam ke ek sadhu *TAP karte the.",
+   "sfx": [
+    {
+     "at": "guru",
+     "sfx": "chime",
+     "gain": 0.45
+    }
+   ]
+  },
+  {
+   "id": "b8",
+   "mood": "tense",
+   "hi": "उन्होंने किला बनाने की इजाज़त दी, बस एक शर्त पर: किले की परछाईं, कभी उनकी कुटिया पर नहीं पड़नी चाहिए।",
+   "en": "Unhone kila banane ki ijaazat di, bas ek *SHART par: kile ki *PARCHHAAIN, kabhi unki *KUTIYA par nahi padni chahiye.",
+   "sfx": [
+    {
+     "at": "shart",
+     "sfx": "stamp",
+     "gain": 0.6
+    },
+    {
+     "at": "parchhaain",
+     "sfx": "shimmer_dark",
+     "gain": 0.45
+    }
+   ]
+  },
+  {
+   "id": "b9",
+   "mood": "climax",
+   "hi": "कहते हैं, बाद में किला ऊँचा किया गया, परछाईं कुटिया पर पड़ी, और भानगढ़ उजड़ गया।",
+   "en": "Kehte hain, baad mein kila *UNCHA kiya gaya, parchhaain kutiya par *PADI, aur Bhangarh *UJAD gaya.",
+   "sfx": [
+    {
+     "at": "padi",
+     "sfx": "thunder",
+     "gain": 0.7,
+     "off": -0.05
+    },
+    {
+     "at": "ujad",
+     "sfx": "rumble",
+     "gain": 0.6
+    }
+   ]
+  },
+  {
+   "id": "b10",
+   "mood": "royal",
+   "hi": "दूसरी कहानी: राजकुमारी रत्नावती, जिनकी सुंदरता के चर्चे दूर दूर तक थे।",
+   "en": "Doosri kahani: rajkumari *RATNAVATI, jinki sundarta ke charche door door tak the.",
+   "sfx": [
+    {
+     "at": "start",
+     "sfx": "whoosh",
+     "gain": 0.55,
+     "off": -0.15
+    },
+    {
+     "at": "ratnavati",
+     "sfx": "chime",
+     "gain": 0.45
+    }
+   ]
+  },
+  {
+   "id": "b11",
+   "mood": "creepy",
+   "hi": "एक तांत्रिक, सिंघिया, उन्हें पाना चाहता था। उसने राजकुमारी के इत्र पर जादू कर दिया।",
+   "en": "Ek *TANTRIK, Singhia, unhe paana chahta tha. Usne rajkumari ke *ITR par *JAADU kar diya.",
+   "sfx": [
+    {
+     "at": "tantrik",
+     "sfx": "ghost",
+     "gain": 0.5
+    },
+    {
+     "at": "jaadu",
+     "sfx": "shimmer_dark",
+     "gain": 0.55
+    }
+   ]
+  },
+  {
+   "id": "b12",
+   "mood": "tense",
+   "hi": "पर राजकुमारी ने चाल समझ ली, और इत्र एक चट्टान पर फेंक दिया।",
+   "en": "Par rajkumari ne chaal samajh li, aur itr ek *CHATTAN par phenk diya.",
+   "sfx": [
+    {
+     "at": "chattan",
+     "sfx": "whoosh",
+     "gain": 0.5
+    },
+    {
+     "at": "diya",
+     "sfx": "crash",
+     "gain": 0.6
+    }
+   ]
+  },
+  {
+   "id": "b13",
+   "mood": "climax",
+   "hi": "चट्टान लुढ़ककर तांत्रिक पर गिरी, और मरते हुए उसने पूरे भानगढ़ को श्राप दे दिया!",
+   "en": "Chattan *LUDHAKKAR tantrik par giri, aur marte hue usne poore Bhangarh ko *SHRAAP de diya!",
+   "sfx": [
+    {
+     "at": "ludhakkar",
+     "sfx": "rumble",
+     "gain": 0.65
+    },
+    {
+     "at": "giri",
+     "sfx": "boom",
+     "gain": 0.7
+    },
+    {
+     "at": "shraap",
+     "sfx": "thunder",
+     "gain": 0.8,
+     "off": -0.05
+    }
+   ]
+  },
+  {
+   "id": "b14",
+   "mood": "tense",
+   "hi": "और आज? किले के बाहर, पुरातत्व विभाग का बोर्ड लगा है: सूर्योदय से पहले और सूर्यास्त के बाद, यहाँ घुसना मना है।",
+   "en": "Aur aaj? Kile ke bahar, *PURATATTVA *VIBHAAG ka board laga hai: *SURYODAY se pehle aur *SURYAST ke baad, yahan ghusna *MANA hai.",
+   "sfx": [
+    {
+     "at": "start",
+     "sfx": "heartbeat",
+     "gain": 0.5
+    },
+    {
+     "at": "board",
+     "sfx": "stamp",
+     "gain": 0.7
+    },
+    {
+     "at": "mana",
+     "sfx": "hit",
+     "gain": 0.8
+    }
+   ]
+  },
+  {
+   "id": "b15",
+   "mood": "mystery",
+   "hi": "क्या ये भूतों की वजह से है? असल वजह शायद सुरक्षा है: पुराने खंडहर, और पास के सरिस्का जंगल के जंगली जानवर।",
+   "en": "Kya ye *BHOOTON ki wajah se hai? Asal wajah shayad *SURAKSHA hai: purane khandahar, aur paas ke *SARISKA jangal ke jangli *JAANWAR.",
+   "sfx": [
+    {
+     "at": "start",
+     "sfx": "whoosh",
+     "gain": 0.55,
+     "off": -0.15
+    },
+    {
+     "at": "suraksha",
+     "sfx": "stamp",
+     "gain": 0.55
+    }
+   ]
+  },
+  {
+   "id": "b16",
+   "mood": "creepy",
+   "hi": "पर जो भी हो, रात में भानगढ़ जाने की हिम्मत, बहुत कम लोग करते हैं।",
+   "en": "Par jo bhi ho, raat mein Bhangarh jaane ki *HIMMAT, bahut *KAM log karte hain.",
+   "sfx": [
+    {
+     "at": "himmat",
+     "sfx": "heartbeat",
+     "gain": 0.5
+    },
+    {
+     "at": "kam",
+     "sfx": "ghost",
+     "gain": 0.5
+    }
+   ]
+  },
+  {
+   "id": "b17",
+   "mood": "climax",
+   "hi": "डर मीटर: पूरे दस में से दस!",
+   "en": "*DAR *METER: poore das mein se *DAS!",
+   "sfx": [
+    {
+     "at": "dar",
+     "sfx": "riser",
+     "gain": 0.5
+    },
+    {
+     "at": "das",
+     "sfx": "boom",
+     "gain": 0.8
+    }
+   ],
+   "hold": 0.8
+  },
+  {
+   "id": "o1",
+   "mood": "mystery",
+   "hi": "तो ये थीं, भारत की पाँच सबसे भूतिया जगहें: डुमस, डाउ हिल, शनिवार वाड़ा, कुलधरा, और भानगढ़।",
+   "en": "To ye thi, Bharat ki paanch sabse bhootiya jagahein: *DUMAS, *DOW *HILL, *SHANIWAR *WADA, *KULDHARA, aur *BHANGARH.",
+   "sfx": [
+    {
+     "at": "dumas",
+     "sfx": "pop",
+     "gain": 0.5
+    },
+    {
+     "at": "dow",
+     "sfx": "pop",
+     "gain": 0.5
+    },
+    {
+     "at": "shaniwar",
+     "sfx": "pop",
+     "gain": 0.5
+    },
+    {
+     "at": "kuldhara",
+     "sfx": "pop",
+     "gain": 0.5
+    },
+    {
+     "at": "bhangarh",
+     "sfx": "hit",
+     "gain": 0.6
+    }
+   ]
+  },
+  {
+   "id": "o2",
+   "mood": "tense",
+   "hi": "इनमें से सबसे डरावनी कौन सी लगी? और क्या आप रात में वहाँ जाने की हिम्मत करोगे? कमेंट में बताओ!",
+   "en": "Inme se sabse *DARAAVNI kaun si lagi? Aur kya aap raat mein wahan jaane ki *HIMMAT karoge? *COMMENT mein batao!",
+   "sfx": [
+    {
+     "at": "daraavni",
+     "sfx": "ghost",
+     "gain": 0.45
+    },
+    {
+     "at": "comment",
+     "sfx": "pop",
+     "gain": 0.6
+    }
+   ]
+  },
+  {
+   "id": "o3",
+   "mood": "tense",
+   "hi": "और ऐसे ही रहस्यों के लिए, इतिहास के भूत को सब्सक्राइब करो, और बेल आइकन दबाओ!",
+   "en": "Aur aise hi rahasyon ke liye, *ITIHAAS *KE *BHOOT ko *SUBSCRIBE karo, aur *BELL icon dabao!",
+   "sfx": [
+    {
+     "at": "itihaas",
+     "sfx": "whoosh",
+     "gain": 0.5,
+     "off": -0.12
+    },
+    {
+     "at": "subscribe",
+     "sfx": "pop",
+     "gain": 0.8,
+     "off": 0.13
+    },
+    {
+     "at": "subscribe",
+     "sfx": "ding",
+     "gain": 0.7,
+     "off": 0.27
+    },
+    {
+     "at": "bell",
+     "sfx": "ding",
+     "gain": 0.6,
+     "off": 0.15
+    }
+   ]
+  },
+  {
+   "id": "o4",
+   "mood": "calm",
+   "hi": "मिलते हैं अगली रात, किसी और रहस्य के साथ।",
+   "en": "Milte hain *AGLI *RAAT, kisi aur *RAHASYA ke saath.",
+   "sfx": [
+    {
+     "at": "start",
+     "sfx": "wind",
+     "gain": 0.4
+    },
+    {
+     "at": "rahasya",
+     "sfx": "ghost",
+     "gain": 0.4
+    }
+   ]
+  }
+ ]
+}
