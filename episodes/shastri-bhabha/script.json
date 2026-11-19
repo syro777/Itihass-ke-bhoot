@@ -1,0 +1,136 @@
+{
+  "id": "shastri-bhabha",
+  "style": "3d",
+  "voice": "hi-IN-MadhurNeural",
+  "pitch": "-2Hz",
+  "notes": "Facts: PM Lal Bahadur Shastri died in Tashkent on 11 Jan 1966, hours after signing the Tashkent Declaration; official cause heart attack; no post-mortem in the USSR or India; his wife Lalita Shastri publicly raised suspicion of poisoning (1970). Raj Narain committee (1977) records are untraceable (CIC 2018); PMO refused an RTI in 2009. Homi Bhabha died 24 Jan 1966 (13 days later) when Air India Flight 101 (Boeing 707 'Kanchenjunga') hit Mont Blanc; 117 killed; French inquiry: navigation error (pilot misjudged position). Bhabha had said on All India Radio that, given the go-ahead, India could build a bomb in 18 months (year reported as 1964 or 1965, so no year stated). CIA theory rests on the disputed book 'Conversations with the Crow' (Gregory Douglas / Robert Crowley) - framed as 'kuch log maante hain', no proof. No allegations against living people. WATCH: open loop (coincidence or conspiracy?) carried to the end; ending repeats the hook's '13 din'.",
+  "scenes": [
+    {
+      "id": "hook",
+      "mood": "tense",
+      "hi": "जनवरी 1966। सिर्फ 13 दिन में, भारत ने अपने दो सबसे बड़े लोग खो दिए!",
+      "en": "*JANUARY_1966. Sirf *13 *DIN mein, Bharat ne apne do sabse bade log *KHO diye!",
+      "sfx": [
+        { "at": "start", "sfx": "boom", "gain": 0.7 },
+        { "at": "start", "sfx": "wind", "gain": 0.35 },
+        { "at": "13", "sfx": "tick", "gain": 0.6 },
+        { "at": "din", "sfx": "heartbeat", "gain": 0.55 },
+        { "at": "kho", "sfx": "hit", "gain": 0.85 }
+      ]
+    },
+    {
+      "id": "shastri",
+      "mood": "sad",
+      "hi": "पहले, ताशकंद समझौते के कुछ घंटे बाद, प्रधानमंत्री लाल बहादुर शास्त्री की अचानक मौत।",
+      "en": "Pehle, *TASHKENT samjhaute ke kuch *GHANTE baad, Pradhanmantri *LAL *BAHADUR *SHASTRI ki achanak *MAUT.",
+      "sfx": [
+        { "at": "start", "sfx": "whoosh", "off": -0.15, "gain": 0.6 },
+        { "at": "tashkent", "sfx": "stamp", "gain": 0.6 },
+        { "at": "ghante", "sfx": "tick", "gain": 0.5 },
+        { "at": "shastri", "sfx": "bell", "gain": 0.45 },
+        { "at": "maut", "sfx": "hit", "gain": 0.8 }
+      ]
+    },
+    {
+      "id": "heart",
+      "mood": "creepy",
+      "hi": "वजह, दिल का दौरा। पर पोस्टमार्टम? न भारत में हुआ, न रूस में!",
+      "en": "Wajah, *DIL ka daura. Par *POSTMORTEM? Na Bharat mein hua, na *RUS mein!",
+      "sfx": [
+        { "at": "start", "sfx": "heartbeat", "gain": 0.6 },
+        { "at": "postmortem", "sfx": "stamp", "gain": 0.75 },
+        { "at": "rus", "sfx": "thunder", "off": -0.05, "gain": 0.7 }
+      ]
+    },
+    {
+      "id": "poison",
+      "mood": "creepy",
+      "hi": "पत्नी ललिता जी को ज़हर का शक था।",
+      "en": "Patni Lalita ji ko *ZEHAR ka *SHAK tha.",
+      "sfx": [
+        { "at": "start", "sfx": "glitch", "off": -0.1, "gain": 0.45 },
+        { "at": "zehar", "sfx": "ghost", "gain": 0.5 },
+        { "at": "shak", "sfx": "hit", "gain": 0.7 }
+      ]
+    },
+    {
+      "id": "bhabha",
+      "mood": "mystery",
+      "hi": "और ठीक 13 दिन बाद? परमाणु कार्यक्रम के जनक, होमी भाभा!",
+      "en": "Aur theek *13 din baad? *PARMANU karyakram ke janak, *HOMI *BHABHA!",
+      "sfx": [
+        { "at": "start", "sfx": "whoosh", "off": -0.15, "gain": 0.6 },
+        { "at": "13", "sfx": "tick", "gain": 0.6 },
+        { "at": "parmanu", "sfx": "shimmer", "gain": 0.5 },
+        { "at": "homi", "sfx": "riser", "gain": 0.45 },
+        { "at": "bhabha", "sfx": "hit", "gain": 0.7 }
+      ]
+    },
+    {
+      "id": "crash",
+      "mood": "climax",
+      "hi": "उनका एयर इंडिया विमान आल्प्स के पहाड़ से टकरा गया। कोई नहीं बचा!",
+      "en": "Unka *AIR *INDIA vimaan *ALPS ke pahaad se *TAKRA gaya. Koi *NAHI bacha!",
+      "sfx": [
+        { "at": "start", "sfx": "wind", "gain": 0.5 },
+        { "at": "vimaan", "sfx": "rumble", "gain": 0.6 },
+        { "at": "pahaad", "sfx": "riser", "gain": 0.5 },
+        { "at": "takra", "sfx": "crash", "off": -0.05, "gain": 0.95 },
+        { "at": "nahi", "sfx": "thunder", "gain": 0.6 }
+      ]
+    },
+    {
+      "id": "bomb",
+      "mood": "tense",
+      "hi": "भाभा कह चुके थे, मंज़ूरी मिले तो भारत 18 महीने में एटम बम बना सकता है!",
+      "en": "Bhabha keh chuke the, *MANZOORI mile to Bharat *18 *MAHINE mein *ATOM *BAM bana sakta hai!",
+      "sfx": [
+        { "at": "start", "sfx": "whoosh", "off": -0.15, "gain": 0.6 },
+        { "at": "manzoori", "sfx": "stamp", "gain": 0.6 },
+        { "at": "mahine", "sfx": "tick", "gain": 0.6 },
+        { "at": "atom", "sfx": "riser", "gain": 0.5 },
+        { "at": "bam", "sfx": "boom", "gain": 0.85 }
+      ]
+    },
+    {
+      "id": "theory",
+      "mood": "creepy",
+      "hi": "कुछ लोग इसमें CIA का हाथ मानते हैं, पर पक्का सबूत आज तक नहीं मिला।",
+      "en": "Kuch log isme *CIA ka haath maante hain, par *PAKKA *SABOOT aaj tak nahi mila.",
+      "sfx": [
+        { "at": "start", "sfx": "glitch", "off": -0.1, "gain": 0.5 },
+        { "at": "cia", "sfx": "stamp", "gain": 0.8 },
+        { "at": "pakka", "sfx": "shimmer_dark", "gain": 0.45 },
+        { "at": "mila", "sfx": "hit", "gain": 0.6 }
+      ]
+    },
+    {
+      "id": "records",
+      "mood": "mystery",
+      "hi": "जांच ने कहा, पायलट की गलती। और शास्त्री जी की मौत की जांच के रिकॉर्ड? मिलते ही नहीं!",
+      "en": "Jaanch ne kaha, *PILOT ki *GALTI. Aur Shastri ji ki maut ki jaanch ke *RECORD? *MILTE hi *NAHI!",
+      "sfx": [
+        { "at": "start", "sfx": "whoosh", "off": -0.15, "gain": 0.6 },
+        { "at": "galti", "sfx": "stamp", "gain": 0.7 },
+        { "at": "record", "sfx": "creak", "gain": 0.6 },
+        { "at": "milte", "sfx": "riser", "gain": 0.45 },
+        { "at": "nahi", "sfx": "thunder", "off": -0.05, "gain": 0.75 }
+      ]
+    },
+    {
+      "id": "cta",
+      "mood": "tense",
+      "hi": "13 दिन, 2 मौतें। संयोग या साज़िश? कमेंट में बताओ, और ऐसे ही रहस्यों के लिए इतिहास के भूत को सब्सक्राइब करो!",
+      "en": "*13 din, *2 maut. *SANYOG ya *SAAZISH? Comment mein batao, aur aise hi rahasyon ke liye *ITIHAAS *KE *BHOOT ko *SUBSCRIBE karo!",
+      "sfx": [
+        { "at": "start", "sfx": "heartbeat", "gain": 0.5 },
+        { "at": "sanyog", "sfx": "tick", "gain": 0.5 },
+        { "at": "saazish", "sfx": "ghost", "gain": 0.5 },
+        { "at": "comment", "sfx": "pop", "gain": 0.6 },
+        { "at": "itihaas", "sfx": "whoosh", "off": -0.12, "gain": 0.5 },
+        { "at": "subscribe", "sfx": "pop", "off": 0.13, "gain": 0.8 },
+        { "at": "subscribe", "sfx": "ding", "off": 0.27, "gain": 0.7 }
+      ]
+    }
+  ]
+}

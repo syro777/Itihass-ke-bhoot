@@ -44,7 +44,7 @@ export type BeanLook = {
   skin?: string;
   body?: string; // shirt / coat colour
   legs?: string;
-  hat?: "none" | "ranger" | "turban" | "cap" | "hood" | "beanie" | "officer";
+  hat?: "none" | "ranger" | "turban" | "cap" | "hood" | "beanie" | "officer" | "gandhi" | "hair";
   hatColor?: string;
   coat?: boolean; // long coat skirt
   backpack?: string;
@@ -235,6 +235,24 @@ export const Bean: React.FC<{ position: [number, number, number]; rotY?: number;
                   <meshStandardMaterial color="#d9a93a" metalness={0.6} roughness={0.3} />
                 </mesh>
               </group>
+            )}
+            {look.hat === "gandhi" && (
+              <group position={[0, 0.27, -0.01]} rotation={[-0.12, 0, 0]}>
+                <mesh castShadow>
+                  <boxGeometry args={[0.36, 0.16, 0.62]} />
+                  <meshStandardMaterial color={look.hatColor ?? "#f7f5ee"} roughness={0.9} />
+                </mesh>
+                <mesh position={[0, 0.09, 0]}>
+                  <boxGeometry args={[0.08, 0.05, 0.6]} />
+                  <meshStandardMaterial color={look.hatColor ?? "#f7f5ee"} roughness={0.9} />
+                </mesh>
+              </group>
+            )}
+            {look.hat === "hair" && (
+              <mesh position={[0, 0.05, -0.03]} scale={[1.04, 0.86, 1.06]} castShadow>
+                <sphereGeometry args={[0.35, 18, 10, 0, Math.PI * 2, 0, Math.PI / 2]} />
+                <meshStandardMaterial color={look.hatColor ?? "#1a1410"} roughness={0.6} />
+              </mesh>
             )}
             {look.hat === "hood" && (
               <mesh position={[0, 0.08, -0.04]} castShadow>
