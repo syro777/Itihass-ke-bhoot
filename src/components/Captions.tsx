@@ -104,10 +104,10 @@ export const Captions: React.FC<{ timeline: Timeline; y?: number }> = ({ timelin
   );
 };
 
-export const TopTitle: React.FC<{ line1: string; line2: string; hideFrom?: number }> = ({ line1, line2, hideFrom }) => {
+export const TopTitle: React.FC<{ line1: string; line2: string; hideFrom?: number; startAt?: number }> = ({ line1, line2, hideFrom, startAt = 2 }) => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
-  const p = spring({ frame: frame - 2, fps, config: { damping: 11 } });
+  const p = spring({ frame: frame - startAt, fps, config: { damping: 11 } });
   const hide = hideFrom !== undefined ? spring({ frame: frame - hideFrom, fps, config: { damping: 14 } }) : 0;
   const wob = Math.sin(frame / 18) * 1.2;
   return (

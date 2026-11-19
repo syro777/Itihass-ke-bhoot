@@ -1,0 +1,128 @@
+{
+  "id": "tanot",
+  "style": "3d",
+  "voice": "hi-IN-MadhurNeural",
+  "pitch": "-2Hz",
+  "notes": "Facts: Tanot Mata (Tanot Rai) temple, Jaisalmer district, Rajasthan, close to the Pakistan border. 1965 war: Pakistan Army shelled Tanot; widely repeated figure ~3000 shells toward the temple, ~450 in the premises, none exploded (local lore; MHA/PIB 2022 release: 'many bomb shells ... none detonated by the miracle of Tanot Mata'). Unexploded shells are displayed in the temple museum. After the 1971 Battle of Longewala the Army built a Vijay Stambh in the compound; the BSF manages the temple and its jawans perform the pooja. Shell counts and 'no damage' are framed as 'kehte hain'; the soft-sand explanation is framed as an opinion ('kuch log maante hain'). WATCH: open loop (miracle or something else?) carried to the end; ending question loops back to the hook.",
+  "scenes": [
+    {
+      "id": "hook",
+      "mood": "tense",
+      "hi": "1965 की जंग। कहते हैं, एक मंदिर पर करीब 3000 बम गिरे, और एक भी नहीं फटा!",
+      "en": "*1965 ki jung. Kehte hain, ek *MANDIR par kareeb *3000 bam gire, aur ek bhi *NAHI *PHATA!",
+      "sfx": [
+        { "at": "start", "sfx": "boom", "gain": 0.75 },
+        { "at": "start", "sfx": "rumble", "gain": 0.45 },
+        { "at": "3000", "sfx": "whoosh", "off": -0.2, "gain": 0.6 },
+        { "at": "gire", "sfx": "hit", "gain": 0.85 },
+        { "at": "phata", "sfx": "bell", "gain": 0.6 },
+        { "at": "phata", "sfx": "shimmer", "gain": 0.4 }
+      ]
+    },
+    {
+      "id": "place",
+      "mood": "mystery",
+      "hi": "ये है जैसलमेर में, पाकिस्तान बॉर्डर के पास, तनोट माता का मंदिर।",
+      "en": "Ye hai *JAISALMER mein, Pakistan *BORDER ke paas, *TANOT *MATA ka mandir.",
+      "sfx": [
+        { "at": "start", "sfx": "whoosh", "off": -0.15, "gain": 0.6 },
+        { "at": "start", "sfx": "wind", "gain": 0.4 },
+        { "at": "border", "sfx": "stamp", "gain": 0.7 },
+        { "at": "tanot", "sfx": "bell", "gain": 0.55 },
+        { "at": "mata", "sfx": "shimmer", "gain": 0.4 }
+      ]
+    },
+    {
+      "id": "attack",
+      "mood": "climax",
+      "hi": "जंग में दुश्मन की तोपों ने तनोट पर लगातार गोले बरसाए।",
+      "en": "Jung mein dushman ki *TOPON ne Tanot par *LAGAATAAR gole barsaaye.",
+      "sfx": [
+        { "at": "start", "sfx": "whoosh", "off": -0.15, "gain": 0.6 },
+        { "at": "topon", "sfx": "boom", "gain": 0.85 },
+        { "at": "lagaataar", "sfx": "rumble", "gain": 0.6 },
+        { "at": "gole", "sfx": "whoosh", "gain": 0.55 },
+        { "at": "barsaaye", "sfx": "boom", "gain": 0.75 }
+      ]
+    },
+    {
+      "id": "duds",
+      "mood": "tense",
+      "hi": "कहते हैं, करीब 450 गोले तो सीधे मंदिर के आँगन में गिरे, पर मंदिर को खरोंच तक नहीं आई!",
+      "en": "Kehte hain, kareeb *450 gole to seedhe mandir ke *AANGAN mein gire, par mandir ko *KHARONCH tak nahi aayi!",
+      "sfx": [
+        { "at": "start", "sfx": "whoosh", "off": -0.15, "gain": 0.6 },
+        { "at": "450", "sfx": "stamp", "gain": 0.7 },
+        { "at": "aangan", "sfx": "hit", "gain": 0.85 },
+        { "at": "gire", "sfx": "hit", "gain": 0.7 },
+        { "at": "kharonch", "sfx": "bell", "gain": 0.6 },
+        { "at": "aayi", "sfx": "shimmer", "gain": 0.4 }
+      ]
+    },
+    {
+      "id": "question",
+      "mood": "creepy",
+      "hi": "तो क्या ये सच में माता का चमत्कार था?",
+      "en": "To kya ye *SACH mein Mata ka *CHAMATKAR tha?",
+      "sfx": [
+        { "at": "start", "sfx": "heartbeat", "gain": 0.5 },
+        { "at": "sach", "sfx": "riser", "gain": 0.45 },
+        { "at": "chamatkar", "sfx": "hit", "gain": 0.75 },
+        { "at": "chamatkar", "sfx": "shimmer_dark", "gain": 0.45 }
+      ]
+    },
+    {
+      "id": "science",
+      "mood": "mystery",
+      "hi": "कुछ लोग मानते हैं, रेगिस्तान की नरम रेत की वजह से गोले फटे ही नहीं।",
+      "en": "Kuch log maante hain, *REGISTAN ki *NARAM *RET ki wajah se gole phate hi nahi.",
+      "sfx": [
+        { "at": "start", "sfx": "whoosh", "off": -0.15, "gain": 0.6 },
+        { "at": "registan", "sfx": "wind", "gain": 0.5 },
+        { "at": "ret", "sfx": "hit", "gain": 0.6 },
+        { "at": "phate", "sfx": "tick", "gain": 0.5 }
+      ]
+    },
+    {
+      "id": "proof",
+      "mood": "climax",
+      "hi": "पर वो बिना फटे गोले, आज भी मंदिर के म्यूज़ियम में रखे हैं!",
+      "en": "Par wo *BINA *PHATE gole, aaj bhi mandir ke *MUSEUM mein rakhe hain!",
+      "sfx": [
+        { "at": "start", "sfx": "whoosh", "off": -0.15, "gain": 0.6 },
+        { "at": "bina", "sfx": "riser", "gain": 0.5 },
+        { "at": "museum", "sfx": "stamp", "gain": 0.8 },
+        { "at": "museum", "sfx": "shimmer", "gain": 0.45 }
+      ]
+    },
+    {
+      "id": "bsf",
+      "mood": "royal",
+      "hi": "1971 में लोंगेवाला की जीत के बाद, यहीं विजय स्तंभ बना। और आज यहाँ पूजा BSF के जवान करते हैं।",
+      "en": "*1971 mein *LONGEWALA ki jeet ke baad, yahin *VIJAY *STAMBH bana. Aur aaj yahan pooja *BSF ke jawan karte hain.",
+      "sfx": [
+        { "at": "start", "sfx": "whoosh", "off": -0.15, "gain": 0.6 },
+        { "at": "1971", "sfx": "stamp", "gain": 0.7 },
+        { "at": "longewala", "sfx": "boom", "gain": 0.6 },
+        { "at": "vijay", "sfx": "fanfare", "gain": 0.6 },
+        { "at": "pooja", "sfx": "bell", "gain": 0.55 },
+        { "at": "bsf", "sfx": "hit", "gain": 0.6 }
+      ]
+    },
+    {
+      "id": "cta",
+      "mood": "tense",
+      "hi": "चमत्कार या साइंस? कमेंट में बताओ, और ऐसे ही रहस्यों के लिए इतिहास के भूत को सब्सक्राइब करो!",
+      "en": "*CHAMATKAR ya *SCIENCE? Comment mein batao, aur aise hi rahasyon ke liye *ITIHAAS *KE *BHOOT ko *SUBSCRIBE karo!",
+      "sfx": [
+        { "at": "start", "sfx": "heartbeat", "gain": 0.5 },
+        { "at": "chamatkar", "sfx": "bell", "gain": 0.5 },
+        { "at": "science", "sfx": "glitch", "gain": 0.4 },
+        { "at": "comment", "sfx": "pop", "gain": 0.6 },
+        { "at": "itihaas", "sfx": "whoosh", "off": -0.12, "gain": 0.5 },
+        { "at": "subscribe", "sfx": "pop", "off": 0.13, "gain": 0.8 },
+        { "at": "subscribe", "sfx": "ding", "off": 0.27, "gain": 0.7 }
+      ]
+    }
+  ]
+}

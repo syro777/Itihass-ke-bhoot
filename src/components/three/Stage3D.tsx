@@ -12,10 +12,11 @@ export const Stage3D: React.FC<{
   tint?: string;
   tintOp?: number;
   exposure?: number;
-}> = ({ children, overlay, flashOp = 0, tint, tintOp = 0, exposure = 1.15 }) => {
+  entryFlash?: boolean;
+}> = ({ children, overlay, flashOp = 0, tint, tintOp = 0, exposure = 1.15, entryFlash = true }) => {
   const f = useCurrentFrame();
   const { width, height } = useVideoConfig();
-  const entry = interpolate(f, [0, 6], [0.45, 0], { extrapolateRight: "clamp" });
+  const entry = entryFlash ? interpolate(f, [0, 6], [0.45, 0], { extrapolateRight: "clamp" }) : 0;
   return (
     <AbsoluteFill style={{ backgroundColor: "#000" }}>
       <ThreeCanvas width={width} height={height} shadows gl={{ toneMappingExposure: exposure }} camera={{ fov: 55, near: 0.1, far: 3000 }}>

@@ -180,17 +180,18 @@ export const VoteButtons: React.FC<{ y: number; at: number; left: string; right:
   const b = pop(frame, at + 6, 30, 9);
   const v = pop(frame, at + 12, 30, 7);
   const pulse = 1 + 0.04 * Math.sin((frame - at) / 4);
+  const fit = (t: string, base: number) => Math.min(base, Math.floor(350 / (t.length * 0.72)));
   return (
     <g>
       <g transform={`translate(250,${y}) scale(${a * pulse})`}>
         <rect x={-200} y={-80} width={400} height={160} rx={36} fill="#e62e2e" stroke="#ffffff" strokeWidth={8} />
-        <text y={left.length > 5 ? 24 : 30} textAnchor="middle" fontFamily={POP} fontWeight={900} fontSize={left.length > 5 ? 66 : 84} fill="#ffffff">
+        <text y={left.length > 5 ? 22 : 30} textAnchor="middle" fontFamily={POP} fontWeight={900} fontSize={fit(left, left.length > 5 ? 66 : 84)} fill="#ffffff">
           {left}
         </text>
       </g>
       <g transform={`translate(830,${y}) scale(${b * pulse})`}>
         <rect x={-200} y={-80} width={400} height={160} rx={36} fill="#2b6fe6" stroke="#ffffff" strokeWidth={8} />
-        <text y={right.length > 5 ? 24 : 30} textAnchor="middle" fontFamily={POP} fontWeight={900} fontSize={right.length > 5 ? 66 : 76} fill="#ffffff">
+        <text y={right.length > 5 ? 22 : 30} textAnchor="middle" fontFamily={POP} fontWeight={900} fontSize={fit(right, right.length > 5 ? 66 : 76)} fill="#ffffff">
           {right}
         </text>
       </g>
