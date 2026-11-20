@@ -11,6 +11,7 @@ import { Gumnaami, totalFrames as gumnaamiFrames } from "./episodes/gumnaami/Gum
 import { Tanot, totalFrames as tanotFrames } from "./episodes/tanot/Tanot";
 import { ShastriBhabha, totalFrames as shastriBhabhaFrames } from "./episodes/shastri-bhabha/ShastriBhabha";
 import { Bhootiya5, Bhootiya5Thumb, totalFrames as bhootiya5Frames } from "./episodes/bhootiya-5/Bhootiya5";
+import { Jatinga, totalFrames as jatingaFrames } from "./episodes/jatinga/Jatinga";
 
 export const RemotionRoot: React.FC = () => {
   return (
@@ -23,6 +24,7 @@ export const RemotionRoot: React.FC = () => {
       <Composition id="Gumnaami" component={Gumnaami} durationInFrames={gumnaamiFrames} fps={FPS} width={W} height={H} />
       <Composition id="Tanot" component={Tanot} durationInFrames={tanotFrames} fps={FPS} width={W} height={H} />
       <Composition id="ShastriBhabha" component={ShastriBhabha} durationInFrames={shastriBhabhaFrames} fps={FPS} width={W} height={H} />
+      <Composition id="Jatinga" component={Jatinga} durationInFrames={jatingaFrames} fps={FPS} width={W} height={H} />
       <Composition id="Bhootiya5" component={Bhootiya5} durationInFrames={bhootiya5Frames} fps={FPS} width={1920} height={1080} />
       <Still id="Bhootiya5Thumb" component={Bhootiya5Thumb} width={1280} height={720} />
       <Still id="LogoAvatar" component={LogoAvatar} width={800} height={800} />

@@ -1,0 +1,132 @@
+{
+  "id": "jatinga",
+  "style": "3d",
+  "voice": "hi-IN-MadhurNeural",
+  "pitch": "-2Hz",
+  "notes": "Facts: Jatinga village, Dima Hasao district, Assam (~9 km from Haflong). Phenomenon roughly Aug-Oct (some sources Sep-Nov) on dark moonless nights with dense fog/drizzle: birds fly toward village lights and come down. E. P. Gee publicised it in the 1960s. Locals long believed evil spirits were behind it ('kehte hain'); dazed birds were killed with bamboo poles. Ornithologist Anwaruddin Choudhury: most are juvenile, resident/local birds disturbed by high winds; lights attract them. Forest department now posts guards / floodlight tower; awareness reduced killing. Not framed as 'suicide' (that is the myth the payoff corrects). WATCH: open loop (do they choose death?) answered by science; ending question loops to the hook.",
+  "scenes": [
+    {
+      "id": "hook",
+      "mood": "tense",
+      "hi": "असम का एक गाँव, जहाँ हर साल पंछी जैसे खुद मौत की तरफ उड़ते हैं!",
+      "en": "*ASSAM ka ek gaon, jahan har saal *PANCHHI jaise khud *MAUT ki taraf udte hain!",
+      "sfx": [
+        { "at": "start", "sfx": "boom", "gain": 0.7 },
+        { "at": "start", "sfx": "wind", "gain": 0.45 },
+        { "at": "panchhi", "sfx": "whoosh", "gain": 0.6 },
+        { "at": "maut", "sfx": "hit", "gain": 0.85 }
+      ]
+    },
+    {
+      "id": "place",
+      "mood": "mystery",
+      "hi": "ये है जतिंगा, दिमा हसाओ ज़िले की पहाड़ियों में।",
+      "en": "Ye hai *JATINGA, Dima Hasao zile ki *PAHAADIYON mein.",
+      "sfx": [
+        { "at": "start", "sfx": "whoosh", "off": -0.15, "gain": 0.6 },
+        { "at": "jatinga", "sfx": "stamp", "gain": 0.6 },
+        { "at": "pahaadiyon", "sfx": "wind", "gain": 0.45 }
+      ]
+    },
+    {
+      "id": "when",
+      "mood": "creepy",
+      "hi": "अगस्त से अक्टूबर के बीच, बिना चाँद वाली, कोहरे भरी रातों में।",
+      "en": "*AUGUST se *OCTOBER ke beech, bina *CHAAND wali, *KOHRE bhari raaton mein.",
+      "sfx": [
+        { "at": "start", "sfx": "tick", "gain": 0.5 },
+        { "at": "chaand", "sfx": "shimmer_dark", "gain": 0.45 },
+        { "at": "kohre", "sfx": "wind", "gain": 0.55 }
+      ]
+    },
+    {
+      "id": "birds",
+      "mood": "climax",
+      "hi": "झुंड के झुंड पंछी अचानक गाँव की रोशनी की तरफ उड़ते हैं, और ज़मीन पर गिर पड़ते हैं!",
+      "en": "*JHUND ke jhund panchhi achanak gaon ki *ROSHNI ki taraf udte hain, aur zameen par *GIR padte hain!",
+      "sfx": [
+        { "at": "start", "sfx": "riser", "gain": 0.45 },
+        { "at": "jhund", "sfx": "whoosh", "gain": 0.6 },
+        { "at": "roshni", "sfx": "shimmer", "gain": 0.45 },
+        { "at": "gir", "sfx": "hit", "gain": 0.85 }
+      ]
+    },
+    {
+      "id": "spirits",
+      "mood": "creepy",
+      "hi": "कहते हैं, गाँव वाले इसे बुरी आत्माओं का काम मानते थे।",
+      "en": "Kehte hain, gaon waale ise *BURI *AATMAON ka kaam maante the.",
+      "sfx": [
+        { "at": "start", "sfx": "ghost", "gain": 0.5 },
+        { "at": "aatmaon", "sfx": "glitch", "gain": 0.45 }
+      ]
+    },
+    {
+      "id": "question",
+      "mood": "creepy",
+      "hi": "तो क्या ये पंछी सच में खुद मरने आते हैं?",
+      "en": "To kya ye panchhi *SACH mein khud *MARNE aate hain?",
+      "sfx": [
+        { "at": "start", "sfx": "heartbeat", "gain": 0.5 },
+        { "at": "sach", "sfx": "riser", "gain": 0.45 },
+        { "at": "marne", "sfx": "hit", "gain": 0.7 }
+      ]
+    },
+    {
+      "id": "science",
+      "mood": "mystery",
+      "hi": "वैज्ञानिक कहते हैं, नहीं! कोहरा और तेज़ हवा इन्हें भटका देती है।",
+      "en": "*VAIGYANIK kehte hain, *NAHI! Kohra aur tez *HAWA inhe *BHATKA deti hai.",
+      "sfx": [
+        { "at": "start", "sfx": "whoosh", "off": -0.15, "gain": 0.6 },
+        { "at": "nahi", "sfx": "stamp", "gain": 0.75 },
+        { "at": "hawa", "sfx": "wind", "gain": 0.6 }
+      ]
+    },
+    {
+      "id": "light",
+      "mood": "tense",
+      "hi": "और अँधेरे में गाँव की रोशनी, इन्हें अपनी तरफ खींच लेती है।",
+      "en": "Aur andhere mein gaon ki *ROSHNI, inhe apni taraf *KHEENCH leti hai.",
+      "sfx": [
+        { "at": "roshni", "sfx": "shimmer", "gain": 0.5 },
+        { "at": "kheench", "sfx": "riser", "gain": 0.45 }
+      ]
+    },
+    {
+      "id": "young",
+      "mood": "calm",
+      "hi": "ज़्यादातर ये छोटे, स्थानीय पंछी होते हैं।",
+      "en": "Zyadatar ye *CHHOTE, *STHANIYA panchhi hote hain.",
+      "sfx": [
+        { "at": "chhote", "sfx": "chime", "gain": 0.4 }
+      ]
+    },
+    {
+      "id": "today",
+      "mood": "sad",
+      "hi": "पहले गाँव वाले इन्हें बाँस के डंडों से मार देते थे। आज वन विभाग पहरा देता है।",
+      "en": "Pehle gaon waale inhe *BAANS ke dandon se maar dete the. Aaj *VAN *VIBHAAG pehra deta hai.",
+      "sfx": [
+        { "at": "start", "sfx": "whoosh", "off": -0.15, "gain": 0.55 },
+        { "at": "baans", "sfx": "hit", "gain": 0.6 },
+        { "at": "van", "sfx": "chime", "gain": 0.45 }
+      ]
+    },
+    {
+      "id": "cta",
+      "mood": "tense",
+      "hi": "तो जतिंगा: भूतों का साया, या कुदरत की उलझन? कमेंट में बताओ, और ऐसे ही रहस्यों के लिए इतिहास के भूत को सब्सक्राइब करो!",
+      "en": "To Jatinga: *BHOOTON ka saaya, ya *KUDRAT ki uljhan? Comment mein batao, aur aise hi rahasyon ke liye *ITIHAAS *KE *BHOOT ko *SUBSCRIBE karo!",
+      "sfx": [
+        { "at": "start", "sfx": "heartbeat", "gain": 0.5 },
+        { "at": "bhooton", "sfx": "ghost", "gain": 0.45 },
+        { "at": "kudrat", "sfx": "chime", "gain": 0.4 },
+        { "at": "comment", "sfx": "pop", "gain": 0.6 },
+        { "at": "itihaas", "sfx": "whoosh", "off": -0.12, "gain": 0.5 },
+        { "at": "subscribe", "sfx": "pop", "off": 0.13, "gain": 0.8 },
+        { "at": "subscribe", "sfx": "ding", "off": 0.27, "gain": 0.7 }
+      ]
+    }
+  ]
+}
