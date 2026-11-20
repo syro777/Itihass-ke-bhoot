@@ -1,0 +1,280 @@
+{
+  "id": "shivaji-agra-escape",
+  "style": "3d",
+  "voice": "hi-IN-MadhurNeural",
+  "pitch": "-2Hz",
+  "notes": "Facts: After the Treaty of Purandar (1665) Shivaji went to Aurangzeb's court at Agra (May 1666); he was made to stand among lower-ranking nobles, left angrily and was placed under house arrest. He feigned illness and sent out large baskets of sweets daily as charity; guards checked them at first, then stopped. Shivaji and his son Sambhaji escaped hidden in the baskets (Britannica: 17 Aug 1666; some sources 19 Aug, so no date is stated). His half-brother Hiroji Farzand lay on his bed under a quilt. Shivaji returned to Maharashtra in the disguise of a sadhu; crowned Chhatrapati at Raigad in 1674. Respectful portrayal of all historical figures. WATCH: hook = how did a king escape the strongest emperor's prison in a sweet basket? Payoff = the plan; ending = coronation + comment question.",
+  "scenes": [
+    {
+      "id": "hook",
+      "mood": "tense",
+      "hi": "1666, हिंदुस्तान के सबसे ताकतवर बादशाह की कैद से, एक राजा मिठाई की टोकरी में निकल भागा!",
+      "en": "*1666, Hindustan ke sabse taakatwar *BAADSHAH ki *QAID se, ek raja *MITHAI ki *TOKRI mein nikal bhaaga!",
+      "sfx": [
+        {
+          "at": "start",
+          "sfx": "boom",
+          "gain": 0.7
+        },
+        {
+          "at": "qaid",
+          "sfx": "stamp",
+          "gain": 0.7
+        },
+        {
+          "at": "mithai",
+          "sfx": "pop",
+          "gain": 0.6
+        },
+        {
+          "at": "tokri",
+          "sfx": "hit",
+          "gain": 0.85
+        }
+      ]
+    },
+    {
+      "id": "who",
+      "mood": "royal",
+      "hi": "वो थे, शिवाजी महाराज। और बादशाह था, औरंगज़ेब।",
+      "en": "Wo the, *SHIVAJI *MAHARAJ. Aur baadshah tha, *AURANGZEB.",
+      "sfx": [
+        {
+          "at": "start",
+          "sfx": "whoosh",
+          "off": -0.15,
+          "gain": 0.6
+        },
+        {
+          "at": "shivaji",
+          "sfx": "fanfare",
+          "gain": 0.55
+        },
+        {
+          "at": "aurangzeb",
+          "sfx": "thunder",
+          "gain": 0.55
+        }
+      ]
+    },
+    {
+      "id": "durbar",
+      "mood": "tense",
+      "hi": "आगरा के दरबार में अपमान हुआ, तो शिवाजी दरबार छोड़कर निकल गए। नतीजा: नज़रबंदी!",
+      "en": "*AGRA ke darbaar mein *APMAAN hua, to Shivaji darbaar chhodkar nikal gaye. Nateeja: *NAZARBANDI!",
+      "sfx": [
+        {
+          "at": "start",
+          "sfx": "whoosh",
+          "off": -0.15,
+          "gain": 0.6
+        },
+        {
+          "at": "apmaan",
+          "sfx": "hit",
+          "gain": 0.75
+        },
+        {
+          "at": "chhodkar",
+          "sfx": "footsteps",
+          "gain": 0.5
+        },
+        {
+          "at": "nazarbandi",
+          "sfx": "stamp",
+          "gain": 0.85
+        }
+      ]
+    },
+    {
+      "id": "plan",
+      "mood": "mystery",
+      "hi": "तब शिवाजी ने बीमारी का बहाना किया, और रोज़ दान के लिए मिठाई की टोकरियाँ बाहर भेजने लगे।",
+      "en": "Tab Shivaji ne *BIMAARI ka bahaana kiya, aur roz *DAAN ke liye *MITHAI ki tokriyan bahar bhejne lage.",
+      "sfx": [
+        {
+          "at": "start",
+          "sfx": "tick",
+          "gain": 0.45
+        },
+        {
+          "at": "bimaari",
+          "sfx": "shimmer_dark",
+          "gain": 0.4
+        },
+        {
+          "at": "mithai",
+          "sfx": "chime",
+          "gain": 0.45
+        }
+      ]
+    },
+    {
+      "id": "check",
+      "mood": "tense",
+      "hi": "पहले पहरेदार हर टोकरी जाँचते थे। कुछ दिनों बाद, जाँचना बंद हो गया।",
+      "en": "Pehle pehredaar har tokri *JAANCHTE the. Kuch dinon baad, jaanchna *BAND ho gaya.",
+      "sfx": [
+        {
+          "at": "start",
+          "sfx": "footsteps",
+          "gain": 0.45
+        },
+        {
+          "at": "jaanchte",
+          "sfx": "creak",
+          "gain": 0.5
+        },
+        {
+          "at": "band",
+          "sfx": "stamp",
+          "gain": 0.75
+        }
+      ]
+    },
+    {
+      "id": "escape",
+      "mood": "climax",
+      "hi": "फिर एक दिन, शिवाजी और नन्हे संभाजी, उन्हीं टोकरियों में छिपकर बाहर निकल गए!",
+      "en": "Phir ek din, Shivaji aur nanhe *SAMBHAJI, unhi *TOKRIYON mein *CHHIPKAR bahar nikal gaye!",
+      "sfx": [
+        {
+          "at": "start",
+          "sfx": "heartbeat",
+          "gain": 0.55
+        },
+        {
+          "at": "tokriyon",
+          "sfx": "riser",
+          "gain": 0.5
+        },
+        {
+          "at": "chhipkar",
+          "sfx": "whoosh",
+          "gain": 0.6
+        },
+        {
+          "at": "gaye",
+          "sfx": "hit",
+          "gain": 0.8
+        }
+      ]
+    },
+    {
+      "id": "decoy",
+      "mood": "mystery",
+      "hi": "पीछे बिस्तर पर, सौतेले भाई हिरोजी चादर ओढ़कर लेटे रहे।",
+      "en": "Peechhe bistar par, sautele bhai *HIROJI *CHAADAR odhkar lete rahe.",
+      "sfx": [
+        {
+          "at": "start",
+          "sfx": "whoosh",
+          "off": -0.15,
+          "gain": 0.55
+        },
+        {
+          "at": "hiroji",
+          "sfx": "shimmer",
+          "gain": 0.4
+        },
+        {
+          "at": "chaadar",
+          "sfx": "creak",
+          "gain": 0.45
+        }
+      ]
+    },
+    {
+      "id": "sadhu",
+      "mood": "royal",
+      "hi": "फिर साधु के भेस में, शिवाजी सुरक्षित महाराष्ट्र लौट आए।",
+      "en": "Phir *SADHU ke bhes mein, Shivaji *SURAKSHIT Maharashtra laut aaye.",
+      "sfx": [
+        {
+          "at": "start",
+          "sfx": "wind",
+          "gain": 0.4
+        },
+        {
+          "at": "sadhu",
+          "sfx": "bell",
+          "gain": 0.45
+        },
+        {
+          "at": "surakshit",
+          "sfx": "fanfare",
+          "gain": 0.5
+        }
+      ]
+    },
+    {
+      "id": "crown",
+      "mood": "climax",
+      "hi": "आठ साल बाद, रायगढ़ पर उनका राज्याभिषेक हुआ: छत्रपति शिवाजी महाराज!",
+      "en": "Aath saal baad, *RAIGAD par unka rajyabhishek hua: *CHHATRAPATI Shivaji Maharaj!",
+      "sfx": [
+        {
+          "at": "start",
+          "sfx": "riser",
+          "gain": 0.45
+        },
+        {
+          "at": "raigad",
+          "sfx": "boom",
+          "gain": 0.6
+        },
+        {
+          "at": "chhatrapati",
+          "sfx": "fanfare",
+          "gain": 0.8
+        },
+        {
+          "at": "chhatrapati",
+          "sfx": "bell",
+          "gain": 0.5
+        }
+      ]
+    },
+    {
+      "id": "cta",
+      "mood": "royal",
+      "hi": "ये कहानी पहले पता थी? कमेंट में बताओ, और ऐसे ही रहस्यों के लिए इतिहास के भूत को सब्सक्राइब करो!",
+      "en": "Ye kahani pehle *PATA thi? Comment mein batao, aur aise hi rahasyon ke liye *ITIHAAS *KE *BHOOT ko *SUBSCRIBE karo!",
+      "sfx": [
+        {
+          "at": "start",
+          "sfx": "heartbeat",
+          "gain": 0.45
+        },
+        {
+          "at": "pata",
+          "sfx": "pop",
+          "gain": 0.5
+        },
+        {
+          "at": "comment",
+          "sfx": "pop",
+          "gain": 0.6
+        },
+        {
+          "at": "itihaas",
+          "sfx": "whoosh",
+          "off": -0.12,
+          "gain": 0.5
+        },
+        {
+          "at": "subscribe",
+          "sfx": "pop",
+          "off": 0.13,
+          "gain": 0.8
+        },
+        {
+          "at": "subscribe",
+          "sfx": "ding",
+          "off": 0.27,
+          "gain": 0.7
+        }
+      ]
+    }
+  ]
+}
