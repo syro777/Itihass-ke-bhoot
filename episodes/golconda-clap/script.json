@@ -1,0 +1,225 @@
+{
+ "id": "golconda-clap",
+ "style": "3d",
+ "voice": "hi-IN-MadhurNeural",
+ "pitch": "-2Hz",
+ "notes": "Facts: Golconda Fort, Hyderabad; a clap under the dome of the Fateh Darwaza is reported to be heard at the Bala Hisar pavilion ~1 km away at the top; said ('kehte hain') to have served as an alarm; gate has iron spikes against elephants; Qutb Shahi Golconda was famous for its diamond trade; Aurangzeb took it in 1687 after a months-long siege.",
+ "scenes": [
+  {
+   "id": "hook",
+   "mood": "tense",
+   "hi": "इस किले के दरवाज़े पर ताली बजाओ, और एक किलोमीटर दूर, पहाड़ी की चोटी पर आवाज़ सुनाई देती है!",
+   "en": "Is kile ke darwaze par *TAALI bajao, aur ek *KILOMETER door, pahaadi ki *CHOTI par aawaaz sunaai deti hai!",
+   "sfx": [
+    {
+     "at": "start",
+     "sfx": "boom",
+     "gain": 0.6
+    },
+    {
+     "at": "taali",
+     "sfx": "hit",
+     "gain": 0.9
+    },
+    {
+     "at": "kilometer",
+     "sfx": "riser",
+     "gain": 0.45
+    },
+    {
+     "at": "choti",
+     "sfx": "chime",
+     "gain": 0.6
+    }
+   ]
+  },
+  {
+   "id": "place",
+   "mood": "royal",
+   "hi": "ये है हैदराबाद का गोलकोंडा किला।",
+   "en": "Ye hai Hyderabad ka *GOLCONDA kila.",
+   "sfx": [
+    {
+     "at": "start",
+     "sfx": "whoosh",
+     "off": -0.12,
+     "gain": 0.5
+    },
+    {
+     "at": "golconda",
+     "sfx": "stamp",
+     "gain": 0.65
+    }
+   ]
+  },
+  {
+   "id": "dome",
+   "mood": "mystery",
+   "hi": "फतेह दरवाज़े के गुंबद के नीचे ताली बजाओ, तो आवाज़ ऊपर बाला हिसार तक पहुँचती है।",
+   "en": "*FATEH darwaze ke *GUMBAD ke neeche taali bajao, to aawaaz upar *BALA *HISAR tak pahunchti hai.",
+   "sfx": [
+    {
+     "at": "taali",
+     "sfx": "hit",
+     "gain": 0.85
+    },
+    {
+     "at": "bala",
+     "sfx": "shimmer",
+     "gain": 0.5
+    }
+   ]
+  },
+  {
+   "id": "alarm",
+   "mood": "tense",
+   "hi": "कहते हैं, ये था किले का अलार्म सिस्टम!",
+   "en": "Kehte hain, ye tha kile ka *ALARM *SYSTEM!",
+   "sfx": [
+    {
+     "at": "alarm",
+     "sfx": "bell",
+     "gain": 0.6
+    }
+   ]
+  },
+  {
+   "id": "enemy",
+   "mood": "climax",
+   "hi": "दुश्मन दरवाज़े पर आता, पहरेदार ताली बजाता, और ऊपर सबको खबर हो जाती।",
+   "en": "*DUSHMAN darwaze par aata, pehredaar taali bajaata, aur upar sabko *KHABAR ho jaati.",
+   "sfx": [
+    {
+     "at": "dushman",
+     "sfx": "swords",
+     "gain": 0.5
+    },
+    {
+     "at": "taali",
+     "sfx": "hit",
+     "gain": 0.85
+    },
+    {
+     "at": "khabar",
+     "sfx": "bell",
+     "gain": 0.55
+    }
+   ]
+  },
+  {
+   "id": "spikes",
+   "mood": "tense",
+   "hi": "दरवाज़े पर नुकीले कीले भी हैं, ताकि हाथी उसे तोड़ न सकें।",
+   "en": "Darwaze par *NUKEELE keele bhi hain, taaki *HAATHI use tod na sakein.",
+   "sfx": [
+    {
+     "at": "start",
+     "sfx": "whoosh",
+     "off": -0.12,
+     "gain": 0.5
+    },
+    {
+     "at": "nukeele",
+     "sfx": "hit",
+     "gain": 0.65
+    },
+    {
+     "at": "haathi",
+     "sfx": "hit",
+     "gain": 0.55
+    }
+   ]
+  },
+  {
+   "id": "diamonds",
+   "mood": "royal",
+   "hi": "कुतुब शाही दौर में ये किला दुनिया के मशहूर हीरों का बाज़ार था।",
+   "en": "*QUTB *SHAHI daur mein ye kila duniya ke mashhoor *HEERON ka bazaar tha.",
+   "sfx": [
+    {
+     "at": "heeron",
+     "sfx": "shimmer",
+     "gain": 0.6
+    }
+   ]
+  },
+  {
+   "id": "siege",
+   "mood": "climax",
+   "hi": "और 1687 में, औरंगज़ेब ने महीनों की घेराबंदी के बाद इसे जीता।",
+   "en": "Aur *1687 mein, *AURANGZEB ne maheenon ki gheraabandi ke baad ise jeeta.",
+   "sfx": [
+    {
+     "at": "start",
+     "sfx": "whoosh",
+     "off": -0.12,
+     "gain": 0.5
+    },
+    {
+     "at": "1687",
+     "sfx": "riser",
+     "gain": 0.65
+    },
+    {
+     "at": "aurangzeb",
+     "sfx": "boom",
+     "gain": 0.55
+    }
+   ]
+  },
+  {
+   "id": "today",
+   "mood": "calm",
+   "hi": "आज भी सैलानी वहाँ ताली बजाकर ये जादू आज़माते हैं।",
+   "en": "Aaj bhi sailaani wahan *TAALI bajaakar ye *JAADU aazmaate hain.",
+   "sfx": [
+    {
+     "at": "taali",
+     "sfx": "hit",
+     "gain": 0.7
+    }
+   ]
+  },
+  {
+   "id": "cta",
+   "mood": "tense",
+   "hi": "ये इंजीनियरिंग थी, या जादू? कमेंट में बताओ, और ऐसे ही रहस्यों के लिए इतिहास के भूत को सब्सक्राइब करो!",
+   "en": "Ye *ENGINEERING thi, ya *JAADU? Comment mein batao, aur aise hi rahasyon ke liye *ITIHAAS *KE *BHOOT ko *SUBSCRIBE karo!",
+   "sfx": [
+    {
+     "at": "start",
+     "sfx": "heartbeat",
+     "gain": 0.45
+    },
+    {
+     "at": "jaadu",
+     "sfx": "shimmer",
+     "gain": 0.45
+    },
+    {
+     "at": "comment",
+     "sfx": "pop",
+     "gain": 0.6
+    },
+    {
+     "at": "itihaas",
+     "sfx": "whoosh",
+     "off": -0.12,
+     "gain": 0.5
+    },
+    {
+     "at": "subscribe",
+     "sfx": "pop",
+     "off": 0.13,
+     "gain": 0.8
+    },
+    {
+     "at": "subscribe",
+     "sfx": "ding",
+     "off": 0.27,
+     "gain": 0.7
+    }
+   ]
+  }
+ ]
+}

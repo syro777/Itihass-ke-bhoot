@@ -1,0 +1,263 @@
+{
+ "id": "flight-19",
+ "style": "3d",
+ "voice": "hi-IN-MadhurNeural",
+ "pitch": "-2Hz",
+ "notes": "Facts: 5 Dec 1945, five TBM Avengers (Flight 19) left NAS Fort Lauderdale on a training flight, led by Lt Charles Taylor, who reported his compasses were not working; they became lost over the sea and ran out of fuel; a PBM Mariner search plane with 13 men was also lost (probably caught fire); 27 men in total; Flight 19 wreckage never found. Navy inquiry: navigation error / disorientation and bad weather. The case fuelled the Bermuda Triangle legend.",
+ "scenes": [
+  {
+   "id": "hook",
+   "mood": "tense",
+   "hi": "5 जंगी विमान उड़े, और फिर कभी नहीं लौटे! जो उन्हें ढूँढने गया, वो भी गायब!",
+   "en": "*5 jangi *VIMAAN ude, aur phir kabhi *NAHI laute! Jo unhe dhoondhne gaya, wo bhi *GAAYAB!",
+   "sfx": [
+    {
+     "at": "start",
+     "sfx": "boom",
+     "gain": 0.7
+    },
+    {
+     "at": "start",
+     "sfx": "wind",
+     "gain": 0.3
+    },
+    {
+     "at": "5",
+     "sfx": "hit",
+     "gain": 0.65
+    },
+    {
+     "at": "gaayab",
+     "sfx": "hit",
+     "gain": 0.55
+    }
+   ]
+  },
+  {
+   "id": "date",
+   "mood": "mystery",
+   "hi": "दिसंबर 1945, अमेरिका का फ्लोरिडा।",
+   "en": "*DECEMBER_1945, America ka *FLORIDA.",
+   "sfx": [
+    {
+     "at": "start",
+     "sfx": "whoosh",
+     "off": -0.12,
+     "gain": 0.5
+    },
+    {
+     "at": "december_1945",
+     "sfx": "stamp",
+     "gain": 0.65
+    },
+    {
+     "at": "florida",
+     "sfx": "shimmer",
+     "gain": 0.55
+    }
+   ]
+  },
+  {
+   "id": "takeoff",
+   "mood": "calm",
+   "hi": "फ्लाइट 19 के पाँच बॉम्बर, एक रूटीन ट्रेनिंग उड़ान पर निकले।",
+   "en": "Flight *19 ke paanch bomber, ek routine *TRAINING udaan par nikle.",
+   "sfx": [
+    {
+     "at": "start",
+     "sfx": "whoosh",
+     "off": -0.12,
+     "gain": 0.5
+    },
+    {
+     "at": "19",
+     "sfx": "hit",
+     "gain": 0.65
+    },
+    {
+     "at": "training",
+     "sfx": "chime",
+     "gain": 0.55
+    }
+   ]
+  },
+  {
+   "id": "compass",
+   "mood": "tense",
+   "hi": "फिर लीडर का रेडियो संदेश आया: मेरे कंपास काम नहीं कर रहे!",
+   "en": "Phir leader ka radio sandesh aaya: mere *COMPASS kaam *NAHI kar rahe!",
+   "sfx": [
+    {
+     "at": "start",
+     "sfx": "glitch",
+     "gain": 0.45
+    },
+    {
+     "at": "compass",
+     "sfx": "tick",
+     "gain": 0.6
+    },
+    {
+     "at": "nahi",
+     "sfx": "hit",
+     "gain": 0.7
+    }
+   ]
+  },
+  {
+   "id": "lost",
+   "mood": "creepy",
+   "hi": "विमान समंदर के ऊपर भटकते रहे, और ईंधन खत्म होने लगा।",
+   "en": "Vimaan samandar ke upar *BHATAKTE rahe, aur *IDHAN khatm hone laga.",
+   "sfx": [
+    {
+     "at": "start",
+     "sfx": "whoosh",
+     "off": -0.12,
+     "gain": 0.5
+    },
+    {
+     "at": "bhatakte",
+     "sfx": "stamp",
+     "gain": 0.65
+    },
+    {
+     "at": "idhan",
+     "sfx": "ghost",
+     "gain": 0.55
+    }
+   ]
+  },
+  {
+   "id": "rescue",
+   "mood": "climax",
+   "hi": "उन्हें ढूँढने निकला बचाव विमान भी, तेरह लोगों के साथ गायब हो गया!",
+   "en": "Unhe dhoondhne nikla *BACHAAV vimaan bhi, *TERAH logon ke saath gaayab ho gaya!",
+   "sfx": [
+    {
+     "at": "start",
+     "sfx": "rumble",
+     "gain": 0.5
+    },
+    {
+     "at": "terah",
+     "sfx": "boom",
+     "gain": 0.7
+    }
+   ]
+  },
+  {
+   "id": "total",
+   "mood": "sad",
+   "hi": "कुल सत्ताईस लोग, और आज तक कोई मलबा नहीं मिला।",
+   "en": "Kul *SATTAAIS log, aur aaj tak koi *MALBA nahi mila.",
+   "sfx": [
+    {
+     "at": "start",
+     "sfx": "whoosh",
+     "off": -0.12,
+     "gain": 0.5
+    },
+    {
+     "at": "sattaais",
+     "sfx": "ghost",
+     "gain": 0.65
+    },
+    {
+     "at": "malba",
+     "sfx": "bell",
+     "gain": 0.55
+    }
+   ]
+  },
+  {
+   "id": "legend",
+   "mood": "creepy",
+   "hi": "यहीं से जन्म हुआ बरमूडा ट्रायंगल की दहशत का!",
+   "en": "Yahin se janm hua *BERMUDA *TRIANGLE ki dehshat ka!",
+   "sfx": [
+    {
+     "at": "start",
+     "sfx": "whoosh",
+     "off": -0.12,
+     "gain": 0.5
+    },
+    {
+     "at": "bermuda",
+     "sfx": "riser",
+     "gain": 0.65
+    },
+    {
+     "at": "triangle",
+     "sfx": "ghost",
+     "gain": 0.55
+    }
+   ]
+  },
+  {
+   "id": "truth",
+   "mood": "mystery",
+   "hi": "पर नेवी जाँच ने वजह बताई: रास्ता भटकना और खराब मौसम।",
+   "en": "Par *NAVY jaanch ne wajah batayi: raasta *BHATAKNA aur kharab *MAUSAM.",
+   "sfx": [
+    {
+     "at": "start",
+     "sfx": "whoosh",
+     "off": -0.12,
+     "gain": 0.5
+    },
+    {
+     "at": "navy",
+     "sfx": "hit",
+     "gain": 0.65
+    },
+    {
+     "at": "mausam",
+     "sfx": "shimmer",
+     "gain": 0.55
+    }
+   ]
+  },
+  {
+   "id": "cta",
+   "mood": "tense",
+   "hi": "हादसा, या ट्रायंगल का राज़? कमेंट में बताओ, और ऐसे ही रहस्यों के लिए इतिहास के भूत को सब्सक्राइब करो!",
+   "en": "*HAADSA, ya triangle ka *RAAZ? Comment mein batao, aur aise hi rahasyon ke liye *ITIHAAS *KE *BHOOT ko *SUBSCRIBE karo!",
+   "sfx": [
+    {
+     "at": "start",
+     "sfx": "heartbeat",
+     "gain": 0.45
+    },
+    {
+     "at": "raaz",
+     "sfx": "ghost",
+     "gain": 0.45
+    },
+    {
+     "at": "comment",
+     "sfx": "pop",
+     "gain": 0.6
+    },
+    {
+     "at": "itihaas",
+     "sfx": "whoosh",
+     "off": -0.12,
+     "gain": 0.5
+    },
+    {
+     "at": "subscribe",
+     "sfx": "pop",
+     "off": 0.13,
+     "gain": 0.8
+    },
+    {
+     "at": "subscribe",
+     "sfx": "ding",
+     "off": 0.27,
+     "gain": 0.7
+    }
+   ]
+  }
+ ]
+}

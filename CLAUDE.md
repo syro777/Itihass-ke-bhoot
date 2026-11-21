@@ -16,7 +16,7 @@ Brand assets: `src/brand/Brand.tsx` (ghost-king mascot; renders LogoAvatar, Logo
 
 ## Voiceover (user preference — always follow)
 - **Clear, natural, "viral narrator" male voice.** Clarity beats speed: every word must be pronounced fully.
-- Free default: `hi-IN-MadhurNeural` at rate **+8%** with natural pauses (word 0.14 s / comma 0.24 s / sentence 0.34 s, soft 12 ms fades). The old +28% with hard-trimmed pauses sounded too fast and choppy — never go back to it.
+- Free default: `hi-IN-MadhurNeural` at rate **+8%**, **continuous narration with no audible pauses** (user request, 21 Nov 2026): gaps word 0.06 s / comma 0.09 s / sentence 0.15 s, scene lead 0.04 s / tail 0.10 s, soft 12 ms fades, then `squeeze_silence` in make_voice.py shortens any quiet run inside a scene to ≤ 0.12 s (script keys `squeeze`, `max_gap`). Keep the rate at +8% (the old +28% sounded too fast and choppy) — remove pauses, not speed.
 - Premium: ElevenLabs Hindi male narrator (quota resets on the 23rd of each month) — offer it when credits are available.
 - Keep scripts short enough (≈ 120–135 words) to stay ≤ 60 s at this pace instead of speeding the voice up.
 
@@ -43,6 +43,9 @@ npx remotion render <Comp> out/<id>.mp4 --crf=18        # final video
 ```
 See README.md for the script format, components and SFX list. Always render check frames and look at them before the final render.
 
+## Shot kit for 3D shorts
+- `src/components/three/ShortShots.tsx`: write a `World` (flags in `x`, word-timed via `wf/after/ramp`) and a shot table `{scene: sh(p0,p1,look0,look1,{x, ov:[chip|stamp|tag|date|cta]})}`; `makeShort` adds captions, title, nudge, progress bar and audio. Render many stills at once with `node out/check_multi.cjs <dir> Comp:f1,f2 …`.
+
 ## Long videos (16:9, since Nov 2026)
 - 1920×1080 composition; captions `y≈965, size 60, 4 words/page`; chapter card, chapter badge, night clock and DAR METER live in `src/components/LongForm.tsx`. Aim for ≥ 8 min (mid-roll ads), chapters in the description (first at 00:00, no `#` before chapter numbers).
 - A scene in script.json may set `"hold": <seconds>` for a dramatic pause after it.
@@ -54,4 +57,4 @@ The MP4, plus title (with #shorts), description, hashtags (first 3 matter, max 1
 ## Automation (daily)
 - GitHub repo: **syro777/Itihass-ke-bhoot** (user's personal account; never use the swiings2123-dev account).
 - **On demand only (user preference):** never create videos on a schedule. Make a video only when the user asks. The routine in `AUTOMATION.md` runs end to end: next topic from `topics.json` → research → script → voice/audio → scenes → checked frames → commit + `episodes/LATEST` → push.
-- `.github/workflows/publish.yml` (on push of `episodes/LATEST`) renders the MP4, creates the GitHub Release, and uploads to YouTube when repo variable `AUTO_UPLOAD` = `true` (only after the YouTube API audit; see `YOUTUBE_SETUP.md`). Claude Code sessions cannot create releases themselves. Secrets live only in GitHub Actions secrets.
+- `.github/workflows/publish.yml` (on push of `episodes/LATEST`) renders every id listed there (one per line → parallel matrix jobs, tag `ep-<IST date>-<id>` each), creates the GitHub Release, and uploads to YouTube when repo variable `AUTO_UPLOAD` = `true` (only after the YouTube API audit; see `YOUTUBE_SETUP.md`). Claude Code sessions cannot create releases themselves. Secrets live only in GitHub Actions secrets.

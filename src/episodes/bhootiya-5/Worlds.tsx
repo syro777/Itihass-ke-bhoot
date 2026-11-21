@@ -34,7 +34,7 @@ export const Moon: React.FC<{ position: V3; size?: number }> = ({ position, size
   </group>
 );
 
-const NightLights: React.FC<{ moon: V3; strength?: number }> = ({ moon, strength = 1 }) => (
+export const NightLights: React.FC<{ moon: V3; strength?: number }> = ({ moon, strength = 1 }) => (
   <>
     <ambientLight intensity={0.38 * strength} />
     <hemisphereLight args={["#6a7cc0", "#16141a", 0.85 * strength]} />
@@ -54,7 +54,7 @@ const NightLights: React.FC<{ moon: V3; strength?: number }> = ({ moon, strength
   </>
 );
 
-const DayLights: React.FC<{ warm?: boolean; sun?: V3 }> = ({ warm = true, sun = [-60, 70, 40] }) => (
+export const DayLights: React.FC<{ warm?: boolean; sun?: V3 }> = ({ warm = true, sun = [-60, 70, 40] }) => (
   <>
     <ambientLight intensity={0.55} />
     <hemisphereLight args={[warm ? "#ffe2b8" : "#cfe2ff", "#7a6040", 1.2]} />
@@ -75,7 +75,7 @@ const DayLights: React.FC<{ warm?: boolean; sun?: V3 }> = ({ warm = true, sun = 
 );
 
 /** Translucent drifting spirit. */
-const Wisp: React.FC<{ position: V3; seed?: number; s?: number; op?: number }> = ({ position, seed = 0, s = 1, op = 1 }) => {
+export const Wisp: React.FC<{ position: V3; seed?: number; s?: number; op?: number }> = ({ position, seed = 0, s = 1, op = 1 }) => {
   const f = useCurrentFrame();
   const o = (0.18 + 0.14 * Math.sin(f / 13 + seed * 2)) * op;
   return (
@@ -90,7 +90,7 @@ const Wisp: React.FC<{ position: V3; seed?: number; s?: number; op?: number }> =
   );
 };
 
-const Fire: React.FC<{ position: V3; s?: number; light?: number }> = ({ position, s = 1, light = 1 }) => {
+export const Fire: React.FC<{ position: V3; s?: number; light?: number }> = ({ position, s = 1, light = 1 }) => {
   const f = useCurrentFrame();
   const tex = softTexture();
   return (
@@ -200,7 +200,7 @@ export const Crossroads: React.FC<WP> = (p) => {
 };
 
 /* ---------------- 2. DUMAS ---------------- */
-const Sea: React.FC<{ color: string }> = ({ color }) => {
+export const Sea: React.FC<{ color: string }> = ({ color }) => {
   const f = useCurrentFrame();
   const geo = useMemo(() => {
     const g = new THREE.PlaneGeometry(700, 300, 120, 50);
@@ -223,7 +223,7 @@ const Sea: React.FC<{ color: string }> = ({ color }) => {
   );
 };
 
-const Casuarina: React.FC<{ position: V3; s?: number }> = ({ position, s = 1 }) => (
+export const Casuarina: React.FC<{ position: V3; s?: number }> = ({ position, s = 1 }) => (
   <group position={position} scale={s}>
     <mesh position={[0, 2.5, 0]} castShadow>
       <cylinderGeometry args={[0.1, 0.18, 5, 6]} />
@@ -413,7 +413,7 @@ export const Dumas: React.FC<WP> = (p) => {
 };
 
 /* ---------------- 3. DOW HILL ---------------- */
-const Deodar: React.FC<{ position: V3; s?: number; c?: string }> = ({ position, s = 1, c = "#1f3a2c" }) => (
+export const Deodar: React.FC<{ position: V3; s?: number; c?: string }> = ({ position, s = 1, c = "#1f3a2c" }) => (
   <group position={position} scale={s}>
     <mesh position={[0, 1.2, 0]} castShadow>
       <cylinderGeometry args={[0.16, 0.26, 2.4, 6]} />

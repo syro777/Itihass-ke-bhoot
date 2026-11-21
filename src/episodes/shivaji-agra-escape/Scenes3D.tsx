@@ -24,7 +24,7 @@ const EMPEROR: BeanLook = { body: "#e8e2d0", legs: "#e8e2d0", hat: "turban", hat
 const PORTER: BeanLook = { body: "#e8dcc0", legs: "#e8dcc0", hat: "turban", hatColor: "#c0392b", skin: "#a87a5a" };
 
 /* ---------------- props ---------------- */
-const Torch: React.FC<{ position: V3; s?: number }> = ({ position, s = 1 }) => {
+export const Torch: React.FC<{ position: V3; s?: number }> = ({ position, s = 1 }) => {
   const f = useCurrentFrame();
   const tex = softTexture();
   return (

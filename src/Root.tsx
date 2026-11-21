@@ -13,6 +13,14 @@ import { ShastriBhabha, totalFrames as shastriBhabhaFrames } from "./episodes/sh
 import { Bhootiya5, Bhootiya5Thumb, totalFrames as bhootiya5Frames } from "./episodes/bhootiya-5/Bhootiya5";
 import { Jatinga, totalFrames as jatingaFrames } from "./episodes/jatinga/Jatinga";
 import { ShivajiEscape, totalFrames as shivajiFrames } from "./episodes/shivaji-agra-escape/ShivajiEscape";
+import { TowerRavens, towerRavensFrames } from "./episodes/tower-ravens/TowerRavens";
+import { Flight19, flight19Frames } from "./episodes/flight-19/Flight19";
+import { DyatlovPass, dyatlovFrames } from "./episodes/dyatlov-pass/DyatlovPass";
+import { ChandBaori, chandBaoriFrames } from "./episodes/chand-baori/ChandBaori";
+import { GolcondaClap, golcondaFrames } from "./episodes/golconda-clap/GolcondaClap";
+import { Kiradu, kiraduFrames } from "./episodes/kiradu/Kiradu";
+import { IslandOfDolls, islandOfDollsFrames } from "./episodes/island-of-dolls/IslandOfDolls";
+import { KohinoorCurse, kohinoorFrames } from "./episodes/kohinoor-curse/KohinoorCurse";
 
 export const RemotionRoot: React.FC = () => {
   return (
@@ -27,6 +35,14 @@ export const RemotionRoot: React.FC = () => {
       <Composition id="ShastriBhabha" component={ShastriBhabha} durationInFrames={shastriBhabhaFrames} fps={FPS} width={W} height={H} />
       <Composition id="Jatinga" component={Jatinga} durationInFrames={jatingaFrames} fps={FPS} width={W} height={H} />
       <Composition id="ShivajiEscape" component={ShivajiEscape} durationInFrames={shivajiFrames} fps={FPS} width={W} height={H} />
+      <Composition id="TowerRavens" component={TowerRavens} durationInFrames={towerRavensFrames} fps={FPS} width={W} height={H} />
+      <Composition id="Flight19" component={Flight19} durationInFrames={flight19Frames} fps={FPS} width={W} height={H} />
+      <Composition id="DyatlovPass" component={DyatlovPass} durationInFrames={dyatlovFrames} fps={FPS} width={W} height={H} />
+      <Composition id="ChandBaori" component={ChandBaori} durationInFrames={chandBaoriFrames} fps={FPS} width={W} height={H} />
+      <Composition id="GolcondaClap" component={GolcondaClap} durationInFrames={golcondaFrames} fps={FPS} width={W} height={H} />
+      <Composition id="Kiradu" component={Kiradu} durationInFrames={kiraduFrames} fps={FPS} width={W} height={H} />
+      <Composition id="IslandOfDolls" component={IslandOfDolls} durationInFrames={islandOfDollsFrames} fps={FPS} width={W} height={H} />
+      <Composition id="KohinoorCurse" component={KohinoorCurse} durationInFrames={kohinoorFrames} fps={FPS} width={W} height={H} />
       <Composition id="Bhootiya5" component={Bhootiya5} durationInFrames={bhootiya5Frames} fps={FPS} width={1920} height={1080} />
       <Still id="Bhootiya5Thumb" component={Bhootiya5Thumb} width={1280} height={720} />
       <Still id="LogoAvatar" component={LogoAvatar} width={800} height={800} />

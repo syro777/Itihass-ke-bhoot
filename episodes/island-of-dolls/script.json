@@ -1,0 +1,234 @@
+{
+ "id": "island-of-dolls",
+ "style": "3d",
+ "voice": "hi-IN-MadhurNeural",
+ "pitch": "-2Hz",
+ "notes": "Facts: Isla de las Munecas, Xochimilco canals, Mexico City; caretaker Don Julian Santana Barrera lived there alone and hung hundreds of dolls over ~50 years; story ('kehte hain') that he found a drowned girl and then a floating doll; he died in 2001, reportedly drowned in the canal at the spot where he said he saw the girl; relatives say he probably imagined the girl.",
+ "scenes": [
+  {
+   "id": "hook",
+   "mood": "creepy",
+   "hi": "एक टापू, जहाँ हर पेड़ पर लटकी हैं, सैकड़ों डरावनी गुड़ियाँ!",
+   "en": "Ek *TAAPU, jahan har *PED par latki hain, *SAIKDON daraavni *GUDIYAN!",
+   "sfx": [
+    {
+     "at": "start",
+     "sfx": "boom",
+     "gain": 0.7
+    },
+    {
+     "at": "start",
+     "sfx": "wind",
+     "gain": 0.3
+    },
+    {
+     "at": "taapu",
+     "sfx": "hit",
+     "gain": 0.65
+    },
+    {
+     "at": "gudiyan",
+     "sfx": "ghost",
+     "gain": 0.55
+    }
+   ]
+  },
+  {
+   "id": "place",
+   "mood": "mystery",
+   "hi": "मेक्सिको सिटी की सोचिमिल्को नहरों में, ये है गुड़ियों का टापू।",
+   "en": "*MEXICO City ki *XOCHIMILCO nehron mein, ye hai gudiyon ka *TAAPU.",
+   "sfx": [
+    {
+     "at": "start",
+     "sfx": "whoosh",
+     "off": -0.12,
+     "gain": 0.5
+    },
+    {
+     "at": "mexico",
+     "sfx": "stamp",
+     "gain": 0.65
+    },
+    {
+     "at": "taapu",
+     "sfx": "shimmer",
+     "gain": 0.55
+    }
+   ]
+  },
+  {
+   "id": "julian",
+   "mood": "calm",
+   "hi": "इसे बनाया डॉन हूलियन सांताना ने, जो यहाँ अकेले रहते थे।",
+   "en": "Ise banaya *DON *JULIAN Santana ne, jo yahan *AKELE rehte the.",
+   "sfx": [
+    {
+     "at": "start",
+     "sfx": "whoosh",
+     "off": -0.12,
+     "gain": 0.5
+    },
+    {
+     "at": "don",
+     "sfx": "hit",
+     "gain": 0.65
+    },
+    {
+     "at": "akele",
+     "sfx": "chime",
+     "gain": 0.55
+    }
+   ]
+  },
+  {
+   "id": "girl",
+   "mood": "sad",
+   "hi": "कहते हैं, उन्हें नहर में एक डूबी हुई बच्ची मिली थी।",
+   "en": "Kehte hain, unhe nahar mein ek *DOOBI hui *BACHCHI mili thi.",
+   "sfx": [
+    {
+     "at": "doobi",
+     "sfx": "splash",
+     "gain": 0.5
+    },
+    {
+     "at": "bachchi",
+     "sfx": "bell",
+     "gain": 0.45
+    }
+   ]
+  },
+  {
+   "id": "doll",
+   "mood": "creepy",
+   "hi": "फिर पानी में तैरती एक गुड़िया दिखी। उन्होंने उसे बच्ची की आत्मा के लिए पेड़ पर टाँग दिया।",
+   "en": "Phir paani mein tairti ek *GUDIYA dikhi. Unhone use bachchi ki *AATMA ke liye ped par taang diya.",
+   "sfx": [
+    {
+     "at": "start",
+     "sfx": "whoosh",
+     "off": -0.12,
+     "gain": 0.5
+    },
+    {
+     "at": "gudiya",
+     "sfx": "stamp",
+     "gain": 0.65
+    },
+    {
+     "at": "aatma",
+     "sfx": "ghost",
+     "gain": 0.55
+    }
+   ]
+  },
+  {
+   "id": "fifty",
+   "mood": "creepy",
+   "hi": "और अगले पचास साल तक, वो गुड़ियाँ टाँगते रहे। सैकड़ों!",
+   "en": "Aur agle *PACHAAS saal tak, wo gudiyan taangte rahe. *SAIKDON!",
+   "sfx": [
+    {
+     "at": "start",
+     "sfx": "whoosh",
+     "off": -0.12,
+     "gain": 0.5
+    },
+    {
+     "at": "pachaas",
+     "sfx": "hit",
+     "gain": 0.65
+    },
+    {
+     "at": "saikdon",
+     "sfx": "ghost",
+     "gain": 0.55
+    }
+   ]
+  },
+  {
+   "id": "death",
+   "mood": "climax",
+   "hi": "2001 में, डॉन हूलियन की मौत हुई, उसी नहर में, उसी जगह, जहाँ बच्ची मिली थी!",
+   "en": "*2001 mein, Don Julian ki maut hui, *USI nahar mein, usi jagah, jahan bachchi mili thi!",
+   "sfx": [
+    {
+     "at": "start",
+     "sfx": "heartbeat",
+     "gain": 0.5
+    },
+    {
+     "at": "usi",
+     "sfx": "thunder",
+     "gain": 0.7
+    }
+   ]
+  },
+  {
+   "id": "doubt",
+   "mood": "mystery",
+   "hi": "पर उनके रिश्तेदार कहते हैं, वो बच्ची शायद कभी थी ही नहीं।",
+   "en": "Par unke rishtedaar kehte hain, wo bachchi shayad kabhi *THI hi *NAHI.",
+   "sfx": [
+    {
+     "at": "start",
+     "sfx": "whoosh",
+     "off": -0.12,
+     "gain": 0.5
+    },
+    {
+     "at": "thi",
+     "sfx": "riser",
+     "gain": 0.65
+    },
+    {
+     "at": "nahi",
+     "sfx": "shimmer",
+     "gain": 0.55
+    }
+   ]
+  },
+  {
+   "id": "cta",
+   "mood": "tense",
+   "hi": "दुख की कहानी, या भूतों का टापू? कमेंट में बताओ, और ऐसे ही रहस्यों के लिए इतिहास के भूत को सब्सक्राइब करो!",
+   "en": "*DUKH ki kahani, ya *BHOOTON ka taapu? Comment mein batao, aur aise hi rahasyon ke liye *ITIHAAS *KE *BHOOT ko *SUBSCRIBE karo!",
+   "sfx": [
+    {
+     "at": "start",
+     "sfx": "heartbeat",
+     "gain": 0.45
+    },
+    {
+     "at": "bhooton",
+     "sfx": "ghost",
+     "gain": 0.45
+    },
+    {
+     "at": "comment",
+     "sfx": "pop",
+     "gain": 0.6
+    },
+    {
+     "at": "itihaas",
+     "sfx": "whoosh",
+     "off": -0.12,
+     "gain": 0.5
+    },
+    {
+     "at": "subscribe",
+     "sfx": "pop",
+     "off": 0.13,
+     "gain": 0.8
+    },
+    {
+     "at": "subscribe",
+     "sfx": "ding",
+     "off": 0.27,
+     "gain": 0.7
+    }
+   ]
+  }
+ ]
+}

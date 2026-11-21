@@ -1,7 +1,8 @@
 name: Render & publish episode
 
 # The daily routine commits an episode (script, timeline, scenes, public/<id>/mix.m4a,
-# upload.json, youtube.md) and writes its id to episodes/LATEST. This workflow renders it,
+# upload.json, youtube.md) and writes its id to episodes/LATEST (one id per line for a batch).
+# This workflow renders each listed episode in parallel,
 # attaches the MP4 to a GitHub Release, and uploads to YouTube when AUTO_UPLOAD is "true".
 on:
   push:
@@ -10,7 +11,7 @@ on:
   workflow_dispatch:
     inputs:
       episode:
-        description: "Episode id (folder name in episodes/)"
+        description: "Episode id(s), space- or comma-separated (folder names in episodes/)"
         required: true
 
 permissions:
@@ -21,17 +22,39 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
+  # episodes/LATEST may list several ids (one per line); each one renders in its own parallel job.
+  plan:
+    runs-on: ubuntu-latest
+    outputs:
+      ids: ${{ steps.ids.outputs.ids }}
+    steps:
+      - uses: actions/checkout@v4
+      - name: List episodes
+        id: ids
+        env:
+          INPUT: ${{ inputs.episode }}
+        run: |
+          if [ -n "$INPUT" ]; then LIST=$(echo "$INPUT" | tr ', ' '\n\n'); else LIST=$(cat episodes/LATEST); fi
+          IDS=$(echo "$LIST" | tr -d '\r' | grep -E '^[a-z0-9-]+$' | jq -R . | jq -sc .)
+          echo "$IDS"
+          for EP in $(echo "$IDS" | jq -r '.[]'); do test -f "episodes/$EP/upload.json"; done
+          echo "ids=$IDS" >> "$GITHUB_OUTPUT"
+
   publish:
+    needs: plan
     runs-on: ubuntu-latest
     timeout-minutes: 60
+    strategy:
+      fail-fast: false
+      matrix:
+        episode: ${{ fromJson(needs.plan.outputs.ids) }}
     steps:
       - uses: actions/checkout@v4
 
       - name: Resolve episode
         id: ep
         run: |
-          EP="${{ inputs.episode }}"
-          [ -z "$EP" ] && EP=$(tr -d '[:space:]' < episodes/LATEST)
+          EP="${{ matrix.episode }}"
           test -f "episodes/$EP/upload.json"
           echo "id=$EP" >> "$GITHUB_OUTPUT"
           echo "comp=$(jq -r .composition "episodes/$EP/upload.json")" >> "$GITHUB_OUTPUT"

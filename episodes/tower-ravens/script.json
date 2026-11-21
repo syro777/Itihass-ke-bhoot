@@ -1,0 +1,241 @@
+{
+ "id": "tower-ravens",
+ "style": "3d",
+ "voice": "hi-IN-MadhurNeural",
+ "pitch": "-2Hz",
+ "notes": "Facts: Tower of London ravens; legend (HRP): kingdom and Tower fall if the ravens leave; at least six kept (HRP lists eight), Ravenmaster cares for them and occasionally trims flight feathers. Charles II origin story is legend; Tower historian Geoffrey Parnell thinks the legend is a Victorian invention.",
+ "scenes": [
+  {
+   "id": "hook",
+   "mood": "tense",
+   "hi": "अगर ये छह कौवे उड़ गए, तो कहते हैं ब्रिटेन का राज गिर जाएगा!",
+   "en": "Agar ye *CHHAH *KAUVE ud gaye, to kehte hain *BRITAIN ka raaj *GIR jaayega!",
+   "sfx": [
+    {
+     "at": "start",
+     "sfx": "boom",
+     "gain": 0.7
+    },
+    {
+     "at": "start",
+     "sfx": "wind",
+     "gain": 0.3
+    },
+    {
+     "at": "chhah",
+     "sfx": "hit",
+     "gain": 0.65
+    },
+    {
+     "at": "gir",
+     "sfx": "hit",
+     "gain": 0.55
+    }
+   ]
+  },
+  {
+   "id": "place",
+   "mood": "mystery",
+   "hi": "ये हैं लंदन के टावर के कौवे, यानी रेवन्स।",
+   "en": "Ye hain *LONDON ke *TOWER ke kauve, yaani *RAVENS.",
+   "sfx": [
+    {
+     "at": "start",
+     "sfx": "whoosh",
+     "off": -0.12,
+     "gain": 0.5
+    },
+    {
+     "at": "london",
+     "sfx": "stamp",
+     "gain": 0.65
+    },
+    {
+     "at": "ravens",
+     "sfx": "shimmer",
+     "gain": 0.55
+    }
+   ]
+  },
+  {
+   "id": "legend",
+   "mood": "creepy",
+   "hi": "लोककथा कहती है, अगर कौवों ने किला छोड़ा, तो किला और राजगद्दी दोनों गिर जाएँगे।",
+   "en": "Lokkatha kehti hai, agar kauvon ne *KILA chhoda, to kila aur *RAJGADDI dono gir jaayenge.",
+   "sfx": [
+    {
+     "at": "start",
+     "sfx": "whoosh",
+     "off": -0.12,
+     "gain": 0.5
+    },
+    {
+     "at": "kila",
+     "sfx": "hit",
+     "gain": 0.65
+    },
+    {
+     "at": "rajgaddi",
+     "sfx": "ghost",
+     "gain": 0.55
+    }
+   ]
+  },
+  {
+   "id": "charles",
+   "mood": "royal",
+   "hi": "कहानी है कि राजा चार्ल्स द्वितीय ने हुक्म दिया था: कौवों को कोई नहीं हटाएगा।",
+   "en": "Kahani hai ki raja *CHARLES dwitiya ne hukm diya tha: kauvon ko koi *NAHI hatayega.",
+   "sfx": [
+    {
+     "at": "start",
+     "sfx": "whoosh",
+     "off": -0.12,
+     "gain": 0.5
+    },
+    {
+     "at": "charles",
+     "sfx": "shimmer_dark",
+     "gain": 0.65
+    },
+    {
+     "at": "nahi",
+     "sfx": "chime",
+     "gain": 0.55
+    }
+   ]
+  },
+  {
+   "id": "today",
+   "mood": "mystery",
+   "hi": "और आज भी? किले में कम से कम छह कौवे रखे जाते हैं, और एक रेवनमास्टर उनकी देखभाल करता है।",
+   "en": "Aur aaj bhi? Kile mein *KAM se kam *CHHAH kauve rakhe jaate hain, aur ek *RAVENMASTER unki dekhbhaal karta hai.",
+   "sfx": [
+    {
+     "at": "start",
+     "sfx": "whoosh",
+     "off": -0.12,
+     "gain": 0.5
+    },
+    {
+     "at": "kam",
+     "sfx": "stamp",
+     "gain": 0.65
+    },
+    {
+     "at": "ravenmaster",
+     "sfx": "shimmer",
+     "gain": 0.55
+    }
+   ]
+  },
+  {
+   "id": "spare",
+   "mood": "tense",
+   "hi": "डर इतना है, कि हमेशा एक दो एक्स्ट्रा कौवे भी रखे जाते हैं!",
+   "en": "Darr itna hai, ki hamesha ek do *EXTRA kauve bhi rakhe jaate hain!",
+   "sfx": [
+    {
+     "at": "start",
+     "sfx": "whoosh",
+     "off": -0.12,
+     "gain": 0.5
+    },
+    {
+     "at": "extra",
+     "sfx": "hit",
+     "gain": 0.65
+    }
+   ]
+  },
+  {
+   "id": "wings",
+   "mood": "calm",
+   "hi": "और उड़ न जाएँ, इसलिए कभी कभी उनके पंख भी हल्के से काटे जाते हैं।",
+   "en": "Aur ud na jaayein, isliye kabhi kabhi unke *PANKH bhi halke se *KAATE jaate hain.",
+   "sfx": [
+    {
+     "at": "start",
+     "sfx": "whoosh",
+     "off": -0.12,
+     "gain": 0.5
+    },
+    {
+     "at": "pankh",
+     "sfx": "ghost",
+     "gain": 0.65
+    },
+    {
+     "at": "kaate",
+     "sfx": "chime",
+     "gain": 0.55
+    }
+   ]
+  },
+  {
+   "id": "twist",
+   "mood": "mystery",
+   "hi": "पर इतिहासकारों के मुताबिक, ये लोककथा शायद विक्टोरियन दौर में गढ़ी गई थी।",
+   "en": "Par *ITIHAASKAARON ke mutabik, ye lokkatha shayad *VICTORIAN daur mein *GADHI gayi thi.",
+   "sfx": [
+    {
+     "at": "start",
+     "sfx": "whoosh",
+     "off": -0.12,
+     "gain": 0.5
+    },
+    {
+     "at": "itihaaskaaron",
+     "sfx": "riser",
+     "gain": 0.65
+    },
+    {
+     "at": "gadhi",
+     "sfx": "shimmer",
+     "gain": 0.55
+    }
+   ]
+  },
+  {
+   "id": "cta",
+   "mood": "tense",
+   "hi": "आप होते तो रिस्क लेते? कमेंट में बताओ, और ऐसे ही रहस्यों के लिए इतिहास के भूत को सब्सक्राइब करो!",
+   "en": "Aap hote to *RISK lete? Comment mein batao, aur aise hi rahasyon ke liye *ITIHAAS *KE *BHOOT ko *SUBSCRIBE karo!",
+   "sfx": [
+    {
+     "at": "start",
+     "sfx": "heartbeat",
+     "gain": 0.45
+    },
+    {
+     "at": "risk",
+     "sfx": "hit",
+     "gain": 0.5
+    },
+    {
+     "at": "comment",
+     "sfx": "pop",
+     "gain": 0.6
+    },
+    {
+     "at": "itihaas",
+     "sfx": "whoosh",
+     "off": -0.12,
+     "gain": 0.5
+    },
+    {
+     "at": "subscribe",
+     "sfx": "pop",
+     "off": 0.13,
+     "gain": 0.8
+    },
+    {
+     "at": "subscribe",
+     "sfx": "ding",
+     "off": 0.27,
+     "gain": 0.7
+    }
+   ]
+  }
+ ]
+}

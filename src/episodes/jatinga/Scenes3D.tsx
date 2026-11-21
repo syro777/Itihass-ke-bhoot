@@ -171,7 +171,7 @@ const WatchTower: React.FC<{ position: V3; beam?: number }> = ({ position, beam 
 };
 
 /* ---------------- birds ---------------- */
-const Bird: React.FC<{ position: V3; rotation?: V3; flap: number; color?: string; belly?: string; s?: number; lying?: boolean }> = ({
+export const Bird: React.FC<{ position: V3; rotation?: V3; flap: number; color?: string; belly?: string; s?: number; lying?: boolean }> = ({
   position,
   rotation = [0, 0, 0],
   flap,

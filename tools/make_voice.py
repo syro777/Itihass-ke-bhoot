@@ -29,11 +29,13 @@ DEFAULT_VOICE = "hi-IN-MadhurNeural"
 DEFAULT_RATE = "+8%"
 DEFAULT_PITCH = "-2Hz"
 # Longest silence allowed between words (seconds); longer TTS pauses are cut down to these.
-DEFAULT_GAPS = {"word": 0.14, "comma": 0.24, "sentence": 0.34}
+# Nov 2026: user wants continuous narration with no audible pauses, at the same clear +8% rate.
+# Gaps stay >= 0.06 s so 75% of each gap keeps word tails intact (no clipped consonants).
+DEFAULT_GAPS = {"word": 0.06, "comma": 0.09, "sentence": 0.15}
 
-LEAD_FIRST = 0.08   # silence before first scene's voice
-LEAD = 0.15         # silence at start of every other scene
-TAIL = 0.25         # silence after last word of a scene
+LEAD_FIRST = 0.03   # silence before first scene's voice
+LEAD = 0.04         # silence at start of every other scene
+TAIL = 0.10         # silence after last word of a scene
 END_PAD = 1.6       # extra time on the final scene for the end card
 
 
@@ -104,6 +106,63 @@ def tighten(audio, words, en, gaps):
     return np.concatenate(out), new_words
 
 
+def squeeze_silence(audio, words, max_gap=0.12, win=0.01, rel_db=-28.0):
+    """Energy-based pass: shorten any quiet run longer than max_gap (TTS pauses hidden inside word
+    timings), trim leading/trailing quiet, and shift word timings to match."""
+    n = int(win * SR)
+    if len(audio) < 4 * n:
+        return audio, words
+    frames = len(audio) // n
+    rms = np.sqrt(np.mean(audio[: frames * n].reshape(frames, n) ** 2, axis=1) + 1e-12)
+    ref = np.percentile(rms, 95)
+    quiet = 20 * np.log10(rms / (ref + 1e-12) + 1e-12) < rel_db
+    voiced = np.where(~quiet)[0]
+    if len(voiced) == 0:
+        return audio, words
+    audio = audio.copy()
+    head = max(0, voiced[0] * n - int(0.02 * SR))
+    tail = min(len(audio), (voiced[-1] + 1) * n + int(0.06 * SR))
+    keep = int(max_gap * SR)
+    cuts = []  # (start_sample, removed_samples)
+    i = voiced[0]
+    while i <= voiced[-1]:
+        if quiet[i]:
+            j = i
+            while j <= voiced[-1] and quiet[j]:
+                j += 1
+            run = (j - i) * n
+            if run > keep:
+                cuts.append((i * n + keep // 2, run - keep))
+            i = j
+        else:
+            i += 1
+    fade = int(0.01 * SR)
+    out, pos = [], head
+    for cs, rem in cuts:
+        seg = audio[pos:cs].copy()
+        if len(seg) > 2 * fade:
+            seg[-fade:] *= np.linspace(1, 0, fade)
+        out.append(seg)
+        pos = cs + rem
+        if pos + fade < len(audio):
+            audio[pos:pos + fade] *= np.linspace(0, 1, fade)
+    out.append(audio[pos:tail].copy())
+    new = np.concatenate(out)
+
+    def shift(t):
+        smp = int(t * SR)
+        removed = min(smp, head)
+        for cs, rem in cuts:
+            if smp >= cs + rem:
+                removed += rem
+            elif smp > cs:
+                removed += smp - cs
+        return max(0.0, (smp - removed) / SR)
+
+    total = len(new) / SR
+    return new, [{**w, "start": min(shift(w["start"]), total), "end": min(shift(w["end"]), total)} for w in words]
+
+
 def decode(mp3_path):
     raw = subprocess.run(
         ["ffmpeg", "-v", "error", "-i", mp3_path, "-ac", "1", "-ar", str(SR), "-f", "f32le", "-"],
@@ -143,6 +202,8 @@ def main(script_path):
             sys.exit(1)
 
         audio, words = tighten(decode(mp3), words, en, gaps)
+        if script.get("squeeze", True):  # remove pauses hidden inside word timings (user: no pauses in VO)
+            audio, words = squeeze_silence(audio, words, max_gap=float(script.get("max_gap", 0.12)))
         last_end = words[-1]["end"]
         cut = min(len(audio), int((last_end + TAIL) * SR))
         audio = audio[:cut]

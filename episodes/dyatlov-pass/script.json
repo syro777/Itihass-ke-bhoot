@@ -1,0 +1,268 @@
+{
+ "id": "dyatlov-pass",
+ "style": "3d",
+ "voice": "hi-IN-MadhurNeural",
+ "pitch": "-2Hz",
+ "notes": "Facts: Feb 1959, Northern Urals; Igor Dyatlov's group of nine hikers died; tent cut open from inside, belongings left, many fled in socks or barefoot; most died of hypothermia, some had severe injuries. Theories ranged from aliens to weapons tests to yeti. 2019 Russian inquiry: avalanche; 2021 Gaume & Puzrin model: a small delayed slab avalanche could explain it; authors say the full truth may never be known.",
+ "scenes": [
+  {
+   "id": "hook",
+   "mood": "tense",
+   "hi": "माइनस तीस डिग्री में, नौ लोगों ने अपना टेंट अंदर से फाड़ा, और कई नंगे पैर बर्फ में भाग गए!",
+   "en": "*MINUS *TEES degree mein, *NAU logon ne apna tent *ANDAR se phaada, aur kai *NANGE pair barf mein bhaag gaye!",
+   "sfx": [
+    {
+     "at": "start",
+     "sfx": "boom",
+     "gain": 0.7
+    },
+    {
+     "at": "start",
+     "sfx": "wind",
+     "gain": 0.3
+    },
+    {
+     "at": "minus",
+     "sfx": "hit",
+     "gain": 0.65
+    },
+    {
+     "at": "nange",
+     "sfx": "hit",
+     "gain": 0.55
+    }
+   ]
+  },
+  {
+   "id": "date",
+   "mood": "mystery",
+   "hi": "फरवरी 1959, रूस के यूराल पहाड़।",
+   "en": "*FEBRUARY *1959, Russia ke *URAL pahaad.",
+   "sfx": [
+    {
+     "at": "start",
+     "sfx": "whoosh",
+     "off": -0.12,
+     "gain": 0.5
+    },
+    {
+     "at": "february_1959",
+     "sfx": "stamp",
+     "gain": 0.65
+    },
+    {
+     "at": "ural",
+     "sfx": "shimmer",
+     "gain": 0.55
+    }
+   ]
+  },
+  {
+   "id": "team",
+   "mood": "calm",
+   "hi": "इगोर द्यातलोव की टीम ट्रेकिंग पर निकली थी, पर कोई वापस नहीं लौटा।",
+   "en": "Igor *DYATLOV ki team trekking par nikli thi, par koi *WAPAS nahi lauta.",
+   "sfx": [
+    {
+     "at": "start",
+     "sfx": "whoosh",
+     "off": -0.12,
+     "gain": 0.5
+    },
+    {
+     "at": "dyatlov",
+     "sfx": "hit",
+     "gain": 0.65
+    },
+    {
+     "at": "wapas",
+     "sfx": "chime",
+     "gain": 0.55
+    }
+   ]
+  },
+  {
+   "id": "tent",
+   "mood": "creepy",
+   "hi": "बचाव दल को टेंट मिला, अंदर से कटा हुआ। सामान वहीं पड़ा था।",
+   "en": "Bachaav dal ko tent mila, *ANDAR se *KATA hua. Saamaan wahin pada tha.",
+   "sfx": [
+    {
+     "at": "start",
+     "sfx": "whoosh",
+     "off": -0.12,
+     "gain": 0.5
+    },
+    {
+     "at": "andar",
+     "sfx": "shimmer_dark",
+     "gain": 0.65
+    },
+    {
+     "at": "kata",
+     "sfx": "ghost",
+     "gain": 0.55
+    }
+   ]
+  },
+  {
+   "id": "bodies",
+   "mood": "sad",
+   "hi": "कुछ शरीरों पर गहरी चोटें थीं, और ज़्यादातर की मौत ठंड से हुई।",
+   "en": "Kuch shareeron par *GEHRI chotein thi, aur zyadatar ki maut *THAND se hui.",
+   "sfx": [
+    {
+     "at": "start",
+     "sfx": "whoosh",
+     "off": -0.12,
+     "gain": 0.5
+    },
+    {
+     "at": "gehri",
+     "sfx": "stamp",
+     "gain": 0.65
+    },
+    {
+     "at": "thand",
+     "sfx": "bell",
+     "gain": 0.55
+    }
+   ]
+  },
+  {
+   "id": "theories",
+   "mood": "mystery",
+   "hi": "दशकों तक थ्योरी चलीं: एलियन, सीक्रेट हथियार, यहाँ तक कि यति!",
+   "en": "Dashakon tak theory chali: *ALIEN, secret *HATHIYAAR, yahan tak ki *YETI!",
+   "sfx": [
+    {
+     "at": "alien",
+     "sfx": "glitch",
+     "gain": 0.5
+    },
+    {
+     "at": "hathiyaar",
+     "sfx": "stamp",
+     "gain": 0.6
+    },
+    {
+     "at": "yeti",
+     "sfx": "ghost",
+     "gain": 0.55
+    }
+   ]
+  },
+  {
+   "id": "science",
+   "mood": "tense",
+   "hi": "फिर 2021 में, स्विस वैज्ञानिकों ने एक मॉडल से दिखाया: एक छोटा बर्फीला एवलांच।",
+   "en": "Phir *2021 mein, *SWISS vaigyanikon ne ek model se dikhaya: ek chhota barfila *AVALANCHE.",
+   "sfx": [
+    {
+     "at": "start",
+     "sfx": "whoosh",
+     "off": -0.12,
+     "gain": 0.5
+    },
+    {
+     "at": "2021",
+     "sfx": "ghost",
+     "gain": 0.65
+    },
+    {
+     "at": "avalanche",
+     "sfx": "hit",
+     "gain": 0.55
+    }
+   ]
+  },
+  {
+   "id": "slab",
+   "mood": "climax",
+   "hi": "शायद बर्फ की एक परत टेंट पर गिरी, घबराकर सब बाहर भागे, और ठंड जानलेवा बन गई।",
+   "en": "Shayad barf ki ek *PARAT tent par giri, *GHABRAKAR sab bahar bhaage, aur thand *JAANLEVA ban gayi.",
+   "sfx": [
+    {
+     "at": "parat",
+     "sfx": "crash",
+     "gain": 0.7
+    },
+    {
+     "at": "ghabrakar",
+     "sfx": "footsteps",
+     "gain": 0.5
+    },
+    {
+     "at": "jaanleva",
+     "sfx": "wind",
+     "gain": 0.6
+    }
+   ]
+  },
+  {
+   "id": "unknown",
+   "mood": "mystery",
+   "hi": "पर वैज्ञानिक खुद मानते हैं, पूरा सच शायद कभी पता न चले।",
+   "en": "Par vaigyanik khud maante hain, *POORA *SACH shayad kabhi pata na chale.",
+   "sfx": [
+    {
+     "at": "start",
+     "sfx": "whoosh",
+     "off": -0.12,
+     "gain": 0.5
+    },
+    {
+     "at": "poora",
+     "sfx": "hit",
+     "gain": 0.65
+    },
+    {
+     "at": "sach",
+     "sfx": "shimmer",
+     "gain": 0.55
+    }
+   ]
+  },
+  {
+   "id": "cta",
+   "mood": "tense",
+   "hi": "एवलांच, या कुछ और? कमेंट में बताओ, और ऐसे ही रहस्यों के लिए इतिहास के भूत को सब्सक्राइब करो!",
+   "en": "*AVALANCHE, ya kuch *AUR? Comment mein batao, aur aise hi rahasyon ke liye *ITIHAAS *KE *BHOOT ko *SUBSCRIBE karo!",
+   "sfx": [
+    {
+     "at": "start",
+     "sfx": "heartbeat",
+     "gain": 0.45
+    },
+    {
+     "at": "aur",
+     "sfx": "ghost",
+     "gain": 0.45
+    },
+    {
+     "at": "comment",
+     "sfx": "pop",
+     "gain": 0.6
+    },
+    {
+     "at": "itihaas",
+     "sfx": "whoosh",
+     "off": -0.12,
+     "gain": 0.5
+    },
+    {
+     "at": "subscribe",
+     "sfx": "pop",
+     "off": 0.13,
+     "gain": 0.8
+    },
+    {
+     "at": "subscribe",
+     "sfx": "ding",
+     "off": 0.27,
+     "gain": 0.7
+    }
+   ]
+  }
+ ]
+}

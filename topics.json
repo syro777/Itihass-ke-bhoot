@@ -32,7 +32,8 @@
       "id": "island-of-dolls",
       "title": "Island of the Dolls, Mexico — gudiyon ka bhootiya tapu",
       "type": "world-ghost",
-      "status": "todo"
+      "status": "done",
+      "date": "2026-11-21"
     },
     {
       "id": "roopkund",
@@ -64,7 +65,8 @@
       "id": "kiradu-temples",
       "title": "Kiradu Mandir, Barmer — raat rukne wala patthar ban jaata hai?",
       "type": "india-ghost",
-      "status": "todo"
+      "status": "done",
+      "date": "2026-11-21"
     },
     {
       "id": "konark-magnet",
@@ -95,7 +97,8 @@
       "id": "kohinoor-curse",
       "title": "Kohinoor ka shraap — sirf aurtein hi pehen sakti hain?",
       "type": "india-history",
-      "status": "todo"
+      "status": "done",
+      "date": "2026-11-21"
     },
     {
       "id": "edinburgh-vaults",
@@ -125,7 +128,8 @@
       "id": "golconda-clap",
       "title": "Golconda Fort — taali jo 1 km door sunayi deti hai",
       "type": "india-history",
-      "status": "todo"
+      "status": "done",
+      "date": "2026-11-21"
     },
     {
       "id": "dumas-beach",
@@ -149,7 +153,8 @@
       "id": "chand-baori",
       "title": "Chand Baori — 3500 seedhiyon wala rahasyamay kuan",
       "type": "india-history",
-      "status": "todo"
+      "status": "done",
+      "date": "2026-11-21"
     },
     {
       "id": "mary-kings-close",
@@ -209,6 +214,27 @@
       "type": "india-ghost-long",
       "status": "done",
       "date": "2026-11-19"
+    },
+    {
+      "id": "tower-ravens",
+      "title": "Tower of London ke 6 kauve — ude to Britain ka raaj khatam?",
+      "type": "world-ghost",
+      "status": "done",
+      "date": "2026-11-21"
+    },
+    {
+      "id": "flight-19",
+      "title": "Flight 19 — 5 vimaan gayab, dhoondhne wala bhi gayab (Bermuda Triangle)",
+      "type": "world-mystery",
+      "status": "done",
+      "date": "2026-11-21"
+    },
+    {
+      "id": "dyatlov-pass",
+      "title": "Dyatlov Pass — -30° mein tent andar se kyun phaada?",
+      "type": "world-mystery",
+      "status": "done",
+      "date": "2026-11-21"
     }
   ]
 }

@@ -1,0 +1,229 @@
+{
+ "id": "kiradu",
+ "style": "3d",
+ "voice": "hi-IN-MadhurNeural",
+ "pitch": "-2Hz",
+ "notes": "Facts: Kiradu temples, Barmer district, Rajasthan, 11th-12th c. (~900 years), only five temples standing; sculpture compared to Khajuraho. Legend ('lokkatha'): a sage's ailing disciple was neglected except by a potter woman; the sage cursed the town to stone; she was told not to look back, did, and turned to stone. No evidence for the curse; people do not stay after sunset.",
+ "scenes": [
+  {
+   "id": "hook",
+   "mood": "tense",
+   "hi": "राजस्थान का एक मंदिर, जहाँ कहते हैं, सूरज ढलने के बाद रुके, तो पत्थर बन जाओगे!",
+   "en": "Rajasthan ka ek *MANDIR, jahan kehte hain, suraj dhalne ke baad ruke, to *PATTHAR ban jaaoge!",
+   "sfx": [
+    {
+     "at": "start",
+     "sfx": "boom",
+     "gain": 0.7
+    },
+    {
+     "at": "start",
+     "sfx": "wind",
+     "gain": 0.3
+    },
+    {
+     "at": "mandir",
+     "sfx": "hit",
+     "gain": 0.65
+    },
+    {
+     "at": "patthar",
+     "sfx": "hit",
+     "gain": 0.55
+    }
+   ]
+  },
+  {
+   "id": "place",
+   "mood": "mystery",
+   "hi": "ये हैं बाड़मेर के किराडू मंदिर, करीब नौ सौ साल पुराने।",
+   "en": "Ye hain *BARMER ke *KIRADU mandir, kareeb *NAU sau saal purane.",
+   "sfx": [
+    {
+     "at": "start",
+     "sfx": "whoosh",
+     "off": -0.12,
+     "gain": 0.5
+    },
+    {
+     "at": "barmer",
+     "sfx": "stamp",
+     "gain": 0.65
+    },
+    {
+     "at": "nau",
+     "sfx": "shimmer",
+     "gain": 0.55
+    }
+   ]
+  },
+  {
+   "id": "carving",
+   "mood": "royal",
+   "hi": "इनकी नक्काशी इतनी शानदार है, कि इन्हें राजस्थान का खजुराहो कहा जाता है।",
+   "en": "Inki nakkashi itni shaandaar hai, ki inhe Rajasthan ka *KHAJURAHO kaha jaata hai.",
+   "sfx": [
+    {
+     "at": "start",
+     "sfx": "whoosh",
+     "off": -0.12,
+     "gain": 0.5
+    },
+    {
+     "at": "khajuraho",
+     "sfx": "hit",
+     "gain": 0.65
+    }
+   ]
+  },
+  {
+   "id": "sadhu",
+   "mood": "mystery",
+   "hi": "लोककथा: एक साधु अपने शिष्य को यहाँ छोड़कर गए। शिष्य बीमार पड़ा, पर किसी ने मदद नहीं की।",
+   "en": "Lokkatha: ek *SADHU apne shishya ko yahan chhodkar gaye. Shishya *BEEMAAR pada, par kisi ne *MADAD nahi ki.",
+   "sfx": [
+    {
+     "at": "start",
+     "sfx": "whoosh",
+     "off": -0.12,
+     "gain": 0.5
+    },
+    {
+     "at": "sadhu",
+     "sfx": "shimmer_dark",
+     "gain": 0.65
+    },
+    {
+     "at": "madad",
+     "sfx": "shimmer",
+     "gain": 0.55
+    }
+   ]
+  },
+  {
+   "id": "potter",
+   "mood": "sad",
+   "hi": "सिर्फ एक कुम्हारिन ने उसकी सेवा की।",
+   "en": "Sirf ek *KUMHAARIN ne uski *SEVA ki.",
+   "sfx": [
+    {
+     "at": "start",
+     "sfx": "whoosh",
+     "off": -0.12,
+     "gain": 0.5
+    },
+    {
+     "at": "kumhaarin",
+     "sfx": "stamp",
+     "gain": 0.65
+    },
+    {
+     "at": "seva",
+     "sfx": "bell",
+     "gain": 0.55
+    }
+   ]
+  },
+  {
+   "id": "curse",
+   "mood": "climax",
+   "hi": "गुस्से में साधु ने श्राप दिया: शाम के बाद यहाँ जो रुकेगा, पत्थर बन जाएगा!",
+   "en": "Gusse mein sadhu ne *SHRAAP diya: shaam ke baad yahan jo rukega, *PATTHAR ban jaayega!",
+   "sfx": [
+    {
+     "at": "shraap",
+     "sfx": "thunder",
+     "gain": 0.75
+    },
+    {
+     "at": "patthar",
+     "sfx": "rumble",
+     "gain": 0.6
+    }
+   ]
+  },
+  {
+   "id": "lookback",
+   "mood": "creepy",
+   "hi": "कुम्हारिन से कहा: पीछे मुड़कर मत देखना। पर उसने देखा, और वो भी पत्थर बन गई!",
+   "en": "Kumhaarin se kaha: *PEECHHE mudkar mat dekhna. Par usne dekha, aur wo bhi *PATTHAR ban gayi!",
+   "sfx": [
+    {
+     "at": "peechhe",
+     "sfx": "heartbeat",
+     "gain": 0.5
+    },
+    {
+     "at": "patthar",
+     "sfx": "chisel",
+     "gain": 0.7
+    }
+   ]
+  },
+  {
+   "id": "truth",
+   "mood": "mystery",
+   "hi": "इसका कोई सबूत नहीं। पर आज भी, शाम के बाद यहाँ कोई नहीं रुकता।",
+   "en": "Iska koi *SABOOT nahi. Par aaj bhi, shaam ke baad yahan koi *NAHI rukta.",
+   "sfx": [
+    {
+     "at": "start",
+     "sfx": "whoosh",
+     "off": -0.12,
+     "gain": 0.5
+    },
+    {
+     "at": "saboot",
+     "sfx": "riser",
+     "gain": 0.65
+    },
+    {
+     "at": "nahi",
+     "sfx": "shimmer",
+     "gain": 0.55
+    }
+   ]
+  },
+  {
+   "id": "cta",
+   "mood": "tense",
+   "hi": "आप एक रात रुकने की हिम्मत करोगे? कमेंट में बताओ, और ऐसे ही रहस्यों के लिए इतिहास के भूत को सब्सक्राइब करो!",
+   "en": "Aap ek raat rukne ki *HIMMAT karoge? Comment mein batao, aur aise hi rahasyon ke liye *ITIHAAS *KE *BHOOT ko *SUBSCRIBE karo!",
+   "sfx": [
+    {
+     "at": "start",
+     "sfx": "heartbeat",
+     "gain": 0.45
+    },
+    {
+     "at": "himmat",
+     "sfx": "ghost",
+     "gain": 0.45
+    },
+    {
+     "at": "comment",
+     "sfx": "pop",
+     "gain": 0.6
+    },
+    {
+     "at": "itihaas",
+     "sfx": "whoosh",
+     "off": -0.12,
+     "gain": 0.5
+    },
+    {
+     "at": "subscribe",
+     "sfx": "pop",
+     "off": 0.13,
+     "gain": 0.8
+    },
+    {
+     "at": "subscribe",
+     "sfx": "ding",
+     "off": 0.27,
+     "gain": 0.7
+    }
+   ]
+  }
+ ]
+}

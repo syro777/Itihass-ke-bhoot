@@ -1,0 +1,232 @@
+{
+ "id": "kohinoor-curse",
+ "style": "3d",
+ "voice": "hi-IN-MadhurNeural",
+ "pitch": "-2Hz",
+ "notes": "Facts: Koh-i-Noor ('mountain of light'); believed to come from the Golconda region mines; set in the Mughal Peacock Throne; taken by Nadir Shah in 1739 (assassinated 1747); later reached Maharaja Ranjit Singh; in 1849 the British took it from 10-year-old Maharaja Duleep Singh; legend ('lokkatha') that only God or a woman can wear it safely; in Britain it has been worn only by queens; now set in the Queen Mother's crown, displayed at the Tower of London.",
+ "scenes": [
+  {
+   "id": "hook",
+   "mood": "tense",
+   "hi": "कहते हैं, ये हीरा जिस आदमी ने पहना, उसका राज खत्म हो गया!",
+   "en": "Kehte hain, ye *HEERA jis *AADMI ne pehna, uska *RAAJ khatm ho gaya!",
+   "sfx": [
+    {
+     "at": "start",
+     "sfx": "boom",
+     "gain": 0.7
+    },
+    {
+     "at": "heera",
+     "sfx": "shimmer",
+     "gain": 0.6
+    },
+    {
+     "at": "raaj",
+     "sfx": "hit",
+     "gain": 0.85
+    }
+   ]
+  },
+  {
+   "id": "name",
+   "mood": "royal",
+   "hi": "ये है कोहिनूर, यानी रोशनी का पहाड़।",
+   "en": "Ye hai *KOHINOOR, yaani *ROSHNI ka *PAHAAD.",
+   "sfx": [
+    {
+     "at": "kohinoor",
+     "sfx": "shimmer",
+     "gain": 0.6
+    }
+   ]
+  },
+  {
+   "id": "origin",
+   "mood": "mystery",
+   "hi": "माना जाता है, ये गोलकोंडा की खदानों से निकला।",
+   "en": "Maana jaata hai, ye *GOLCONDA ki khadaanon se nikla.",
+   "sfx": [
+    {
+     "at": "start",
+     "sfx": "whoosh",
+     "off": -0.12,
+     "gain": 0.5
+    },
+    {
+     "at": "golconda",
+     "sfx": "hit",
+     "gain": 0.65
+    }
+   ]
+  },
+  {
+   "id": "mughal",
+   "mood": "royal",
+   "hi": "फिर मुगलों के मयूर सिंहासन में जड़ा, और 1739 में नादिर शाह लूट ले गया।",
+   "en": "Phir mughalon ke *MAYUR *SINGHASAN mein jada, aur *1739 mein *NADIR *SHAH loot le gaya.",
+   "sfx": [
+    {
+     "at": "mayur",
+     "sfx": "chime",
+     "gain": 0.5
+    },
+    {
+     "at": "nadir",
+     "sfx": "swords",
+     "gain": 0.6
+    }
+   ]
+  },
+  {
+   "id": "ranjit",
+   "mood": "tense",
+   "hi": "नादिर शाह की हत्या हुई। फिर हीरा कई हाथों से होकर महाराजा रणजीत सिंह तक पहुँचा।",
+   "en": "Nadir Shah ki *HATYA hui. Phir heera kai haathon se hokar Maharaja *RANJIT *SINGH tak pahuncha.",
+   "sfx": [
+    {
+     "at": "hatya",
+     "sfx": "hit",
+     "gain": 0.8
+    },
+    {
+     "at": "ranjit",
+     "sfx": "fanfare",
+     "gain": 0.45
+    }
+   ]
+  },
+  {
+   "id": "duleep",
+   "mood": "sad",
+   "hi": "1849 में, अंग्रेज़ों ने इसे दस साल के महाराजा दलीप सिंह से ले लिया।",
+   "en": "*1849 mein, angrezon ne ise *DAS saal ke Maharaja *DULEEP Singh se le liya.",
+   "sfx": [
+    {
+     "at": "start",
+     "sfx": "whoosh",
+     "off": -0.12,
+     "gain": 0.5
+    },
+    {
+     "at": "1849",
+     "sfx": "hit",
+     "gain": 0.65
+    },
+    {
+     "at": "duleep",
+     "sfx": "bell",
+     "gain": 0.55
+    }
+   ]
+  },
+  {
+   "id": "curse",
+   "mood": "creepy",
+   "hi": "श्राप की लोककथा कहती है: इसे सिर्फ भगवान या औरत पहन सकते हैं।",
+   "en": "Shraap ki lokkatha kehti hai: ise sirf *BHAGWAN ya *AURAT pehen sakte hain.",
+   "sfx": [
+    {
+     "at": "start",
+     "sfx": "whoosh",
+     "off": -0.12,
+     "gain": 0.5
+    },
+    {
+     "at": "bhagwan",
+     "sfx": "ghost",
+     "gain": 0.65
+    },
+    {
+     "at": "aurat",
+     "sfx": "ghost",
+     "gain": 0.55
+    }
+   ]
+  },
+  {
+   "id": "queens",
+   "mood": "mystery",
+   "hi": "और ब्रिटेन में? इसे आज तक सिर्फ रानियों ने ही पहना है!",
+   "en": "Aur Britain mein? Ise aaj tak sirf *RAANIYON ne hi pehna hai!",
+   "sfx": [
+    {
+     "at": "start",
+     "sfx": "whoosh",
+     "off": -0.12,
+     "gain": 0.5
+    },
+    {
+     "at": "raaniyon",
+     "sfx": "riser",
+     "gain": 0.65
+    }
+   ]
+  },
+  {
+   "id": "today",
+   "mood": "royal",
+   "hi": "आज ये टावर ऑफ लंदन में रखे एक ताज में जड़ा है।",
+   "en": "Aaj ye *TOWER of *LONDON mein rakhe ek *TAAJ mein jada hai.",
+   "sfx": [
+    {
+     "at": "start",
+     "sfx": "whoosh",
+     "off": -0.12,
+     "gain": 0.5
+    },
+    {
+     "at": "tower",
+     "sfx": "hit",
+     "gain": 0.65
+    },
+    {
+     "at": "taaj",
+     "sfx": "chime",
+     "gain": 0.55
+    }
+   ]
+  },
+  {
+   "id": "cta",
+   "mood": "tense",
+   "hi": "श्राप, या बस संयोग? कमेंट में बताओ, और ऐसे ही रहस्यों के लिए इतिहास के भूत को सब्सक्राइब करो!",
+   "en": "*SHRAAP, ya bas *SANYOG? Comment mein batao, aur aise hi rahasyon ke liye *ITIHAAS *KE *BHOOT ko *SUBSCRIBE karo!",
+   "sfx": [
+    {
+     "at": "start",
+     "sfx": "heartbeat",
+     "gain": 0.45
+    },
+    {
+     "at": "shraap",
+     "sfx": "ghost",
+     "gain": 0.45
+    },
+    {
+     "at": "comment",
+     "sfx": "pop",
+     "gain": 0.6
+    },
+    {
+     "at": "itihaas",
+     "sfx": "whoosh",
+     "off": -0.12,
+     "gain": 0.5
+    },
+    {
+     "at": "subscribe",
+     "sfx": "pop",
+     "off": 0.13,
+     "gain": 0.8
+    },
+    {
+     "at": "subscribe",
+     "sfx": "ding",
+     "off": 0.27,
+     "gain": 0.7
+    }
+   ]
+  }
+ ]
+}

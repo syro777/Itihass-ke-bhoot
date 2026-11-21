@@ -1,0 +1,1316 @@
+{
+ "id": "chand-baori",
+ "fps": 30,
+ "duration": 46.68,
+ "scenes": [
+  {
+   "id": "hook",
+   "mood": "tense",
+   "start": 0.0,
+   "duration": 5.75,
+   "words": [
+    {
+     "text": "Saadhe",
+     "key": "saadhe",
+     "emph": false,
+     "hi": "साढ़े",
+     "start": 0.03,
+     "end": 0.345
+    },
+    {
+     "text": "teen",
+     "key": "teen",
+     "emph": false,
+     "hi": "तीन",
+     "start": 0.345,
+     "end": 0.669
+    },
+    {
+     "text": "HAZAAR",
+     "key": "hazaar",
+     "emph": true,
+     "hi": "हज़ार",
+     "start": 0.669,
+     "end": 1.051
+    },
+    {
+     "text": "seedhiyan,",
+     "key": "seedhiyan",
+     "emph": false,
+     "hi": "सीढ़ियाँ",
+     "start": 1.051,
+     "end": 1.549
+    },
+    {
+     "text": "TERAH",
+     "key": "terah",
+     "emph": true,
+     "hi": "तेरह",
+     "start": 1.639,
+     "end": 1.894
+    },
+    {
+     "text": "manzil",
+     "key": "manzil",
+     "emph": false,
+     "hi": "मंज़िल",
+     "start": 1.894,
+     "end": 2.3
+    },
+    {
+     "text": "neeche,",
+     "key": "neeche",
+     "emph": false,
+     "hi": "नीचे",
+     "start": 2.3,
+     "end": 2.739
+    },
+    {
+     "text": "aur",
+     "key": "aur",
+     "emph": false,
+     "hi": "और",
+     "start": 2.829,
+     "end": 2.995
+    },
+    {
+     "text": "kehte",
+     "key": "kehte",
+     "emph": false,
+     "hi": "कहते",
+     "start": 3.006,
+     "end": 3.411
+    },
+    {
+     "text": "hain",
+     "key": "hain",
+     "emph": false,
+     "hi": "हैं",
+     "start": 3.423,
+     "end": 3.654
+    },
+    {
+     "text": "ise",
+     "key": "ise",
+     "emph": false,
+     "hi": "इसे",
+     "start": 3.714,
+     "end": 3.934
+    },
+    {
+     "text": "BHOOTON",
+     "key": "bhooton",
+     "emph": true,
+     "hi": "भूतों",
+     "start": 3.934,
+     "end": 4.328
+    },
+    {
+     "text": "ne",
+     "key": "ne",
+     "emph": false,
+     "hi": "ने",
+     "start": 4.328,
+     "end": 4.455
+    },
+    {
+     "text": "ek",
+     "key": "ek",
+     "emph": false,
+     "hi": "एक",
+     "start": 4.515,
+     "end": 4.735
+    },
+    {
+     "text": "RAAT",
+     "key": "raat",
+     "emph": true,
+     "hi": "रात",
+     "start": 4.735,
+     "end": 5.047
+    },
+    {
+     "text": "mein",
+     "key": "mein",
+     "emph": false,
+     "hi": "में",
+     "start": 5.047,
+     "end": 5.209
+    },
+    {
+     "text": "banaya!",
+     "key": "banaya",
+     "emph": false,
+     "hi": "बनाया",
+     "start": 5.209,
+     "end": 5.661
+    }
+   ]
+  },
+  {
+   "id": "place",
+   "mood": "mystery",
+   "start": 5.75,
+   "duration": 2.9,
+   "words": [
+    {
+     "text": "Ye",
+     "key": "ye",
+     "emph": false,
+     "hi": "ये",
+     "start": 0.04,
+     "end": 0.213
+    },
+    {
+     "text": "hai",
+     "key": "hai",
+     "emph": false,
+     "hi": "है",
+     "start": 0.213,
+     "end": 0.41
+    },
+    {
+     "text": "Rajasthan",
+     "key": "rajasthan",
+     "emph": false,
+     "hi": "राजस्थान",
+     "start": 0.41,
+     "end": 1.093
+    },
+    {
+     "text": "ke",
+     "key": "ke",
+     "emph": false,
+     "hi": "के",
+     "start": 1.116,
+     "end": 1.255
+    },
+    {
+     "text": "ABHANERI",
+     "key": "abhaneri",
+     "emph": true,
+     "hi": "आभानेरी",
+     "start": 1.301,
+     "end": 1.88
+    },
+    {
+     "text": "ki",
+     "key": "ki",
+     "emph": false,
+     "hi": "की",
+     "start": 1.88,
+     "end": 2.019
+    },
+    {
+     "text": "CHAND",
+     "key": "chand",
+     "emph": true,
+     "hi": "चाँद",
+     "start": 2.079,
+     "end": 2.345
+    },
+    {
+     "text": "BAORI.",
+     "key": "baori",
+     "emph": true,
+     "hi": "बावड़ी",
+     "start": 2.345,
+     "end": 2.819
+    }
+   ]
+  },
+  {
+   "id": "deep",
+   "mood": "tense",
+   "start": 8.65,
+   "duration": 3.89,
+   "words": [
+    {
+     "text": "Kareeb",
+     "key": "kareeb",
+     "emph": false,
+     "hi": "करीब",
+     "start": 0.04,
+     "end": 0.306
+    },
+    {
+     "text": "SAU",
+     "key": "sau",
+     "emph": true,
+     "hi": "सौ",
+     "start": 0.306,
+     "end": 0.56
+    },
+    {
+     "text": "feet",
+     "key": "feet",
+     "emph": false,
+     "hi": "फीट",
+     "start": 0.56,
+     "end": 0.908
+    },
+    {
+     "text": "gehri,",
+     "key": "gehri",
+     "emph": false,
+     "hi": "गहरी",
+     "start": 0.919,
+     "end": 1.359
+    },
+    {
+     "text": "Bharat",
+     "key": "bharat",
+     "emph": false,
+     "hi": "भारत",
+     "start": 1.449,
+     "end": 1.844
+    },
+    {
+     "text": "ki",
+     "key": "ki",
+     "emph": false,
+     "hi": "की",
+     "start": 1.844,
+     "end": 1.983
+    },
+    {
+     "text": "sabse",
+     "key": "sabse",
+     "emph": false,
+     "hi": "सबसे",
+     "start": 1.983,
+     "end": 2.411
+    },
+    {
+     "text": "GEHRI",
+     "key": "gehri",
+     "emph": true,
+     "hi": "गहरी",
+     "start": 2.411,
+     "end": 2.735
+    },
+    {
+     "text": "baavdiyon",
+     "key": "baavdiyon",
+     "emph": false,
+     "hi": "बावड़ियों",
+     "start": 2.758,
+     "end": 3.221
+    },
+    {
+     "text": "mein",
+     "key": "mein",
+     "emph": false,
+     "hi": "में",
+     "start": 3.221,
+     "end": 3.36
+    },
+    {
+     "text": "se",
+     "key": "se",
+     "emph": false,
+     "hi": "से",
+     "start": 3.36,
+     "end": 3.545
+    },
+    {
+     "text": "ek.",
+     "key": "ek",
+     "emph": false,
+     "hi": "एक",
+     "start": 3.605,
+     "end": 3.89
+    }
+   ]
+  },
+  {
+   "id": "king",
+   "mood": "royal",
+   "start": 12.54,
+   "duration": 4.16,
+   "words": [
+    {
+     "text": "Maana",
+     "key": "maana",
+     "emph": false,
+     "hi": "माना",
+     "start": 0.04,
+     "end": 0.34
+    },
+    {
+     "text": "jaata",
+     "key": "jaata",
+     "emph": false,
+     "hi": "जाता",
+     "start": 0.34,
+     "end": 0.676
+    },
+    {
+     "text": "hai,",
+     "key": "hai",
+     "emph": false,
+     "hi": "है",
+     "start": 0.676,
+     "end": 0.919
+    },
+    {
+     "text": "ise",
+     "key": "ise",
+     "emph": false,
+     "hi": "इसे",
+     "start": 1.009,
+     "end": 1.31
+    },
+    {
+     "text": "AATHVI",
+     "key": "aathvi",
+     "emph": true,
+     "hi": "आठवीं",
+     "start": 1.37,
+     "end": 1.856
+    },
+    {
+     "text": "NAUVI",
+     "key": "nauvi",
+     "emph": true,
+     "hi": "नौवीं",
+     "start": 1.856,
+     "end": 2.226
+    },
+    {
+     "text": "sadi",
+     "key": "sadi",
+     "emph": false,
+     "hi": "सदी",
+     "start": 2.226,
+     "end": 2.574
+    },
+    {
+     "text": "mein",
+     "key": "mein",
+     "emph": false,
+     "hi": "में",
+     "start": 2.574,
+     "end": 2.724
+    },
+    {
+     "text": "raja",
+     "key": "raja",
+     "emph": false,
+     "hi": "राजा",
+     "start": 2.724,
+     "end": 3.06
+    },
+    {
+     "text": "CHANDA",
+     "key": "chanda",
+     "emph": true,
+     "hi": "चंदा",
+     "start": 3.071,
+     "end": 3.419
+    },
+    {
+     "text": "ne",
+     "key": "ne",
+     "emph": false,
+     "hi": "ने",
+     "start": 3.419,
+     "end": 3.558
+    },
+    {
+     "text": "banwaaya.",
+     "key": "banwaaya",
+     "emph": false,
+     "hi": "बनवाया",
+     "start": 3.558,
+     "end": 4.09
+    }
+   ]
+  },
+  {
+   "id": "why",
+   "mood": "calm",
+   "start": 16.7,
+   "duration": 3.26,
+   "words": [
+    {
+     "text": "Par",
+     "key": "par",
+     "emph": false,
+     "hi": "पर",
+     "start": 0.04,
+     "end": 0.122
+    },
+    {
+     "text": "kyun?",
+     "key": "kyun",
+     "emph": false,
+     "hi": "क्यों",
+     "start": 0.122,
+     "end": 0.377
+    },
+    {
+     "text": "Registan",
+     "key": "registan",
+     "emph": false,
+     "hi": "रेगिस्तान",
+     "start": 0.51,
+     "end": 1.103
+    },
+    {
+     "text": "mein",
+     "key": "mein",
+     "emph": false,
+     "hi": "में",
+     "start": 1.115,
+     "end": 1.265
+    },
+    {
+     "text": "BAARISH",
+     "key": "baarish",
+     "emph": true,
+     "hi": "बारिश",
+     "start": 1.265,
+     "end": 1.67
+    },
+    {
+     "text": "ka",
+     "key": "ka",
+     "emph": false,
+     "hi": "का",
+     "start": 1.67,
+     "end": 1.798
+    },
+    {
+     "text": "PAANI",
+     "key": "paani",
+     "emph": true,
+     "hi": "पानी",
+     "start": 1.798,
+     "end": 2.133
+    },
+    {
+     "text": "jama",
+     "key": "jama",
+     "emph": false,
+     "hi": "जमा",
+     "start": 2.133,
+     "end": 2.434
+    },
+    {
+     "text": "karne",
+     "key": "karne",
+     "emph": false,
+     "hi": "करने",
+     "start": 2.434,
+     "end": 2.724
+    },
+    {
+     "text": "ke",
+     "key": "ke",
+     "emph": false,
+     "hi": "के",
+     "start": 2.724,
+     "end": 2.886
+    },
+    {
+     "text": "liye.",
+     "key": "liye",
+     "emph": false,
+     "hi": "लिए",
+     "start": 2.897,
+     "end": 3.175
+    }
+   ]
+  },
+  {
+   "id": "cool",
+   "mood": "calm",
+   "start": 19.96,
+   "duration": 3.67,
+   "words": [
+    {
+     "text": "Kehte",
+     "key": "kehte",
+     "emph": false,
+     "hi": "कहते",
+     "start": 0.04,
+     "end": 0.317
+    },
+    {
+     "text": "hain,",
+     "key": "hain",
+     "emph": false,
+     "hi": "हैं",
+     "start": 0.329,
+     "end": 0.595
+    },
+    {
+     "text": "neeche",
+     "key": "neeche",
+     "emph": false,
+     "hi": "नीचे",
+     "start": 0.68,
+     "end": 1.047
+    },
+    {
+     "text": "ki",
+     "key": "ki",
+     "emph": false,
+     "hi": "की",
+     "start": 1.059,
+     "end": 1.221
+    },
+    {
+     "text": "hawa",
+     "key": "hawa",
+     "emph": false,
+     "hi": "हवा",
+     "start": 1.221,
+     "end": 1.545
+    },
+    {
+     "text": "upar",
+     "key": "upar",
+     "emph": false,
+     "hi": "ऊपर",
+     "start": 1.602,
+     "end": 1.903
+    },
+    {
+     "text": "se",
+     "key": "se",
+     "emph": false,
+     "hi": "से",
+     "start": 1.903,
+     "end": 2.089
+    },
+    {
+     "text": "kai",
+     "key": "kai",
+     "emph": false,
+     "hi": "कई",
+     "start": 2.089,
+     "end": 2.355
+    },
+    {
+     "text": "degree",
+     "key": "degree",
+     "emph": false,
+     "hi": "डिग्री",
+     "start": 2.366,
+     "end": 2.679
+    },
+    {
+     "text": "THANDI",
+     "key": "thandi",
+     "emph": true,
+     "hi": "ठंडी",
+     "start": 2.702,
+     "end": 3.049
+    },
+    {
+     "text": "rehti",
+     "key": "rehti",
+     "emph": false,
+     "hi": "रहती",
+     "start": 3.049,
+     "end": 3.396
+    },
+    {
+     "text": "hai.",
+     "key": "hai",
+     "emph": false,
+     "hi": "है",
+     "start": 3.396,
+     "end": 3.67
+    }
+   ]
+  },
+  {
+   "id": "maze",
+   "mood": "mystery",
+   "start": 23.63,
+   "duration": 4.25,
+   "words": [
+    {
+     "text": "ZIGZAG",
+     "key": "zigzag",
+     "emph": true,
+     "hi": "ज़िगज़ैग",
+     "start": 0.04,
+     "end": 0.481
+    },
+    {
+     "text": "seedhiyon",
+     "key": "seedhiyon",
+     "emph": false,
+     "hi": "सीढ़ियों",
+     "start": 0.481,
+     "end": 0.944
+    },
+    {
+     "text": "ka",
+     "key": "ka",
+     "emph": false,
+     "hi": "का",
+     "start": 0.944,
+     "end": 1.117
+    },
+    {
+     "text": "ye",
+     "key": "ye",
+     "emph": false,
+     "hi": "ये",
+     "start": 1.117,
+     "end": 1.268
+    },
+    {
+     "text": "jaal,",
+     "key": "jaal",
+     "emph": false,
+     "hi": "जाल",
+     "start": 1.268,
+     "end": 1.627
+    },
+    {
+     "text": "aisa",
+     "key": "aisa",
+     "emph": false,
+     "hi": "ऐसा",
+     "start": 1.71,
+     "end": 2.032
+    },
+    {
+     "text": "lagta",
+     "key": "lagta",
+     "emph": false,
+     "hi": "लगता",
+     "start": 2.032,
+     "end": 2.437
+    },
+    {
+     "text": "hai",
+     "key": "hai",
+     "emph": false,
+     "hi": "है",
+     "start": 2.437,
+     "end": 2.657
+    },
+    {
+     "text": "jaise",
+     "key": "jaise",
+     "emph": false,
+     "hi": "जैसे",
+     "start": 2.717,
+     "end": 3.111
+    },
+    {
+     "text": "koi",
+     "key": "koi",
+     "emph": false,
+     "hi": "कोई",
+     "start": 3.122,
+     "end": 3.412
+    },
+    {
+     "text": "BHOOLBHULAIYA!",
+     "key": "bhoolbhulaiya",
+     "emph": true,
+     "hi": "भूलभुलैया",
+     "start": 3.446,
+     "end": 4.176
+    }
+   ]
+  },
+  {
+   "id": "legend",
+   "mood": "creepy",
+   "start": 27.88,
+   "duration": 5.13,
+   "words": [
+    {
+     "text": "Lokkatha",
+     "key": "lokkatha",
+     "emph": false,
+     "hi": "लोककथा",
+     "start": 0.04,
+     "end": 0.56
+    },
+    {
+     "text": "kehti",
+     "key": "kehti",
+     "emph": false,
+     "hi": "कहती",
+     "start": 0.56,
+     "end": 0.954
+    },
+    {
+     "text": "hai,",
+     "key": "hai",
+     "emph": false,
+     "hi": "है",
+     "start": 0.954,
+     "end": 1.185
+    },
+    {
+     "text": "jo",
+     "key": "jo",
+     "emph": false,
+     "hi": "जो",
+     "start": 1.275,
+     "end": 1.497
+    },
+    {
+     "text": "seedhi",
+     "key": "seedhi",
+     "emph": false,
+     "hi": "सीढ़ी",
+     "start": 1.497,
+     "end": 1.867
+    },
+    {
+     "text": "se",
+     "key": "se",
+     "emph": false,
+     "hi": "से",
+     "start": 1.867,
+     "end": 2.041
+    },
+    {
+     "text": "utra,",
+     "key": "utra",
+     "emph": false,
+     "hi": "उतरा",
+     "start": 2.064,
+     "end": 2.469
+    },
+    {
+     "text": "wo",
+     "key": "wo",
+     "emph": false,
+     "hi": "वो",
+     "start": 2.559,
+     "end": 2.802
+    },
+    {
+     "text": "USI",
+     "key": "usi",
+     "emph": true,
+     "hi": "उसी",
+     "start": 2.825,
+     "end": 3.126
+    },
+    {
+     "text": "seedhi",
+     "key": "seedhi",
+     "emph": false,
+     "hi": "सीढ़ी",
+     "start": 3.126,
+     "end": 3.485
+    },
+    {
+     "text": "se",
+     "key": "se",
+     "emph": false,
+     "hi": "से",
+     "start": 3.485,
+     "end": 3.682
+    },
+    {
+     "text": "wapas",
+     "key": "wapas",
+     "emph": false,
+     "hi": "वापस",
+     "start": 3.682,
+     "end": 4.11
+    },
+    {
+     "text": "NAHI",
+     "key": "nahi",
+     "emph": true,
+     "hi": "नहीं",
+     "start": 4.11,
+     "end": 4.341
+    },
+    {
+     "text": "chadh",
+     "key": "chadh",
+     "emph": false,
+     "hi": "चढ़",
+     "start": 4.365,
+     "end": 4.573
+    },
+    {
+     "text": "paata.",
+     "key": "paata",
+     "emph": false,
+     "hi": "पाता",
+     "start": 4.596,
+     "end": 5.036
+    }
+   ]
+  },
+  {
+   "id": "truth",
+   "mood": "mystery",
+   "start": 33.01,
+   "duration": 5.04,
+   "words": [
+    {
+     "text": "Sach?",
+     "key": "sach",
+     "emph": false,
+     "hi": "सच",
+     "start": 0.04,
+     "end": 0.262
+    },
+    {
+     "text": "Iske",
+     "key": "iske",
+     "emph": false,
+     "hi": "इसके",
+     "start": 0.41,
+     "end": 0.662
+    },
+    {
+     "text": "nirmaan",
+     "key": "nirmaan",
+     "emph": false,
+     "hi": "निर्माण",
+     "start": 0.673,
+     "end": 1.148
+    },
+    {
+     "text": "ka",
+     "key": "ka",
+     "emph": false,
+     "hi": "का",
+     "start": 1.16,
+     "end": 1.322
+    },
+    {
+     "text": "koi",
+     "key": "koi",
+     "emph": false,
+     "hi": "कोई",
+     "start": 1.322,
+     "end": 1.622
+    },
+    {
+     "text": "SHILALEKH",
+     "key": "shilalekh",
+     "emph": true,
+     "hi": "शिलालेख",
+     "start": 1.622,
+     "end": 2.19
+    },
+    {
+     "text": "nahi",
+     "key": "nahi",
+     "emph": false,
+     "hi": "नहीं",
+     "start": 2.201,
+     "end": 2.491
+    },
+    {
+     "text": "mila.",
+     "key": "mila",
+     "emph": false,
+     "hi": "मिला",
+     "start": 2.491,
+     "end": 2.768
+    },
+    {
+     "text": "Isliye",
+     "key": "isliye",
+     "emph": false,
+     "hi": "इसलिए",
+     "start": 2.87,
+     "end": 3.257
+    },
+    {
+     "text": "kahaniyan",
+     "key": "kahaniyan",
+     "emph": false,
+     "hi": "कहानियाँ",
+     "start": 3.257,
+     "end": 3.824
+    },
+    {
+     "text": "aaj",
+     "key": "aaj",
+     "emph": false,
+     "hi": "आज",
+     "start": 3.884,
+     "end": 4.161
+    },
+    {
+     "text": "bhi",
+     "key": "bhi",
+     "emph": false,
+     "hi": "भी",
+     "start": 4.161,
+     "end": 4.347
+    },
+    {
+     "text": "ZINDA",
+     "key": "zinda",
+     "emph": true,
+     "hi": "ज़िंदा",
+     "start": 4.347,
+     "end": 4.74
+    },
+    {
+     "text": "hain.",
+     "key": "hain",
+     "emph": false,
+     "hi": "हैं",
+     "start": 4.74,
+     "end": 5.04
+    }
+   ]
+  },
+  {
+   "id": "cta",
+   "mood": "tense",
+   "start": 38.05,
+   "duration": 8.63,
+   "words": [
+    {
+     "text": "BHOOTON",
+     "key": "bhooton",
+     "emph": true,
+     "hi": "भूतों",
+     "start": 0.04,
+     "end": 0.364
+    },
+    {
+     "text": "ka",
+     "key": "ka",
+     "emph": false,
+     "hi": "का",
+     "start": 0.364,
+     "end": 0.526
+    },
+    {
+     "text": "kaam,",
+     "key": "kaam",
+     "emph": false,
+     "hi": "काम",
+     "start": 0.526,
+     "end": 0.861
+    },
+    {
+     "text": "ya",
+     "key": "ya",
+     "emph": false,
+     "hi": "या",
+     "start": 0.931,
+     "end": 1.104
+    },
+    {
+     "text": "INSAANON",
+     "key": "insaanon",
+     "emph": true,
+     "hi": "इंसानों",
+     "start": 1.164,
+     "end": 1.639
+    },
+    {
+     "text": "ka",
+     "key": "ka",
+     "emph": false,
+     "hi": "का",
+     "start": 1.639,
+     "end": 1.789
+    },
+    {
+     "text": "kamaal?",
+     "key": "kamaal",
+     "emph": false,
+     "hi": "कमाल",
+     "start": 1.789,
+     "end": 2.229
+    },
+    {
+     "text": "Comment",
+     "key": "comment",
+     "emph": false,
+     "hi": "कमेंट",
+     "start": 2.29,
+     "end": 2.583
+    },
+    {
+     "text": "mein",
+     "key": "mein",
+     "emph": false,
+     "hi": "में",
+     "start": 2.583,
+     "end": 2.734
+    },
+    {
+     "text": "batao,",
+     "key": "batao",
+     "emph": false,
+     "hi": "बताओ",
+     "start": 2.734,
+     "end": 3.243
+    },
+    {
+     "text": "aur",
+     "key": "aur",
+     "emph": false,
+     "hi": "और",
+     "start": 3.3,
+     "end": 3.448
+    },
+    {
+     "text": "aise",
+     "key": "aise",
+     "emph": false,
+     "hi": "ऐसे",
+     "start": 3.506,
+     "end": 3.818
+    },
+    {
+     "text": "hi",
+     "key": "hi",
+     "emph": false,
+     "hi": "ही",
+     "start": 3.83,
+     "end": 3.969
+    },
+    {
+     "text": "rahasyon",
+     "key": "rahasyon",
+     "emph": false,
+     "hi": "रहस्यों",
+     "start": 3.98,
+     "end": 4.386
+    },
+    {
+     "text": "ke",
+     "key": "ke",
+     "emph": false,
+     "hi": "के",
+     "start": 4.397,
+     "end": 4.571
+    },
+    {
+     "text": "liye",
+     "key": "liye",
+     "emph": false,
+     "hi": "लिए",
+     "start": 4.594,
+     "end": 4.849
+    },
+    {
+     "text": "ITIHAAS",
+     "key": "itihaas",
+     "emph": true,
+     "hi": "इतिहास",
+     "start": 4.909,
+     "end": 5.418
+    },
+    {
+     "text": "KE",
+     "key": "ke",
+     "emph": true,
+     "hi": "के",
+     "start": 5.418,
+     "end": 5.545
+    },
+    {
+     "text": "BHOOT",
+     "key": "bhoot",
+     "emph": true,
+     "hi": "भूत",
+     "start": 5.545,
+     "end": 5.858
+    },
+    {
+     "text": "ko",
+     "key": "ko",
+     "emph": false,
+     "hi": "को",
+     "start": 5.869,
+     "end": 5.985
+    },
+    {
+     "text": "SUBSCRIBE",
+     "key": "subscribe",
+     "emph": true,
+     "hi": "सब्सक्राइब",
+     "start": 5.985,
+     "end": 6.645
+    },
+    {
+     "text": "karo!",
+     "key": "karo",
+     "emph": false,
+     "hi": "करो",
+     "start": 6.668,
+     "end": 7.003
+    }
+   ]
+  }
+ ],
+ "sfx": [
+  {
+   "sfx": "boom",
+   "t": 0.0,
+   "gain": 0.7
+  },
+  {
+   "sfx": "wind",
+   "t": 0.0,
+   "gain": 0.3
+  },
+  {
+   "sfx": "hit",
+   "t": 0.669,
+   "gain": 0.65
+  },
+  {
+   "sfx": "hit",
+   "t": 4.735,
+   "gain": 0.55
+  },
+  {
+   "sfx": "whoosh",
+   "t": 5.63,
+   "gain": 0.5
+  },
+  {
+   "sfx": "stamp",
+   "t": 7.051,
+   "gain": 0.65
+  },
+  {
+   "sfx": "shimmer",
+   "t": 8.095,
+   "gain": 0.55
+  },
+  {
+   "sfx": "whoosh",
+   "t": 8.53,
+   "gain": 0.5
+  },
+  {
+   "sfx": "hit",
+   "t": 8.956,
+   "gain": 0.65
+  },
+  {
+   "sfx": "hit",
+   "t": 9.569,
+   "gain": 0.55
+  },
+  {
+   "sfx": "whoosh",
+   "t": 12.42,
+   "gain": 0.5
+  },
+  {
+   "sfx": "shimmer_dark",
+   "t": 13.91,
+   "gain": 0.65
+  },
+  {
+   "sfx": "chime",
+   "t": 15.611,
+   "gain": 0.55
+  },
+  {
+   "sfx": "splash",
+   "t": 17.965,
+   "gain": 0.45
+  },
+  {
+   "sfx": "whoosh",
+   "t": 19.84,
+   "gain": 0.5
+  },
+  {
+   "sfx": "hit",
+   "t": 22.662,
+   "gain": 0.65
+  },
+  {
+   "sfx": "whoosh",
+   "t": 23.51,
+   "gain": 0.5
+  },
+  {
+   "sfx": "ghost",
+   "t": 23.67,
+   "gain": 0.65
+  },
+  {
+   "sfx": "shimmer",
+   "t": 27.076,
+   "gain": 0.55
+  },
+  {
+   "sfx": "whoosh",
+   "t": 27.76,
+   "gain": 0.5
+  },
+  {
+   "sfx": "riser",
+   "t": 30.705,
+   "gain": 0.65
+  },
+  {
+   "sfx": "ghost",
+   "t": 31.99,
+   "gain": 0.55
+  },
+  {
+   "sfx": "whoosh",
+   "t": 32.89,
+   "gain": 0.5
+  },
+  {
+   "sfx": "hit",
+   "t": 34.632,
+   "gain": 0.65
+  },
+  {
+   "sfx": "shimmer",
+   "t": 37.357,
+   "gain": 0.55
+  },
+  {
+   "sfx": "heartbeat",
+   "t": 38.05,
+   "gain": 0.45
+  },
+  {
+   "sfx": "ghost",
+   "t": 38.09,
+   "gain": 0.45
+  },
+  {
+   "sfx": "pop",
+   "t": 40.34,
+   "gain": 0.6
+  },
+  {
+   "sfx": "whoosh",
+   "t": 42.839,
+   "gain": 0.5
+  },
+  {
+   "sfx": "pop",
+   "t": 44.165,
+   "gain": 0.8
+  },
+  {
+   "sfx": "ding",
+   "t": 44.305,
+   "gain": 0.7
+  }
+ ]
+}

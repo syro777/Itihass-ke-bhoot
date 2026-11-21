@@ -57,7 +57,7 @@ Tile them into a contact sheet and **look at it**. Fix: text overlapping the tit
 ## 8. Publish (GitHub Actions renders and releases)
 Claude Code sessions cannot create GitHub Releases, so CI does it:
 1. In `topics.json` set the topic to `"status": "done", "date": "<YYYY-MM-DD>"`.
-2. Write the episode id (one line) to `episodes/LATEST`.
+2. Write the episode id (one line) to `episodes/LATEST`; for a batch, list one id per line and each renders in its own parallel job.
 3. Commit everything except `out/`, `node_modules/`, build files and `mix.wav` (see `.gitignore`; **do** commit `public/<id>/mix.m4a` and `src/data/<id>.timeline.json`), message `Episode: <id>`, and push to `main`.
 4. The push triggers `.github/workflows/publish.yml`: it renders the MP4, creates the release `ep-<date>-<id>` with the MP4 + upload kit, and uploads to YouTube when `AUTO_UPLOAD` is on. Check the run with `gh api repos/syro777/Itihass-ke-bhoot/actions/runs --jq '.workflow_runs[0] | {status, conclusion, html_url}'` (wait for it to finish; if it fails, read the job log, fix, push again).
 

@@ -1,0 +1,254 @@
+{
+ "id": "chand-baori",
+ "style": "3d",
+ "voice": "hi-IN-MadhurNeural",
+ "pitch": "-2Hz",
+ "notes": "Facts: Chand Baori, Abhaneri (Dausa dist., Rajasthan); ~3,500 steps, 13 storeys, ~100 ft deep; believed commissioned by King Chanda (Nikumbha dynasty), 8th-9th c. (no inscription found); built to store rainwater; legend: ghosts built it in one night; folk tale: you cannot climb back up the same steps you came down; air at the bottom said to be cooler.",
+ "scenes": [
+  {
+   "id": "hook",
+   "mood": "tense",
+   "hi": "साढ़े तीन हज़ार सीढ़ियाँ, तेरह मंज़िल नीचे, और कहते हैं इसे भूतों ने एक रात में बनाया!",
+   "en": "Saadhe teen *HAZAAR seedhiyan, *TERAH manzil neeche, aur kehte hain ise *BHOOTON ne ek *RAAT mein banaya!",
+   "sfx": [
+    {
+     "at": "start",
+     "sfx": "boom",
+     "gain": 0.7
+    },
+    {
+     "at": "start",
+     "sfx": "wind",
+     "gain": 0.3
+    },
+    {
+     "at": "hazaar",
+     "sfx": "hit",
+     "gain": 0.65
+    },
+    {
+     "at": "raat",
+     "sfx": "hit",
+     "gain": 0.55
+    }
+   ]
+  },
+  {
+   "id": "place",
+   "mood": "mystery",
+   "hi": "ये है राजस्थान के आभानेरी की चाँद बावड़ी।",
+   "en": "Ye hai Rajasthan ke *ABHANERI ki *CHAND *BAORI.",
+   "sfx": [
+    {
+     "at": "start",
+     "sfx": "whoosh",
+     "off": -0.12,
+     "gain": 0.5
+    },
+    {
+     "at": "abhaneri",
+     "sfx": "stamp",
+     "gain": 0.65
+    },
+    {
+     "at": "baori",
+     "sfx": "shimmer",
+     "gain": 0.55
+    }
+   ]
+  },
+  {
+   "id": "deep",
+   "mood": "tense",
+   "hi": "करीब सौ फीट गहरी, भारत की सबसे गहरी बावड़ियों में से एक।",
+   "en": "Kareeb *SAU feet gehri, Bharat ki sabse *GEHRI baavdiyon mein se ek.",
+   "sfx": [
+    {
+     "at": "start",
+     "sfx": "whoosh",
+     "off": -0.12,
+     "gain": 0.5
+    },
+    {
+     "at": "sau",
+     "sfx": "hit",
+     "gain": 0.65
+    },
+    {
+     "at": "gehri",
+     "sfx": "hit",
+     "gain": 0.55
+    }
+   ]
+  },
+  {
+   "id": "king",
+   "mood": "royal",
+   "hi": "माना जाता है, इसे आठवीं नौवीं सदी में राजा चंदा ने बनवाया।",
+   "en": "Maana jaata hai, ise *AATHVI *NAUVI sadi mein raja *CHANDA ne banwaaya.",
+   "sfx": [
+    {
+     "at": "start",
+     "sfx": "whoosh",
+     "off": -0.12,
+     "gain": 0.5
+    },
+    {
+     "at": "aathvi",
+     "sfx": "shimmer_dark",
+     "gain": 0.65
+    },
+    {
+     "at": "chanda",
+     "sfx": "chime",
+     "gain": 0.55
+    }
+   ]
+  },
+  {
+   "id": "why",
+   "mood": "calm",
+   "hi": "पर क्यों? रेगिस्तान में बारिश का पानी जमा करने के लिए।",
+   "en": "Par kyun? Registan mein *BAARISH ka *PAANI jama karne ke liye.",
+   "sfx": [
+    {
+     "at": "baarish",
+     "sfx": "splash",
+     "gain": 0.45
+    }
+   ]
+  },
+  {
+   "id": "cool",
+   "mood": "calm",
+   "hi": "कहते हैं, नीचे की हवा ऊपर से कई डिग्री ठंडी रहती है।",
+   "en": "Kehte hain, neeche ki hawa upar se kai degree *THANDI rehti hai.",
+   "sfx": [
+    {
+     "at": "start",
+     "sfx": "whoosh",
+     "off": -0.12,
+     "gain": 0.5
+    },
+    {
+     "at": "thandi",
+     "sfx": "hit",
+     "gain": 0.65
+    }
+   ]
+  },
+  {
+   "id": "maze",
+   "mood": "mystery",
+   "hi": "ज़िगज़ैग सीढ़ियों का ये जाल, ऐसा लगता है जैसे कोई भूलभुलैया!",
+   "en": "*ZIGZAG seedhiyon ka ye jaal, aisa lagta hai jaise koi *BHOOLBHULAIYA!",
+   "sfx": [
+    {
+     "at": "start",
+     "sfx": "whoosh",
+     "off": -0.12,
+     "gain": 0.5
+    },
+    {
+     "at": "zigzag",
+     "sfx": "ghost",
+     "gain": 0.65
+    },
+    {
+     "at": "bhoolbhulaiya",
+     "sfx": "shimmer",
+     "gain": 0.55
+    }
+   ]
+  },
+  {
+   "id": "legend",
+   "mood": "creepy",
+   "hi": "लोककथा कहती है, जो सीढ़ी से उतरा, वो उसी सीढ़ी से वापस नहीं चढ़ पाता।",
+   "en": "Lokkatha kehti hai, jo seedhi se utra, wo *USI seedhi se wapas *NAHI chadh paata.",
+   "sfx": [
+    {
+     "at": "start",
+     "sfx": "whoosh",
+     "off": -0.12,
+     "gain": 0.5
+    },
+    {
+     "at": "usi",
+     "sfx": "riser",
+     "gain": 0.65
+    },
+    {
+     "at": "nahi",
+     "sfx": "ghost",
+     "gain": 0.55
+    }
+   ]
+  },
+  {
+   "id": "truth",
+   "mood": "mystery",
+   "hi": "सच? इसके निर्माण का कोई शिलालेख नहीं मिला। इसलिए कहानियाँ आज भी ज़िंदा हैं।",
+   "en": "Sach? Iske nirmaan ka koi *SHILALEKH nahi mila. Isliye kahaniyan aaj bhi *ZINDA hain.",
+   "sfx": [
+    {
+     "at": "start",
+     "sfx": "whoosh",
+     "off": -0.12,
+     "gain": 0.5
+    },
+    {
+     "at": "shilalekh",
+     "sfx": "hit",
+     "gain": 0.65
+    },
+    {
+     "at": "zinda",
+     "sfx": "shimmer",
+     "gain": 0.55
+    }
+   ]
+  },
+  {
+   "id": "cta",
+   "mood": "tense",
+   "hi": "भूतों का काम, या इंसानों का कमाल? कमेंट में बताओ, और ऐसे ही रहस्यों के लिए इतिहास के भूत को सब्सक्राइब करो!",
+   "en": "*BHOOTON ka kaam, ya *INSAANON ka kamaal? Comment mein batao, aur aise hi rahasyon ke liye *ITIHAAS *KE *BHOOT ko *SUBSCRIBE karo!",
+   "sfx": [
+    {
+     "at": "start",
+     "sfx": "heartbeat",
+     "gain": 0.45
+    },
+    {
+     "at": "bhooton",
+     "sfx": "ghost",
+     "gain": 0.45
+    },
+    {
+     "at": "comment",
+     "sfx": "pop",
+     "gain": 0.6
+    },
+    {
+     "at": "itihaas",
+     "sfx": "whoosh",
+     "off": -0.12,
+     "gain": 0.5
+    },
+    {
+     "at": "subscribe",
+     "sfx": "pop",
+     "off": 0.13,
+     "gain": 0.8
+    },
+    {
+     "at": "subscribe",
+     "sfx": "ding",
+     "off": 0.27,
+     "gain": 0.7
+    }
+   ]
+  }
+ ]
+}

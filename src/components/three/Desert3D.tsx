@@ -159,9 +159,11 @@ export const Flag: React.FC<{ position: V3; w?: number; h?: number; color?: stri
 };
 
 /* ---------------- temple ---------------- */
-const CREAM = "#f4ecdc";
-const STONE = "#e2d3b5";
-const RED = "#c8462c";
+const CREAM0 = "#f4ecdc";
+const STONE0 = "#e2d3b5";
+const RED0 = "#c8462c";
+const CREAM = CREAM0;
+const RED = RED0;
 const GOLD = "#e8b23a";
 
 const Chhatri: React.FC<{ position: V3; s?: number }> = ({ position, s = 1 }) => (
@@ -190,13 +192,19 @@ const Chhatri: React.FC<{ position: V3; s?: number }> = ({ position, s = 1 }) =>
 );
 
 /** Rajasthani desert temple (plinth, mandap, porch, shikhara, flag). Front faces +z. */
-export const Temple: React.FC<{ position?: V3; rotY?: number; scale?: number; glow?: number; bellSwing?: number }> = ({
+export const Temple: React.FC<{ position?: V3; rotY?: number; scale?: number; glow?: number; bellSwing?: number; stone?: string; trim?: string; noFlag?: boolean }> = ({
   position = [0, 0, 0],
   rotY = 0,
   scale = 1,
   glow = 1,
   bellSwing = 0,
+  stone,
+  trim,
+  noFlag = false,
 }) => {
+  const CREAM = stone ?? CREAM0;
+  const STONE = stone ?? STONE0;
+  const RED = trim ?? RED0;
   const f = useCurrentFrame();
   const flick = 0.85 + 0.15 * Math.sin(f / 3.3) * Math.sin(f / 7.1);
   return (
@@ -267,7 +275,7 @@ export const Temple: React.FC<{ position?: V3; rotY?: number; scale?: number; gl
       {/* shikhara */}
       <mesh position={[0, 9.45, -0.5]} castShadow>
         <cylinderGeometry args={[0.8, 3.0, 6.5, 8]} />
-        <meshStandardMaterial color="#f1e4cc" roughness={0.8} flatShading />
+        <meshStandardMaterial color={stone ?? "#f1e4cc"} roughness={0.8} flatShading />
       </mesh>
       {[0.25, 0.5, 0.75].map((k) => (
         <mesh key={k} position={[0, 6.2 + k * 6.5, -0.5]}>
@@ -277,7 +285,7 @@ export const Temple: React.FC<{ position?: V3; rotY?: number; scale?: number; gl
       ))}
       <mesh position={[0, 12.9, -0.5]} castShadow>
         <cylinderGeometry args={[1.05, 1.05, 0.45, 16]} />
-        <meshStandardMaterial color="#e8d8b8" />
+        <meshStandardMaterial color={stone ?? "#e8d8b8"} />
       </mesh>
       <mesh position={[0, 13.45, -0.5]}>
         <sphereGeometry args={[0.38, 14, 10]} />
@@ -291,7 +299,7 @@ export const Temple: React.FC<{ position?: V3; rotY?: number; scale?: number; gl
         <cylinderGeometry args={[0.04, 0.04, 2.6, 6]} />
         <meshStandardMaterial color="#8a6a3a" />
       </mesh>
-      <Flag position={[0.04, 15.8, -0.5]} w={2.0} h={1.1} color="#ff6a00" seed={1.3} />
+      {!noFlag && <Flag position={[0.04, 15.8, -0.5]} w={2.0} h={1.1} color="#ff6a00" seed={1.3} />}
       {/* corner chhatris */}
       {[-4.9, 4.9].map((x) => [-4.9, 4.9].map((z) => <Chhatri key={`${x}${z}`} position={[x, 1.2, z]} s={1} />))}
       <pointLight position={[0, 3, 5.5]} color="#ffb060" intensity={26 * glow * flick} distance={16} decay={1.6} />
