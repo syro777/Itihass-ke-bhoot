@@ -1,0 +1,270 @@
+{
+ "id": "kailasa-ellora",
+ "style": "3d",
+ "voice": "hi-IN-MadhurNeural",
+ "pitch": "-2Hz",
+ "notes": "Facts: Kailasa temple, Ellora Cave 16 (Maharashtra), part of the UNESCO Ellora Caves; generally attributed to Rashtrakuta king Krishna I (8th c., r. c. 756-773 CE; no dedicatory inscription); carved top-down out of a single basalt rock scarp (no bricks/joints); estimates ~200,000 tonnes of rock removed (estimates vary); dedicated to Shiva, meant to evoke Mount Kailash; ~32 m high, largest monolithic rock-cut structure; where the debris went is still asked; alien claims are fringe, historians credit human craftsmen with chisels and hammers.",
+ "scenes": [
+  {
+   "id": "hook",
+   "mood": "tense",
+   "hi": "एक पूरा मंदिर, जिसमें एक भी ईंट नहीं जोड़ी गई! पूरा का पूरा, एक ही चट्टान से काटा गया!",
+   "en": "Ek poora *MANDIR, jisme ek bhi *EENT nahi jodi gayi! Poora ka poora, *EK hi *CHATTAAN se kaata gaya!",
+   "sfx": [
+    {
+     "at": "start",
+     "sfx": "boom",
+     "gain": 0.7
+    },
+    {
+     "at": "start",
+     "sfx": "wind",
+     "gain": 0.25
+    },
+    {
+     "at": "eent",
+     "sfx": "hit",
+     "gain": 0.7
+    },
+    {
+     "at": "chattaan",
+     "sfx": "chisel",
+     "gain": 0.8
+    }
+   ]
+  },
+  {
+   "id": "place",
+   "mood": "royal",
+   "hi": "ये है महाराष्ट्र के एलोरा का कैलाश मंदिर, गुफा नंबर सोलह।",
+   "en": "Ye hai Maharashtra ke *ELLORA ka *KAILASH mandir, gufa number *SOLAH.",
+   "sfx": [
+    {
+     "at": "start",
+     "sfx": "whoosh",
+     "off": -0.12,
+     "gain": 0.5
+    },
+    {
+     "at": "ellora",
+     "sfx": "stamp",
+     "gain": 0.65
+    },
+    {
+     "at": "solah",
+     "sfx": "chime",
+     "gain": 0.55
+    }
+   ]
+  },
+  {
+   "id": "topdown",
+   "mood": "mystery",
+   "hi": "इसे नीचे से ऊपर नहीं, ऊपर से नीचे की ओर तराशा गया।",
+   "en": "Ise neeche se upar *NAHI, *UPAR se *NEECHE ki or taraasha gaya.",
+   "sfx": [
+    {
+     "at": "start",
+     "sfx": "whoosh",
+     "off": -0.12,
+     "gain": 0.5
+    },
+    {
+     "at": "upar",
+     "sfx": "chisel",
+     "gain": 0.7
+    },
+    {
+     "at": "neeche",
+     "sfx": "rumble",
+     "gain": 0.5
+    }
+   ]
+  },
+  {
+   "id": "rock",
+   "mood": "tense",
+   "hi": "अनुमान है, करीब दो लाख टन पत्थर काटकर हटाया गया!",
+   "en": "Anumaan hai, kareeb *DO *LAAKH ton patthar kaatkar *HATAYA gaya!",
+   "sfx": [
+    {
+     "at": "start",
+     "sfx": "whoosh",
+     "off": -0.12,
+     "gain": 0.5
+    },
+    {
+     "at": "do",
+     "sfx": "stamp",
+     "gain": 0.7
+    },
+    {
+     "at": "hataya",
+     "sfx": "crash",
+     "gain": 0.55
+    }
+   ]
+  },
+  {
+   "id": "king",
+   "mood": "royal",
+   "hi": "माना जाता है, आठवीं सदी में राष्ट्रकूट राजा कृष्ण प्रथम ने इसे बनवाया।",
+   "en": "Maana jaata hai, *AATHVI sadi mein *RASHTRAKUT raja *KRISHNA pratham ne ise banwaaya.",
+   "sfx": [
+    {
+     "at": "start",
+     "sfx": "whoosh",
+     "off": -0.12,
+     "gain": 0.5
+    },
+    {
+     "at": "rashtrakut",
+     "sfx": "fanfare",
+     "gain": 0.45
+    }
+   ]
+  },
+  {
+   "id": "shiva",
+   "mood": "calm",
+   "hi": "ये भगवान शिव को समर्पित है, जैसे धरती पर कैलाश पर्वत।",
+   "en": "Ye bhagwan *SHIV ko samarpit hai, jaise dharti par *KAILASH *PARVAT.",
+   "sfx": [
+    {
+     "at": "start",
+     "sfx": "whoosh",
+     "off": -0.12,
+     "gain": 0.5
+    },
+    {
+     "at": "shiv",
+     "sfx": "bell",
+     "gain": 0.6
+    },
+    {
+     "at": "kailash",
+     "sfx": "shimmer",
+     "gain": 0.5
+    }
+   ]
+  },
+  {
+   "id": "tools",
+   "mood": "tense",
+   "hi": "न मशीन, न क्रेन। सिर्फ छेनी, हथौड़ी, और कारीगरों का हुनर!",
+   "en": "Na *MACHINE, na *CRANE. Sirf *CHHENI, *HATHAUDI, aur kaarigaron ka *HUNAR!",
+   "sfx": [
+    {
+     "at": "start",
+     "sfx": "whoosh",
+     "off": -0.12,
+     "gain": 0.5
+    },
+    {
+     "at": "chheni",
+     "sfx": "chisel",
+     "gain": 0.8
+    },
+    {
+     "at": "hathaudi",
+     "sfx": "chisel",
+     "gain": 0.8
+    },
+    {
+     "at": "hunar",
+     "sfx": "shimmer",
+     "gain": 0.5
+    }
+   ]
+  },
+  {
+   "id": "debris",
+   "mood": "mystery",
+   "hi": "पर एक सवाल आज भी: इतना सारा पत्थर गया कहाँ?",
+   "en": "Par ek sawaal aaj bhi: itna saara *PATTHAR gaya *KAHAN?",
+   "sfx": [
+    {
+     "at": "start",
+     "sfx": "whoosh",
+     "off": -0.12,
+     "gain": 0.5
+    },
+    {
+     "at": "kahan",
+     "sfx": "shimmer_dark",
+     "gain": 0.6
+    }
+   ]
+  },
+  {
+   "id": "truth",
+   "mood": "climax",
+   "hi": "कुछ लोग इसे एलियंस का काम कहते हैं, पर इतिहासकारों के मुताबिक, ये भारत के कारीगरों का कमाल है!",
+   "en": "Kuch log ise *ALIENS ka kaam kehte hain, par itihaaskaaron ke mutabik, ye *BHARAT ke *KAARIGARON ka kamaal hai!",
+   "sfx": [
+    {
+     "at": "start",
+     "sfx": "whoosh",
+     "off": -0.12,
+     "gain": 0.5
+    },
+    {
+     "at": "aliens",
+     "sfx": "glitch",
+     "gain": 0.5
+    },
+    {
+     "at": "bharat",
+     "sfx": "stamp",
+     "gain": 0.7
+    },
+    {
+     "at": "kaarigaron",
+     "sfx": "fanfare",
+     "gain": 0.45
+    }
+   ]
+  },
+  {
+   "id": "cta",
+   "mood": "tense",
+   "hi": "इंसानी हुनर, या कोई चमत्कार? कमेंट में बताओ, और ऐसे ही रहस्यों के लिए इतिहास के भूत को सब्सक्राइब करो!",
+   "en": "*INSAANI hunar, ya koi *CHAMATKAAR? Comment mein batao, aur aise hi rahasyon ke liye *ITIHAAS *KE *BHOOT ko *SUBSCRIBE karo!",
+   "sfx": [
+    {
+     "at": "start",
+     "sfx": "heartbeat",
+     "gain": 0.45
+    },
+    {
+     "at": "chamatkaar",
+     "sfx": "shimmer",
+     "gain": 0.45
+    },
+    {
+     "at": "comment",
+     "sfx": "pop",
+     "gain": 0.6
+    },
+    {
+     "at": "itihaas",
+     "sfx": "whoosh",
+     "off": -0.12,
+     "gain": 0.5
+    },
+    {
+     "at": "subscribe",
+     "sfx": "pop",
+     "off": 0.13,
+     "gain": 0.8
+    },
+    {
+     "at": "subscribe",
+     "sfx": "ding",
+     "off": 0.27,
+     "gain": 0.7
+    }
+   ]
+  }
+ ]
+}

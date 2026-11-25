@@ -1,0 +1,240 @@
+{
+ "id": "flannan-isles",
+ "style": "3d",
+ "voice": "hi-IN-MadhurNeural",
+ "pitch": "-2Hz",
+ "notes": "Facts: Flannan Isles Lighthouse, Eilean Mor, Outer Hebrides, Scotland (lit 1899). Keepers James Ducat, Thomas Marshall, Donald MacArthur; last slate entries 15 Dec 1900; that night the steamer Archtor noted the light was not lit; relief ship Hesperus, delayed by weather, arrived 26 Dec and found nobody; gate and door closed; one set of oilskins left, so one keeper went out without his; Superintendent Robert Muirhead (visit 29 Dec, report Jan 1901) found storm damage at the west landing high above the sea and thought the men were swept away by an unusually large wave while securing equipment; bodies never found. The uneaten meal and overturned chair come from Wilfrid Gibson's 1912 poem 'Flannan Isle', not the official report.",
+ "scenes": [
+  {
+   "id": "hook",
+   "mood": "tense",
+   "hi": "1900 में, समंदर के बीच एक लाइटहाउस से, तीन रखवाले अचानक गायब हो गए, और कभी नहीं मिले!",
+   "en": "*1900 mein, samandar ke beech ek *LIGHTHOUSE se, *TEEN rakhwale achanak *GAAYAB ho gaye, aur kabhi *NAHI mile!",
+   "sfx": [
+    {
+     "at": "start",
+     "sfx": "boom",
+     "gain": 0.7
+    },
+    {
+     "at": "start",
+     "sfx": "wind",
+     "gain": 0.35
+    },
+    {
+     "at": "teen",
+     "sfx": "hit",
+     "gain": 0.7
+    },
+    {
+     "at": "gaayab",
+     "sfx": "ghost",
+     "gain": 0.55
+    }
+   ]
+  },
+  {
+   "id": "place",
+   "mood": "mystery",
+   "hi": "स्कॉटलैंड का फ्लैनन टापू।",
+   "en": "*SCOTLAND ka *FLANNAN taapu.",
+   "sfx": [
+    {
+     "at": "start",
+     "sfx": "whoosh",
+     "off": -0.12,
+     "gain": 0.5
+    },
+    {
+     "at": "flannan",
+     "sfx": "splash",
+     "gain": 0.5
+    }
+   ]
+  },
+  {
+   "id": "dark",
+   "mood": "tense",
+   "hi": "पंद्रह दिसंबर की रात, पास से गुज़रते एक जहाज़ ने देखा: लाइटहाउस की बत्ती बुझी हुई है!",
+   "en": "*PANDRAH December ki raat, paas se guzarte ek *JAHAAZ ne dekha: lighthouse ki *BATTI *BUJHI hui hai!",
+   "sfx": [
+    {
+     "at": "start",
+     "sfx": "whoosh",
+     "off": -0.12,
+     "gain": 0.5
+    },
+    {
+     "at": "jahaaz",
+     "sfx": "rumble",
+     "gain": 0.45
+    },
+    {
+     "at": "bujhi",
+     "sfx": "hit",
+     "gain": 0.75
+    }
+   ]
+  },
+  {
+   "id": "arrive",
+   "mood": "creepy",
+   "hi": "मदद ग्यारह दिन बाद पहुँची। अंदर कोई नहीं!",
+   "en": "Madad *GYARAH din baad pahunchi. Andar *KOI *NAHI!",
+   "sfx": [
+    {
+     "at": "start",
+     "sfx": "whoosh",
+     "off": -0.12,
+     "gain": 0.5
+    },
+    {
+     "at": "andar",
+     "sfx": "creak",
+     "gain": 0.7
+    },
+    {
+     "at": "nahi",
+     "sfx": "ghost",
+     "gain": 0.55
+    }
+   ]
+  },
+  {
+   "id": "coat",
+   "mood": "mystery",
+   "hi": "खूँटी पर एक कोट टंगा था, यानी एक रखवाला बिना कोट के बाहर गया!",
+   "en": "Khoonti par ek *COAT tanga tha, yaani ek rakhwala *BINA coat ke bahar gaya!",
+   "sfx": [
+    {
+     "at": "start",
+     "sfx": "whoosh",
+     "off": -0.12,
+     "gain": 0.5
+    },
+    {
+     "at": "coat",
+     "sfx": "shimmer_dark",
+     "gain": 0.55
+    },
+    {
+     "at": "bina",
+     "sfx": "hit",
+     "gain": 0.65
+    }
+   ]
+  },
+  {
+   "id": "myth",
+   "mood": "creepy",
+   "hi": "अधूरा खाना, उलटी कुर्सी? ये बातें 1912 की एक कविता से आईं, असली रिपोर्ट से नहीं।",
+   "en": "*ADHOORA khaana, *ULTI kursi? Ye baatein *1912 ki ek *KAVITA se aayi, asli report se nahi.",
+   "sfx": [
+    {
+     "at": "start",
+     "sfx": "whoosh",
+     "off": -0.12,
+     "gain": 0.5
+    },
+    {
+     "at": "ulti",
+     "sfx": "crash",
+     "gain": 0.45
+    },
+    {
+     "at": "kavita",
+     "sfx": "stamp",
+     "gain": 0.7
+    }
+   ]
+  },
+  {
+   "id": "wave",
+   "mood": "climax",
+   "hi": "जाँच अफसर को पश्चिमी जेटी पर तूफ़ान की तबाही मिली। उसका अंदाज़ा: एक विशाल लहर तीनों को बहा ले गई।",
+   "en": "Jaanch afsar ko *PASCHIMI jetty par toofaan ki *TABAAHI mili. Uska andaaza: ek *VISHAAL *LEHAR teenon ko baha le gayi.",
+   "sfx": [
+    {
+     "at": "start",
+     "sfx": "thunder",
+     "gain": 0.55
+    },
+    {
+     "at": "tabaahi",
+     "sfx": "crash",
+     "gain": 0.6
+    },
+    {
+     "at": "vishaal",
+     "sfx": "splash",
+     "gain": 0.9
+    },
+    {
+     "at": "lehar",
+     "sfx": "boom",
+     "gain": 0.6
+    }
+   ]
+  },
+  {
+   "id": "unknown",
+   "mood": "sad",
+   "hi": "पर उनके शरीर कभी नहीं मिले।",
+   "en": "Par unke *SHAREER kabhi *NAHI mile.",
+   "sfx": [
+    {
+     "at": "start",
+     "sfx": "whoosh",
+     "off": -0.12,
+     "gain": 0.4
+    },
+    {
+     "at": "nahi",
+     "sfx": "bell",
+     "gain": 0.5
+    }
+   ]
+  },
+  {
+   "id": "cta",
+   "mood": "tense",
+   "hi": "समंदर की लहर, या कोई रहस्य? कमेंट में बताओ, और ऐसे ही रहस्यों के लिए इतिहास के भूत को सब्सक्राइब करो!",
+   "en": "Samandar ki *LEHAR, ya koi *RAHASYA? Comment mein batao, aur aise hi rahasyon ke liye *ITIHAAS *KE *BHOOT ko *SUBSCRIBE karo!",
+   "sfx": [
+    {
+     "at": "start",
+     "sfx": "heartbeat",
+     "gain": 0.45
+    },
+    {
+     "at": "rahasya",
+     "sfx": "ghost",
+     "gain": 0.45
+    },
+    {
+     "at": "comment",
+     "sfx": "pop",
+     "gain": 0.6
+    },
+    {
+     "at": "itihaas",
+     "sfx": "whoosh",
+     "off": -0.12,
+     "gain": 0.5
+    },
+    {
+     "at": "subscribe",
+     "sfx": "pop",
+     "off": 0.13,
+     "gain": 0.8
+    },
+    {
+     "at": "subscribe",
+     "sfx": "ding",
+     "off": 0.27,
+     "gain": 0.7
+    }
+   ]
+  }
+ ]
+}

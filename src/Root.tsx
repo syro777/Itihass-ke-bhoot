@@ -21,6 +21,8 @@ import { GolcondaClap, golcondaFrames } from "./episodes/golconda-clap/GolcondaC
 import { Kiradu, kiraduFrames } from "./episodes/kiradu/Kiradu";
 import { IslandOfDolls, islandOfDollsFrames } from "./episodes/island-of-dolls/IslandOfDolls";
 import { KohinoorCurse, kohinoorFrames } from "./episodes/kohinoor-curse/KohinoorCurse";
+import { Kailasa, kailasaFrames } from "./episodes/kailasa-ellora/Kailasa";
+import { Flannan, flannanFrames } from "./episodes/flannan-isles/Flannan";
 
 export const RemotionRoot: React.FC = () => {
   return (
@@ -43,6 +45,8 @@ export const RemotionRoot: React.FC = () => {
       <Composition id="Kiradu" component={Kiradu} durationInFrames={kiraduFrames} fps={FPS} width={W} height={H} />
       <Composition id="IslandOfDolls" component={IslandOfDolls} durationInFrames={islandOfDollsFrames} fps={FPS} width={W} height={H} />
       <Composition id="KohinoorCurse" component={KohinoorCurse} durationInFrames={kohinoorFrames} fps={FPS} width={W} height={H} />
+      <Composition id="Kailasa" component={Kailasa} durationInFrames={kailasaFrames} fps={FPS} width={W} height={H} />
+      <Composition id="Flannan" component={Flannan} durationInFrames={flannanFrames} fps={FPS} width={W} height={H} />
       <Composition id="Bhootiya5" component={Bhootiya5} durationInFrames={bhootiya5Frames} fps={FPS} width={1920} height={1080} />
       <Still id="Bhootiya5Thumb" component={Bhootiya5Thumb} width={1280} height={720} />
       <Still id="LogoAvatar" component={LogoAvatar} width={800} height={800} />
