@@ -1,0 +1,251 @@
+{
+ "id": "robert-doll",
+ "style": "3d",
+ "voice": "hi-IN-MadhurNeural",
+ "pitch": "-2Hz",
+ "notes": "Facts: GTA 6 is set in Leonida, Rockstar's fictional Florida; its Leonida Keys region is based on the Florida Keys (press coverage). Robert the Doll: c. 1904 doll (cloth and straw, sailor suit) that belonged to Key West artist Robert Eugene 'Gene' Otto (died 1974); legends (kehte hain): Gene blamed mischief on Robert, neighbours saw it move and heard giggles; on display since 1994 at Fort East Martello Museum, Key West, donated by Myrtle Reuter; museum asks visitors to ask permission before photographing it; visitors send apology letters blaming bad luck; no evidence of anything supernatural.",
+ "scenes": [
+  {
+   "id": "hook",
+   "mood": "tense",
+   "hi": "जीटीए सिक्स खेलकर लियोनिडा कीज़ घूम रहे हो? उसकी असली जगह पर एक गुड़िया है, जिससे लोग आज भी माफी माँगते हैं!",
+   "en": "*GTA *6 khelkar *LEONIDA keys ghoom rahe ho? Uski *ASLI jagah par ek *GUDIYA hai, jisse log aaj bhi *MAAFI maangte hain!",
+   "sfx": [
+    {
+     "at": "start",
+     "sfx": "boom",
+     "gain": 0.7
+    },
+    {
+     "at": "start",
+     "sfx": "wind",
+     "gain": 0.25
+    },
+    {
+     "at": "leonida",
+     "sfx": "shimmer",
+     "gain": 0.5
+    },
+    {
+     "at": "gudiya",
+     "sfx": "ghost",
+     "gain": 0.6
+    },
+    {
+     "at": "maafi",
+     "sfx": "hit",
+     "gain": 0.7
+    }
+   ]
+  },
+  {
+   "id": "place",
+   "mood": "mystery",
+   "hi": "ये बनी है असली फ्लोरिडा कीज़ पर। वहाँ की वेस्ट के एक किले में बैठा है रॉबर्ट।",
+   "en": "Ye bani hai asli *FLORIDA *KEYS par. Wahan *KEY *WEST ke ek kile mein baitha hai *ROBERT.",
+   "sfx": [
+    {
+     "at": "start",
+     "sfx": "whoosh",
+     "off": -0.12,
+     "gain": 0.5
+    },
+    {
+     "at": "florida",
+     "sfx": "splash",
+     "gain": 0.45
+    },
+    {
+     "at": "robert",
+     "sfx": "shimmer_dark",
+     "gain": 0.6
+    }
+   ]
+  },
+  {
+   "id": "robert",
+   "mood": "creepy",
+   "hi": "रॉबर्ट, सौ साल से भी पुरानी गुड़िया, जिसे कहते हैं दुनिया की सबसे भूतिया गुड़िया!",
+   "en": "*ROBERT, *SAU saal se bhi purani gudiya, jise kehte hain duniya ki sabse *BHOOTIYA gudiya!",
+   "sfx": [
+    {
+     "at": "start",
+     "sfx": "whoosh",
+     "off": -0.12,
+     "gain": 0.5
+    },
+    {
+     "at": "robert",
+     "sfx": "heartbeat",
+     "gain": 0.5
+    },
+    {
+     "at": "bhootiya",
+     "sfx": "ghost",
+     "gain": 0.6
+    }
+   ]
+  },
+  {
+   "id": "gene",
+   "mood": "calm",
+   "hi": "1904 के आसपास, ये जीन ओटो नाम के एक बच्चे को तोहफे में मिली।",
+   "en": "*1904 ke aaspaas, ye *GENE *OTTO naam ke ek bachche ko tohfe mein mili.",
+   "sfx": [
+    {
+     "at": "start",
+     "sfx": "whoosh",
+     "off": -0.12,
+     "gain": 0.5
+    },
+    {
+     "at": "1904",
+     "sfx": "chime",
+     "gain": 0.5
+    },
+    {
+     "at": "gene",
+     "sfx": "pop",
+     "gain": 0.45
+    }
+   ]
+  },
+  {
+   "id": "blame",
+   "mood": "creepy",
+   "hi": "कहते हैं, घर में कुछ भी टूटता, तो जीन कहता: ये रॉबर्ट ने किया!",
+   "en": "Kehte hain, ghar mein kuch bhi *TOOTTA, to Gene kehta: ye *ROBERT ne kiya!",
+   "sfx": [
+    {
+     "at": "start",
+     "sfx": "whoosh",
+     "off": -0.12,
+     "gain": 0.5
+    },
+    {
+     "at": "tootta",
+     "sfx": "crash",
+     "gain": 0.6
+    },
+    {
+     "at": "robert",
+     "sfx": "ghost",
+     "gain": 0.55
+    }
+   ]
+  },
+  {
+   "id": "museum",
+   "mood": "mystery",
+   "hi": "1994 से रॉबर्ट म्यूज़ियम में है। नियम: फोटो खींचने से पहले, उससे इजाज़त माँगो!",
+   "en": "*1994 se Robert *MUSEUM mein hai. Niyam: photo kheenchne se pehle, usse *IJAAZAT maango!",
+   "sfx": [
+    {
+     "at": "start",
+     "sfx": "whoosh",
+     "off": -0.12,
+     "gain": 0.5
+    },
+    {
+     "at": "museum",
+     "sfx": "creak",
+     "gain": 0.5
+    },
+    {
+     "at": "ijaazat",
+     "sfx": "stamp",
+     "gain": 0.7
+    }
+   ]
+  },
+  {
+   "id": "letters",
+   "mood": "climax",
+   "hi": "कई लोग, बदकिस्मती के बाद, उसे माफी की चिट्ठियाँ भेजते हैं!",
+   "en": "Kai log, *BADKISMATI ke baad, use *MAAFI ki *CHITTHIYAN bhejte hain!",
+   "sfx": [
+    {
+     "at": "start",
+     "sfx": "whoosh",
+     "off": -0.12,
+     "gain": 0.5
+    },
+    {
+     "at": "badkismati",
+     "sfx": "hit",
+     "gain": 0.65
+    },
+    {
+     "at": "chitthiyan",
+     "sfx": "riser",
+     "gain": 0.5
+    }
+   ]
+  },
+  {
+   "id": "truth",
+   "mood": "mystery",
+   "hi": "सच? भूत का कोई सबूत नहीं। पर रॉबर्ट से पंगा, आज भी कोई नहीं लेता!",
+   "en": "Sach? Bhoot ka koi *SABOOT nahi. Par Robert se *PANGA, aaj bhi koi nahi leta!",
+   "sfx": [
+    {
+     "at": "start",
+     "sfx": "whoosh",
+     "off": -0.12,
+     "gain": 0.5
+    },
+    {
+     "at": "saboot",
+     "sfx": "stamp",
+     "gain": 0.6
+    },
+    {
+     "at": "panga",
+     "sfx": "ghost",
+     "gain": 0.6
+    }
+   ]
+  },
+  {
+   "id": "cta",
+   "mood": "tense",
+   "hi": "आप इजाज़त माँगोगे, या सीधा फोटो? कमेंट में बताओ, और ऐसे ही रहस्यों के लिए इतिहास के भूत को सब्सक्राइब करो!",
+   "en": "Aap *IJAAZAT maangoge, ya seedha *PHOTO? Comment mein batao, aur aise hi rahasyon ke liye *ITIHAAS *KE *BHOOT ko *SUBSCRIBE karo!",
+   "sfx": [
+    {
+     "at": "start",
+     "sfx": "heartbeat",
+     "gain": 0.45
+    },
+    {
+     "at": "photo",
+     "sfx": "pop",
+     "gain": 0.5
+    },
+    {
+     "at": "comment",
+     "sfx": "pop",
+     "gain": 0.6
+    },
+    {
+     "at": "itihaas",
+     "sfx": "whoosh",
+     "off": -0.12,
+     "gain": 0.5
+    },
+    {
+     "at": "subscribe",
+     "sfx": "pop",
+     "off": 0.13,
+     "gain": 0.8
+    },
+    {
+     "at": "subscribe",
+     "sfx": "ding",
+     "off": 0.27,
+     "gain": 0.7
+    }
+   ]
+  }
+ ]
+}

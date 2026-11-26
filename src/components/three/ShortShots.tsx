@@ -52,6 +52,8 @@ export type Shot = {
   flash?: string;
   ov?: Ov[];
   entry?: boolean;
+  /** hard cut inside the scene: from word `at`, use a second camera path and extra world flags */
+  cut?: { at: string; p: [V3, V3]; l: [V3, V3]; x?: Record<string, unknown>; fov?: number; exp?: number };
 };
 
 export const sh = (p0: V3, p1: V3, l0: V3, l1: V3 = l0, rest: Partial<Shot> = {}): Shot => ({ p: [p0, p1], l: [l0, l1], ...rest });
@@ -117,17 +119,24 @@ export const makeScenes = (World: React.FC<WP>, shots: Record<string, Shot>) => 
       const ramp = (k: unknown, len = 12, pad = 0) => (typeof k === "string" ? prog(f, wf(k) + pad, wf(k) + pad + len) : 0);
       const isCta = (s.ov ?? []).some((o) => o.k === "cta");
       const focus = isCta ? prog(f, wf("aur") - 2, wf("aur") + 10) : 0;
+      const fc = s.cut ? wf(s.cut.at) - 2 : Infinity;
+      const cut = s.cut && f >= fc ? s.cut : undefined;
+      const ct = cut ? prog(f, fc, dur, Easing.out(Easing.quad)) : t;
+      const P = cut ? cut.p : s.p;
+      const L = cut ? cut.l : s.l;
+      const X = cut ? { ...(s.x ?? {}), ...(cut.x ?? {}) } : s.x ?? {};
+      const flashOp = Math.max(s.flash ? flash(f, wf(s.flash), 7, 0.5) : 0, s.cut ? flash(f, fc, 6, 0.6) : 0);
       return (
         <Stage3D
-          exposure={s.exp ?? 1.3}
+          exposure={cut?.exp ?? s.exp ?? 1.3}
           entryFlash={s.entry ?? true}
-          flashOp={s.flash ? flash(f, wf(s.flash), 7, 0.5) : 0}
+          flashOp={flashOp}
           tint={isCta ? "#000000" : s.sepia ? "#7a4a1a" : s.tint}
           tintOp={isCta ? focus * 0.45 : s.sepia ? 0.22 : s.tintOp ?? 0}
           overlay={s.ov ? <OvLayer ov={s.ov} words={words} /> : undefined}
         >
-          <World f={f} t={t} dur={dur} x={s.x ?? {}} wf={wf} after={after} ramp={ramp} />
-          <CameraRig pos={lerp3(s.p[0], s.p[1], t)} look={lerp3(s.l[0], s.l[1], t)} fov={s.fov ?? 50} />
+          <World f={f} t={t} dur={dur} x={X} wf={wf} after={after} ramp={ramp} />
+          <CameraRig pos={lerp3(P[0], P[1], ct)} look={lerp3(L[0], L[1], ct)} fov={cut?.fov ?? s.fov ?? 50} />
         </Stage3D>
       );
     };

@@ -1,0 +1,251 @@
+{
+ "id": "gta6-leak",
+ "style": "3d",
+ "voice": "hi-IN-MadhurNeural",
+ "pitch": "-2Hz",
+ "notes": "Facts: Sept 2022, 90 clips of unreleased GTA 6 footage leaked after a hack of Rockstar; the hacker, a 17-year-old Lapsus$ member (Arion Kurtaj, Oxford), was on bail in a hotel under police protection with his laptop confiscated and used an Amazon Fire TV Stick, the hotel TV and his phone (BBC via CBS/Engadget); Rockstar said the hack cost $5 million and thousands of staff hours (disputed by defence). Dec 2023, Southwark Crown Court: indefinite hospital order in a secure hospital, as doctors said he intended to return to cybercrime as soon as possible. July 2026 moved to prison awaiting retrial; 16 Nov 2026 pleaded guilty (PC Gamer); sentencing pending. GTA 6 launched 19 Nov 2026; Sony: biggest launch in PlayStation history.",
+ "scenes": [
+  {
+   "id": "hook",
+   "mood": "tense",
+   "hi": "जीटीए सिक्स का सबसे बड़ा लीक, एक सत्रह साल के लड़के ने, होटल के कमरे से, टीवी वाली स्टिक से कर दिया!",
+   "en": "*GTA *6 ka sabse bada *LEAK, ek *SATRAH saal ke ladke ne, hotel ke kamre se, TV wali *STICK se kar diya!",
+   "sfx": [
+    {
+     "at": "start",
+     "sfx": "boom",
+     "gain": 0.7
+    },
+    {
+     "at": "start",
+     "sfx": "glitch",
+     "gain": 0.5
+    },
+    {
+     "at": "leak",
+     "sfx": "hit",
+     "gain": 0.75
+    },
+    {
+     "at": "satrah",
+     "sfx": "stamp",
+     "gain": 0.6
+    },
+    {
+     "at": "stick",
+     "sfx": "glitch",
+     "gain": 0.6
+    }
+   ]
+  },
+  {
+   "id": "server",
+   "mood": "tense",
+   "hi": "2022 में, रॉकस्टार के सर्वर से, गेम के नब्बे वीडियो इंटरनेट पर आ गए!",
+   "en": "*2022 mein, *ROCKSTAR ke server se, game ke *NABBE video internet par aa gaye!",
+   "sfx": [
+    {
+     "at": "start",
+     "sfx": "whoosh",
+     "off": -0.12,
+     "gain": 0.5
+    },
+    {
+     "at": "rockstar",
+     "sfx": "glitch",
+     "gain": 0.5
+    },
+    {
+     "at": "nabbe",
+     "sfx": "riser",
+     "gain": 0.5
+    },
+    {
+     "at": "internet",
+     "sfx": "boom",
+     "gain": 0.55
+    }
+   ]
+  },
+  {
+   "id": "bail",
+   "mood": "mystery",
+   "hi": "पुलिस ने उसका लैपटॉप ज़ब्त कर लिया था, और उसे ज़मानत पर एक होटल में रखा गया।",
+   "en": "Police ne uska *LAPTOP *ZABT kar liya tha, aur use zamaanat par ek *HOTEL mein rakha gaya.",
+   "sfx": [
+    {
+     "at": "start",
+     "sfx": "whoosh",
+     "off": -0.12,
+     "gain": 0.5
+    },
+    {
+     "at": "zabt",
+     "sfx": "stamp",
+     "gain": 0.7
+    },
+    {
+     "at": "hotel",
+     "sfx": "creak",
+     "gain": 0.5
+    }
+   ]
+  },
+  {
+   "id": "stick",
+   "mood": "climax",
+   "hi": "पर उसने हार नहीं मानी। होटल के टीवी, एक फायर स्टिक और फोन से, उसने रॉकस्टार में सेंध लगा दी!",
+   "en": "Par usne haar nahi maani. Hotel ke *TV, ek *FIRE *STICK aur *PHONE se, usne Rockstar mein *SENDH laga di!",
+   "sfx": [
+    {
+     "at": "start",
+     "sfx": "whoosh",
+     "off": -0.12,
+     "gain": 0.5
+    },
+    {
+     "at": "tv",
+     "sfx": "pop",
+     "gain": 0.6
+    },
+    {
+     "at": "fire",
+     "sfx": "glitch",
+     "gain": 0.55
+    },
+    {
+     "at": "phone",
+     "sfx": "pop",
+     "gain": 0.6
+    },
+    {
+     "at": "sendh",
+     "sfx": "boom",
+     "gain": 0.65
+    }
+   ]
+  },
+  {
+   "id": "cost",
+   "mood": "tense",
+   "hi": "रॉकस्टार के मुताबिक, इस लीक से उसे पचास लाख डॉलर का नुकसान हुआ।",
+   "en": "Rockstar ke mutabik, is leak se use *PACHAAS *LAAKH *DOLLAR ka nuksaan hua.",
+   "sfx": [
+    {
+     "at": "start",
+     "sfx": "whoosh",
+     "off": -0.12,
+     "gain": 0.5
+    },
+    {
+     "at": "pachaas",
+     "sfx": "stamp",
+     "gain": 0.7
+    },
+    {
+     "at": "dollar",
+     "sfx": "crash",
+     "gain": 0.45
+    }
+   ]
+  },
+  {
+   "id": "court",
+   "mood": "sad",
+   "hi": "2023 में कोर्ट ने उसे एक सुरक्षित अस्पताल भेज दिया, क्योंकि वो फिर से हैकिंग करना चाहता था!",
+   "en": "*2023 mein court ne use ek *SURAKSHIT *ASPATAAL bhej diya, kyunki wo phir se *HACKING karna chahta tha!",
+   "sfx": [
+    {
+     "at": "start",
+     "sfx": "whoosh",
+     "off": -0.12,
+     "gain": 0.5
+    },
+    {
+     "at": "court",
+     "sfx": "hit",
+     "gain": 0.7
+    },
+    {
+     "at": "aspataal",
+     "sfx": "bell",
+     "gain": 0.45
+    },
+    {
+     "at": "hacking",
+     "sfx": "glitch",
+     "gain": 0.55
+    }
+   ]
+  },
+  {
+   "id": "twist",
+   "mood": "climax",
+   "hi": "और ट्विस्ट? गेम रिलीज़ से कुछ दिन पहले, उसने कोर्ट में अपना जुर्म कबूल कर लिया! सज़ा का फैसला अभी बाकी है।",
+   "en": "Aur *TWIST? Game release se kuch din pehle, usne court mein apna *JURM *KABOOL kar liya! *SAZA ka faisla abhi *BAAKI hai.",
+   "sfx": [
+    {
+     "at": "start",
+     "sfx": "riser",
+     "gain": 0.5
+    },
+    {
+     "at": "twist",
+     "sfx": "hit",
+     "gain": 0.75
+    },
+    {
+     "at": "kabool",
+     "sfx": "stamp",
+     "gain": 0.75
+    },
+    {
+     "at": "baaki",
+     "sfx": "tick",
+     "gain": 0.5
+    }
+   ]
+  },
+  {
+   "id": "cta",
+   "mood": "tense",
+   "hi": "जीनियस, या पागलपन? कमेंट में बताओ, और ऐसे ही रहस्यों के लिए इतिहास के भूत को सब्सक्राइब करो!",
+   "en": "*GENIUS, ya *PAAGALPAN? Comment mein batao, aur aise hi rahasyon ke liye *ITIHAAS *KE *BHOOT ko *SUBSCRIBE karo!",
+   "sfx": [
+    {
+     "at": "start",
+     "sfx": "heartbeat",
+     "gain": 0.45
+    },
+    {
+     "at": "paagalpan",
+     "sfx": "glitch",
+     "gain": 0.45
+    },
+    {
+     "at": "comment",
+     "sfx": "pop",
+     "gain": 0.6
+    },
+    {
+     "at": "itihaas",
+     "sfx": "whoosh",
+     "off": -0.12,
+     "gain": 0.5
+    },
+    {
+     "at": "subscribe",
+     "sfx": "pop",
+     "off": 0.13,
+     "gain": 0.8
+    },
+    {
+     "at": "subscribe",
+     "sfx": "ding",
+     "off": 0.27,
+     "gain": 0.7
+    }
+   ]
+  }
+ ]
+}
