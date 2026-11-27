@@ -25,6 +25,8 @@ import { Kailasa, kailasaFrames } from "./episodes/kailasa-ellora/Kailasa";
 import { Flannan, flannanFrames } from "./episodes/flannan-isles/Flannan";
 import { GtaLeak, gtaLeakFrames } from "./episodes/gta6-leak/GtaLeak";
 import { RobertDoll, robertDollFrames } from "./episodes/robert-doll/RobertDoll";
+import { Padmanabha, padmanabhaFrames } from "./episodes/padmanabhaswamy/Padmanabha";
+import { Mh370, mh370Frames } from "./episodes/mh370/Mh370";
 
 export const RemotionRoot: React.FC = () => {
   return (
@@ -51,6 +53,8 @@ export const RemotionRoot: React.FC = () => {
       <Composition id="Flannan" component={Flannan} durationInFrames={flannanFrames} fps={FPS} width={W} height={H} />
       <Composition id="GtaLeak" component={GtaLeak} durationInFrames={gtaLeakFrames} fps={FPS} width={W} height={H} />
       <Composition id="RobertDoll" component={RobertDoll} durationInFrames={robertDollFrames} fps={FPS} width={W} height={H} />
+      <Composition id="Padmanabha" component={Padmanabha} durationInFrames={padmanabhaFrames} fps={FPS} width={W} height={H} />
+      <Composition id="Mh370" component={Mh370} durationInFrames={mh370Frames} fps={FPS} width={W} height={H} />
       <Composition id="Bhootiya5" component={Bhootiya5} durationInFrames={bhootiya5Frames} fps={FPS} width={1920} height={1080} />
       <Still id="Bhootiya5Thumb" component={Bhootiya5Thumb} width={1280} height={720} />
       <Still id="LogoAvatar" component={LogoAvatar} width={800} height={800} />

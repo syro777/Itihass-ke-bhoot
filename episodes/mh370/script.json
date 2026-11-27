@@ -1,0 +1,289 @@
+{
+ "id": "mh370",
+ "style": "3d",
+ "voice": "hi-IN-MadhurNeural",
+ "pitch": "-2Hz",
+ "notes": "Facts: 8 March 2014, Malaysia Airlines MH370 (Boeing 777) Kuala Lumpur to Beijing, 239 people. About 40 min after take-off the last radio call: 'Good night Malaysian three seven zero'; transponder went off; military radar tracked it turning back west across Malaysia and out over the Andaman Sea; Inmarsat satellite 'handshakes' show it kept flying about 7 hours after take-off, ending in the southern Indian Ocean. July 2015 a flaperon washed up on Reunion Island (confirmed MH370). Underwater search 2014-2017 (120,000 sq km) suspended; Ocean Infinity 2018; 2025-26 search ended Jan 2026 with no find; June 2026 Malaysia extended Ocean Infinity's 'no find, no fee' deal one year, $70 million only if found.",
+ "scenes": [
+  {
+   "id": "hook",
+   "mood": "tense",
+   "hi": "239 लोगों के साथ एक बोइंग विमान गायब हुआ, और बारह साल बाद भी नहीं मिला!",
+   "en": "*239 logon ke saath ek *BOEING vimaan *GAAYAB hua, aur *BAARAH saal baad bhi nahi mila!",
+   "sfx": [
+    {
+     "at": "start",
+     "sfx": "boom",
+     "gain": 0.7
+    },
+    {
+     "at": "start",
+     "sfx": "wind",
+     "gain": 0.3
+    },
+    {
+     "at": "239",
+     "sfx": "hit",
+     "gain": 0.75
+    },
+    {
+     "at": "gaayab",
+     "sfx": "ghost",
+     "gain": 0.55
+    },
+    {
+     "at": "baarah",
+     "sfx": "stamp",
+     "gain": 0.6
+    }
+   ]
+  },
+  {
+   "id": "flight",
+   "mood": "calm",
+   "hi": "साल 2014, मलेशिया एयरलाइंस की ये फ्लाइट, कुआलालंपुर से बीजिंग जा रही थी।",
+   "en": "Saal *2014, *MALAYSIA airlines ki ye flight, *KUALA_LUMPUR se *BEIJING ja rahi thi.",
+   "sfx": [
+    {
+     "at": "start",
+     "sfx": "whoosh",
+     "off": -0.12,
+     "gain": 0.5
+    },
+    {
+     "at": "malaysia",
+     "sfx": "chime",
+     "gain": 0.45
+    },
+    {
+     "at": "beijing",
+     "sfx": "riser",
+     "gain": 0.4
+    }
+   ]
+  },
+  {
+   "id": "goodnight",
+   "mood": "creepy",
+   "hi": "उड़ान के करीब चालीस मिनट बाद, पायलट की आखिरी आवाज़ आई: गुड नाइट, मलेशिया थ्री सेवन ज़ीरो।",
+   "en": "Udaan ke kareeb *CHAALIS minute baad, pilot ki *AAKHIRI aawaaz aayi: *GOOD *NIGHT, Malaysia three seven zero.",
+   "sfx": [
+    {
+     "at": "start",
+     "sfx": "whoosh",
+     "off": -0.12,
+     "gain": 0.5
+    },
+    {
+     "at": "aakhiri",
+     "sfx": "glitch",
+     "gain": 0.45
+    },
+    {
+     "at": "good",
+     "sfx": "shimmer_dark",
+     "gain": 0.6
+    }
+   ]
+  },
+  {
+   "id": "dark",
+   "mood": "tense",
+   "hi": "फिर ट्रांसपोंडर बंद, और विमान गायब!",
+   "en": "Phir *TRANSPONDER band, aur vimaan *GAAYAB!",
+   "sfx": [
+    {
+     "at": "transponder",
+     "sfx": "glitch",
+     "gain": 0.6
+    },
+    {
+     "at": "gaayab",
+     "sfx": "hit",
+     "gain": 0.8
+    }
+   ]
+  },
+  {
+   "id": "turn",
+   "mood": "mystery",
+   "hi": "मिलिट्री रडार ने देखा, विमान अचानक मुड़ा, और उल्टी दिशा में उड़ने लगा।",
+   "en": "*MILITARY radar ne dekha, vimaan achanak *MUDA, aur *ULTI disha mein udne laga.",
+   "sfx": [
+    {
+     "at": "start",
+     "sfx": "whoosh",
+     "off": -0.12,
+     "gain": 0.5
+    },
+    {
+     "at": "military",
+     "sfx": "tick",
+     "gain": 0.5
+    },
+    {
+     "at": "muda",
+     "sfx": "riser",
+     "gain": 0.5
+    },
+    {
+     "at": "ulti",
+     "sfx": "hit",
+     "gain": 0.6
+    }
+   ]
+  },
+  {
+   "id": "satellite",
+   "mood": "tense",
+   "hi": "सैटेलाइट के सिग्नल बताते हैं, वो करीब सात घंटे तक उड़ता रहा, हिंद महासागर की ओर।",
+   "en": "*SATELLITE ke signal batate hain, wo kareeb *SAAT *GHANTE tak udta raha, *HIND mahasagar ki or.",
+   "sfx": [
+    {
+     "at": "start",
+     "sfx": "whoosh",
+     "off": -0.12,
+     "gain": 0.5
+    },
+    {
+     "at": "satellite",
+     "sfx": "pop",
+     "gain": 0.55
+    },
+    {
+     "at": "saat",
+     "sfx": "stamp",
+     "gain": 0.65
+    },
+    {
+     "at": "hind",
+     "sfx": "rumble",
+     "gain": 0.5
+    }
+   ]
+  },
+  {
+   "id": "debris",
+   "mood": "mystery",
+   "hi": "2015 में, अफ्रीका के पास एक द्वीप पर, उसके पंख का एक टुकड़ा मिला।",
+   "en": "*2015 mein, Africa ke paas ek *DWEEP par, uske *PANKH ka ek tukda mila.",
+   "sfx": [
+    {
+     "at": "start",
+     "sfx": "whoosh",
+     "off": -0.12,
+     "gain": 0.5
+    },
+    {
+     "at": "dweep",
+     "sfx": "splash",
+     "gain": 0.55
+    },
+    {
+     "at": "pankh",
+     "sfx": "hit",
+     "gain": 0.65
+    }
+   ]
+  },
+  {
+   "id": "search",
+   "mood": "tense",
+   "hi": "हवाई इतिहास की सबसे बड़ी खोज हुई, पर एक लाख वर्ग किलोमीटर छानकर भी, विमान नहीं मिला।",
+   "en": "Hawai *ITIHAAS ki sabse badi *KHOJ hui, par ek *LAAKH varg kilometer chhaankar bhi, vimaan *NAHI mila.",
+   "sfx": [
+    {
+     "at": "start",
+     "sfx": "whoosh",
+     "off": -0.12,
+     "gain": 0.5
+    },
+    {
+     "at": "khoj",
+     "sfx": "riser",
+     "gain": 0.45
+    },
+    {
+     "at": "laakh",
+     "sfx": "stamp",
+     "gain": 0.6
+    },
+    {
+     "at": "nahi",
+     "sfx": "bell",
+     "gain": 0.5
+    }
+   ]
+  },
+  {
+   "id": "today",
+   "mood": "climax",
+   "hi": "2026 में भी खोज नाकाम रही। अब शर्त है: मिला तो सात करोड़ डॉलर, नहीं तो कुछ नहीं!",
+   "en": "*2026 mein bhi khoj *NAAKAAM rahi. Ab shart hai: mila to *SAAT *CRORE dollar, nahi to kuch *NAHI!",
+   "sfx": [
+    {
+     "at": "start",
+     "sfx": "whoosh",
+     "off": -0.12,
+     "gain": 0.5
+    },
+    {
+     "at": "naakaam",
+     "sfx": "hit",
+     "gain": 0.7
+    },
+    {
+     "at": "saat",
+     "sfx": "chime",
+     "gain": 0.55
+    },
+    {
+     "at": "nahi",
+     "sfx": "stamp",
+     "gain": 0.6
+    }
+   ]
+  },
+  {
+   "id": "cta",
+   "mood": "tense",
+   "hi": "हादसा, या कोई गहरा राज़? कमेंट में बताओ, और ऐसे ही रहस्यों के लिए इतिहास के भूत को सब्सक्राइब करो!",
+   "en": "*HAADSA, ya koi gehra *RAAZ? Comment mein batao, aur aise hi rahasyon ke liye *ITIHAAS *KE *BHOOT ko *SUBSCRIBE karo!",
+   "sfx": [
+    {
+     "at": "start",
+     "sfx": "heartbeat",
+     "gain": 0.45
+    },
+    {
+     "at": "raaz",
+     "sfx": "ghost",
+     "gain": 0.45
+    },
+    {
+     "at": "comment",
+     "sfx": "pop",
+     "gain": 0.6
+    },
+    {
+     "at": "itihaas",
+     "sfx": "whoosh",
+     "off": -0.12,
+     "gain": 0.5
+    },
+    {
+     "at": "subscribe",
+     "sfx": "pop",
+     "off": 0.13,
+     "gain": 0.8
+    },
+    {
+     "at": "subscribe",
+     "sfx": "ding",
+     "off": 0.27,
+     "gain": 0.7
+    }
+   ]
+  }
+ ]
+}

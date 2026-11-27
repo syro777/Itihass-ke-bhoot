@@ -251,6 +251,20 @@
       "type": "world-ghost",
       "status": "done",
       "date": "2026-11-26"
+    },
+    {
+      "id": "padmanabhaswamy",
+      "title": "Padmanabhaswamy Mandir — 1 lakh crore ka khazana, par Tehkhana B aaj bhi band",
+      "type": "india-mystery",
+      "status": "done",
+      "date": "2026-11-27"
+    },
+    {
+      "id": "mh370",
+      "title": "MH370 — 239 log, ek plane, 12 saal se gayab",
+      "type": "world-mystery",
+      "status": "done",
+      "date": "2026-11-27"
     }
   ]
 }

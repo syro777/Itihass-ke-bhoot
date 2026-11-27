@@ -1,0 +1,278 @@
+{
+ "id": "padmanabhaswamy",
+ "style": "3d",
+ "voice": "hi-IN-MadhurNeural",
+ "pitch": "-2Hz",
+ "notes": "Facts: Sree Padmanabhaswamy Temple, Thiruvananthapuram, Kerala (Vishnu); 2011 Supreme Court-ordered inventory after a petition by former IPS officer T.P. Sundararajan; five of six vaults opened (June 2011): gold idols, coins, precious stones and jewellery; media estimates over Rs 1 lakh crore (~$22 billion), no official valuation published. Vault B left sealed; royal family opposed; door engravings said to resemble cobras; legends (lokkatha) of disaster if forced. Sundararajan died 17 July 2011 (fever, age 70) weeks after the openings; rumours linked it to a curse. July 2020 Supreme Court upheld Travancore royal family's rights and left the Vault B decision to the temple committee; Aug 2025 demand to open it raised again; still sealed. (The claim that Vault B was opened several times in 1990-2002 is disputed and not used.)",
+ "scenes": [
+  {
+   "id": "hook",
+   "mood": "tense",
+   "hi": "इस मंदिर के तहखानों से करीब एक लाख करोड़ का खज़ाना निकला, पर एक दरवाज़ा आज तक नहीं खुला!",
+   "en": "Is mandir ke tehkhanon se kareeb ek *LAAKH *CRORE ka *KHAZANA nikla, par ek *DARWAZA aaj tak nahi khula!",
+   "sfx": [
+    {
+     "at": "start",
+     "sfx": "boom",
+     "gain": 0.7
+    },
+    {
+     "at": "start",
+     "sfx": "wind",
+     "gain": 0.25
+    },
+    {
+     "at": "laakh",
+     "sfx": "shimmer",
+     "gain": 0.6
+    },
+    {
+     "at": "khazana",
+     "sfx": "chime",
+     "gain": 0.55
+    },
+    {
+     "at": "darwaza",
+     "sfx": "creak",
+     "gain": 0.7
+    }
+   ]
+  },
+  {
+   "id": "place",
+   "mood": "royal",
+   "hi": "ये है केरल का श्री पद्मनाभ स्वामी मंदिर, भगवान विष्णु का धाम।",
+   "en": "Ye hai Kerala ka *SHRI *PADMANABHA *SWAMY mandir, bhagwan *VISHNU ka dhaam.",
+   "sfx": [
+    {
+     "at": "start",
+     "sfx": "whoosh",
+     "off": -0.12,
+     "gain": 0.5
+    },
+    {
+     "at": "padmanabha",
+     "sfx": "bell",
+     "gain": 0.55
+    },
+    {
+     "at": "vishnu",
+     "sfx": "chime",
+     "gain": 0.5
+    }
+   ]
+  },
+  {
+   "id": "court",
+   "mood": "tense",
+   "hi": "2011 में, सुप्रीम कोर्ट के आदेश पर, इसके तहखाने खोले गए।",
+   "en": "*2011 mein, *SUPREME *COURT ke aadesh par, iske *TEHKHANE khole gaye.",
+   "sfx": [
+    {
+     "at": "start",
+     "sfx": "whoosh",
+     "off": -0.12,
+     "gain": 0.5
+    },
+    {
+     "at": "supreme",
+     "sfx": "stamp",
+     "gain": 0.65
+    },
+    {
+     "at": "tehkhane",
+     "sfx": "creak",
+     "gain": 0.7
+    }
+   ]
+  },
+  {
+   "id": "treasure",
+   "mood": "climax",
+   "hi": "अंदर से निकलीं सोने की मूर्तियाँ, हज़ारों सिक्के, हीरे जवाहरात, और ढेरों गहने!",
+   "en": "Andar se nikli *SONE ki murtiyan, hazaaron *SIKKE, heere jawahraat, aur dheron *GEHNE!",
+   "sfx": [
+    {
+     "at": "start",
+     "sfx": "riser",
+     "gain": 0.45
+    },
+    {
+     "at": "sone",
+     "sfx": "shimmer",
+     "gain": 0.7
+    },
+    {
+     "at": "sikke",
+     "sfx": "chime",
+     "gain": 0.6
+    },
+    {
+     "at": "gehne",
+     "sfx": "fanfare",
+     "gain": 0.45
+    }
+   ]
+  },
+  {
+   "id": "vaultb",
+   "mood": "creepy",
+   "hi": "पर तहखाना बी नहीं खुला। उसके दरवाज़े पर बनी है नाग की आकृति!",
+   "en": "Par tehkhana *B nahi khula. Uske darwaze par bani hai *NAAG ki aakriti!",
+   "sfx": [
+    {
+     "at": "start",
+     "sfx": "heartbeat",
+     "gain": 0.5
+    },
+    {
+     "at": "b",
+     "sfx": "hit",
+     "gain": 0.75
+    },
+    {
+     "at": "naag",
+     "sfx": "ghost",
+     "gain": 0.6
+    }
+   ]
+  },
+  {
+   "id": "legend",
+   "mood": "creepy",
+   "hi": "लोककथा कहती है, इसे ज़बरदस्ती खोला, तो भारी अनर्थ होगा!",
+   "en": "Lokkatha kehti hai, ise *ZABARDASTI khola, to bhaari *ANARTH hoga!",
+   "sfx": [
+    {
+     "at": "start",
+     "sfx": "whoosh",
+     "off": -0.12,
+     "gain": 0.5
+    },
+    {
+     "at": "zabardasti",
+     "sfx": "rumble",
+     "gain": 0.6
+    },
+    {
+     "at": "anarth",
+     "sfx": "thunder",
+     "gain": 0.6
+    }
+   ]
+  },
+  {
+   "id": "death",
+   "mood": "sad",
+   "hi": "और जिस अफसर की याचिका पर तहखाने खुले, कुछ हफ्तों बाद उनकी मौत हो गई।",
+   "en": "Aur jis afsar ki yachika par tehkhane khule, kuch *HAFTON baad unki *MAUT ho gayi.",
+   "sfx": [
+    {
+     "at": "start",
+     "sfx": "whoosh",
+     "off": -0.12,
+     "gain": 0.5
+    },
+    {
+     "at": "hafton",
+     "sfx": "tick",
+     "gain": 0.45
+    },
+    {
+     "at": "maut",
+     "sfx": "bell",
+     "gain": 0.55
+    }
+   ]
+  },
+  {
+   "id": "truth",
+   "mood": "mystery",
+   "hi": "वजह बुखार बताई गई, पर अफवाहों ने इसे श्राप बना दिया।",
+   "en": "Wajah *BUKHAAR bataayi gayi, par afwaahon ne ise *SHRAAP bana diya.",
+   "sfx": [
+    {
+     "at": "start",
+     "sfx": "whoosh",
+     "off": -0.12,
+     "gain": 0.5
+    },
+    {
+     "at": "bukhaar",
+     "sfx": "stamp",
+     "gain": 0.55
+    },
+    {
+     "at": "shraap",
+     "sfx": "ghost",
+     "gain": 0.55
+    }
+   ]
+  },
+  {
+   "id": "today",
+   "mood": "tense",
+   "hi": "2020 में सुप्रीम कोर्ट ने फैसला मंदिर समिति पर छोड़ा। और तहखाना बी? आज भी बंद है!",
+   "en": "*2020 mein Supreme Court ne faisla mandir *SAMITI par chhoda. Aur tehkhana B? Aaj bhi *BAND hai!",
+   "sfx": [
+    {
+     "at": "start",
+     "sfx": "whoosh",
+     "off": -0.12,
+     "gain": 0.5
+    },
+    {
+     "at": "samiti",
+     "sfx": "stamp",
+     "gain": 0.6
+    },
+    {
+     "at": "band",
+     "sfx": "hit",
+     "gain": 0.75
+    }
+   ]
+  },
+  {
+   "id": "cta",
+   "mood": "tense",
+   "hi": "खोलना चाहिए, या नहीं? कमेंट में बताओ, और ऐसे ही रहस्यों के लिए इतिहास के भूत को सब्सक्राइब करो!",
+   "en": "*KHOLNA chahiye, ya *NAHI? Comment mein batao, aur aise hi rahasyon ke liye *ITIHAAS *KE *BHOOT ko *SUBSCRIBE karo!",
+   "sfx": [
+    {
+     "at": "start",
+     "sfx": "heartbeat",
+     "gain": 0.45
+    },
+    {
+     "at": "kholna",
+     "sfx": "creak",
+     "gain": 0.45
+    },
+    {
+     "at": "comment",
+     "sfx": "pop",
+     "gain": 0.6
+    },
+    {
+     "at": "itihaas",
+     "sfx": "whoosh",
+     "off": -0.12,
+     "gain": 0.5
+    },
+    {
+     "at": "subscribe",
+     "sfx": "pop",
+     "off": 0.13,
+     "gain": 0.8
+    },
+    {
+     "at": "subscribe",
+     "sfx": "ding",
+     "off": 0.27,
+     "gain": 0.7
+    }
+   ]
+  }
+ ]
+}
