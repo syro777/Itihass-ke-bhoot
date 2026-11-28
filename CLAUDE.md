@@ -45,6 +45,7 @@ See README.md for the script format, components and SFX list. Always render chec
 
 ## Shot kit for 3D shorts
 - `src/components/three/ShortShots.tsx`: write a `World` (flags in `x`, word-timed via `wf/after/ramp`) and a shot table `{scene: sh(p0,p1,look0,look1,{x, ov:[chip|stamp|tag|date|cta]})}`; `makeShort` adds captions, title, nudge, progress bar and audio. Render many stills at once with `node out/check_multi.cjs <dir> Comp:f1,f2 …`.
+- Extras: `cut` (hard cut to a second camera path at a word), `shake` (handheld camera), and `makeShort({ fx })` for a full-video layer such as `HauntFX` (`src/components/three/Haunt.tsx`: grain, scanlines, flicker, breathing vignette, VHS tears, shadow-figure flashes at chosen frames) for "haunting" episodes (Malcha Mahal, Brown Lady).
 
 ## Long videos (16:9, since Nov 2026)
 - 1920×1080 composition; captions `y≈965, size 60, 4 words/page`; chapter card, chapter badge, night clock and DAR METER live in `src/components/LongForm.tsx`. Aim for ≥ 8 min (mid-roll ads), chapters in the description (first at 00:00, no `#` before chapter numbers).

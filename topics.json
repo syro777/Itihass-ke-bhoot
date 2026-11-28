@@ -110,7 +110,8 @@
       "id": "malcha-mahal",
       "title": "Malcha Mahal, Delhi — jungle mein chhupi 'begum' ki kahani",
       "type": "india-ghost",
-      "status": "todo"
+      "status": "done",
+      "date": "2026-11-28"
     },
     {
       "id": "kailasa-ellora",
@@ -123,7 +124,8 @@
       "id": "raynham-brown-lady",
       "title": "Brown Lady of Raynham Hall — duniya ki sabse famous bhoot photo",
       "type": "world-ghost",
-      "status": "todo"
+      "status": "done",
+      "date": "2026-11-28"
     },
     {
       "id": "golconda-clap",
@@ -265,6 +267,13 @@
       "type": "world-mystery",
       "status": "done",
       "date": "2026-11-27"
+    },
+    {
+      "id": "brown-lady",
+      "title": "Brown Lady of Raynham Hall — duniya ki sabse mashhoor bhoot ki tasveer (1936)",
+      "type": "world-ghost",
+      "status": "done",
+      "date": "2026-11-28"
     }
   ]
 }

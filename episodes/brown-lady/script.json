@@ -1,0 +1,252 @@
+{
+ "id": "brown-lady",
+ "style": "3d",
+ "voice": "hi-IN-MadhurNeural",
+ "pitch": "-2Hz",
+ "notes": "Facts: Raynham Hall, Norfolk, England. Legend (lokkatha): the 'Brown Lady' is the ghost of Lady Dorothy Walpole (Townshend), d. 1726, said to have been locked in her rooms by her husband; sightings on the staircase; story that Captain Frederick Marryat fired a pistol at the figure (legend). 19 Sept 1936: Country Life photographers Captain Hubert Provand and Indra Shira were photographing the staircase when Shira said he saw a misty figure descending; the photo was published in Country Life (Dec 1936) and Life (1937) and became the most famous ghost photo. Sceptics (e.g. Joe Nickell) say it is probably a double exposure; no proof either way.",
+ "scenes": [
+  {
+   "id": "hook",
+   "mood": "creepy",
+   "hi": "दुनिया की सबसे मशहूर भूत की तस्वीर, नब्बे साल पहले, एक सीढ़ी पर खींची गई थी!",
+   "en": "Duniya ki sabse mashhoor *BHOOT ki *TASVEER, *NABBE saal pehle, ek *SEEDHI par kheenchi gayi thi!",
+   "sfx": [
+    {
+     "at": "start",
+     "sfx": "boom",
+     "gain": 0.7
+    },
+    {
+     "at": "start",
+     "sfx": "wind",
+     "gain": 0.35
+    },
+    {
+     "at": "bhoot",
+     "sfx": "ghost",
+     "gain": 0.6
+    },
+    {
+     "at": "seedhi",
+     "sfx": "creak",
+     "gain": 0.65
+    }
+   ]
+  },
+  {
+   "id": "place",
+   "mood": "mystery",
+   "hi": "इंग्लैंड का रेनहैम हॉल, एक पुरानी शाही हवेली।",
+   "en": "*ENGLAND ka *RAYNHAM *HALL, ek purani shahi haveli.",
+   "sfx": [
+    {
+     "at": "start",
+     "sfx": "whoosh",
+     "off": -0.12,
+     "gain": 0.45
+    },
+    {
+     "at": "raynham",
+     "sfx": "bell",
+     "gain": 0.5
+    }
+   ]
+  },
+  {
+   "id": "legend",
+   "mood": "sad",
+   "hi": "लोककथा है, यहाँ की मालकिन डोरोथी को उसके पति ने कमरे में बंद कर दिया था, और वहीं उसकी मौत हुई।",
+   "en": "Lokkatha hai, yahan ki malkin *DOROTHY ko uske pati ne kamre mein *BAND kar diya tha, aur wahin uski *MAUT hui.",
+   "sfx": [
+    {
+     "at": "start",
+     "sfx": "whoosh",
+     "off": -0.12,
+     "gain": 0.45
+    },
+    {
+     "at": "band",
+     "sfx": "hit",
+     "gain": 0.7
+    },
+    {
+     "at": "maut",
+     "sfx": "bell",
+     "gain": 0.5
+    }
+   ]
+  },
+  {
+   "id": "sightings",
+   "mood": "creepy",
+   "hi": "तब से लोग कहते हैं, भूरे कपड़ों में एक औरत, सीढ़ियों पर घूमती दिखती है।",
+   "en": "Tab se log kehte hain, *BHOORE kapdon mein ek *AURAT, seedhiyon par ghoomti dikhti hai.",
+   "sfx": [
+    {
+     "at": "start",
+     "sfx": "heartbeat",
+     "gain": 0.45
+    },
+    {
+     "at": "bhoore",
+     "sfx": "shimmer_dark",
+     "gain": 0.55
+    },
+    {
+     "at": "aurat",
+     "sfx": "ghost",
+     "gain": 0.65
+    }
+   ]
+  },
+  {
+   "id": "captain",
+   "mood": "tense",
+   "hi": "कहते हैं, एक कैप्टन ने उस पर गोली तक चला दी थी!",
+   "en": "Kehte hain, ek *CAPTAIN ne us par *GOLI tak chala di thi!",
+   "sfx": [
+    {
+     "at": "start",
+     "sfx": "whoosh",
+     "off": -0.12,
+     "gain": 0.45
+    },
+    {
+     "at": "goli",
+     "sfx": "boom",
+     "gain": 0.75
+    }
+   ]
+  },
+  {
+   "id": "photo",
+   "mood": "tense",
+   "hi": "साल 1936, दो फोटोग्राफर सीढ़ियों की फोटो ले रहे थे, तभी एक बोला: सीढ़ी पर कोई उतर रहा है!",
+   "en": "Saal *1936, do photographer seedhiyon ki photo le rahe the, tabhi ek bola: seedhi par koi *UTAR raha hai!",
+   "sfx": [
+    {
+     "at": "start",
+     "sfx": "tick",
+     "gain": 0.45
+    },
+    {
+     "at": "1936",
+     "sfx": "chime",
+     "gain": 0.45
+    },
+    {
+     "at": "utar",
+     "sfx": "hit",
+     "gain": 0.75
+    }
+   ]
+  },
+  {
+   "id": "click",
+   "mood": "climax",
+   "hi": "क्लिक! और तस्वीर में दिखी, एक धुंधली परछाईं!",
+   "en": "*CLICK! Aur tasveer mein dikhi, ek dhundhli *PARCHHAAIN!",
+   "sfx": [
+    {
+     "at": "click",
+     "sfx": "stamp",
+     "gain": 0.9
+    },
+    {
+     "at": "parchhaain",
+     "sfx": "ghost",
+     "gain": 0.7
+    }
+   ]
+  },
+  {
+   "id": "famous",
+   "mood": "mystery",
+   "hi": "ये फोटो कंट्री लाइफ मैगज़ीन में छपी, और दुनिया भर में मशहूर हो गई।",
+   "en": "Ye photo *COUNTRY *LIFE magazine mein chhapi, aur *DUNIYA bhar mein mashhoor ho gayi.",
+   "sfx": [
+    {
+     "at": "start",
+     "sfx": "whoosh",
+     "off": -0.12,
+     "gain": 0.45
+    },
+    {
+     "at": "country",
+     "sfx": "pop",
+     "gain": 0.5
+    },
+    {
+     "at": "duniya",
+     "sfx": "riser",
+     "gain": 0.45
+    }
+   ]
+  },
+  {
+   "id": "truth",
+   "mood": "mystery",
+   "hi": "पर जानकार कहते हैं, ये शायद डबल एक्सपोज़र था, यानी दो तस्वीरें एक के ऊपर एक।",
+   "en": "Par jaankar kehte hain, ye shayad *DOUBLE *EXPOSURE tha, yaani do tasveerein ek ke upar ek.",
+   "sfx": [
+    {
+     "at": "start",
+     "sfx": "whoosh",
+     "off": -0.12,
+     "gain": 0.45
+    },
+    {
+     "at": "double",
+     "sfx": "glitch",
+     "gain": 0.55
+    },
+    {
+     "at": "exposure",
+     "sfx": "stamp",
+     "gain": 0.55
+    }
+   ]
+  },
+  {
+   "id": "cta",
+   "mood": "tense",
+   "hi": "असली भूत, या कैमरे की चाल? कमेंट में बताओ, और ऐसे ही रहस्यों के लिए इतिहास के भूत को सब्सक्राइब करो!",
+   "en": "Asli *BHOOT, ya camere ki *CHAAL? Comment mein batao, aur aise hi rahasyon ke liye *ITIHAAS *KE *BHOOT ko *SUBSCRIBE karo!",
+   "sfx": [
+    {
+     "at": "start",
+     "sfx": "heartbeat",
+     "gain": 0.45
+    },
+    {
+     "at": "bhoot",
+     "sfx": "ghost",
+     "gain": 0.45
+    },
+    {
+     "at": "comment",
+     "sfx": "pop",
+     "gain": 0.6
+    },
+    {
+     "at": "itihaas",
+     "sfx": "whoosh",
+     "off": -0.12,
+     "gain": 0.5
+    },
+    {
+     "at": "subscribe",
+     "sfx": "pop",
+     "off": 0.13,
+     "gain": 0.8
+    },
+    {
+     "at": "subscribe",
+     "sfx": "ding",
+     "off": 0.27,
+     "gain": 0.7
+    }
+   ]
+  }
+ ]
+}

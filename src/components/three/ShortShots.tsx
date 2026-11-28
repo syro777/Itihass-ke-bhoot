@@ -52,6 +52,8 @@ export type Shot = {
   flash?: string;
   ov?: Ov[];
   entry?: boolean;
+  /** handheld camera shake amplitude (world units) */
+  shake?: number;
   /** hard cut inside the scene: from word `at`, use a second camera path and extra world flags */
   cut?: { at: string; p: [V3, V3]; l: [V3, V3]; x?: Record<string, unknown>; fov?: number; exp?: number };
 };
@@ -107,6 +109,9 @@ const OvLayer: React.FC<{ ov: Ov[]; words: Word[] }> = ({ ov, words }) => {
   );
 };
 
+const shaken = (p: V3, a: number, f: number): V3 =>
+  a > 0 ? [p[0] + a * (Math.sin(f * 0.9) * 0.6 + Math.sin(f * 2.3) * 0.25), p[1] + a * (Math.sin(f * 1.3 + 1) * 0.45 + Math.sin(f * 3.1) * 0.15), p[2] + a * Math.sin(f * 0.7 + 2) * 0.4] : p;
+
 export const makeScenes = (World: React.FC<WP>, shots: Record<string, Shot>) => {
   const out: Record<string, React.FC<SP>> = {};
   for (const id of Object.keys(shots)) {
@@ -136,7 +141,7 @@ export const makeScenes = (World: React.FC<WP>, shots: Record<string, Shot>) => 
           overlay={s.ov ? <OvLayer ov={s.ov} words={words} /> : undefined}
         >
           <World f={f} t={t} dur={dur} x={X} wf={wf} after={after} ramp={ramp} />
-          <CameraRig pos={lerp3(P[0], P[1], ct)} look={lerp3(L[0], L[1], ct)} fov={cut?.fov ?? s.fov ?? 50} />
+          <CameraRig pos={shaken(lerp3(P[0], P[1], ct), s.shake ?? 0, f)} look={lerp3(L[0], L[1], ct)} fov={cut?.fov ?? s.fov ?? 50} />
         </Stage3D>
       );
     };
@@ -147,8 +152,8 @@ export const makeScenes = (World: React.FC<WP>, shots: Record<string, Shot>) => 
 };
 
 /** Standard 9:16 episode: scenes in sequence, mid-video subscribe nudge, title, captions, progress, audio. */
-export const makeShort = (opts: { timeline: Timeline; scenes: Record<string, React.FC<SP>>; audio: string; line1: string; line2: string; nudge: string; nudgeY?: number }) => {
-  const { timeline, scenes, audio, line1, line2, nudge, nudgeY = 1080 } = opts;
+export const makeShort = (opts: { timeline: Timeline; scenes: Record<string, React.FC<SP>>; audio: string; line1: string; line2: string; nudge: string; nudgeY?: number; fx?: React.ReactNode }) => {
+  const { timeline, scenes, audio, line1, line2, nudge, nudgeY = 1080, fx } = opts;
   const total = Math.round(timeline.duration * FPS);
   const Ep: React.FC = () => {
     const cta = timeline.scenes.find((s) => s.id === "cta");
@@ -166,6 +171,7 @@ export const makeShort = (opts: { timeline: Timeline; scenes: Record<string, Rea
             </Sequence>
           );
         })}
+        {fx}
         {mid && (
           <Sequence name="subscribe-nudge" from={Math.round(mid.start * FPS) + 8} durationInFrames={80}>
             <SubscribeNudge y={nudgeY} scale={0.8} />

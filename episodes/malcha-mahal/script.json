@@ -1,0 +1,272 @@
+{
+ "id": "malcha-mahal",
+ "style": "3d",
+ "voice": "hi-IN-MadhurNeural",
+ "pitch": "-2Hz",
+ "notes": "Facts: Malcha Mahal (Wilayat Mahal), Tughlaq-era hunting lodge in Delhi's Ridge forest, Chanakyapuri. Begum Wilayat Mahal claimed descent from the royal house of Awadh (Oudh); from the 1970s she camped for about ten years at New Delhi railway station demanding compensation; in 1985 the government gave her Malcha Mahal. The family lived cut off, without electricity or running water. Wilayat died in 1993; her son Ali Raza ('Cyrus') was found dead alone in the lodge on 2 Sept 2017 (daughter Sakina died some years earlier). 2019 New York Times investigation (Ellen Barry, 'The Jungle Prince of Delhi') found they had no connection to the Awadh royal house. Ghost talk about the lodge is local folklore (kehte hain).",
+ "scenes": [
+  {
+   "id": "hook",
+   "mood": "creepy",
+   "hi": "दिल्ली के जंगल में एक खंडहर महल, जहाँ एक शाही परिवार तीस साल अकेला रहा, पर सच कुछ और ही निकला!",
+   "en": "Delhi ke *JUNGLE mein ek khandhar *MAHAL, jahan ek *SHAHI parivaar *TEES saal akela raha, par *SACH kuch aur hi nikla!",
+   "sfx": [
+    {
+     "at": "start",
+     "sfx": "boom",
+     "gain": 0.7
+    },
+    {
+     "at": "start",
+     "sfx": "wind",
+     "gain": 0.4
+    },
+    {
+     "at": "mahal",
+     "sfx": "creak",
+     "gain": 0.6
+    },
+    {
+     "at": "tees",
+     "sfx": "heartbeat",
+     "gain": 0.5
+    },
+    {
+     "at": "sach",
+     "sfx": "hit",
+     "gain": 0.75
+    }
+   ]
+  },
+  {
+   "id": "place",
+   "mood": "mystery",
+   "hi": "ये है मालचा महल, तुगलक दौर का, छह सौ साल पुराना शिकारगाह।",
+   "en": "Ye hai *MALCHA *MAHAL, *TUGHLAQ daur ka, chhah sau saal purana shikargaah.",
+   "sfx": [
+    {
+     "at": "start",
+     "sfx": "whoosh",
+     "off": -0.12,
+     "gain": 0.45
+    },
+    {
+     "at": "malcha",
+     "sfx": "shimmer_dark",
+     "gain": 0.55
+    },
+    {
+     "at": "tughlaq",
+     "sfx": "bell",
+     "gain": 0.45
+    }
+   ]
+  },
+  {
+   "id": "begum",
+   "mood": "mystery",
+   "hi": "1970 के दशक में, बेगम विलायत महल ने खुद को अवध के नवाबों का वारिस बताया।",
+   "en": "*1970 ke dashak mein, Begum *WILAYAT *MAHAL ne khud ko *AWADH ke nawabon ka waaris bataya.",
+   "sfx": [
+    {
+     "at": "start",
+     "sfx": "whoosh",
+     "off": -0.12,
+     "gain": 0.45
+    },
+    {
+     "at": "wilayat",
+     "sfx": "ghost",
+     "gain": 0.5
+    },
+    {
+     "at": "awadh",
+     "sfx": "chime",
+     "gain": 0.45
+    }
+   ]
+  },
+  {
+   "id": "station",
+   "mood": "tense",
+   "hi": "हर्जाने के लिए, वो करीब दस साल नई दिल्ली रेलवे स्टेशन पर डटी रहीं!",
+   "en": "*HARJAANE ke liye, wo kareeb *DAS saal New Delhi *RAILWAY station par dati rahi!",
+   "sfx": [
+    {
+     "at": "start",
+     "sfx": "whoosh",
+     "off": -0.12,
+     "gain": 0.45
+    },
+    {
+     "at": "das",
+     "sfx": "stamp",
+     "gain": 0.65
+    },
+    {
+     "at": "railway",
+     "sfx": "rumble",
+     "gain": 0.55
+    }
+   ]
+  },
+  {
+   "id": "given",
+   "mood": "calm",
+   "hi": "आखिर 1985 में, सरकार ने उन्हें ये जंगल वाला महल दे दिया।",
+   "en": "Aakhir *1985 mein, *SARKAAR ne unhe ye jungle wala mahal de diya.",
+   "sfx": [
+    {
+     "at": "start",
+     "sfx": "whoosh",
+     "off": -0.12,
+     "gain": 0.45
+    },
+    {
+     "at": "sarkaar",
+     "sfx": "stamp",
+     "gain": 0.55
+    },
+    {
+     "at": "mahal",
+     "sfx": "creak",
+     "gain": 0.55
+    }
+   ]
+  },
+  {
+   "id": "isolated",
+   "mood": "creepy",
+   "hi": "न बिजली, न पानी। परिवार ने दुनिया से नाता तोड़ लिया।",
+   "en": "Na *BIJLI, na paani. Parivaar ne duniya se *NAATA tod liya.",
+   "sfx": [
+    {
+     "at": "start",
+     "sfx": "heartbeat",
+     "gain": 0.45
+    },
+    {
+     "at": "bijli",
+     "sfx": "glitch",
+     "gain": 0.5
+    },
+    {
+     "at": "naata",
+     "sfx": "ghost",
+     "gain": 0.55
+    }
+   ]
+  },
+  {
+   "id": "deaths",
+   "mood": "sad",
+   "hi": "1993 में बेगम चल बसीं, और 2017 में बेटा अली रज़ा, महल में अकेला मृत मिला।",
+   "en": "*1993 mein Begum chal basi, aur *2017 mein beta Ali Raza, mahal mein *AKELA mrit mila.",
+   "sfx": [
+    {
+     "at": "start",
+     "sfx": "whoosh",
+     "off": -0.12,
+     "gain": 0.45
+    },
+    {
+     "at": "1993",
+     "sfx": "bell",
+     "gain": 0.5
+    },
+    {
+     "at": "akela",
+     "sfx": "shimmer_dark",
+     "gain": 0.6
+    }
+   ]
+  },
+  {
+   "id": "twist",
+   "mood": "climax",
+   "hi": "फिर 2019 में, न्यूयॉर्क टाइम्स की जाँच में खुलासा हुआ: उनका अवध के शाही घराने से कोई रिश्ता ही नहीं था!",
+   "en": "Phir *2019 mein, *NEW_YORK *TIMES ki jaanch mein khulasa hua: unka Awadh ke shahi gharane se koi *RISHTA hi nahi tha!",
+   "sfx": [
+    {
+     "at": "start",
+     "sfx": "riser",
+     "gain": 0.5
+    },
+    {
+     "at": "times",
+     "sfx": "stamp",
+     "gain": 0.6
+    },
+    {
+     "at": "rishta",
+     "sfx": "hit",
+     "gain": 0.85
+    }
+   ]
+  },
+  {
+   "id": "today",
+   "mood": "creepy",
+   "hi": "आज महल फिर खाली है, और लोग कहते हैं, रात को वहाँ अजीब आवाज़ें आती हैं।",
+   "en": "Aaj mahal phir *KHAALI hai, aur log kehte hain, raat ko wahan *AJEEB aawaazein aati hain.",
+   "sfx": [
+    {
+     "at": "start",
+     "sfx": "wind",
+     "gain": 0.45
+    },
+    {
+     "at": "khaali",
+     "sfx": "creak",
+     "gain": 0.6
+    },
+    {
+     "at": "ajeeb",
+     "sfx": "ghost",
+     "gain": 0.7
+    }
+   ]
+  },
+  {
+   "id": "cta",
+   "mood": "tense",
+   "hi": "धोखा, या दर्द भरी कहानी? कमेंट में बताओ, और ऐसे ही रहस्यों के लिए इतिहास के भूत को सब्सक्राइब करो!",
+   "en": "*DHOKHA, ya dard bhari *KAHANI? Comment mein batao, aur aise hi rahasyon ke liye *ITIHAAS *KE *BHOOT ko *SUBSCRIBE karo!",
+   "sfx": [
+    {
+     "at": "start",
+     "sfx": "heartbeat",
+     "gain": 0.45
+    },
+    {
+     "at": "dhokha",
+     "sfx": "hit",
+     "gain": 0.45
+    },
+    {
+     "at": "comment",
+     "sfx": "pop",
+     "gain": 0.6
+    },
+    {
+     "at": "itihaas",
+     "sfx": "whoosh",
+     "off": -0.12,
+     "gain": 0.5
+    },
+    {
+     "at": "subscribe",
+     "sfx": "pop",
+     "off": 0.13,
+     "gain": 0.8
+    },
+    {
+     "at": "subscribe",
+     "sfx": "ding",
+     "off": 0.27,
+     "gain": 0.7
+    }
+   ]
+  }
+ ]
+}
