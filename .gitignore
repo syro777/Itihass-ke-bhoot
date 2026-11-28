@@ -5,3 +5,4 @@ public/*/mix.wav
 *.log
 .DS_Store
 __pycache__/
+public/*/mix_nomusic.*

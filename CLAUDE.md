@@ -39,6 +39,7 @@ Components live in `src/components/Subscribe.tsx`; SFX `pop` + `ding`.
 ```bash
 python3 tools/make_voice.py episodes/<id>/script.json   # voice + word timings + timeline
 python3 tools/make_audio.py <id>                        # score + SFX + -14 LUFS master
+python3 tools/make_audio.py <id> --no-music             # voice + SFX only (public/<id>/mix_nomusic.m4a) for adding a licensed trending sound in the YouTube app
 npx remotion render <Comp> out/<id>.mp4 --crf=18        # final video
 ```
 See README.md for the script format, components and SFX list. Always render check frames and look at them before the final render.
@@ -51,6 +52,9 @@ See README.md for the script format, components and SFX list. Always render chec
 - 1920×1080 composition; captions `y≈965, size 60, 4 words/page`; chapter card, chapter badge, night clock and DAR METER live in `src/components/LongForm.tsx`. Aim for ≥ 8 min (mid-roll ads), chapters in the description (first at 00:00, no `#` before chapter numbers).
 - A scene in script.json may set `"hold": <seconds>` for a dramatic pause after it.
 - Publish by writing the id to `episodes/LATEST_LONG`: `.github/workflows/publish-long.yml` renders `segments` (upload.json) frame ranges in parallel, joins them, adds `public/<id>/mix.m4a`, and releases the MP4 + `thumbnail.png` (1280×720 Still) under tag `long-<date>-<id>`. `upload.json` needs `"long": true`.
+
+## Music
+- Never put copyrighted songs into the MP4 (Content ID: muted/blocked/demonetized). For a viral song, deliver a no-music version as well and have the user add it with "Add sound" in the YouTube Shorts app (licensed library), voice volume high, song ~15-25%.
 
 ## Each delivery includes
 The MP4, plus title (with #shorts), description, hashtags (first 3 matter, max 15), tags and a pinned comment, written in Hinglish/Hindi.

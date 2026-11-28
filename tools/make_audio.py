@@ -216,7 +216,7 @@ def write_wav(path, st):
                     "-c:a", "pcm_s16le", path], input=data.tobytes(), check=True)
 
 
-def main(ep):
+def main(ep, no_music=False):
     root = os.path.join(os.path.dirname(__file__), "..")
     build = os.path.join(root, "episodes", ep, "build")
     timeline = json.load(open(os.path.join(root, "src", "data", f"{ep}.timeline.json"), encoding="utf-8"))
@@ -256,6 +256,8 @@ def main(ep):
     venv2 = S.filt(S.filt(np.abs(voice), "lowpass", 8), "lowpass", 2.5, order=1)
     duck = 1 - 0.62 * np.clip(venv2 / 0.05, 0, 1)
     music *= duck
+    if no_music:
+        music *= 0  # voice + SFX only: leaves room for a licensed trending sound added in the YouTube app
     print(f"music RMS {rms_db(music):.1f} dBFS")
 
     # ---- sfx ----
@@ -287,7 +289,7 @@ def main(ep):
 
     out_dir = os.path.join(root, "public", ep)
     os.makedirs(out_dir, exist_ok=True)
-    out = os.path.join(out_dir, "mix.wav")
+    out = os.path.join(out_dir, "mix_nomusic.wav" if no_music else "mix.wav")
     meas = subprocess.run(["ffmpeg", "-hide_banner", "-i", raw, "-af", "loudnorm=I=-14:TP=-1.5:LRA=11:print_format=json",
                            "-f", "null", "-"], capture_output=True, text=True).stderr
     m = json.loads(meas[meas.rindex("{"):])
@@ -300,4 +302,5 @@ def main(ep):
 
 
 if __name__ == "__main__":
-    main(sys.argv[1])
+    # python3 tools/make_audio.py <id> [--no-music]   (--no-music writes public/<id>/mix_nomusic.m4a)
+    main(sys.argv[1], no_music="--no-music" in sys.argv[2:])
